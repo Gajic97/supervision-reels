@@ -14,7 +14,7 @@ AUTH="Authorization: Basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0
 git -c http.extraHeader="$AUTH" clone -q https://github.com/Gajic97/supervision-reels.git ~/sr && cd ~/sr
 git config user.name Gajic97; git config user.email freelancenemanjagajic@gmail.com
 ```
-Pročitaj **BRAND.md** (obavezna pravila), **brag/SKILL.md** (kako se pravi video) i oba šablona u `templates/`. Gajicu se najviše dopao **reel-v2**, pa je on glavni uzor za stil, tempo i kvalitet.
+Pročitaj **BRAND.md** (obavezna pravila), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v3**: reel-v2 stil, plus hook od 2 s, šire bočne margine i muzika koja se menja.
 
 GitHub API (releases i ostalo) je blokiran kroz proxy. Radi samo `git` preko HTTPS-a sa gornjim headerom.
 
@@ -49,10 +49,19 @@ Za svaki proizvod u `~/work/<slug>/`:
    - hook
    - 5–6 scena po strukturi iz BRAND.md
    - spisak činjenica sa izvorom
-4. **Kompozicija:** `index.html` sa `window.render(t)` i `window.ready`, 1080×1920, 21 s, rezovi na 3,5 / 8,5 / 13 / 15,5 / 18,5 s, kao u šablonima. Scene i tekst prilagodi proizvodu: hook mora biti specifičan za taj proizvod, a ne kopija prethodnog. Ključna reč se mora pojaviti na ekranu.
-5. **Zvuk:** kopiraj `templates/reel-v2/sound.py` i pomeri tempiranje efekata (swish, shutter, impact) tako da prati ulaske elemenata u tvojoj kompoziciji. `OUT_WAV=music.wav python3 sound.py`. Bez tonskih blipova.
-6. **Provera kadrova:** pre rendera pregledaj stillove svake scene i sredine prelaza (Playwright screenshot, pa Read), pa ispravi preklapanja, prelome i kontrast.
-7. **Render:** `node scripts/render.js ~/work/<slug> ~/work/<slug>/music.wav ~/work/<slug>/reel.mp4 21 <poster_t>`. Za `poster_t` uzmi najjači smiren kadar, obično kraj hook-a (oko 2,9 s).
+4. **Kompozicija:** polazi od `templates/reel-v3/index.html`, koji je trenutni standard. Ima `window.render(t)` i `window.ready`, format 1080×1920 i **23 s**:
+   - **0–2 s: tekstualni hook (scena s0)** po `HOOKS.md`: oznaka iznad, glavni red od najviše 8 reči (svaka reč je `<span class="w">`, a ključne su `class="w green"`) i jedna rečenica ispod. Tip hook-a mora biti drugačiji od prethodnog reela u posted.json.
+   - **2–23 s: glavni deo** (funkcija `renderMain`, vreme ide od 0), sa rezovima na 3,5 / 8,5 / 13 / 15,5 / 18,5 s glavnog dela.
+   - **Bočne margine:** sav sadržaj scena je skaliran na 92%, tako da je razmak od ivice oko 117 px. Ne vraćaj `.scene` scale, ne stavljaj tekst bliže od x=80 unutar scene i ne pravi elemente šire od 920 px.
+   - Scene i tekst prilagodi proizvodu: hook mora biti specifičan za taj proizvod, a ne kopija prethodnog. Ključna reč se mora pojaviti na ekranu.
+5. **Muzika (svaki reel drugačija):** kopiraj `templates/reel-v3/sound.py`.
+   - Izaberi `STYLE` iz skupa deep_house, lofi_chill, synthwave, cinematic, minimal_tech, tako da se **ne ponavlja nijedan od poslednja 2 reela** (`music_style` u posted.json).
+   - `KEY` uzmi nasumično 0–11, a `SEED` = product_id.
+   - Napravi `sfx.json` sa efektima u **apsolutnom vremenu**, usklađenim sa tvojim ulascima elemenata. Format je `[{"type":"shutter","t":2.0,"g":0.9}, ...]`, a tipovi su opisani na vrhu sound.py. Bez `SFX` se koristi raspored reel-v3.
+   - Pokreni: `STYLE=.. KEY=.. SEED=.. INTRO=2.0 SFX=sfx.json OUT_WAV=music.wav python3 sound.py`
+   - Bez tonskih blip i pluck zvukova.
+6. **Provera kadrova:** pre rendera pregledaj stillove svake scene, hook-a i sredine prelaza (Playwright screenshot, pa Read), pa ispravi preklapanja, prelome, kontrast i tekst preblizu ivice.
+7. **Render:** `node scripts/render.js ~/work/<slug> ~/work/<slug>/music.wav ~/work/<slug>/reel.mp4 23 1.7`. Poster (thumbnail) je tekstualni hook na 1,7 s.
 8. **Opisi** (BRAND.md): Instagram, TikTok i LinkedIn. Instagram tekst ide u `ig.txt`.
 
 Ako bilo koji korak ne uspe za neki proizvod, preskoči ga i uzmi sledeći sa liste. Nikad se ne objavljuje video sa neproverenim podacima.
@@ -77,7 +86,7 @@ BUFFER_TOKEN=... python3 scripts/schedule_buffer.py --service instagram --video 
 
 ## 6. Evidencija
 U `data/posted.json` (grana main) dodaj unos za svaki zakazani reel:
-- date, product_id, product, category, keyword
+- date, product_id, product, category, keyword, hook_type, hook_text, music_style
 - channels, scheduled, video, buffer_post_id
 
 Uz to sačuvaj `templates/runs/<datum>-<slug>/` sa fajlovima brag-plan.md, index.html, sound.py i opisima. MP4 i frejmove ne čuvaj. Zatim commit i push na main.

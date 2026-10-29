@@ -7,7 +7,9 @@
   "channels": [
    "instagram"
   ],
-  "note": "probni reel v2, objavljen rucno preko Buffer Share Now"
+  "note": "probni reel v2, objavljen rucno preko Buffer Share Now",
+  "music_style": "deep_house",
+  "hook_type": "none"
  },
  {
   "date": "2026-10-29",
@@ -25,6 +27,8 @@
   "buffer_post_id": "6ae35a04a87e7858ef12ab32",
   "template": "reel-v2",
   "buffer_post_id_tiktok": "6ae38b9a5a87bd1f00b0ad6b",
-  "buffer_post_id_linkedin": "6ae392df31868ec16fbe7313"
+  "buffer_post_id_linkedin": "6ae392df31868ec16fbe7313",
+  "music_style": "deep_house",
+  "hook_type": "none"
  }
 ]

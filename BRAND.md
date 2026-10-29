@@ -5,7 +5,8 @@ Ova pravila se dodaju uz brag (brag-slim) pri svakom pravljenju reela. Kad se ne
 ## Format
 - Vertikalno 1080×1920, 30 fps, trajanje 18–22 s.
 - Muzika na 120 BPM; svaki rez i svaki ulazak elementa pada na beat.
-- Važan sadržaj stoji između y 170 i y 1500 i između x 80 i x 1000. Donji i desni deo kadra ostaju slobodni za UI TikTok-a i Instagrama.
+- Važan sadržaj stoji između y 170 i y 1500. Sa strane mora biti bar oko 115 px razmaka od ivice (u reel-v3 ovo rešava scale 0.92 na scenama). Donji i desni deo kadra ostaju slobodni za UI TikTok-a i Instagrama.
+- Trajanje je 23 s: 2 s tekstualnog hook-a (HOOKS.md), pa 21 s proizvoda.
 
 ## Ton
 - Brz, čist i pregledan, sa puno animacija, ali ozbiljan.
@@ -42,6 +43,7 @@ Ova pravila se dodaju uz brag (brag-slim) pri svakom pravljenju reela. Kad se ne
 
 ## Zvuk
 - Zvuk je uvek ugrađen u video. Renderuje se samo jedna verzija, sa muzikom i efektima.
+- **Muzika je za svaki reel drugačija:** 5 stilova (deep_house, lofi_chill, synthwave, cinematic, minimal_tech), uz nasumični tonalitet. Isti stil se ne ponavlja u 2 uzastopna reela (Gajic, 29.10.2026).
 - Moderna house ili elektronska podloga, topli akordi (npr. Am9, Fmaj7, Cmaj9, G6), sub bas sa sidechain-om.
 - Zvučni efekti:
   - mehanički škljocaji i sub udari
@@ -52,7 +54,7 @@ Ova pravila se dodaju uz brag (brag-slim) pri svakom pravljenju reela. Kad se ne
   - reverb na sve
 - **Zabranjeno:** 8-bit i Nintendo zvuk, tonski „blip“ i pluck efekti.
 - Glasnoća -14 LUFS, vrh -1,5 dBTP.
-- Polazna osnova je `templates/reel-v1/sound.py`.
+- Polazna osnova je `templates/reel-v3/sound.py`.
 
 ## Opisi
 - Za svaku mrežu poseban opis:
