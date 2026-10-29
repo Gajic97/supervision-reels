@@ -1,6 +1,6 @@
 # AUTOMATION.md: dnevni posao (zakazani zadatak u Claude-u)
 
-Ovo je uputstvo koje Claude prati pri svakom dnevnom pokretanju. Cilj: **2 nova reela dnevno**, zakazana u Buffer-u za **11:30 i 19:30** (Europe/Belgrade), bez ičijeg ručnog rada. Na kraju ide kratak izveštaj za Gajica.
+Ovo je uputstvo koje Claude prati pri svakom dnevnom pokretanju. Cilj: **2 nova reela dnevno**, zakazana u Buffer-u za **12:30 i 19:30** (Europe/Belgrade), bez ičijeg ručnog rada. Na kraju ide kratak izveštaj za Gajica.
 
 Tajne (GH_TOKEN, BUFFER_TOKEN, SV_BASIC) stižu u promptu zakazanog zadatka. Nikada se ne upisuju u repo, u fajlove koji se commit-uju niti u izveštaj.
 
@@ -70,9 +70,9 @@ Javni link: `https://gajic97.github.io/supervision-reels/v/<fajl>.mp4`. Pre zaka
 
 ## 5. Zakazivanje (Buffer API)
 ```bash
-BUFFER_TOKEN=... python3 scripts/schedule_buffer.py --service instagram --video <link> --text-file ig.txt --at "YYYY-MM-DD 11:30"
+BUFFER_TOKEN=... python3 scripts/schedule_buffer.py --service instagram --video <link> --text-file ig.txt --at "YYYY-MM-DD 12:30"
 ```
-- Prvi reel ide u 11:30, drugi u 19:30, istog dana. Ako je termin prošao ili je bliže od 15 minuta, pomeri ga na isti termin sledećeg dana.
+- Prvi reel ide u 12:30, drugi u 19:30, istog dana. Ako je termin prošao ili je bliže od 15 minuta, pomeri ga na isti termin sledećeg dana.
 - Isto ponovi za `tiktok` i `linkedin` (sa njihovim opisima) samo ako je kanal povezan. Skripta javlja „Kanal nije povezan“, što nije greška: tada samo preskoči.
 - Nikada ne briši niti menjaj postojeće objave u Buffer-u.
 
