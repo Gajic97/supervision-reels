@@ -1,6 +1,6 @@
 # HOOKS.md: tekstualni hook pre proizvoda (Hormozi pristup)
 
-Svaki reel počinje **tekstualnim hook-om od 3 s** (scena `s0` u `templates/reel-v3`), pa tek onda ide proizvod. Hook ne pominje model. Obraća se kupcu i njegovom problemu, a proizvod u nastavku je odgovor.
+Svaki reel počinje **tekstualnim hook-om od 3 s** (scena `s0` u `templates/reel-v4`), pa tek onda ide proizvod. Hook ne pominje model. Obraća se kupcu i njegovom problemu, a proizvod u nastavku je odgovor.
 
 ## Kako se piše (Alex Hormozi, $100M Leads i Value Equation)
 - **Jedna poruka, najviše 7–8 reči** u glavnom redu. Uz to idu kratka oznaka iznad (2–4 reči, „kome se obraćamo“) i jedna rečenica ispod, koja vodi u proizvod.

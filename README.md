@@ -18,8 +18,9 @@ Detaljno dnevno uputstvo je u `AUTOMATION.md`.
    - predloge odgovora na komentare
    - 5 naloga za ručno praćenje
 
-## Šablon
-`templates/reel-v1/` sadrži prvi odobreni reel (komplet HiLook 4x THC-B120-P): kompoziciju, zvuk, plan i opise.
+## Šabloni
+- `templates/reel-v4/`: **trenutni standard**, odobren 29.10.2026 (EZVIZ CS-TY1 demo, animacije, hook 3 s)
+- reel-v3, reel-v2 i reel-v1 su ranije verzije
 
 ## Bezbednost
 U repou nema šifri ni tokena. Oni se prosleđuju samo kroz promenljive okruženja (`GH_TOKEN`, `BUFFER_TOKEN`, `SV_BASIC`).
