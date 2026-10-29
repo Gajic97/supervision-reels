@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="sr"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0d281e;font-family:'Poppins',sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
+#bg{position:absolute;inset:0;background:radial-gradient(1200px 1400px at 50% 35%,#1b4636 0%,#123528 45%,#0b2219 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(40px)}
+#grid{position:absolute;left:0;top:-120px;width:1080px;height:2160px;opacity:.07}
+#parts{position:absolute;inset:0}
+.pt{position:absolute;width:6px;height:6px;border-radius:50%;background:#6cc08f}
+.scene{position:absolute;left:0;top:0;width:1080px;height:1920px;visibility:hidden;transform-origin:540px 860px}
+.abs{position:absolute}
+.card{position:absolute;background:#fff;border-radius:34px;box-shadow:0 28px 70px rgba(0,0,0,.38);overflow:hidden}
+.shine{position:absolute;top:-20%;left:0;width:38%;height:140%;background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 50%,rgba(255,255,255,0) 100%);pointer-events:none}
+.h1{font-weight:800;letter-spacing:-2px;line-height:1.02}
+.green{color:#6cc08f}
+.w{display:inline-block;transform-origin:50% 70%;position:relative}
+.mark{position:absolute;left:-8px;right:-8px;bottom:6px;height:38%;background:#2f7a50;border-radius:8px;z-index:-1;transform-origin:0 50%}
+#wipe{position:absolute;left:-60px;width:1200px;height:2600px;top:0;background:linear-gradient(180deg,#6cc08f 0%,#439665 8%,#2f7a50 85%,#1b4636 100%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+#iris{position:absolute;inset:0;background:#2f7a50;visibility:hidden}
+#prog{position:absolute;left:120px;top:150px;width:840px;height:8px;border-radius:4px;background:rgba(255,255,255,.12);overflow:hidden}
+#progf{height:8px;width:0;background:linear-gradient(90deg,#2f7a50,#6cc08f)}
+.feat{position:absolute;left:80px;width:920px;height:290px;display:flex;align-items:center;gap:34px;padding:0 40px}
+.ic{width:200px;height:200px;flex:none;border-radius:50%;background:#e6f2ea;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.st b{display:block;font-size:44px;line-height:1.12;color:#123528;font-weight:800;letter-spacing:-.5px}
+.st span{display:block;font-size:30px;line-height:1.3;color:#5d6b64;font-weight:500;margin-top:8px}
+.gauge{position:absolute;width:445px;height:430px;background:rgba(255,255,255,.06);border:3px solid rgba(108,192,143,.45);border-radius:34px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gauge svg{width:260px;height:260px}
+.gv{position:absolute;top:118px;width:100%;text-align:center;font-weight:800;font-size:72px;letter-spacing:-2px}
+.gl{font-size:34px;font-weight:700;margin-top:8px}
+.gs{font-size:26px;color:#c9dbd0;font-weight:500}
+.odo{display:inline-block;height:110px;overflow:hidden;vertical-align:top;text-align:center}
+.odo.dg{width:60px}
+.odo span{display:block;height:110px;line-height:110px}
+</style></head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+  <div class="blob" id="b1" style="width:700px;height:700px;background:rgba(108,192,143,.20)"></div>
+  <div class="blob" id="b2" style="width:600px;height:600px;background:rgba(31,111,107,.28)"></div>
+  <svg id="grid" viewBox="0 0 1080 2160"><defs><pattern id="p" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0V90" fill="none" stroke="#fff" stroke-width="2"/></pattern></defs><rect width="1080" height="2160" fill="url(#p)"/></svg>
+  <div id="parts"></div>
+
+  <!-- S0 TEXT HOOK -->
+  <div class="scene" id="s0">
+    <div class="abs" id="h0tag" style="left:80px;top:500px;font-size:42px;font-weight:700;color:#6cc08f;letter-spacing:5px">ZA STAN I KANCELARIJU</div>
+    <div class="abs h1" id="h0txt" style="left:80px;top:580px;width:920px;font-size:128px;line-height:1.06">
+      <span class="w">Cela</span> <span class="w">prostorija</span> <span class="w">za</span> <span class="w">manje</span> <span class="w">od</span> <span class="w green" id="hp">3.500<i class="mark" id="mk"></i></span> <span class="w green">dinara.</span>
+    </div>
+    <div class="abs" id="h0sub" style="left:80px;top:1190px;width:920px;font-size:40px;color:#c9dbd0;font-weight:500">Jedna kamera koja se okreće u krug.</div>
+  </div>
+
+  <!-- S1 PRODUCT HERO -->
+  <div class="scene" id="s1">
+    <div class="abs h1" id="h1a" style="left:80px;top:190px;font-size:120px;transform-origin:0 50%">OKREĆE SE</div>
+    <div class="abs h1 green" id="h1b" style="left:80px;top:315px;font-size:120px;transform-origin:0 50%">U KRUG.</div>
+    <svg class="abs" id="ring" style="left:140px;top:470px" width="800" height="800" viewBox="-400 -400 800 800">
+      <circle r="330" fill="none" stroke="rgba(108,192,143,.25)" stroke-width="6"/>
+      <circle id="ringp" r="330" fill="none" stroke="#6cc08f" stroke-width="10" stroke-linecap="round" stroke-dasharray="2073" stroke-dashoffset="2073" transform="rotate(-90)"/>
+      <g id="orb"><circle cx="0" cy="-330" r="18" fill="#fff"/><circle cx="0" cy="-330" r="34" fill="rgba(108,192,143,.35)"/></g>
+      <text id="deg" x="0" y="372" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="56" fill="#6cc08f">0°</text>
+    </svg>
+    <div class="abs" id="glowp" style="left:190px;top:520px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(108,192,143,.55),rgba(108,192,143,0) 70%)"></div>
+    <div class="abs" id="hero" style="left:280px;top:610px;width:520px;height:520px;border-radius:50%;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.45);overflow:hidden"><img src="assets/ty1.png" style="position:absolute;left:30px;top:30px;width:460px;height:460px"></div>
+    <div class="abs h1" id="h1k" style="left:0;width:1080px;text-align:center;top:1330px;font-size:60px;letter-spacing:-1px"><span class="green">Wi-Fi kamera 2K+</span> za stan</div>
+  </div>
+
+  <!-- S2 FEATURES -->
+  <div class="scene" id="s2">
+    <div class="abs h1" id="s2a" style="left:80px;top:190px;font-size:110px">ŠTA RADI?</div>
+    <div class="card feat" id="f1" style="top:360px">
+      <div class="ic"><svg width="170" height="170" viewBox="0 0 170 170"><rect x="10" y="10" width="150" height="150" rx="12" fill="#cfe6d8"/><circle id="trk" cx="60" cy="90" r="16" fill="#2f7a50"/><rect id="box" x="34" y="64" width="52" height="52" rx="6" fill="none" stroke="#123528" stroke-width="5" stroke-dasharray="12 6"/></svg></div>
+      <div class="st"><b>Sama prati pokret</b><span>kadar ide za osobom</span></div>
+    </div>
+    <div class="card feat" id="f2" style="top:680px">
+      <div class="ic"><svg width="170" height="170" viewBox="-85 -85 170 170"><path d="M-30 -20h18l26 -22v84l-26 -22h-18z" fill="#2f7a50"/><g fill="none" stroke="#2f7a50" stroke-width="8" stroke-linecap="round"><path id="sw1" d="M26 -16a24 24 0 0 1 0 32"/><path id="sw2" d="M40 -30a44 44 0 0 1 0 60"/></g></svg></div>
+      <div class="st"><b>Razgovaraš preko kamere</b><span>dvosmerni razgovor</span></div>
+    </div>
+    <div class="card feat" id="f3" style="top:1000px">
+      <div class="ic"><svg width="170" height="170" viewBox="-85 -85 170 170"><circle r="60" fill="#fff" stroke="#2f7a50" stroke-width="8"/><circle r="22" fill="#123528"/><rect id="lid" x="-66" y="-66" width="132" height="0" fill="#2f7a50"/></svg></div>
+      <div class="st"><b>Režim spavanja</b><span>objektiv se skloni, za privatnost</span></div>
+    </div>
+  </div>
+
+  <!-- S3 GAUGES -->
+  <div class="scene" id="s3">
+    <div class="abs" id="s3t" style="left:80px;top:190px;font-size:40px;font-weight:700;color:#6cc08f;letter-spacing:4px">EZVIZ CS-TY1 4MP</div>
+    <div class="gauge" id="g1" style="left:80px;top:270px"><svg viewBox="-60 -60 120 120"><circle r="50" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="9"/><circle id="ga1" r="50" fill="none" stroke="#6cc08f" stroke-width="9" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" transform="rotate(-90)"/></svg><div class="gv" id="gv1">2K+</div><div class="gl">Oštra slika</div><div class="gs">2560 × 1440</div></div>
+    <div class="gauge" id="g2" style="left:555px;top:270px"><svg viewBox="-60 -60 120 120"><circle r="50" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="9"/><circle id="ga2" r="50" fill="none" stroke="#6cc08f" stroke-width="9" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" transform="rotate(-90)"/></svg><div class="gv" id="gv2">0°</div><div class="gl">Ugao kadra</div><div class="gs">dijagonalno</div></div>
+    <div class="gauge" id="g3" style="left:80px;top:730px"><svg viewBox="-60 -60 120 120"><circle r="50" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="9"/><circle id="ga3" r="50" fill="none" stroke="#6cc08f" stroke-width="9" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" transform="rotate(-90)"/></svg><div class="gv" id="gv3">0 m</div><div class="gl">Vidi i noću</div><div class="gs">infracrveno</div></div>
+    <div class="gauge" id="g4" style="left:555px;top:730px"><svg viewBox="-60 -60 120 120"><circle r="50" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="9"/><circle id="ga4" r="50" fill="none" stroke="#6cc08f" stroke-width="9" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" transform="rotate(-90)"/></svg><div class="gv" id="gv4">360°</div><div class="gl">Pun krug</div><div class="gs">okreće se motorom</div></div>
+    <div class="abs" id="s3n" style="left:80px;top:1200px;width:920px;font-size:31px;color:#c9dbd0;font-weight:500">Snima na microSD karticu do 256 GB.</div>
+  </div>
+
+  <!-- S4 ROOM RADAR -->
+  <div class="scene" id="s4">
+    <div class="abs h1" id="s4a" style="left:80px;top:190px;font-size:100px">Jedna kamera,</div>
+    <div class="abs h1 green" id="s4b" style="left:80px;top:300px;font-size:100px">cela soba</div>
+    <svg class="abs" id="room" style="left:80px;top:450px" width="920" height="760" viewBox="0 0 920 760">
+      <defs><radialGradient id="sw" cx="0" cy="0" r="1"><stop offset="0" stop-color="#6cc08f" stop-opacity=".7"/><stop offset="1" stop-color="#6cc08f" stop-opacity="0"/></radialGradient></defs>
+      <rect x="20" y="20" width="880" height="720" rx="26" fill="rgba(255,255,255,.04)" stroke="#439665" stroke-width="5"/>
+      <rect x="60" y="60" width="260" height="150" rx="16" fill="rgba(255,255,255,.08)"/><text x="190" y="145" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="30" fill="#c9dbd0">kauč</text>
+      <rect x="600" y="520" width="260" height="180" rx="16" fill="rgba(255,255,255,.08)"/><text x="730" y="618" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="30" fill="#c9dbd0">sto</text>
+      <rect x="380" y="700" width="160" height="40" fill="#0d281e"/><text x="460" y="730" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="26" fill="#c9dbd0">vrata</text>
+      <g transform="translate(460 380)"><path id="beam" d="M0 0 L420 -170 A455 455 0 0 1 420 170 Z" fill="url(#sw)"/><circle r="26" fill="#fff" stroke="#2f7a50" stroke-width="8"/></g>
+      <circle id="ping" cx="240" cy="560" r="16" fill="#fff"/>
+    </svg>
+    <div class="abs" id="s4c" style="left:80px;top:1230px;width:920px;font-size:30px;color:#c9dbd0;font-weight:500">Primer. Samo za unutrašnji prostor.</div>
+  </div>
+
+  <!-- S5 PRICE -->
+  <div class="scene" id="s5">
+    <div class="abs h1" id="s5a" style="left:80px;top:190px;font-size:92px">Ceo stan</div>
+    <div class="abs h1 green" id="s5b" style="left:80px;top:288px;font-size:92px">na oku</div>
+    <div class="card" id="s5card" style="left:80px;top:440px;width:920px;height:940px">
+      <img id="s5img" src="assets/ty1.png" class="abs" style="left:285px;top:10px;width:350px;height:350px">
+      <div class="abs" style="left:44px;top:372px;background:#e6f2ea;color:#2f7a50;font-weight:600;font-size:30px;border-radius:999px;padding:8px 28px">Na stanju</div>
+      <div class="abs" style="left:44px;top:436px;display:flex;align-items:baseline;gap:18px;font-size:96px;font-weight:800;color:#2f7a50;letter-spacing:-2px">
+        <div id="odo" style="display:flex;font-variant-numeric:tabular-nums;line-height:110px;height:110px"></div><span>RSD</span><span style="font-size:34px;color:#5d6b64;font-weight:500;letter-spacing:0">sa PDV-om</span></div>
+      <div class="abs" id="s5inc" style="left:44px;top:590px;width:832px;height:130px;background:#f1f7f3;border:3px solid #c9dbd0;border-radius:26px;display:flex;align-items:center;padding:0 34px;font-size:32px;color:#123528;font-weight:700">✓  Isporuka za 2 radna dana</div>
+      <div class="abs" id="s5btn" style="left:44px;top:770px;width:832px;height:130px;background:#2f7a50;border-radius:20px;overflow:hidden">
+        <div id="s5rip" class="abs" style="width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.35);left:386px;top:35px"></div>
+        <div id="s5bt" class="abs" style="left:0;top:0;width:832px;height:130px;display:flex;align-items:center;justify-content:center;font-size:50px;font-weight:700;color:#fff">Dodaj u korpu</div>
+      </div>
+      <div class="shine" id="s5shine"></div>
+    </div>
+    <div class="abs" id="s5finger" style="width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.55);border:6px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.35)"></div>
+  </div>
+
+  <!-- S6 OUTRO -->
+  <div class="scene" id="s6">
+    <img id="s6i" src="assets/supervision-ikonica-512.png" class="abs" style="left:400px;top:470px;width:280px;height:280px">
+    <div class="abs h1" id="s6w" style="left:0;width:1080px;text-align:center;top:800px;font-size:136px;letter-spacing:-3px">Super<span class="green">Vision</span></div>
+    <div class="abs" id="s6t" style="left:0;width:1080px;text-align:center;top:965px;font-size:30px;letter-spacing:11px;color:#c9dbd0;font-weight:600">SURVEILLANCE &amp; NETWORKING</div>
+    <div class="abs" id="s6p" style="left:240px;top:1080px;width:600px;height:130px;border-radius:999px;background:#439665;display:flex;align-items:center;justify-content:center;font-size:62px;font-weight:800;box-shadow:0 20px 60px rgba(67,150,101,.45)">super-vision.rs</div>
+    <div class="abs" id="s6l" style="left:0;width:1080px;text-align:center;top:1260px;font-size:38px;font-weight:600">Isporuka za 2 radna dana</div>
+    <div class="abs" id="s6m" style="left:0;width:1080px;text-align:center;top:1320px;font-size:32px;color:#c9dbd0;font-weight:500">Sve licence MUP-a</div>
+  </div>
+
+  <div id="prog"><div id="progf"></div></div>
+  <div id="iris"></div>
+  <div id="wipe"></div>
+  <div id="flash"></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,x)=>a+(b-a)*x;
+const P=(t,a,d)=>clamp((t-a)/d,0,1);
+const eoc=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eob=x=>{const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const SC=0.92; // bočne margine
+function tf(el,{x=0,y=0,s=1,r=0,o=1,ry=0}={}){el.style.transform=`translate(${x}px,${y}px) perspective(1400px) rotateY(${ry}deg) scale(${s}) rotate(${r}deg)`;el.style.opacity=o;}
+function pop(el,t,a,{dy=70,dx=0,s0=.86,d=.4,ry0=0}={}){const p=P(t,a,d);const e=eob(p);tf(el,{x:dx*(1-e),y:dy*(1-e),s:lerp(s0,1,e),o:clamp(p*3,0,1),ry:ry0*(1-eoc(p))});}
+function slam(el,t,a,{s0=1.6,d=.26}={}){const p=P(t,a,d);const e=eoc(p);tf(el,{s:lerp(s0,1,e),o:clamp(p*4,0,1)});}
+function shine(el,t,a){const p=P(t,a,.55);el.style.transform=`translateX(${lerp(-120,320,eio(p))}%) skewX(-12deg)`;el.style.opacity=(p>0&&p<1)?1:0;}
+// čestice
+const PTS=[];for(let i=0;i<26;i++){const d=document.createElement('div');d.className='pt';$('parts').appendChild(d);PTS.push({x:(i*397)%1080,y:(i*733)%1920,s:.4+((i*37)%10)/10,v:18+((i*53)%40)});}
+// odometar
+const PRICE='3.410';(()=>{const o=$('odo');for(const ch of PRICE){const c=document.createElement('div');c.className='odo';if(/\d/.test(ch)){c.classList.add('dg');c.innerHTML=[0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9].map(n=>`<span>${n}</span>`).join('');c.dataset.d=ch;}else{c.innerHTML=`<span>${ch}</span>`;}o.appendChild(c);}})();
+
+const INTRO=3.0;
+const CUTS=[0,3.5,8.5,13,15.5,18.5,21];
+const SLAMS=[0,.5,1.2,8.5,13,15.5,18.5];
+function renderMain(t){
+  for(let i=0;i<6;i++){$('s'+(i+1)).style.visibility=(t>=CUTS[i]&&t<CUTS[i+1]+(i==5?1:0))?'visible':'hidden';}
+  let sx=0,sy=0;for(const a of SLAMS){const d=t-a;if(d>=0&&d<.3){const k=(1-d/.3)*12;sx+=Math.sin(d*90)*k;sy+=Math.cos(d*77)*k*.7;}}
+  $('stage').style.transform=`translate(${sx}px,${sy}px)`;
+  // S1 hero
+  if(t>=-0.1&&t<3.6){
+    slam($('h1a'),t,0,{s0:1.6,d:.22});slam($('h1b'),t,.5,{s0:1.6,d:.22});
+    const hp=P(t,0.15,.6),he=eob(hp);
+    const fl=Math.sin(t*2.2)*14;
+    tf($('hero'),{y:lerp(380,0,he)+fl,s:lerp(.5,1,he),o:clamp(hp*3,0,1),ry:lerp(-70,0,eoc(hp))+Math.sin(t*1.6)*10});
+    $('glowp').style.opacity=hp*(0.75+0.25*Math.sin(t*4));
+    const rp=eio(P(t,0.6,1.6));$('ringp').style.strokeDashoffset=String(2073*(1-rp));
+    $('orb').setAttribute('transform',`rotate(${rp*360})`);$('orb').style.opacity=t>0.6?1:0;
+    $('deg').textContent=Math.round(rp*360)+'°';$('ring').style.opacity=clamp((t-0.5)*4,0,1);
+    pop($('h1k'),t,2.0,{dy:40,s0:.9,d:.35});
+  }
+  // S2 features
+  if(t>=3.4&&t<8.6){
+    pop($('s2a'),t,3.55,{dx:-90,dy:0,s0:1});
+    pop($('f1'),t,4.0,{dx:200,dy:0,s0:.95,d:.42,ry0:-35});pop($('f2'),t,5.0,{dx:200,dy:0,s0:.95,d:.42,ry0:-35});pop($('f3'),t,6.0,{dx:200,dy:0,s0:.95,d:.42,ry0:-35});
+    const k=(t-4.2);const tx=60+50*Math.sin(k*2.4),ty=90+35*Math.sin(k*1.7);$('trk').setAttribute('cx',tx);$('trk').setAttribute('cy',ty);
+    const bx=60+50*Math.sin((k-.18)*2.4),by=90+35*Math.sin((k-.18)*1.7);$('box').setAttribute('x',bx-26);$('box').setAttribute('y',by-26);
+    [['sw1',0],['sw2',.25]].forEach(([id,o])=>{const q=((t-5.2+o)%0.8+0.8)%0.8;$(id).style.opacity=t<5.2?0:(q<.45?1:.2);});
+    const lid=t<6.3?0:66*(0.5-0.5*Math.cos((t-6.3)*3));$('lid').setAttribute('height',String(lid*2));
+  }
+  // S3 gauges
+  if(t>=8.4&&t<13.1){
+    pop($('s3t'),t,8.55,{dx:-60,dy:0,s0:1});
+    const G=[[9.0,1,'2K+'],[9.7,124/360,null],[10.4,10/12,null],[11.1,1,'360°']];
+    G.forEach(([a,frac,txt],i)=>{pop($('g'+(i+1)),t,a,{dy:80,s0:.8,d:.4});const p=eio(P(t,a+.15,.8));$('ga'+(i+1)).style.strokeDashoffset=String(314*(1-p*frac));
+      if(i==1)$('gv2').textContent=Math.round(p*124)+'°';if(i==2)$('gv3').textContent=Math.round(p*10)+' m';if(i==3)$('gv4').textContent=Math.round(p*360)+'°';});
+    pop($('s3n'),t,11.8,{dy:24,s0:1});
+  }
+  // S4 radar
+  if(t>=12.9&&t<15.6){
+    pop($('s4a'),t,13.05,{dx:-90,dy:0,s0:1});pop($('s4b'),t,13.25,{dx:-90,dy:0,s0:1});
+    {const p=P(t,13.1,.4);$('room').style.opacity=p;$('room').style.transform=`scale(${lerp(.92,1,eoc(p))})`;}
+    $('beam').setAttribute('transform',`rotate(${(t-13.2)*150})`);
+    const pg=(t-13.2)%1.2;$('ping').setAttribute('r',String(16+pg*40));$('ping').style.opacity=t<13.6?0:(1-pg/1.2);
+    pop($('s4c'),t,14.3,{dy:20,s0:1});
+  }
+  // S5 price
+  if(t>=15.4&&t<18.6){
+    pop($('s5a'),t,15.55,{dx:-90,dy:0,s0:1});pop($('s5b'),t,15.72,{dx:-90,dy:0,s0:1});
+    pop($('s5card'),t,15.6,{dy:140,s0:.85,d:.45,ry0:25});
+    $('s5img').style.transform=`translateY(${Math.sin(t*2.4)*10}px) rotate(${Math.sin(t*1.7)*3}deg)`;
+    [...$('odo').children].forEach((c,i)=>{if(!c.dataset.d)return;const target=10+Number(c.dataset.d);const p=eoc(P(t,15.8+i*.08,.7));c.style.transform='';c.firstElementChild&&(c.scrollTop=0);c.querySelectorAll('span').forEach(s=>s.style.transform=`translateY(${-p*target*110}px)`);});
+    pop($('s5inc'),t,16.5,{dy:30,s0:.9});
+    shine($('s5shine'),t,16.6);
+    const f=$('s5finger');const fp2=eio(P(t,17.0,.45));const fx=lerp(900,525,fp2),fy=lerp(1700,1330,fp2);
+    const press=t>=17.5&&t<17.68?.84:1;f.style.left=(fx-55)+'px';f.style.top=(fy-55)+'px';f.style.opacity=clamp((t-17)*4,0,1)*(1-clamp((t-17.95)*4,0,1));f.style.transform=`scale(${press})`;
+    $('s5btn').style.transform=`scale(${t>=17.5&&t<17.68?.97:1})`;
+    const rp=P(t,17.5,.45);$('s5rip').style.transform=`scale(${lerp(0,30,eoc(rp))})`;$('s5rip').style.opacity=rp>0?(1-rp):0;
+    const done=t>=17.62;$('s5bt').textContent=done?'✓  Dodato u korpu':'Dodaj u korpu';$('s5btn').style.background=done?'#123528':'#2f7a50';
+    if(done){slam($('s5bt'),t,17.62,{s0:1.25,d:.25});}else{tf($('s5bt'),{});}
+  }
+  // S6 outro
+  if(t>=18.4){
+    {const p=P(t,18.55,.5),e=eob(p);tf($('s6i'),{s:lerp(.3,1,e),r:lerp(-120,0,eoc(p))+Math.sin(t*1.5)*4,o:clamp(p*3,0,1)});}
+    pop($('s6w'),t,18.8,{dy:60,s0:.9});pop($('s6t'),t,19.0,{dy:30,s0:1});
+    {const p=P(t,19.15,.4),e=eob(p);let pulse=0;for(const b of [19.5,20,20.5]){const d=t-b;if(d>=0&&d<.35)pulse=Math.max(pulse,(1-d/.35)*.06);}tf($('s6p'),{s:lerp(.6,1,e)+pulse,o:clamp(p*3,0,1)});}
+    pop($('s6l'),t,19.4,{dy:30,s0:1});pop($('s6m'),t,19.55,{dy:30,s0:1});
+  }
+}
+// različiti prelazi: 0 wipe, 1 iris, 2 flash+zoom, 3 wipe nadole, 4 iris
+const TRANS=[[INTRO,'wipe'],[INTRO+3.5,'iris'],[INTRO+8.5,'flash'],[INTRO+13,'wipe2'],[INTRO+15.5,'iris'],[INTRO+18.5,'flash']];
+window.render=function(T){
+  // stalni pokret pozadine
+  $('grid').style.transform=`translateY(${(T*30)%90}px)`;
+  $('b1').style.transform=`translate(${-100+Math.sin(T*.5)*220}px,${200+Math.cos(T*.37)*260}px)`;
+  $('b2').style.transform=`translate(${600+Math.cos(T*.41)*200}px,${1100+Math.sin(T*.33)*260}px)`;
+  PTS.forEach((p,i)=>{const el=$('parts').children[i];const y=((p.y-T*p.v)%1920+1920)%1920;el.style.transform=`translate(${p.x+Math.sin(T*.8+i)*20}px,${y}px) scale(${p.s})`;el.style.opacity=.15+.25*p.s;});
+  $('progf').style.width=(clamp(T/24,0,1)*100)+'%';
+  // scale za margine + zoom-punch posle flash prelaza
+  let zoom=1;for(const [c,ty] of TRANS){if(ty==='flash'){const d=T-c;if(d>=0&&d<.35)zoom=1+0.06*(1-eoc(d/.35));}}
+  document.querySelectorAll('.scene').forEach(s=>s.style.transform=`scale(${SC*zoom})`);
+  // S0 hook
+  $('s0').style.visibility=T<INTRO?'visible':'hidden';
+  if(T<INTRO){
+    {const p=P(T,0,.25);tf($('h0tag'),{x:-40*(1-eoc(p)),o:p});}
+    [...document.querySelectorAll('#h0txt .w')].forEach((w,i)=>slam(w,T,0.1+i*0.11,{s0:1.4,d:.2}));
+    $('mk').style.transform=`scaleX(${eoc(P(T,0.95,.35))})`;
+    {const p=P(T,1.0,.35);tf($('h0sub'),{y:20*(1-eoc(p)),o:p});}
+    {const k=lerp(1,1.035,eio(P(T,0.9,INTRO-0.9)));$('h0txt').style.transform=`scale(${k})`;$('h0txt').style.transformOrigin='0 50%';}
+  }
+  renderMain(T-INTRO);
+  // prelazi
+  const w=$('wipe'),ir=$('iris'),fl=$('flash');w.style.visibility='hidden';ir.style.visibility='hidden';fl.style.opacity=0;
+  for(const [c,ty] of TRANS){
+    const p=(T-(c-.22))/.44;if(p<0||p>1)continue;
+    if(ty==='wipe'||ty==='wipe2'){w.style.visibility='visible';const y=lerp(2220,-2900,eio(p));w.style.transform=ty==='wipe'?`translateY(${-560-y}px) skewY(9deg)`:`translateY(${y}px) skewY(-9deg)`;}
+    if(ty==='iris'){ir.style.visibility='visible';const r=p<.5?eio(p*2)*1250:(1-eio((p-.5)*2))*1250;ir.style.clipPath=`circle(${r}px at 540px 900px)`;}
+    if(ty==='flash'){fl.style.opacity=String(Math.max(0,1-Math.abs(p-.5)*3.2)*.85);}
+  }
+};
+window.ready=Promise.all([document.fonts.ready,...[...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r;}))]).then(()=>document.fonts.load('800 100px Poppins'));
+render(0);
+</script>
+</body></html>

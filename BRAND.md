@@ -70,3 +70,17 @@ Ova pravila se dodaju uz brag (brag-slim) pri svakom pravljenju reela. Kad se ne
 - Dodaju se 1–2 sporedne fraze i lokacija: „Srbija“, a za lokalne usluge (ugradnja) „Sremska Mitrovica“.
 - Hashtagovi: 3–5 komada, prvi je glavna ključna reč bez razmaka (npr. #videonadzor), uz brend proizvođača (#hilook, #hikvision) i #supervision.
 - Šifra modela (npr. THC-B120-P) ide u opis, za ljude koji traže tačan model.
+
+## Animacije (reel-v4, Gajic 29.10.2026: „više animacija, da drži pažnju“)
+Svaki reel mora imati **nešto u pokretu u svakom trenutku** i **novi vizuelni „udarac“ na oko svake 1–2 s**. Obavezni alati (svi su u `templates/reel-v4`):
+- **Pozadina koja živi:** pokretni zamućeni krugovi, mreža i čestice koje lebde
+- **Traka napretka** na vrhu, koja daje osećaj da se video bliži kraju
+- **Hook:** reči uleću jedna po jedna, a ključna reč dobija zeleni „marker“ koji se iscrta
+- **Proizvod:** ulazi u 3D rotaciji, lebdi i blago se njiše, a iza njega je sjaj koji pulsira. Kod kamera koje se okreću ide prsten sa tačkom koja kruži i brojačem stepeni.
+- **Ikone sa radnjom:** npr. kadar prati tačku, zvučni talasi, objektiv koji se zatvara
+- **Specifikacije kao kružni pokazivači** koji se pune, uz brojače
+- **Scena upotrebe:** animirana šema, npr. radar koji kruži po sobi (uvek „Primer“)
+- **Cena kao odometar:** cifre se zavrte i stanu na tačnu cenu
+- **Prelazi se smenjuju:** wipe, iris (krug), blic sa zoom-punch efektom, wipe nadole
+- **Kraj:** logo se blago njiše, a dugme pulsira u ritmu
+Nijedna animacija ne sme da sakrije ili prekine tekst koji treba pročitati.

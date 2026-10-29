@@ -14,7 +14,7 @@ AUTH="Authorization: Basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0
 git -c http.extraHeader="$AUTH" clone -q https://github.com/Gajic97/supervision-reels.git ~/sr && cd ~/sr
 git config user.name Gajic97; git config user.email freelancenemanjagajic@gmail.com
 ```
-Pročitaj **BRAND.md** (obavezna pravila), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v3**: reel-v2 stil, plus hook od 3 s, šire bočne margine i muzika koja se menja.
+Pročitaj **BRAND.md** (obavezna pravila), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v4**: hook od 3 s, šire bočne margine, muzika koja se menja i bogate animacije (BRAND.md → Animacije).
 
 GitHub API (releases i ostalo) je blokiran kroz proxy. Radi samo `git` preko HTTPS-a sa gornjim headerom.
 
@@ -54,12 +54,12 @@ Za svaki proizvod u `~/work/<slug>/`:
    - hook
    - 5–6 scena po strukturi iz BRAND.md
    - spisak činjenica sa izvorom
-4. **Kompozicija:** polazi od `templates/reel-v3/index.html`, koji je trenutni standard. Ima `window.render(t)` i `window.ready`, format 1080×1920 i **24 s**:
+4. **Kompozicija:** polazi od `templates/reel-v4/index.html`, koji je trenutni standard (sve animacije iz BRAND.md → Animacije; reel-v3 je samo rezerva). Ima `window.render(t)` i `window.ready`, format 1080×1920 i **24 s**:
    - **0–3 s: tekstualni hook (scena s0)** po `HOOKS.md`: oznaka iznad, glavni red od najviše 8 reči (svaka reč je `<span class="w">`, a ključne su `class="w green"`) i jedna rečenica ispod. Tip hook-a mora biti drugačiji od prethodnog reela u posted.json.
    - **3–24 s: glavni deo** (funkcija `renderMain`, vreme ide od 0), sa rezovima na 3,5 / 8,5 / 13 / 15,5 / 18,5 s glavnog dela.
    - **Bočne margine:** sav sadržaj scena je skaliran na 92%, tako da je razmak od ivice oko 117 px. Ne vraćaj `.scene` scale, ne stavljaj tekst bliže od x=80 unutar scene i ne pravi elemente šire od 920 px.
    - Scene i tekst prilagodi proizvodu: hook mora biti specifičan za taj proizvod, a ne kopija prethodnog. Ključna reč se mora pojaviti na ekranu.
-5. **Muzika (svaki reel drugačija):** kopiraj `templates/reel-v3/sound.py`.
+5. **Muzika (svaki reel drugačija):** kopiraj `templates/reel-v4/sound.py` (primer `sfx.json` je u istom folderu).
    - Izaberi `STYLE` iz skupa deep_house, lofi_chill, synthwave, cinematic, minimal_tech, tako da se **ne ponavlja nijedan od poslednja 2 reela** (`music_style` u posted.json).
    - `KEY` uzmi nasumično 0–11, a `SEED` = product_id.
    - Napravi `sfx.json` sa efektima u **apsolutnom vremenu**, usklađenim sa tvojim ulascima elemenata. Format je `[{"type":"shutter","t":2.0,"g":0.9}, ...]`, a tipovi su opisani na vrhu sound.py. Bez `SFX` se koristi raspored reel-v3.
