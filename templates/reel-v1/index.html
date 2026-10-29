@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="sr"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0d281e;font-family:'Poppins',sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
+#bg{position:absolute;inset:0;background:radial-gradient(1200px 1400px at 50% 35%,#1b4636 0%,#123528 45%,#0b2219 100%)}
+#glow{position:absolute;width:1100px;height:1100px;border-radius:50%;background:radial-gradient(circle,rgba(108,192,143,.22),rgba(108,192,143,0) 65%)}
+#grid{position:absolute;left:0;top:-120px;width:1080px;height:2160px;opacity:.07}
+.scene{position:absolute;left:0;top:0;width:1080px;height:1920px;visibility:hidden}
+.abs{position:absolute}
+.card{position:absolute;background:#fff;border-radius:34px;box-shadow:0 28px 70px rgba(0,0,0,.38);overflow:hidden}
+.shine{position:absolute;top:-20%;left:0;width:38%;height:140%;background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 50%,rgba(255,255,255,0) 100%);pointer-events:none}
+.h1{font-weight:800;letter-spacing:-2px;line-height:1.02}
+.green{color:#6cc08f}
+.lbl{color:#123528;font-weight:700}
+.sub{color:#5d6b64;font-weight:500}
+.badge{position:absolute;background:#2f7a50;color:#fff;font-weight:800;border-radius:999px;display:flex;align-items:center;justify-content:center}
+#wipe{position:absolute;left:-60px;width:1200px;height:2600px;top:0;background:linear-gradient(180deg,#6cc08f 0%,#439665 8%,#2f7a50 85%,#1b4636 100%);transform-origin:50% 50%}
+.row{position:absolute;left:80px;width:920px;display:flex;align-items:center}
+.num{font-weight:800;color:#6cc08f;letter-spacing:-3px;line-height:1;width:390px;font-size:146px;white-space:nowrap}
+.rl b{display:block;font-size:46px;font-weight:700;line-height:1.15}
+.rl span{display:block;font-size:32px;color:#c9dbd0;font-weight:500;line-height:1.3}
+</style></head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+  <div id="glow"></div>
+  <svg id="grid" viewBox="0 0 1080 2160"><defs><pattern id="p" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0V90" fill="none" stroke="#fff" stroke-width="2"/></pattern></defs><rect width="1080" height="2160" fill="url(#p)"/></svg>
+
+  <!-- S1 HOOK -->
+  <div class="scene" id="s1">
+    <div class="abs" id="s1head" style="left:90px;top:190px;height:360px;display:flex;align-items:flex-end;gap:26px">
+      <div id="s1n" class="h1" style="font-size:340px;line-height:.9;width:230px;text-align:center;transform-origin:50% 70%">1</div>
+      <div id="s1k" class="h1" style="font-size:138px;padding-bottom:22px">KAMERE.</div>
+    </div>
+    <div class="card" id="s1panel" style="left:50px;top:600px;width:980px;height:760px">
+      <img id="s1r1" src="assets/row1.jpg" class="abs" style="left:71px;top:30px;width:838px;height:340px">
+      <img id="s1r2" src="assets/row2.jpg" class="abs" style="left:20px;top:392px;width:940px;height:336px">
+      <div class="shine" id="s1shine"></div>
+    </div>
+    <div class="abs h1 green" id="s1j" style="left:0;width:1080px;text-align:center;top:1385px;font-size:112px">JEDAN KOMPLET.</div>
+  </div>
+
+  <!-- S2 CONTENTS -->
+  <div class="scene" id="s2">
+    <div class="abs h1" id="s2a" style="left:80px;top:170px;font-size:100px">ŠTA DOBIJAŠ</div>
+    <div class="abs h1 green" id="s2b" style="left:80px;top:276px;font-size:100px">U KUTIJI?</div>
+    <div class="card c2" id="c0" style="left:80px;top:430px;width:920px;height:290px">
+      <img src="assets/cams.jpg" class="abs" style="left:20px;top:14px;width:880px;height:167px">
+      <div class="abs lbl" style="left:40px;top:196px;font-size:46px">4× kamera 2 MP</div>
+      <div class="abs sub" style="left:42px;top:250px;font-size:26px">HiLook THC-B120-P · objektiv 2.8 mm</div>
+      <div class="badge" id="b0" style="right:34px;top:196px;width:110px;height:72px;font-size:40px">×4</div>
+      <div class="shine"></div>
+    </div>
+    <div class="card c2" id="c1" style="left:80px;top:745px;width:445px;height:330px">
+      <img src="assets/dvr.jpg" class="abs" style="left:40px;top:18px;width:365px;height:210px;object-fit:contain">
+      <div class="abs lbl" style="left:30px;top:232px;font-size:36px">Snimač 4 kanala</div>
+      <div class="abs sub" style="left:31px;top:280px;font-size:24px">DVR-104G-K1 · H.265 Pro+</div>
+      <div class="shine"></div>
+    </div>
+    <div class="card c2" id="c2" style="left:555px;top:745px;width:445px;height:330px">
+      <img src="assets/hdd.jpg" class="abs" style="left:122px;top:14px;width:200px;height:212px;object-fit:contain">
+      <div class="abs lbl" style="left:30px;top:232px;font-size:36px">Disk 1 TB</div>
+      <div class="abs sub" style="left:31px;top:280px;font-size:24px">WD Purple · WD10PURX</div>
+      <div class="shine"></div>
+    </div>
+    <div class="card c2" id="c3" style="left:80px;top:1100px;width:445px;height:330px">
+      <img src="assets/psu.jpg" class="abs" style="left:92px;top:14px;width:260px;height:212px;object-fit:contain">
+      <div class="abs lbl" style="left:30px;top:232px;font-size:36px">Napajanje 5 A</div>
+      <div class="abs sub" style="left:31px;top:280px;font-size:24px">za sve 4 kamere</div>
+      <div class="shine"></div>
+    </div>
+    <div class="card c2" id="c4" style="left:555px;top:1100px;width:445px;height:330px">
+      <svg class="abs" style="left:40px;top:26px" width="365" height="190" viewBox="0 0 365 190">
+        <g fill="none" stroke="#2f7a50" stroke-width="9" stroke-linecap="round">
+          <circle cx="92" cy="80" r="52"/><circle cx="92" cy="80" r="24"/><circle cx="92" cy="80" r="6" fill="#2f7a50"/>
+          <path d="M40 80h-18M144 80h18"/>
+          <rect x="222" y="44" width="96" height="72" rx="16"/><path d="M270 116v22M250 80h40"/><circle cx="270" cy="80" r="7" fill="#2f7a50"/>
+        </g>
+        <text x="92" y="178" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="30" fill="#123528">4× BNC</text>
+        <text x="270" y="178" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="30" fill="#123528">4× DC</text>
+      </svg>
+      <div class="abs lbl" style="left:30px;top:232px;font-size:36px">Konektori</div>
+      <div class="abs sub" style="left:31px;top:280px;font-size:24px">+ set strujnih konektora</div>
+      <div class="shine"></div>
+    </div>
+    <div class="abs" id="s2f" style="left:80px;top:1462px;width:920px;font-size:31px;color:#c9dbd0;font-weight:500">Kabl se meri prema objektu i ne ide uz komplet.</div>
+  </div>
+
+  <!-- S3 SPECS -->
+  <div class="scene" id="s3">
+    <div class="abs" id="s3t" style="left:80px;top:170px;font-size:40px;font-weight:700;color:#6cc08f;letter-spacing:4px">HILOOK THC-B120-P</div>
+    <div class="card" id="s3card" style="left:80px;top:240px;width:920px;height:470px">
+      <img id="s3img" src="assets/cam1.jpg" class="abs" style="left:60px;top:40px;width:800px;height:390px;object-fit:contain">
+      <div class="shine" id="s3shine"></div>
+    </div>
+    <div class="abs" id="s3bar" style="left:80px;top:745px;width:920px">
+      <div style="position:relative;height:18px;border-radius:9px;background:rgba(255,255,255,.14);overflow:hidden"><div id="s3fill" style="position:absolute;left:0;top:0;height:18px;width:0;border-radius:9px;background:linear-gradient(90deg,#2f7a50,#6cc08f)"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:24px;color:#c9dbd0;margin-top:10px;font-weight:600"><span>0 m</span><span>5</span><span>10</span><span>15</span><span>20 m</span></div>
+    </div>
+    <div class="row" id="r1" style="top:850px"><div class="num" id="r1n">20 m</div><div class="rl"><b>Infracrveno noću</b><span>EXIR osvetljenje</span></div></div>
+    <div class="row" id="r2" style="top:1060px"><div class="num">IP66</div><div class="rl"><b>Za spoljnu montažu</b><span>radi napolju cele godine</span></div></div>
+    <div class="row" id="r3" style="top:1270px"><div class="num">2 MP</div><div class="rl"><b>Full HD slika</b><span>1920 × 1080</span></div></div>
+  </div>
+
+  <!-- S4 COVERAGE -->
+  <div class="scene" id="s4">
+    <div class="abs h1" id="s4a" style="left:80px;top:170px;font-size:104px">Ulaz, prilaz</div>
+    <div class="abs h1 green" id="s4b" style="left:80px;top:290px;font-size:60px;letter-spacing:-1px">+ još dve tačke oko kuće</div>
+    <svg class="abs" id="s4svg" style="left:80px;top:440px" width="920" height="940" viewBox="0 0 920 940">
+      <defs>
+        <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6cc08f" stop-opacity=".75"/><stop offset="1" stop-color="#6cc08f" stop-opacity=".08"/></linearGradient>
+      </defs>
+      <g id="plan">
+        <rect x="20" y="20" width="880" height="800" rx="28" fill="rgba(255,255,255,.03)" stroke="#439665" stroke-width="4" stroke-dasharray="18 14"/>
+        <rect x="600" y="560" width="130" height="260" fill="rgba(255,255,255,.07)"/>
+        <rect x="0" y="846" width="920" height="94" rx="14" fill="rgba(0,0,0,.28)"/>
+        <path d="M230 893H890" stroke="rgba(255,255,255,.35)" stroke-width="5" stroke-dasharray="34 26"/>
+        <text x="40" y="904" text-anchor="start" font-family="Poppins" font-weight="700" font-size="28" fill="rgba(255,255,255,.55)" letter-spacing="8">ULICA</text>
+        <rect x="250" y="220" width="420" height="340" rx="14" fill="#1b4636" stroke="#6cc08f" stroke-width="5"/>
+        <text x="460" y="402" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="46" fill="rgba(255,255,255,.85)" letter-spacing="6">KUĆA</text>
+        <rect x="430" y="552" width="60" height="16" rx="4" fill="#6cc08f"/>
+        <path d="M600 820h130" stroke="#6cc08f" stroke-width="8"/>
+      </g>
+      <g id="k1"><path d="M460 572 L350 760 L570 760 Z" fill="url(#cg)"/><circle cx="460" cy="572" r="17" fill="#fff" stroke="#2f7a50" stroke-width="6"/><g transform="translate(400 778)"><rect width="120" height="48" rx="24" fill="#fff"/><text x="60" y="34" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="26" fill="#123528">ULAZ</text></g></g>
+      <g id="k2"><path d="M670 560 L600 800 L760 760 Z" fill="url(#cg)"/><circle cx="670" cy="560" r="17" fill="#fff" stroke="#2f7a50" stroke-width="6"/><g transform="translate(740 650)"><rect width="140" height="48" rx="24" fill="#fff"/><text x="70" y="34" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="26" fill="#123528">PRILAZ</text></g></g>
+      <g id="k3"><path d="M250 220 L40 120 L150 40 Z" fill="url(#cg)"/><circle cx="250" cy="220" r="17" fill="#fff" stroke="#2f7a50" stroke-width="6"/><g transform="translate(50 250)"><rect width="180" height="48" rx="24" fill="#fff"/><text x="90" y="34" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="26" fill="#123528">DVORIŠTE</text></g></g>
+      <g id="k4"><path d="M670 220 L770 40 L880 140 Z" fill="url(#cg)"/><circle cx="670" cy="220" r="17" fill="#fff" stroke="#2f7a50" stroke-width="6"/><g transform="translate(690 250)"><rect width="190" height="48" rx="24" fill="#fff"/><text x="95" y="34" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="26" fill="#123528">IZA KUĆE</text></g></g>
+    </svg>
+    <div class="abs" id="s4c" style="left:80px;top:1400px;font-size:28px;color:#c9dbd0;font-weight:500">Primer rasporeda kamera</div>
+  </div>
+
+  <!-- S5 PRICE -->
+  <div class="scene" id="s5">
+    <div class="abs h1" id="s5a" style="left:80px;top:170px;font-size:92px">U kompletu</div>
+    <div class="abs h1" id="s5b" style="left:80px;top:268px;font-size:92px"><span class="green">uštediš</span> <span style="color:#ff8a80">30%</span></div>
+    <div class="card" id="s5card" style="left:80px;top:420px;width:920px;height:1010px">
+      <img src="assets/kit.jpg" class="abs" style="left:250px;top:30px;width:420px;height:308px;object-fit:contain">
+      <div class="abs" style="left:44px;top:356px;background:#e6f2ea;color:#2f7a50;font-weight:600;font-size:30px;border-radius:999px;padding:8px 28px">Na stanju</div>
+      <div class="abs" style="left:44px;top:420px;display:flex;align-items:baseline;gap:18px"><span id="s5p" style="font-size:96px;font-weight:800;color:#2f7a50;letter-spacing:-2px">29.200 RSD</span><span style="font-size:34px;color:#5d6b64;font-weight:500">sa PDV-om</span></div>
+      <div class="abs" style="left:44px;top:560px;width:832px;height:200px;background:#fff6f6;border:3px solid #f2c6c6;border-radius:26px">
+        <div class="abs" style="left:34px;top:34px;font-size:32px;color:#5d6b64;font-weight:500">Kupljeno pojedinačno</div>
+        <div class="abs" style="right:34px;top:30px;font-size:36px;color:#5d6b64;font-weight:700">41.850 RSD<div id="s5strike" style="position:absolute;left:-4px;top:27px;height:5px;width:0;background:#d64545;border-radius:3px"></div></div>
+        <div class="abs" style="left:34px;top:118px;font-size:32px;color:#5d6b64;font-weight:500">Uštedite u kompletu</div>
+        <div class="abs" id="s5save" style="right:34px;top:110px;font-size:40px;color:#404040;font-weight:800;transform-origin:100% 50%">12.650 RSD <span style="color:#d64545">(30%)</span></div>
+      </div>
+      <div class="abs" id="s5btn" style="left:44px;top:800px;width:832px;height:130px;background:#2f7a50;border-radius:20px;overflow:hidden">
+        <div id="s5rip" class="abs" style="width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.35);left:386px;top:35px"></div>
+        <div id="s5bt" class="abs" style="left:0;top:0;width:832px;height:130px;display:flex;align-items:center;justify-content:center;font-size:50px;font-weight:700;color:#fff">Dodaj u korpu</div>
+      </div>
+    </div>
+    <div class="abs" id="s5finger" style="width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.55);border:6px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.35)"></div>
+  </div>
+
+  <!-- S6 OUTRO -->
+  <div class="scene" id="s6">
+    <img id="s6i" src="assets/supervision-ikonica-512.png" class="abs" style="left:400px;top:470px;width:280px;height:280px">
+    <div class="abs h1" id="s6w" style="left:0;width:1080px;text-align:center;top:800px;font-size:136px;letter-spacing:-3px">Super<span class="green">Vision</span></div>
+    <div class="abs" id="s6t" style="left:0;width:1080px;text-align:center;top:965px;font-size:30px;letter-spacing:11px;color:#c9dbd0;font-weight:600">SURVEILLANCE &amp; NETWORKING</div>
+    <div class="abs" id="s6p" style="left:240px;top:1080px;width:600px;height:130px;border-radius:999px;background:#439665;display:flex;align-items:center;justify-content:center;font-size:62px;font-weight:800;box-shadow:0 20px 60px rgba(67,150,101,.45)">super-vision.rs</div>
+    <div class="abs" id="s6l" style="left:0;width:1080px;text-align:center;top:1260px;font-size:38px;font-weight:600">Isporuka za 2 radna dana</div>
+    <div class="abs" id="s6m" style="left:0;width:1080px;text-align:center;top:1320px;font-size:32px;color:#c9dbd0;font-weight:500">Sve licence MUP-a</div>
+  </div>
+
+  <div id="wipe"></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,x)=>a+(b-a)*x;
+const P=(t,a,d)=>clamp((t-a)/d,0,1);
+const eoc=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eob=x=>{const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+function tf(el,{x=0,y=0,s=1,r=0,o=1}={}){el.style.transform=`translate(${x}px,${y}px) scale(${s}) rotate(${r}deg)`;el.style.opacity=o;}
+// pop: element enters at time a
+function pop(el,t,a,{dy=70,dx=0,s0=.86,d=.4}={}){const p=P(t,a,d);const e=eob(p);tf(el,{x:dx*(1-e),y:dy*(1-e),s:lerp(s0,1,e),o:clamp(p*3,0,1)});}
+function slam(el,t,a,{s0=1.6,d=.26}={}){const p=P(t,a,d);const e=eoc(p);tf(el,{s:lerp(s0,1,e),o:clamp(p*4,0,1)});}
+function shine(el,t,a){const p=P(t,a,.55);el.style.transform=`translateX(${lerp(-120,320,eio(p))}%) skewX(-12deg)`;el.style.opacity=(p>0&&p<1)?1:0;}
+const CUTS=[0,3.5,8.5,13,15.5,18.5,21];
+const SLAMS=[0,.5,1,1.5,2.0,8.5,13,15.5,18.5];
+window.render=function(t){
+  // scene visibility
+  for(let i=0;i<6;i++){$('s'+(i+1)).style.visibility=(t>=CUTS[i]&&t<CUTS[i+1]+(i==5?1:0))?'visible':'hidden';}
+  // bg motion
+  $('grid').style.transform=`translateY(${(t*30)%90}px)`;
+  $('glow').style.transform=`translate(${-10+Math.sin(t*.6)*120}px,${300+Math.cos(t*.45)*200}px)`;
+  // shake after slams
+  let sx=0,sy=0;for(const a of SLAMS){const d=t-a;if(d>=0&&d<.3){const k=(1-d/.3)*14;sx+=Math.sin(d*90)*k;sy+=Math.cos(d*77)*k*.7;}}
+  $('stage').style.transform=`translate(${sx}px,${sy}px)`;
+  // wipe
+  const w=$('wipe');let wv=false;
+  [3.5,8.5,13,15.5,18.5].forEach((c,i)=>{const p=(t-(c-.2))/.4;if(p>=0&&p<=1){wv=true;const dir=i%2?-1:1;const y=lerp(2220,-2900,eio(p));w.style.transform=`translateY(${dir>0?y:(-560-y)}px) skewY(${dir*-9}deg)`;}});
+  w.style.visibility=wv?'visible':'hidden';
+
+  // ---------- S1 ----------
+  if(t<3.6){
+    const k=t<.5?1:t<1?2:t<1.5?3:4;const n=$('s1n');n.textContent=k;
+    const lb=[0,.5,1,1.5][k-1];slam(n,t,lb,{s0:1.7,d:.22});
+    const kk=$('s1k');pop(kk,t,1.5,{dx:-80,dy:0,s0:.9,d:.35});
+    const pan=$('s1panel');{const p=P(t,0,.3),e=eob(p);tf(pan,{s:lerp(.8,1,e),o:clamp(p*3,0,1)});}
+    // reveals
+    const r1=lerp(100,49.5,eoc(P(t,0,.18)))-49.5*eoc(P(t,.5,.18));
+    const r2=lerp(100,57.4,eoc(P(t,1,.18)))-57.4*eoc(P(t,1.5,.18));
+    $('s1r1').style.clipPath=`inset(0 ${r1}% 0 0)`;$('s1r2').style.clipPath=`inset(0 ${r2}% 0 0)`;
+    shine($('s1shine'),t,2.05);
+    slam($('s1j'),t,2.0,{s0:1.45,d:.28});
+  }
+  // ---------- S2 ----------
+  if(t>=3.4&&t<8.6){
+    pop($('s2a'),t,3.55,{dx:-90,dy:0,s0:1});pop($('s2b'),t,3.72,{dx:-90,dy:0,s0:1});
+    [4.0,4.5,5.0,5.5,6.0].forEach((a,i)=>{const c=$('c'+i);pop(c,t,a,{dy:110,s0:.82,d:.42});shine(c.querySelector('.shine'),t,a+.25);});
+    slam($('b0'),t,4.25,{s0:1.8,d:.25});
+    pop($('s2f'),t,6.5,{dy:24,s0:1,d:.4});
+  }
+  // ---------- S3 ----------
+  if(t>=8.4&&t<13.1){
+    pop($('s3t'),t,8.55,{dx:-60,dy:0,s0:1});
+    pop($('s3card'),t,8.6,{dy:90,s0:.85,d:.45});
+    $('s3img').style.transform=`scale(${lerp(1,1.07,P(t,8.6,4.4))})`;
+    shine($('s3shine'),t,8.95);
+    pop($('s3bar'),t,8.9,{dy:20,s0:1,d:.3});
+    const fp=eio(P(t,9.0,.7));$('s3fill').style.width=(fp*100)+'%';
+    $('r1n').textContent=Math.round(fp*20)+' m';
+    pop($('r1'),t,9.0,{dx:140,dy:0,s0:1,d:.4});pop($('r2'),t,10.0,{dx:140,dy:0,s0:1,d:.4});pop($('r3'),t,11.0,{dx:140,dy:0,s0:1,d:.4});
+  }
+  // ---------- S4 ----------
+  if(t>=12.9&&t<15.6){
+    pop($('s4a'),t,13.05,{dx:-90,dy:0,s0:1});pop($('s4b'),t,13.25,{dx:-90,dy:0,s0:1});
+    {const p=P(t,13.1,.4),e=eoc(p);const g=$('plan');g.style.opacity=p;g.setAttribute('transform',`translate(460 420) scale(${lerp(.92,1,e)}) translate(-460 -420)`);}
+    const ap=[[460,572],[670,560],[250,220],[670,220]];
+    [13.4,13.8,14.2,14.6].forEach((a,i)=>{const g=$('k'+(i+1));const p=P(t,a,.35);const e=eob(p);g.style.opacity=clamp(p*3,0,1);const [x,y]=ap[i];g.setAttribute('transform',`translate(${x} ${y}) scale(${lerp(.2,1,e)}) translate(${-x} ${-y})`);});
+    pop($('s4c'),t,14.0,{dy:20,s0:1});
+  }
+  // ---------- S5 ----------
+  if(t>=15.4&&t<18.6){
+    pop($('s5a'),t,15.55,{dx:-90,dy:0,s0:1});pop($('s5b'),t,15.72,{dx:-90,dy:0,s0:1});
+    pop($('s5card'),t,15.6,{dy:120,s0:.88,d:.45});
+    const pp=eoc(P(t,15.8,.5));const v=Math.round(pp*29200/10)*10;$('s5p').textContent=v.toLocaleString('de-DE')+' RSD';
+    $('s5strike').style.width=(eoc(P(t,16.4,.25))*108)+'%';
+    {const p=P(t,16.6,.3),e=eob(p);tf($('s5save'),{s:lerp(.6,1,e),o:clamp(p*3,0,1)});}
+    // finger
+    const f=$('s5finger');const fp2=eio(P(t,17.0,.45));const fx=lerp(900,525,fp2),fy=lerp(1700,1360,fp2);
+    const press=t>=17.5&&t<17.68?.84:1;f.style.left=(fx-55)+'px';f.style.top=(fy-55)+'px';f.style.opacity=clamp((t-17)*4,0,1)*(1-clamp((t-17.95)*4,0,1));f.style.transform=`scale(${press})`;
+    $('s5btn').style.transform=`scale(${t>=17.5&&t<17.68?.97:1})`;
+    const rp=P(t,17.5,.45);const rip=$('s5rip');rip.style.transform=`scale(${lerp(0,30,eoc(rp))})`;rip.style.opacity=rp>0?(1-rp):0;
+    const done=t>=17.62;$('s5bt').textContent=done?'✓  Dodato u korpu':'Dodaj u korpu';$('s5btn').style.background=done?'#123528':'#2f7a50';
+    if(done){slam($('s5bt'),t,17.62,{s0:1.25,d:.25});}else{tf($('s5bt'),{});}
+  }
+  // ---------- S6 ----------
+  if(t>=18.4){
+    {const p=P(t,18.55,.5),e=eob(p);tf($('s6i'),{s:lerp(.3,1,e),r:lerp(-120,0,eoc(p)),o:clamp(p*3,0,1)});}
+    pop($('s6w'),t,18.8,{dy:60,s0:.9});pop($('s6t'),t,19.0,{dy:30,s0:1});
+    {const p=P(t,19.15,.4),e=eob(p);let pulse=0;for(const b of [19.5,20,20.5]){const d=t-b;if(d>=0&&d<.35)pulse=Math.max(pulse,(1-d/.35)*.06);}tf($('s6p'),{s:lerp(.6,1,e)+pulse,o:clamp(p*3,0,1)});}
+    pop($('s6l'),t,19.4,{dy:30,s0:1});pop($('s6m'),t,19.55,{dy:30,s0:1});
+  }
+};
+window.ready=Promise.all([document.fonts.ready,...[...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r;}))]).then(()=>document.fonts.load('800 100px Poppins'));
+render(0);
+</script>
+</body></html>
