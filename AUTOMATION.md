@@ -87,9 +87,24 @@ BUFFER_TOKEN=... python3 scripts/schedule_buffer.py --service instagram --video 
 ## 6. Evidencija
 U `data/posted.json` (grana main) dodaj unos za svaki zakazani reel:
 - date, product_id, product, category, keyword, hook_type, hook_text, music_style
+- `buffer_posts`: {"instagram": id, "tiktok": id, "linkedin": id}, gde je id iz izlaza schedule_buffer.py
 - channels, scheduled, video, buffer_post_id
 
 Uz to sačuvaj `templates/runs/<datum>-<slug>/` sa fajlovima brag-plan.md, index.html, sound.py i opisima. MP4 i frejmove ne čuvaj. Zatim commit i push na main.
+
+## 6b. Stranica sa rezultatima (svaki dan) i nedeljni zaključak (ponedeljkom)
+Pre push-a grane `media` (korak 4), osveži stranicu sa rezultatima:
+```bash
+cd ~/sr && BUFFER_TOKEN="$BUFFER_TOKEN" python3 scripts/report.py ~/media/izvestaj --days 60
+```
+Javni link: **https://gajic97.github.io/supervision-reels/izvestaj/**. Folder `izvestaj/` se nikad ne briše pri čišćenju starih videa.
+
+**Ponedeljkom** napiši i nedeljni zaključak, `data/weekly/<GGGG>-W<nedelja>.md` (grana main, pre generisanja stranice). Kratko, na srpskom:
+- top 3 i najslabija 3 reela prošle nedelje (pregledi i interakcije po mreži)
+- koji tip hook-a, koji muzički stil i koja kategorija najbolje prolaze (samo ako ima bar 3 reela po grupi, inače napiši da je uzorak mali)
+- 1–3 konkretna predloga za sledeću nedelju (npr. češće neki tip hook-a, proširenje FAZE 1)
+
+Predloge za promenu pravila (faze, kategorije, cene) samo predlaži; ne menjaj ih sam bez Gajicove odluke. Zaključak kopiraj i u dnevni izveštaj tog dana.
 
 ## 7. Izveštaj za Gajica (poslednja poruka zakazanog zadatka)
 Kratko, na srpskom:

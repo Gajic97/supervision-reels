@@ -9,7 +9,12 @@
   ],
   "note": "probni reel v2, objavljen rucno preko Buffer Share Now",
   "music_style": "deep_house",
-  "hook_type": "none"
+  "hook_type": "none",
+  "buffer_posts": {
+   "instagram": "6ae34c42626d58d096a8d165"
+  },
+  "scheduled": "2026-10-29 14:41",
+  "category": "Kompleti video nadzora"
  },
  {
   "date": "2026-10-29",
@@ -24,11 +29,13 @@
   ],
   "scheduled": "2026-10-29 20:00",
   "video": "https://gajic97.github.io/supervision-reels/v/2026-10-29-ezviz-bc1c-solarna.mp4",
-  "buffer_post_id": "6ae35a04a87e7858ef12ab32",
   "template": "reel-v2",
-  "buffer_post_id_tiktok": "6ae38b9a5a87bd1f00b0ad6b",
-  "buffer_post_id_linkedin": "6ae392df31868ec16fbe7313",
   "music_style": "deep_house",
-  "hook_type": "none"
+  "hook_type": "none",
+  "buffer_posts": {
+   "instagram": "6ae35a04a87e7858ef12ab32",
+   "tiktok": "6ae38b9a5a87bd1f00b0ad6b",
+   "linkedin": "6ae392df31868ec16fbe7313"
+  }
  }
 ]
