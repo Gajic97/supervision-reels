@@ -6,7 +6,7 @@ Ova pravila se dodaju uz brag (brag-slim) pri svakom pravljenju reela. Kad se ne
 - Vertikalno 1080×1920, 30 fps, trajanje 18–22 s.
 - Muzika na 120 BPM; svaki rez i svaki ulazak elementa pada na beat.
 - Važan sadržaj stoji između y 170 i y 1500. Sa strane mora biti bar oko 115 px razmaka od ivice (u reel-v3 ovo rešava scale 0.92 na scenama). Donji i desni deo kadra ostaju slobodni za UI TikTok-a i Instagrama.
-- Trajanje je 23 s: 2 s tekstualnog hook-a (HOOKS.md), pa 21 s proizvoda.
+- Trajanje je 24 s: 3 s tekstualnog hook-a (reči uleću za ~0,9 s, pa se tekst drži da se stigne pročitati) (HOOKS.md), pa 21 s proizvoda.
 
 ## Ton
 - Brz, čist i pregledan, sa puno animacija, ali ozbiljan.

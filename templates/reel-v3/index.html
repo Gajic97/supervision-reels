@@ -151,7 +151,7 @@ function slam(el,t,a,{s0=1.6,d=.26}={}){const p=P(t,a,d);const e=eoc(p);tf(el,{s
 function shine(el,t,a){const p=P(t,a,.55);el.style.transform=`translateX(${lerp(-120,320,eio(p))}%) skewX(-12deg)`;el.style.opacity=(p>0&&p<1)?1:0;}
 const CUTS=[0,3.5,8.5,13,15.5,18.5,21];
 const SLAMS=[0,.5,1,1.5,2.0,8.5,13,15.5,18.5];
-const INTRO=2.0;
+const INTRO=3.0;  // tekstualni hook: reči uleću za ~0,8 s, pa se drži da se stigne pročitati
 function renderMain(t){
   for(let i=0;i<6;i++){$('s'+(i+1)).style.visibility=(t>=CUTS[i]&&t<CUTS[i+1]+(i==5?1:0))?'visible':'hidden';}
   $('grid').style.transform=`translateY(${(t*30)%90}px)`;
@@ -220,8 +220,9 @@ window.render=function(T){
   const s0=$('s0');s0.style.visibility=T<INTRO?'visible':'hidden';
   if(T<INTRO){
     const tg=$('h0tag');{const p=P(T,0,.25);tf(tg,{x:-40*(1-eoc(p)),o:p});}
-    [...document.querySelectorAll('#h0txt .w')].forEach((w,i)=>{const a=0.1+i*0.14;slam(w,T,a,{s0:1.35,d:.2});});
-    {const p=P(T,1.1,.3);tf($('h0sub'),{y:20*(1-eoc(p)),o:p});}
+    [...document.querySelectorAll('#h0txt .w')].forEach((w,i)=>{const a=0.1+i*0.12;slam(w,T,a,{s0:1.35,d:.2});});
+    {const p=P(T,1.0,.35);tf($('h0sub'),{y:20*(1-eoc(p)),o:p});}
+    {const k=lerp(1,1.035,eio(P(T,0.9,INTRO-0.9)));$('h0txt').style.transform=`scale(${k})`;$('h0txt').style.transformOrigin='0 50%';}
   }
   // wipe into product part
   renderMain(T-INTRO);

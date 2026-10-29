@@ -2,7 +2,7 @@
 
 Upotreba:
   STYLE=deep_house|lofi_chill|synthwave|cinematic|minimal_tech  KEY=0..11 (transpozicija u polutonovima)
-  INTRO=2.0 (sekunde tekstualnog hook-a pre glavnog dela)  SEED=<broj>
+  INTRO=3.0 (sekunde tekstualnog hook-a pre glavnog dela)  SEED=<broj>
   SFX=sfx.json (opciono; lista događaja u APSOLUTNOM vremenu: {"type","t","g","pan"})
   OUT_WAV=music.wav  python3 sound.py
 Glavni deo traje 21 s na 120 BPM; „drop“ (ulazak bubnja) je na INTRO+2.0 s.
@@ -15,7 +15,7 @@ from scipy.io import wavfile
 
 STYLE = os.environ.get("STYLE", "deep_house")
 KEY = int(os.environ.get("KEY", "0"))
-INTRO = float(os.environ.get("INTRO", "2.0"))
+INTRO = float(os.environ.get("INTRO", "3.0"))
 SEED = int(os.environ.get("SEED", "11"))
 SR = 44100
 MAIN = 21.0
@@ -307,7 +307,8 @@ else: music.add(pad_saw(oc, 2.5, 1600), END, 0.4)
 # ================= EFEKTI (sfx.json ili podrazumevani raspored reel-v2 + intro) =================
 def default_events():
     ev = []
-    for i in range(6): ev.append({"type": "thud", "t": 0.1 + i * 0.14, "g": 0.35})
+    for i in range(8): ev.append({"type": "thud", "t": 0.1 + i * 0.12, "g": 0.35})
+    ev.append({"type": "swish", "t": 1.0, "g": 0.18})
     ev += [{"type": "riser", "t": INTRO, "g": 0.12, "len": 1.6}]
     o = INTRO
     for i, t in enumerate([0.0, 0.5, 1.0, 1.5]): ev.append({"type": "shutter", "t": o + t, "g": 0.95, "pan": (-0.35, 0.35, -0.2, 0.2)[i]})
