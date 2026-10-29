@@ -54,6 +54,9 @@ def main():
         posted = []
     cutoff = (date.today() - timedelta(days=30)).isoformat()
     recent = {p["product_id"] for p in posted if p.get("date", "") >= cutoff}
+    # ID-jevi se razlikuju između starog i novog sajta, pa se poredi i po nazivu
+    norm = lambda s: re.sub(r"\W+", " ", (s or "").lower()).strip()
+    recent_names = {norm(p.get("product")) for p in posted if p.get("date", "") >= cutoff}
     out = []
     for p in products:
         try:
@@ -71,7 +74,7 @@ def main():
             continue
         if BLOCK_WORDS.search(p["name"]):
             continue
-        if len(p.get("description") or "") < 600 or p["id"] in recent:
+        if len(p.get("description") or "") < 600 or p["id"] in recent or norm(p["name"]) in recent_names:
             continue
         cat = min(cats, key=lambda c: PRIORITY[c])
         out.append({**p, "reel_category": cat, "priority": PRIORITY[cat]})

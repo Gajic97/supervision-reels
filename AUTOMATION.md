@@ -20,10 +20,15 @@ GitHub API (releases i ostalo) je blokiran kroz proxy. Radi samo `git` preko HTT
 
 ## 1. Katalog
 ```bash
-SV_BASE=https://super-vision.rs python3 scripts/fetch_products.py > /tmp/products.json \
- || SV_BASE=https://new.super-vision.rs SV_BASIC="$SV_BASIC" python3 scripts/fetch_products.py > /tmp/products.json
+if [ "$(date +%F)" \< "2026-11-01" ]; then
+  # Prelaz: novi sajt još nije javno pušten, a stari sajt ima DRUGAČIJE cene i ID-jeve. Do 31.10. uvek novi sajt.
+  SV_BASE=https://new.super-vision.rs SV_BASIC="$SV_BASIC" python3 scripts/fetch_products.py > /tmp/products.json
+else
+  SV_BASE=https://super-vision.rs python3 scripts/fetch_products.py > /tmp/products.json \
+   || SV_BASE=https://new.super-vision.rs SV_BASIC="$SV_BASIC" python3 scripts/fetch_products.py > /tmp/products.json
+fi
 ```
-Novi sajt ide uživo 30.10.2026. Ako super-vision.rs vraća stari sajt (nema `/wp-json/wc/store`) ili je blokiran, koristi new.super-vision.rs. Linkovi u opisima uvek glase **super-vision.rs**.
+Linkovi u opisima uvek glase **super-vision.rs**. Od 1.11.2026. pre izbora proveri da cena u /tmp/products.json odgovara javnoj stranici proizvoda na super-vision.rs. Ako se razlikuje, za taj proizvod ne prikazuj cenu i to napiši u izveštaju.
 
 ## 2. Izbor 2 proizvoda
 ```bash
