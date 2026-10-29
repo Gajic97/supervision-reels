@@ -9,8 +9,10 @@ Automatizacija kratkih video objava (Reels/TikTok/LinkedIn) za SuperVision d.o.o
    - HTML kompozicija sa funkcijom `window.render(t)`
    - zvuk u Pythonu
    - `scripts/render.js` za MP4
-4. `scripts/publish_release.py` postavlja MP4 kao GitHub Release asset, pa dobijamo javni link.
-5. Buffer zakazuje objavu u 11:30 i 19:30, sa posebnim opisom za svaku mrežu.
+4. MP4 ide na granu `media`, koja se servira preko GitHub Pages (javni link gajic97.github.io/supervision-reels/v/...).
+5. `scripts/schedule_buffer.py` zakazuje objavu preko Buffer API-ja u 11:30 i 19:30, sa posebnim opisom za svaku mrežu.
+
+Detaljno dnevno uputstvo je u `AUTOMATION.md`.
 6. Dnevni izveštaj sadrži:
    - šta je objavljeno
    - predloge odgovora na komentare

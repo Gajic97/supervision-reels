@@ -1,3 +1,26 @@
 [
- {"date": "2026-10-29", "product_id": 2926, "product": "Komplet video nadzora HiLook 4x bullet THC-B120-P 2MP + DVR-104G-K1", "keyword": "komplet video nadzora", "channels": ["instagram"], "note": "probni reel v2, objavljen rucno preko Buffer Share Now"}
+ {
+  "date": "2026-10-29",
+  "product_id": 2926,
+  "product": "Komplet video nadzora HiLook 4x bullet THC-B120-P 2MP + DVR-104G-K1",
+  "keyword": "komplet video nadzora",
+  "channels": [
+   "instagram"
+  ],
+  "note": "probni reel v2, objavljen rucno preko Buffer Share Now"
+ },
+ {
+  "date": "2026-10-29",
+  "product_id": 4849,
+  "product": "CS-BC1c 4K EZVIZ baterijska kamera 8MP sa solarnim panelom",
+  "category": "Kamere",
+  "keyword": "kamera sa solarnim panelom",
+  "channels": [
+   "instagram"
+  ],
+  "scheduled": "2026-10-29 20:00",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-29-ezviz-bc1c-solarna.mp4",
+  "buffer_post_id": "6ae35a04a87e7858ef12ab32",
+  "template": "reel-v2"
+ }
 ]
