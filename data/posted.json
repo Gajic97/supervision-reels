@@ -16,11 +16,13 @@
   "category": "Kamere",
   "keyword": "kamera sa solarnim panelom",
   "channels": [
-   "instagram"
+   "instagram",
+   "tiktok"
   ],
   "scheduled": "2026-10-29 20:00",
   "video": "https://gajic97.github.io/supervision-reels/v/2026-10-29-ezviz-bc1c-solarna.mp4",
   "buffer_post_id": "6ae35a04a87e7858ef12ab32",
-  "template": "reel-v2"
+  "template": "reel-v2",
+  "buffer_post_id_tiktok": "6ae38b9a5a87bd1f00b0ad6b"
  }
 ]
