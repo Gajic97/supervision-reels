@@ -4,7 +4,7 @@ Ovo je uputstvo koje Claude prati pri svakom dnevnom pokretanju. Cilj: **2 nova 
 
 > **Važi ovaj fajl:** termini su 12:30 i 19:30 (Gajicova odluka 29.10.2026). Ako prompt zakazanog zadatka navodi 11:30, to je staro vreme i treba ga zanemariti.
 
-Tajne (GH_TOKEN, BUFFER_TOKEN, SV_BASIC) stižu u promptu zakazanog zadatka. Nikada se ne upisuju u repo, u fajlove koji se commit-uju niti u izveštaj.
+Tajne (GH_TOKEN, BUFFER_TOKEN, SV_BASIC) su u promenljivim okruženja (Environment variables) zakazanog zadatka. Nikada se ne upisuju u repo, u fajlove koji se commit-uju niti u izveštaj.
 
 ## 0. Priprema
 ```bash
