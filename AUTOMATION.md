@@ -26,22 +26,19 @@ SV_BASE=https://super-vision.rs python3 scripts/fetch_products.py > /tmp/product
 Novi sajt ide uživo 30.10.2026. Ako super-vision.rs vraća stari sajt (nema `/wp-json/wc/store`) ili je blokiran, koristi new.super-vision.rs. Linkovi u opisima uvek glase **super-vision.rs**.
 
 ## 2. Izbor 2 proizvoda
-Uslovi (svi moraju biti ispunjeni):
-- `in_stock` je true
-- cena je javna (`price_html` ne sadrži „Ulogujte“)
-- ima bar jednu sliku
-- opis je duži od oko 600 znakova (dovoljno činjenica za video)
-- nije u `data/posted.json` u poslednjih 30 dana
+```bash
+python3 scripts/pick_candidates.py /tmp/products.json > /tmp/candidates.json
+```
+Biraj **isključivo** iz `/tmp/candidates.json`. Skripta već primenjuje Gajicovo pravilo: samo ozbiljna oprema, nikada kablovi, konektori, nosači, napajanja, moduli ni sitan pribor. Ručno ne dodaješ ništa van te liste.
 
-Prioritet kategorija:
-1. Kompleti video nadzora i Kamere
-2. Interfoni i Video interfoni
-3. Alarm i Senzori
-4. Rampe i motori za kapije
-5. Kontrola pristupa
-6. Ostalo (osim kablova, vijaka i sitnog pribora)
+**Trenutno važi FAZA 1:** samo jeftinije **kamere** (3.000–15.000 RSD), **snimači** (5.000–20.000) i **kompleti video nadzora** (10.000–50.000), od jeftinijih ka skupljim. Lista je sortirana po prioritetu i ceni.
 
-Raznovrsnost: dva reela istog dana nisu iz iste kategorije, a ne ponavlja se kategorija iz prethodna 2 dana ako postoji alternativa. Proizvodi namenjeni krajnjem kupcu (Wi-Fi kamere, kompleti, interfoni) imaju prednost nad profesionalnom opremom.
+Pravila izbora:
+- uzmi prva 2 odgovarajuća proizvoda sa liste, ali ne 2 ista tipa istog dana (npr. kamera i snimač, ili kamera i komplet)
+- ne biraj dva skoro ista modela zaredom (npr. ista kamera sa objektivom 2.8 i 4 mm)
+- proizvodi namenjeni krajnjem kupcu (Wi-Fi kamere, kompleti) imaju prednost kad su cene slične
+
+Ako je na listi manje od 2 proizvoda (svi su objavljeni u poslednjih 30 dana), u `scripts/pick_candidates.py` privremeno povećaj gornje granice cena u PHASE1 za 50% i to napiši u izveštaju. Ne izlazi van ove tri kategorije bez Gajicove odluke.
 
 ## 3. Pravljenje reela (brag)
 Za svaki proizvod u `~/work/<slug>/`:
