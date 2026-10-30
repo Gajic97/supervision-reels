@@ -1,5 +1,7 @@
 # AUTOMATION.md: dnevni posao (zakazani zadatak u Claude-u)
 
+> **Zaštita od dupliranja:** pre svega proveri `data/posted.json`. Ako za današnji datum (Europe/Belgrade) već postoje 2 unosa, ne pravi i ne zakazuj ništa, samo pošalji izveštaj. Ako postoji 1 unos, napravi samo onaj termin koji fali.
+
 Ovo je uputstvo koje Claude prati pri svakom dnevnom pokretanju. Cilj: **2 nova reela dnevno**, zakazana u Buffer-u za **12:30 i 19:30** (Europe/Belgrade), bez ičijeg ručnog rada. Na kraju ide kratak izveštaj za Gajica.
 
 > **Odobreni uzor (Gajic, 29.10.2026):** demo `templates/reel-v4` (EZVIZ CS-TY1) je tačno ono što Gajic želi: tekstualni hook od 3 s, šire margine, animacije u svakom trenutku, prelazi koji se smenjuju, odometar cene i drugačija muzika. Svaki novi reel mora biti bar ovog nivoa animacije i kvaliteta, uz scene prilagođene proizvodu (ne kopija istih scena). Sam demo se ne objavljuje.
