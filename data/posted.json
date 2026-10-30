@@ -37,5 +37,53 @@
    "tiktok": "6ae38b9a5a87bd1f00b0ad6b",
    "linkedin": "6ae392df31868ec16fbe7313"
   }
+ },
+ {
+  "date": "2026-10-30",
+  "product_id": 2885,
+  "product": "THC-T120-P HiLook Turbo HD turret kamera 2MP 2.8mm",
+  "category": "Kamere",
+  "keyword": "kamera za video nadzor",
+  "hook_type": "komanda",
+  "hook_text": "Proveri da li radi sa tvojim snimačem.",
+  "music_style": "minimal_tech",
+  "scheduled": "2026-10-30 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-hilook-thc-t120-p.mp4",
+  "template": "reel-v4",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6ae43fc156e01b97638f8622",
+   "tiktok": "6ae43fc2ba1ca51fd3fd3ddb",
+   "linkedin": "6ae43fc46385db216a2c4ee3"
+  },
+  "note": "napravljeno ručno u sesiji jer jutarnji zadatak nije pokrenuo posao"
+ },
+ {
+  "date": "2026-10-30",
+  "product_id": 2863,
+  "product": "DVR-104G-K1 HiLook Turbo HD DVR snimač 4 kanala 2MP",
+  "category": "Snimači",
+  "keyword": "dvr snimač",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Kamere snimaju. A gde čuvaš snimak?",
+  "music_style": "lofi_chill",
+  "scheduled": "2026-10-30 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-hilook-dvr-104g-k1.mp4",
+  "template": "reel-v4",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6ae43fc22782e7f331d88bb8",
+   "tiktok": "6ae43fc3a83a7fb63c9ba5f5",
+   "linkedin": "6ae43fc556e01b97638f86e0"
+  },
+  "note": "napravljeno ručno u sesiji jer jutarnji zadatak nije pokrenuo posao"
  }
 ]
