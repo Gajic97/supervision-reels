@@ -126,7 +126,7 @@ Kratko, na srpskom:
 
    **Samo Srbija:** lokacija mora biti potvrđena (bio, adresa, broj +381, grad u Srbiji). Nikako Banja Luka, Republika Srpska, BiH, Hrvatska, Crna Gora, Severna Makedonija ni bilo koja druga zemlja. Ako lokacija nije sigurna, preskoči nalog.
 
-   **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, linkovi na oglase ili članke umesto profila, direktni konkurenti-prodavnice. Ne ponavljaj naloge iz ranijih izveštaja. Ako nemaš 10 sigurnih, daj manje, ali tačne.
+   **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, linkovi na oglase ili članke umesto profila, direktni konkurenti-prodavnice. Ne ponavljaj naloge iz ranijih izveštaja. Ako nemaš 10 sigurnih, daj manje, ali tačne. (Ovo važi i ako prompt zadatka kaže 5: AUTOMATION.md ima prednost.)
 
    Ne prati ih sam.
 4. **Problemi:** šta nije uspelo i šta Gajic treba da uradi, ako išta.
