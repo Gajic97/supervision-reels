@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="sr"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0d281e;font-family:'Poppins',sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
+#bg{position:absolute;inset:0;background:radial-gradient(1200px 1400px at 50% 35%,#1b4636 0%,#123528 45%,#0b2219 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(40px)}
+#grid{position:absolute;left:0;top:-120px;width:1080px;height:2160px;opacity:.07}
+#parts{position:absolute;inset:0}
+.pt{position:absolute;width:6px;height:6px;border-radius:50%;background:#6cc08f}
+.scene{position:absolute;left:0;top:0;width:1080px;height:1920px;visibility:hidden;transform-origin:540px 860px}
+.abs{position:absolute}
+.card{position:absolute;background:#fff;border-radius:34px;box-shadow:0 28px 70px rgba(0,0,0,.38);overflow:hidden}
+.shine{position:absolute;top:-20%;left:0;width:38%;height:140%;background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 50%,rgba(255,255,255,0) 100%);pointer-events:none}
+.h1{font-weight:800;letter-spacing:-2px;line-height:1.02}
+.green{color:#6cc08f}
+.red{color:#ff7b7b}
+.w{display:inline-block;transform-origin:50% 70%;position:relative}
+.mark{position:absolute;left:-8px;right:-8px;bottom:6px;height:38%;background:#2f7a50;border-radius:8px;z-index:-1;transform-origin:0 50%}
+.tag{font-size:42px;font-weight:700;color:#6cc08f;letter-spacing:5px}
+.sub{font-size:40px;color:#c9dbd0;font-weight:500}
+.note{font-size:30px;color:#c9dbd0;font-weight:500}
+#wipe{position:absolute;left:-60px;width:1200px;height:2600px;top:0;background:linear-gradient(180deg,#6cc08f 0%,#439665 8%,#2f7a50 85%,#1b4636 100%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+#iris{position:absolute;inset:0;background:#2f7a50;visibility:hidden}
+#prog{position:absolute;left:120px;top:150px;width:840px;height:8px;border-radius:4px;background:rgba(255,255,255,.12);overflow:hidden}
+#progf{height:8px;width:0;background:linear-gradient(90deg,#2f7a50,#6cc08f)}
+.feat{position:absolute;left:80px;width:920px;height:290px;display:flex;align-items:center;gap:34px;padding:0 40px}
+.ic{width:200px;height:200px;flex:none;border-radius:50%;background:#e6f2ea;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.ic img{width:180px;height:180px;object-fit:contain}
+.st b{display:block;font-size:44px;line-height:1.12;color:#123528;font-weight:800;letter-spacing:-.5px}
+.st span{display:block;font-size:30px;line-height:1.3;color:#5d6b64;font-weight:500;margin-top:8px}
+.gauge{position:absolute;width:445px;height:430px;background:rgba(255,255,255,.06);border:3px solid rgba(108,192,143,.45);border-radius:34px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gauge svg{width:260px;height:260px}
+.gv{position:absolute;top:118px;width:100%;text-align:center;font-weight:800;font-size:72px;letter-spacing:-2px}
+.gl{font-size:34px;font-weight:700;margin-top:8px}
+.gs{font-size:26px;color:#c9dbd0;font-weight:500}
+.odo{display:inline-block;height:110px;overflow:hidden;vertical-align:top;text-align:center}
+.odo.dg{width:60px}
+.odo span{display:block;height:110px;line-height:110px}
+.disc{position:absolute;border-radius:50%;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.45);overflow:hidden}
+.disc img,.tile img{position:absolute;object-fit:contain}
+.tile{position:absolute;background:#fff;border-radius:28px;box-shadow:0 20px 50px rgba(0,0,0,.35);overflow:hidden}
+.chip{position:absolute;padding:14px 30px;border-radius:999px;background:rgba(108,192,143,.16);border:3px solid #6cc08f;font-size:36px;font-weight:700;white-space:nowrap}
+.big{position:absolute;font-weight:800;font-size:520px;line-height:1;letter-spacing:-20px;color:#6cc08f}
+.phone{position:absolute;width:560px;height:1060px;border-radius:70px;background:#0a0f0d;border:14px solid #22302a;box-shadow:0 40px 90px rgba(0,0,0,.55);overflow:hidden}
+.scr{position:absolute;inset:0;background:#101a16}
+.chk{display:inline-flex;width:64px;height:64px;border-radius:50%;background:#2f7a50;align-items:center;justify-content:center;font-size:40px;font-weight:800;color:#fff;flex:none}
+.row{position:absolute;left:80px;width:920px;display:flex;align-items:center;gap:26px;font-size:44px;font-weight:700}
+</style></head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+  <div class="blob" id="b1" style="width:700px;height:700px;background:rgba(108,192,143,.20)"></div>
+  <div class="blob" id="b2" style="width:600px;height:600px;background:rgba(31,111,107,.28)"></div>
+  <svg id="grid" viewBox="0 0 1080 2160"><defs><pattern id="p" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0V90" fill="none" stroke="#fff" stroke-width="2"/></pattern></defs><rect width="1080" height="2160" fill="url(#p)"/></svg>
+  <div id="parts"></div>
+  <div id="dark" class="abs" style="inset:0;background:#030806;opacity:0"></div>
+
+  <!-- S0 TEXT HOOK -->
+  <div class="scene" id="s0">
+    <div class="abs tag" id="h0tag" style="left:80px;top:500px">%%TAG%%</div>
+    <div class="abs h1" id="h0txt" style="left:80px;top:580px;width:920px;font-size:%%HSIZE%%px;line-height:1.06">%%HOOK%%</div>
+    <div class="abs sub" id="h0sub" style="left:80px;top:%%SUBTOP%%px;width:920px">%%SUB%%</div>
+  </div>
+
+%%SCENES%%
+
+  <!-- PRICE -->
+  <div class="scene" id="sP">
+    <div class="abs h1" id="sPa" style="left:80px;top:190px;font-size:92px">%%P1%%</div>
+    <div class="abs h1 green" id="sPb" style="left:80px;top:288px;font-size:92px">%%P2%%</div>
+    <div class="card" id="sPcard" style="left:80px;top:440px;width:920px;height:940px">
+      <img id="sPimg" src="assets/kit.jpg" class="abs" style="left:255px;top:6px;width:410px;height:360px;object-fit:contain">
+      <div class="abs" style="left:44px;top:372px;background:#e6f2ea;color:#2f7a50;font-weight:600;font-size:30px;border-radius:999px;padding:8px 28px">Na stanju</div>
+      <div class="abs" style="left:44px;top:436px;display:flex;align-items:baseline;gap:18px;font-size:96px;font-weight:800;color:#2f7a50;letter-spacing:-2px">
+        <div id="odo" style="display:flex;font-variant-numeric:tabular-nums;line-height:110px;height:110px"></div><span>RSD</span><span style="font-size:34px;color:#5d6b64;font-weight:500;letter-spacing:0">sa PDV-om</span></div>
+      <div class="abs" id="sPinc" style="left:44px;top:590px;width:832px;height:130px;background:#f1f7f3;border:3px solid #c9dbd0;border-radius:26px;display:flex;align-items:center;padding:0 34px;font-size:32px;color:#123528;font-weight:700">%%INC%%</div>
+      <div class="abs" id="sPbtn" style="left:44px;top:770px;width:832px;height:130px;background:#2f7a50;border-radius:20px;overflow:hidden">
+        <div id="sPrip" class="abs" style="width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.35);left:386px;top:35px"></div>
+        <div id="sPbt" class="abs" style="left:0;top:0;width:832px;height:130px;display:flex;align-items:center;justify-content:center;font-size:50px;font-weight:700;color:#fff">Dodaj u korpu</div>
+      </div>
+      <div class="shine" id="sPshine"></div>
+    </div>
+    <div class="abs" id="sPfinger" style="width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.55);border:6px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.35)"></div>
+  </div>
+
+  <!-- OUTRO -->
+  <div class="scene" id="sO">
+    <img id="sOi" src="assets/supervision-ikonica-512.png" class="abs" style="left:400px;top:470px;width:280px;height:280px">
+    <div class="abs h1" id="sOw" style="left:0;width:1080px;text-align:center;top:800px;font-size:136px;letter-spacing:-3px">Super<span class="green">Vision</span></div>
+    <div class="abs" id="sOt" style="left:0;width:1080px;text-align:center;top:965px;font-size:30px;letter-spacing:11px;color:#c9dbd0;font-weight:600">SURVEILLANCE &amp; NETWORKING</div>
+    <div class="abs" id="sOp" style="left:240px;top:1080px;width:600px;height:130px;border-radius:999px;background:#439665;display:flex;align-items:center;justify-content:center;font-size:62px;font-weight:800;box-shadow:0 20px 60px rgba(67,150,101,.45)">super-vision.rs</div>
+    <div class="abs" id="sOl" style="left:0;width:1080px;text-align:center;top:1260px;font-size:38px;font-weight:600">Isporuka za 2 radna dana</div>
+    <div class="abs" id="sOm" style="left:0;width:1080px;text-align:center;top:1320px;font-size:32px;color:#c9dbd0;font-weight:500">Sve licence MUP-a</div>
+  </div>
+
+  <div id="prog"><div id="progf"></div></div>
+  <div id="iris"></div>
+  <div id="wipe"></div>
+  <div id="flash"></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,x)=>a+(b-a)*x;
+const P=(t,a,d)=>clamp((t-a)/d,0,1);
+const eoc=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eob=x=>{const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const SC=0.92;
+function tf(el,{x=0,y=0,s=1,r=0,o=1,ry=0}={}){el.style.transform=`translate(${x}px,${y}px) perspective(1400px) rotateY(${ry}deg) scale(${s}) rotate(${r}deg)`;el.style.opacity=o;}
+function pop(el,t,a,{dy=70,dx=0,s0=.86,d=.4,ry0=0}={}){const p=P(t,a,d);const e=eob(p);tf(el,{x:dx*(1-e),y:dy*(1-e),s:lerp(s0,1,e),o:clamp(p*3,0,1),ry:ry0*(1-eoc(p))});}
+function slam(el,t,a,{s0=1.6,d=.26}={}){const p=P(t,a,d);const e=eoc(p);tf(el,{s:lerp(s0,1,e),o:clamp(p*4,0,1)});}
+function shine(el,t,a){const p=P(t,a,.55);el.style.transform=`translateX(${lerp(-120,320,eio(p))}%) skewX(-12deg)`;el.style.opacity=(p>0&&p<1)?1:0;}
+function fly(el,t,a,{x0=0,y0=-600,r0=-25,d=.5}={}){const p=P(t,a,d),e=eob(p);tf(el,{x:x0*(1-e),y:y0*(1-e),r:r0*(1-eoc(p)),s:lerp(.6,1,e),o:clamp(p*3,0,1)});}
+function count(t,a,d,to){return Math.round(eoc(P(t,a,d))*to);}
+function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
+function gauge(id,t,a,frac){const p=eio(P(t,a,.8));$(id).style.strokeDashoffset=String(314*(1-p*frac));return p;}
+const PTS=[];for(let i=0;i<26;i++){const d=document.createElement('div');d.className='pt';$('parts').appendChild(d);PTS.push({x:(i*397)%1080,y:(i*733)%1920,s:.4+((i*37)%10)/10,v:18+((i*53)%40)});}
+const PRICE='%%PRICE%%';(()=>{const o=$('odo');for(const ch of PRICE){const c=document.createElement('div');c.className='odo';if(/\d/.test(ch)){c.classList.add('dg');c.innerHTML=[0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9].map(n=>`<span>${n}</span>`).join('');c.dataset.d=ch;}else{c.innerHTML=`<span>${ch}</span>`;}o.appendChild(c);}})();
+
+const INTRO=3.0;
+// scene glavnog dela: [id, od, do] u vremenu posle hook-a
+const SCN=%%SCN%%.concat([['sP',15.5,18.5],['sO',18.5,22]]);
+const SLAMS=%%SLAMS%%;
+function renderMain(t){
+  for(const [id,a,b] of SCN)$(id).style.visibility=(t>=a&&t<b)?'visible':'hidden';
+  let sx=0,sy=0;for(const a of SLAMS){const d=t-a;if(d>=0&&d<.3){const k=(1-d/.3)*12;sx+=Math.sin(d*90)*k;sy+=Math.cos(d*77)*k*.7;}}
+  $('stage').style.transform=`translate(${sx}px,${sy}px)`;
+  renderF(t);
+  if(t>=15.4&&t<18.6){
+    pop($('sPa'),t,15.55,{dx:-90,dy:0,s0:1});pop($('sPb'),t,15.72,{dx:-90,dy:0,s0:1});
+    pop($('sPcard'),t,15.6,{dy:140,s0:.85,d:.45,ry0:25});
+    $('sPimg').style.transform=`translateY(${Math.sin(t*2.4)*8}px) rotate(${Math.sin(t*1.7)*2}deg)`;
+    [...$('odo').children].forEach((c,i)=>{if(!c.dataset.d)return;const target=10+Number(c.dataset.d);const p=eoc(P(t,15.8+i*.08,.7));c.querySelectorAll('span').forEach(s=>s.style.transform=`translateY(${-p*target*110}px)`);});
+    pop($('sPinc'),t,16.5,{dy:30,s0:.9});shine($('sPshine'),t,16.6);
+    const f=$('sPfinger');const fp2=eio(P(t,17.0,.45));const fx=lerp(900,525,fp2),fy=lerp(1700,1330,fp2);
+    const press=t>=17.5&&t<17.68?.84:1;f.style.left=(fx-55)+'px';f.style.top=(fy-55)+'px';f.style.opacity=clamp((t-17)*4,0,1)*(1-clamp((t-17.95)*4,0,1));f.style.transform=`scale(${press})`;
+    $('sPbtn').style.transform=`scale(${t>=17.5&&t<17.68?.97:1})`;
+    const rp=P(t,17.5,.45);$('sPrip').style.transform=`scale(${lerp(0,30,eoc(rp))})`;$('sPrip').style.opacity=rp>0?(1-rp):0;
+    const done=t>=17.62;$('sPbt').textContent=done?'✓  Dodato u korpu':'Dodaj u korpu';$('sPbtn').style.background=done?'#123528':'#2f7a50';
+    if(done){slam($('sPbt'),t,17.62,{s0:1.25,d:.25});}else{tf($('sPbt'),{});}
+  }
+  if(t>=18.4){
+    {const p=P(t,18.55,.5),e=eob(p);tf($('sOi'),{s:lerp(.3,1,e),r:lerp(-120,0,eoc(p))+Math.sin(t*1.5)*4,o:clamp(p*3,0,1)});}
+    pop($('sOw'),t,18.8,{dy:60,s0:.9});pop($('sOt'),t,19.0,{dy:30,s0:1});
+    {const p=P(t,19.15,.4),e=eob(p);let pulse=0;for(const b of [19.5,20,20.5]){const d=t-b;if(d>=0&&d<.35)pulse=Math.max(pulse,(1-d/.35)*.06);}tf($('sOp'),{s:lerp(.6,1,e)+pulse,o:clamp(p*3,0,1)});}
+    pop($('sOl'),t,19.4,{dy:30,s0:1});pop($('sOm'),t,19.55,{dy:30,s0:1});
+  }
+}
+%%JS%%
+const TT=['wipe','iris','flash','wipe2'];
+const TRANS=[[INTRO,'wipe']].concat(SCN.slice(1).map(([id,a],i)=>[INTRO+a,TT[(i+1)%4]]));
+window.render=function(T){
+  $('grid').style.transform=`translateY(${(T*30)%90}px)`;
+  $('b1').style.transform=`translate(${-100+Math.sin(T*.5)*220}px,${200+Math.cos(T*.37)*260}px)`;
+  $('b2').style.transform=`translate(${600+Math.cos(T*.41)*200}px,${1100+Math.sin(T*.33)*260}px)`;
+  PTS.forEach((p,i)=>{const el=$('parts').children[i];const y=((p.y-T*p.v)%1920+1920)%1920;el.style.transform=`translate(${p.x+Math.sin(T*.8+i)*20}px,${y}px) scale(${p.s})`;el.style.opacity=.15+.25*p.s;});
+  $('progf').style.width=(clamp(T/24,0,1)*100)+'%';
+  let zoom=1;for(const [c,ty] of TRANS){if(ty==='flash'){const d=T-c;if(d>=0&&d<.35)zoom=1+0.06*(1-eoc(d/.35));}}
+  document.querySelectorAll('.scene').forEach(s=>s.style.transform=`scale(${SC*zoom})`);
+  $('dark').style.opacity=0;
+  $('s0').style.visibility=T<INTRO?'visible':'hidden';
+  if(T<INTRO){
+    {const p=P(T,0,.25);tf($('h0tag'),{x:-40*(1-eoc(p)),o:p});}
+    [...document.querySelectorAll('#h0txt .w')].forEach((w,i)=>slam(w,T,0.1+i*0.11,{s0:1.4,d:.2}));
+    const mk=$('mk');if(mk)mk.style.transform=`scaleX(${eoc(P(T,1.0,.35))})`;
+    {const p=P(T,1.05,.35);tf($('h0sub'),{y:20*(1-eoc(p)),o:p});}
+    {const k=lerp(1,1.035,eio(P(T,0.9,INTRO-0.9)));$('h0txt').style.transform=`scale(${k})`;$('h0txt').style.transformOrigin='0 50%';}
+  }
+  renderMain(T-INTRO);
+  const w=$('wipe'),ir=$('iris'),fl=$('flash');w.style.visibility='hidden';ir.style.visibility='hidden';fl.style.opacity=0;
+  for(const [c,ty] of TRANS){
+    const p=(T-(c-.22))/.44;if(p<0||p>1)continue;
+    if(ty==='wipe'||ty==='wipe2'){w.style.visibility='visible';const y=lerp(2220,-2900,eio(p));w.style.transform=ty==='wipe'?`translateY(${-560-y}px) skewY(9deg)`:`translateY(${y}px) skewY(-9deg)`;}
+    if(ty==='iris'){ir.style.visibility='visible';const r=p<.5?eio(p*2)*1250:(1-eio((p-.5)*2))*1250;ir.style.clipPath=`circle(${r}px at 540px 900px)`;}
+    if(ty==='flash'){fl.style.opacity=String(Math.max(0,1-Math.abs(p-.5)*3.2)*.85);}
+  }
+};
+window.ready=Promise.all([document.fonts.ready,...[...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r;}))]).then(()=>document.fonts.load('800 100px Poppins'));
+render(0);
+</script>
+</body></html>
