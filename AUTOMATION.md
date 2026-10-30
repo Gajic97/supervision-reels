@@ -4,6 +4,8 @@
 
 Ovo je uputstvo koje Claude prati pri svakom dnevnom pokretanju. Cilj: **2 nova reela dnevno**, zakazana u Buffer-u za **12:30 i 19:30** (Europe/Belgrade), bez ičijeg ručnog rada. Na kraju ide kratak izveštaj za Gajica.
 
+> **Formati (Gajic, 30.10.2026):** od 31.10. svaki reel je jedan od formata iz **FORMATS.md** (2, 3, 4, 5, 6, 8; 7 retko; 1 nikad). Nivo animacije ostaje kao u reel-v4.
+>
 > **Odobreni uzor (Gajic, 29.10.2026):** demo `templates/reel-v4` (EZVIZ CS-TY1) je tačno ono što Gajic želi: tekstualni hook od 3 s, šire margine, animacije u svakom trenutku, prelazi koji se smenjuju, odometar cene i drugačija muzika. Svaki novi reel mora biti bar ovog nivoa animacije i kvaliteta, uz scene prilagođene proizvodu (ne kopija istih scena). Sam demo se ne objavljuje.
 
 > **Važi ovaj fajl:** termini su 12:30 i 19:30 (Gajicova odluka 29.10.2026). Ako prompt zakazanog zadatka navodi 11:30, to je staro vreme i treba ga zanemariti.
@@ -18,7 +20,7 @@ AUTH="Authorization: Basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0
 git -c http.extraHeader="$AUTH" clone -q https://github.com/Gajic97/supervision-reels.git ~/sr && cd ~/sr
 git config user.name Gajic97; git config user.email freelancenemanjagajic@gmail.com
 ```
-Pročitaj **BRAND.md** (obavezna pravila), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v4**: hook od 3 s, šire bočne margine, muzika koja se menja i bogate animacije (BRAND.md → Animacije).
+Pročitaj **BRAND.md** (obavezna pravila), **FORMATS.md** (koji format reela danas, obavezno), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v4**: hook od 3 s, šire bočne margine, muzika koja se menja i bogate animacije (BRAND.md → Animacije).
 
 GitHub API (releases i ostalo) je blokiran kroz proxy. Radi samo `git` preko HTTPS-a sa gornjim headerom.
 
@@ -58,9 +60,9 @@ Za svaki proizvod u `~/work/<slug>/`:
    - hook
    - 5–6 scena po strukturi iz BRAND.md
    - spisak činjenica sa izvorom
-4. **Kompozicija:** polazi od `templates/reel-v4/index.html`, koji je trenutni standard (sve animacije iz BRAND.md → Animacije; reel-v3 je samo rezerva). Ima `window.render(t)` i `window.ready`, format 1080×1920 i **24 s**:
+4. **Format i kompozicija:** prvo izaberi **format po FORMATS.md** (jutro i veče različiti, ne ponavljaj format iz poslednja 2 reela, format 1 se ne koristi). Polazi od `templates/formati-demo/base.html` i scena tog formata u `templates/formati-demo/gen.py` (f2–f8), pa ih prilagodi proizvodu: tekstovi, slike, brojke i ilustracije. Nivo animacije mora ostati kao u demou. Ima `window.render(t)` i `window.ready`, format 1080×1920 i **24 s**:
    - **0–3 s: tekstualni hook (scena s0)** po `HOOKS.md`: oznaka iznad, glavni red od najviše 8 reči (svaka reč je `<span class="w">`, a ključne su `class="w green"`) i jedna rečenica ispod. Tip hook-a mora biti drugačiji od prethodnog reela u posted.json.
-   - **3–24 s: glavni deo** (funkcija `renderMain`, vreme ide od 0), sa rezovima na 3,5 / 8,5 / 13 / 15,5 / 18,5 s glavnog dela.
+   - **3–24 s: glavni deo** (`renderF(t)`, vreme ide od 0). Scene formata idu od 0 do 15,5 s (`SCN`), a od 15,5 su zajednička scena sa cenom (`sP`) i outro (`sO`).
    - **Bočne margine:** sav sadržaj scena je skaliran na 92%, tako da je razmak od ivice oko 117 px. Ne vraćaj `.scene` scale, ne stavljaj tekst bliže od x=80 unutar scene i ne pravi elemente šire od 920 px.
    - Scene i tekst prilagodi proizvodu: hook mora biti specifičan za taj proizvod, a ne kopija prethodnog. Ključna reč se mora pojaviti na ekranu.
 5. **Muzika (svaki reel drugačija):** kopiraj `templates/reel-v4/sound.py` (primer `sfx.json` je u istom folderu).
@@ -95,7 +97,7 @@ BUFFER_TOKEN=... python3 scripts/schedule_buffer.py --service instagram --video 
 
 ## 6. Evidencija
 U `data/posted.json` (grana main) dodaj unos za svaki zakazani reel:
-- date, product_id, product, category, keyword, hook_type, hook_text, music_style
+- date, product_id, product, category, keyword, **format** (f2–f8), hook_type, hook_text, music_style (kod formata 4 i product_id_b)
 - `buffer_posts`: {"instagram": id, "tiktok": id, "linkedin": id}, gde je id iz izlaza schedule_buffer.py
 - channels, scheduled, video, buffer_post_id
 

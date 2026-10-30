@@ -85,5 +85,24 @@
    "linkedin": "6ae43fc556e01b97638f86e0"
   },
   "note": "napravljeno ručno u sesiji jer jutarnji zadatak nije pokrenuo posao"
+ },
+ {
+  "date": "2026-10-30",
+  "product_id": 2939,
+  "product_id_b": 2905,
+  "product": "Komplet video nadzora HiLook 4x turret THC-T120-P 2.8 mm + DVR-104G-K1 (poređenje sa IP kompletom IPC-T220HA-LUC + NVR-104H-D)",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f4",
+  "hook_type": "izjava / broj",
+  "hook_text": "Isti broj kamera. Drugačiji kabl.",
+  "music_style": "synthwave",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-poredjenje-analogni-ip.mp4",
+  "scheduled": "2026-10-30 20:00",
+  "buffer_posts": {
+   "instagram": "6ae4c4952a4d923bf40a83fa",
+   "tiktok": "6ae4c496cd8290b9b9fd6798",
+   "linkedin": "6ae4c497a351214acf984809"
+  }
  }
 ]
