@@ -63,7 +63,7 @@ Ne moraju svi reelovi biti proizvodi. **Povremeno**, umesto jednog proizvoda tog
 Pravila su ista kao za proizvode: hook po HOOKS.md, formati 2, 4, 5 i 8 (3 i 6 samo za komplete, pa ovde ne idu), samo činjenice sa stranice, bez straha i bez izmišljenih ponuda. Umesto scene sa cenom (`sP`) ide **CTA kartica** sa istom animacijom (kartica, sjaj, dodir prsta), sa tekstom poziva (npr. „Zatražite ponudu“ ili „b2b.super-vision.rs“) i telefonom 062/618-736. Slike su samo sa sajta (fotografije sa stranica usluga, licence MUP-a, slike proizvoda). U posted.json: `product_id: null`, `category: "B2B"` ili `"Usluge"`, `product`: naziv usluge, `url`: stranica.
 
 ### Činjenice koje smeju (izvor: super-vision.rs, 30.10.2026; pre upotrebe proveri da i dalje stoje na stranici)
-**B2B portal** (b2b.super-vision.rs; tekst sa naslovne super-vision.rs, sekcija „Za koga radimo → Instalateri“):
+**B2B portal** (b2b.super-vision.rs je u dozvoljenim domenima od 30.10., pa prvo pročitaj sam portal; tekst sa naslovne super-vision.rs, sekcija „Za koga radimo → Instalateri“):
 - za instalatere i firme; veleprodajne cene; roba sa lagera; slanje u roku od 2 radna dana
 - „Pomažemo oko izbora opreme i sastavljamo spisak po objektu, da na terenu ne fali ni jedan konektor.“
 - 2.000+ artikala na lageru, „poručeno danas, poslato sutra“; Hikvision ovlašćeni partner i tehnička podrška; radimo od 2011.
