@@ -106,7 +106,7 @@ Pre push-a grane `media` (korak 4), osveži stranicu sa rezultatima:
 ```bash
 cd ~/sr && BUFFER_TOKEN="$BUFFER_TOKEN" python3 scripts/report.py ~/media/izvestaj --days 60
 ```
-Javni link: **https://gajic97.github.io/supervision-reels/izvestaj/**. Folder `izvestaj/` se nikad ne briše pri čišćenju starih videa.
+Javni link: **https://gajic97.github.io/supervision-reels/izvestaj/**. Folderi `izvestaj/` i `nalozi/` se nikad ne brišu pri čišćenju starih videa.
 
 **Ponedeljkom** napiši i nedeljni zaključak, `data/weekly/<GGGG>-W<nedelja>.md` (grana main, pre generisanja stranice). Kratko, na srpskom:
 - top 3 i najslabija 3 reela prošle nedelje (pregledi i interakcije po mreži)
@@ -119,14 +119,20 @@ Predloge za promenu pravila (faze, kategorije, cene) samo predlaži; ne menjaj i
 Kratko, na srpskom:
 1. **Zakazano danas:** proizvod, vreme, kanal, link videa i ključna reč.
 2. **Komentari:** Buffer API (29.10.2026) nema čitanje komentara. Napiši podsetnik da se novi komentari pogledaju u Buffer Community. Ako Gajic u promptu nalepi komentare, daj predloge odgovora na osnovu podataka sa sajta.
-3. **10 naloga za praćenje:** pronađi ih web pretragom (Instagram, TikTok ili LinkedIn), pa za svaki daj **direktan link do profila** i jednu rečenicu zašto. Samo ljudi i firme koji se **bave video nadzorom i sigurnosnom opremom**:
+3. **Nalozi za praćenje (fajl + stranica):** web pretragom nađi do **10 Instagram, 10 TikTok i 10 LinkedIn** naloga. Samo ljudi i firme koji se **bave video nadzorom i sigurnosnom opremom**:
    - instalateri i serviseri video nadzora, alarma i interfona **isključivo iz Srbije** (prednost Srem, Novi Sad, Beograd)
-   - firme za tehničku zaštitu i sigurnosne sisteme, električari koji ugrađuju kamere
+   - firme za tehničku zaštitu, električari koji ugrađuju kamere
    - kreatori sadržaja o video nadzoru i pametnoj kući iz Srbije
 
-   **Samo Srbija:** lokacija mora biti potvrđena (bio, adresa, broj +381, grad u Srbiji). Nikako Banja Luka, Republika Srpska, BiH, Hrvatska, Crna Gora, Severna Makedonija ni bilo koja druga zemlja. Ako lokacija nije sigurna, preskoči nalog.
+   **Samo Srbija:** lokacija mora biti potvrđena (bio, adresa, broj +381, grad u Srbiji). Nikako Banja Luka, Republika Srpska, BiH, Hrvatska, Crna Gora, Severna Makedonija ni druge zemlje. Ako lokacija nije sigurna, preskoči.
 
-   **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, linkovi na oglase ili članke umesto profila, direktni konkurenti-prodavnice. Ne ponavljaj naloge iz ranijih izveštaja. Ako nemaš 10 sigurnih, daj manje, ali tačne. (Ovo važi i ako prompt zadatka kaže 5: AUTOMATION.md ima prednost.)
+   **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, oglasi i članci, prodavnice-konkurenti. Nikad ne izmišljaj URL: ako direktan link profila nisi video, stavi `"url": null` i upiši ime (Gajic traži po imenu). Ne ponavljaj naloge koji već postoje u `data/follow.json` (ista mreža i isto ime ili handle). Ako nema dovoljno sigurnih, daj manje.
+
+   Dodaj ih u `data/follow.json` (grana main) kao `{"date","network":"instagram|tiktok|linkedin","name","handle","url","city","reason"}`, pa pre push-a grane `media` (korak 4) napravi stranicu:
+   ```bash
+   cd ~/sr && python3 scripts/follow_page.py ~/media/nalozi
+   ```
+   Stranica: **https://gajic97.github.io/supervision-reels/nalozi/**. Folder `nalozi/` se nikad ne briše. U izveštaju daj link stranice i broj novih naloga po mreži. (Ovo važi i ako prompt zadatka kaže 5: AUTOMATION.md ima prednost.)
 
    Ne prati ih sam.
 4. **Problemi:** šta nije uspelo i šta Gajic treba da uradi, ako išta.
