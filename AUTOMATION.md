@@ -119,12 +119,14 @@ Predloge za promenu pravila (faze, kategorije, cene) samo predlaži; ne menjaj i
 Kratko, na srpskom:
 1. **Zakazano danas:** proizvod, vreme, kanal, link videa i ključna reč.
 2. **Komentari:** Buffer API (29.10.2026) nema čitanje komentara. Napiši podsetnik da se novi komentari pogledaju u Buffer Community. Ako Gajic u promptu nalepi komentare, daj predloge odgovora na osnovu podataka sa sajta.
-3. **5 naloga za praćenje:** pronađi ih web pretragom (Instagram, TikTok ili LinkedIn), pa za svaki daj **direktan link do profila** i jednu rečenicu zašto. Samo ljudi i firme koji se **bave video nadzorom i sigurnosnom opremom**:
-   - instalateri i serviseri video nadzora, alarma i interfona u Srbiji (prednost Srem, Novi Sad, Beograd)
+3. **10 naloga za praćenje:** pronađi ih web pretragom (Instagram, TikTok ili LinkedIn), pa za svaki daj **direktan link do profila** i jednu rečenicu zašto. Samo ljudi i firme koji se **bave video nadzorom i sigurnosnom opremom**:
+   - instalateri i serviseri video nadzora, alarma i interfona **isključivo iz Srbije** (prednost Srem, Novi Sad, Beograd)
    - firme za tehničku zaštitu i sigurnosne sisteme, električari koji ugrađuju kamere
-   - kreatori sadržaja o video nadzoru i pametnoj kući na srpskom (ex-YU)
+   - kreatori sadržaja o video nadzoru i pametnoj kući iz Srbije
 
-   **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, linkovi na oglase ili članke umesto profila, direktni konkurenti-prodavnice. Ne ponavljaj naloge iz ranijih izveštaja. Ako nemaš 5 sigurnih, daj manje, ali tačne.
+   **Samo Srbija:** lokacija mora biti potvrđena (bio, adresa, broj +381, grad u Srbiji). Nikako Banja Luka, Republika Srpska, BiH, Hrvatska, Crna Gora, Severna Makedonija ni bilo koja druga zemlja. Ako lokacija nije sigurna, preskoči nalog.
+
+   **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, linkovi na oglase ili članke umesto profila, direktni konkurenti-prodavnice. Ne ponavljaj naloge iz ranijih izveštaja. Ako nemaš 10 sigurnih, daj manje, ali tačne.
 
    Ne prati ih sam.
 4. **Problemi:** šta nije uspelo i šta Gajic treba da uradi, ako išta.
