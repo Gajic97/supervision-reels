@@ -26,20 +26,17 @@ GitHub API (releases i ostalo) je blokiran kroz proxy. Radi samo `git` preko HTT
 
 ## 1. Katalog
 ```bash
-if [ "$(date +%F)" \< "2026-11-01" ]; then
-  # Prelaz: novi sajt još nije javno pušten, a stari sajt ima DRUGAČIJE cene i ID-jeve. Do 31.10. uvek novi sajt.
-  SV_BASE=https://new.super-vision.rs SV_BASIC="$SV_BASIC" python3 scripts/fetch_products.py > /tmp/products.json
-else
-  SV_BASE=https://super-vision.rs python3 scripts/fetch_products.py > /tmp/products.json \
-   || SV_BASE=https://new.super-vision.rs SV_BASIC="$SV_BASIC" python3 scripts/fetch_products.py > /tmp/products.json
-fi
+SV_BASE=https://super-vision.rs python3 scripts/fetch_products.py > /tmp/products.json
 ```
+Novi sajt je javno pušten 30.10.2026 na super-vision.rs (staging new.super-vision.rs više ne radi). ID-jevi i cene su isti kao na stagingu.
 Linkovi u opisima uvek glase **super-vision.rs**. Od 1.11.2026. pre izbora proveri da cena u /tmp/products.json odgovara javnoj stranici proizvoda na super-vision.rs. Ako se razlikuje, za taj proizvod ne prikazuj cenu i to napiši u izveštaju.
 
 ## 2. Izbor 2 proizvoda
 ```bash
 python3 scripts/pick_candidates.py /tmp/products.json > /tmp/candidates.json
 ```
+**Pre izbora proizvoda proveri FORMATS.md → „Usluge i B2B portal“:** neki dani umesto jednog proizvoda imaju reel o usluzi ili B2B portalu.
+
 Biraj **isključivo** iz `/tmp/candidates.json`. Skripta već primenjuje Gajicovo pravilo: samo ozbiljna oprema, nikada kablovi, konektori, nosači, napajanja, moduli ni sitan pribor. Ručno ne dodaješ ništa van te liste.
 
 **Trenutno važi FAZA 1:** samo jeftinije **kamere** (3.000–15.000 RSD), **snimači** (5.000–20.000) i **kompleti video nadzora** (10.000–50.000), od jeftinijih ka skupljim. Lista je sortirana po prioritetu i ceni.
