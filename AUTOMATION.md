@@ -49,6 +49,8 @@ Pravila izbora:
 - ne biraj dva skoro ista modela zaredom (npr. ista kamera sa objektivom 2.8 i 4 mm)
 - proizvodi namenjeni krajnjem kupcu (Wi-Fi kamere, kompleti) imaju prednost kad su cene slične
 
+Odloženi proizvodi su u `data/postponed.json`. Oni ponovo mogu da se biraju, ali se za njih pravi **novi** reel po FORMATS.md (stari video je u starom formatu). Kad se objavi, ukloni ga iz postponed.json.
+
 Ako je na listi manje od 2 proizvoda (svi su objavljeni u poslednjih 30 dana), u `scripts/pick_candidates.py` privremeno povećaj gornje granice cena u PHASE1 za 50% i to napiši u izveštaju. Ne izlazi van ove tri kategorije bez Gajicove odluke.
 
 ## 3. Pravljenje reela (brag)

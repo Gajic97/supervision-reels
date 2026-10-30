@@ -64,30 +64,6 @@
  },
  {
   "date": "2026-10-30",
-  "product_id": 2863,
-  "product": "DVR-104G-K1 HiLook Turbo HD DVR snimač 4 kanala 2MP",
-  "category": "Snimači",
-  "keyword": "dvr snimač",
-  "hook_type": "yes-pitanje",
-  "hook_text": "Kamere snimaju. A gde čuvaš snimak?",
-  "music_style": "lofi_chill",
-  "scheduled": "2026-10-30 19:30",
-  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-hilook-dvr-104g-k1.mp4",
-  "template": "reel-v4",
-  "channels": [
-   "instagram",
-   "tiktok",
-   "linkedin"
-  ],
-  "buffer_posts": {
-   "instagram": "6ae43fc22782e7f331d88bb8",
-   "tiktok": "6ae43fc3a83a7fb63c9ba5f5",
-   "linkedin": "6ae43fc556e01b97638f86e0"
-  },
-  "note": "napravljeno ručno u sesiji jer jutarnji zadatak nije pokrenuo posao"
- },
- {
-  "date": "2026-10-30",
   "product_id": 2939,
   "product_id_b": 2905,
   "product": "Komplet video nadzora HiLook 4x turret THC-T120-P 2.8 mm + DVR-104G-K1 (poređenje sa IP kompletom IPC-T220HA-LUC + NVR-104H-D)",
