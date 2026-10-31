@@ -1,19 +1,41 @@
 {
- "generated": "30.10.2026. 07:57",
+ "generated": "31.10.2026. 06:45",
  "reels": [
   {
    "date": "2026-10-30",
-   "product": "DVR-104G-K1 HiLook Turbo HD DVR snimač 4 kanala 2MP",
-   "category": "Snimači",
-   "keyword": "dvr snimač",
-   "hook_type": "yes-pitanje",
-   "hook_text": "Kamere snimaju. A gde čuvaš snimak?",
-   "music_style": "lofi_chill",
-   "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-hilook-dvr-104g-k1.mp4",
-   "scheduled": "2026-10-30 19:30",
-   "channels": {},
-   "views": 0,
-   "eng": 0
+   "product": "Komplet video nadzora HiLook 4x turret THC-T120-P 2.8 mm + DVR-104G-K1 (poređenje sa IP kompletom IPC-T220HA-LUC + NVR-104H-D)",
+   "category": "Kompleti video nadzora",
+   "keyword": "komplet video nadzora",
+   "hook_type": "izjava / broj",
+   "hook_text": "Isti broj kamera. Drugačiji kabl.",
+   "music_style": "synthwave",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-poredjenje-analogni-ip.mp4",
+   "scheduled": "2026-10-30 20:00",
+   "channels": {
+    "instagram": {
+     "views": 0.0,
+     "reach": 0.0,
+     "eng": 0.0,
+     "watch": 0.0,
+     "link": "https://www.instagram.com/reel/DfISLH1lEhF/"
+    },
+    "tiktok": {
+     "views": 0.0,
+     "reach": 0.0,
+     "eng": 0.0,
+     "watch": 0.0,
+     "link": "https://tiktok.com/@supervision.doo/video/7702567986690903304"
+    },
+    "linkedin": {
+     "views": 0.0,
+     "reach": 0.0,
+     "eng": 0.0,
+     "watch": 0.0,
+     "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7522009646287622144"
+    }
+   },
+   "views": 0.0,
+   "eng": 0.0
   },
   {
    "date": "2026-10-30",
@@ -25,9 +47,31 @@
    "music_style": "minimal_tech",
    "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-hilook-thc-t120-p.mp4",
    "scheduled": "2026-10-30 12:30",
-   "channels": {},
-   "views": 0,
-   "eng": 0
+   "channels": {
+    "instagram": {
+     "views": 16.0,
+     "reach": 7.0,
+     "eng": 0.0,
+     "watch": 14.29,
+     "link": "https://www.instagram.com/reel/DfHepdDiTXj/"
+    },
+    "tiktok": {
+     "views": 52.0,
+     "reach": 0.0,
+     "eng": 1.0,
+     "watch": 1.67,
+     "link": "https://tiktok.com/@supervision.doo/video/7702421802366045460"
+    },
+    "linkedin": {
+     "views": 4.0,
+     "reach": 2.0,
+     "eng": 1.0,
+     "watch": 0.0,
+     "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7521896319972429825"
+    }
+   },
+   "views": 72.0,
+   "eng": 2.0
   },
   {
    "date": "2026-10-29",
@@ -41,28 +85,28 @@
    "scheduled": "2026-10-29 20:00",
    "channels": {
     "instagram": {
-     "views": 0.0,
-     "reach": 0.0,
+     "views": 119.0,
+     "reach": 70.0,
      "eng": 0.0,
-     "watch": 0.0,
+     "watch": 3.93,
      "link": "https://www.instagram.com/reel/DfFtjnAnfVo/"
     },
     "tiktok": {
-     "views": 0.0,
+     "views": 134.0,
      "reach": 0.0,
      "eng": 0.0,
-     "watch": 0.0,
+     "watch": 3.2,
      "link": "https://tiktok.com/@supervision.doo/video/7702166673536584981"
     },
     "linkedin": {
-     "views": 0.0,
-     "reach": 0.0,
+     "views": 4.0,
+     "reach": 4.0,
      "eng": 0.0,
      "watch": 0.0,
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7521647229518962688"
     }
    },
-   "views": 0.0,
+   "views": 257.0,
    "eng": 0.0
   },
   {
@@ -77,14 +121,14 @@
    "scheduled": "2026-10-29 14:41",
    "channels": {
     "instagram": {
-     "views": 0.0,
-     "reach": 0.0,
+     "views": 154.0,
+     "reach": 95.0,
      "eng": 0.0,
-     "watch": 0.0,
+     "watch": 4.94,
      "link": "https://www.instagram.com/reel/DfFIlUJjQ_t/"
     }
    },
-   "views": 0.0,
+   "views": 154.0,
    "eng": 0.0
   }
  ]
