@@ -80,5 +80,58 @@
    "tiktok": "6ae4c496cd8290b9b9fd6798",
    "linkedin": "6ae4c497a351214acf984809"
   }
+ },
+ {
+  "date": "2026-10-31",
+  "product_id": null,
+  "product": "B2B portal za instalatere i firme",
+  "category": "B2B",
+  "url": "https://b2b.super-vision.rs/",
+  "keyword": "veleprodaja video nadzora",
+  "format": "f2",
+  "hook_type": "label",
+  "hook_text": "Instalateri: svoju cenu vidiš čim se prijaviš.",
+  "music_style": "deep_house",
+  "music_key": 0,
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-31-b2b-portal.mp4",
+  "scheduled": "2026-10-31 12:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6ae580b0406ab8a0189f2c99",
+   "tiktok": "6ae580b2eaa24d6f9a59ec5a",
+   "linkedin": "6ae580b4406ab8a0189f2d41"
+  },
+  "buffer_post_id": "6ae580b0406ab8a0189f2c99"
+ },
+ {
+  "date": "2026-10-31",
+  "product_id": 4862,
+  "product": "CS-H3c EZVIZ Wi-Fi kamera 2MP 1080p 4mm",
+  "category": "Kamere",
+  "url": "https://super-vision.rs/proizvod/cs-h3c-ezviz-wi-fi-kamera-2mp-1080p-4mm/",
+  "price": 4870,
+  "keyword": "spoljna wifi kamera",
+  "format": "f5",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Imaš Wi-Fi i utičnicu kod ulaza?",
+  "music_style": "lofi_chill",
+  "music_key": 6,
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-31-ezviz-cs-h3c.mp4",
+  "scheduled": "2026-10-31 19:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6ae580b1a1145743498a84e0",
+   "tiktok": "6ae580b3eaa24d6f9a59eca1",
+   "linkedin": "6ae580b5ceb491e585dc829f"
+  },
+  "buffer_post_id": "6ae580b1a1145743498a84e0"
  }
 ]

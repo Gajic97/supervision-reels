@@ -205,5 +205,59 @@
   "url": "https://www.linkedin.com/company/tigarddoo",
   "city": "Novi Beograd",
   "reason": "Obezbeđenje i tehnička zaštita: nadzor, alarmi, interfoni."
+ },
+ {
+  "date": "2026-10-31",
+  "network": "instagram",
+  "name": "Video nadzor Šabac",
+  "handle": "@videonadzor.sabac",
+  "url": "https://www.instagram.com/videonadzor.sabac/",
+  "city": "Šabac",
+  "reason": "lokalni nalog za video nadzor (Mačva, blizu Srema)"
+ },
+ {
+  "date": "2026-10-31",
+  "network": "linkedin",
+  "name": "Spartan Sigurnosni Sistemi",
+  "handle": null,
+  "url": null,
+  "city": "Beograd",
+  "reason": "ugradnja i servis alarma, video nadzora, interfona i kontrole pristupa za firme; radi Hikvision"
+ },
+ {
+  "date": "2026-10-31",
+  "network": "linkedin",
+  "name": "Sektor Servis",
+  "handle": null,
+  "url": null,
+  "city": "Beograd",
+  "reason": "preduzetnik, ugradnja video nadzora i alarma"
+ },
+ {
+  "date": "2026-10-31",
+  "network": "linkedin",
+  "name": "ZM Video sistem",
+  "handle": null,
+  "url": null,
+  "city": "Novi Sad (radi i Inđija, Ruma)",
+  "reason": "ugradnja video nadzora, interfona i alarma u Sremu i Novom Sadu"
+ },
+ {
+  "date": "2026-10-31",
+  "network": "linkedin",
+  "name": "Pro Electronic Novi Sad",
+  "handle": null,
+  "url": null,
+  "city": "Novi Sad",
+  "reason": "ugradnja video nadzora, procena objekta pre ugradnje"
+ },
+ {
+  "date": "2026-10-31",
+  "network": "linkedin",
+  "name": "Protecto",
+  "handle": null,
+  "url": null,
+  "city": "Novi Sad",
+  "reason": "ugradnja IP video nadzora, radi i Beograd"
  }
 ]
