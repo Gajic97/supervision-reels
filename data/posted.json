@@ -133,5 +133,59 @@
    "linkedin": "6ae580b5ceb491e585dc829f"
   },
   "buffer_post_id": "6ae580b1a1145743498a84e0"
+ },
+ {
+  "date": "2026-11-01",
+  "product_id": 12799,
+  "product": "Komplet video nadzora Hikvision 4x turret DS-2CE76D0T-LMFS 2MP + DVR iDS-7104HQHI-M1/S",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f6",
+  "hook_type": "izjava / broj",
+  "hook_text": "4 kamere, snimač, disk i napajanje. Jedna cena.",
+  "music_style": "cinematic",
+  "music_key": 5,
+  "price": 29800,
+  "url": "https://super-vision.rs/proizvod/komplet-video-nadzora-hikvision-4x-ds-2ce76d0t-lmfs-ids-7104hqhi-m1-s/",
+  "buffer_posts": {
+   "instagram": "6ae6d34721c807e9d5a29888",
+   "tiktok": "6ae6d34821c807e9d5a29963",
+   "linkedin": "6ae6d3491ee172cd6ddf2efc"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-01 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-01-komplet-hikvision-4x-turret-acusense.mp4",
+  "buffer_post_id": "6ae6d34721c807e9d5a29888"
+ },
+ {
+  "date": "2026-11-01",
+  "product_id": 4224,
+  "product": "THC-B220-M HiLook Turbo HD bullet kamera 2 MP 4u1 2.8mm",
+  "category": "Kamere",
+  "keyword": "kamera za dvorište",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "Pre nego što kupiš kameru, proveri snimač.",
+  "music_style": "minimal_tech",
+  "music_key": 8,
+  "price": 3260,
+  "url": "https://super-vision.rs/proizvod/thc-b220-m-hilook-turbo-hd-bullet-kamera-2mp-4u1-2-8mm/",
+  "buffer_posts": {
+   "instagram": "6ae6d34e21c807e9d5a29a29",
+   "tiktok": "6ae6d34fab019b9087426a50",
+   "linkedin": "6ae6d3501ee172cd6ddf2fae"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-01 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-01-hilook-thc-b220-m.mp4",
+  "buffer_post_id": "6ae6d34e21c807e9d5a29a29"
  }
 ]

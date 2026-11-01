@@ -259,5 +259,23 @@
   "url": null,
   "city": "Novi Sad",
   "reason": "ugradnja IP video nadzora, radi i Beograd"
+ },
+ {
+  "date": "2026-11-01",
+  "network": "instagram",
+  "name": "MEGA TEL",
+  "handle": "@megatelkv",
+  "url": "https://www.instagram.com/megatelkv/",
+  "city": "Kraljevo (pozivni 036 u biografiji)",
+  "reason": "Ugradnja video nadzora i alarma, servis interfona; instalater kome odgovaraju kompleti i B2B portal"
+ },
+ {
+  "date": "2026-11-01",
+  "network": "instagram",
+  "name": "SAS Monitoring",
+  "handle": "@sasmonitoringrs",
+  "url": "https://www.instagram.com/sasmonitoringrs/",
+  "city": "Novi Beograd",
+  "reason": "Firma za tehničku zaštitu (video nadzor, alarmi, kontrola pristupa, monitoring centar); potencijalni B2B kupac opreme"
  }
 ]
