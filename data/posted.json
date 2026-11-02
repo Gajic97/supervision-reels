@@ -187,5 +187,62 @@
   "scheduled": "2026-11-01 19:30",
   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-01-hilook-thc-b220-m.mp4",
   "buffer_post_id": "6ae6d34e21c807e9d5a29a29"
+ },
+ {
+  "date": "2026-11-02",
+  "product_id": 2863,
+  "product_id_b": 987,
+  "product": "DVR-104G-K1 HiLook Turbo HD DVR snimač 4 kanala 2MP (poređenje sa iDS-7104HQHI-M1/S Hikvision AcuSense)",
+  "category": "Snimači",
+  "keyword": "snimač za video nadzor",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Biraš snimač za 4 kamere?",
+  "music_style": "synthwave",
+  "music_key": 6,
+  "price": 5620,
+  "price_b": 9660,
+  "url": "https://super-vision.rs/proizvod/snimac-dvr-104g-k1-4-kanalni-turbo-hd-hilook/",
+  "url_b": "https://super-vision.rs/proizvod/snimac-ids-7104hqhi-m1-s-hikvision/",
+  "buffer_posts": {
+   "instagram": "6ae8240564604db31441ec77",
+   "tiktok": "6ae82406c60bdbcc33d96a81",
+   "linkedin": "6ae82407c60bdbcc33d96e47"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-02 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-02-poredjenje-snimaca-dvr-104g-k1-ids-7104.mp4",
+  "buffer_post_id": "6ae8240564604db31441ec77"
+ },
+ {
+  "date": "2026-11-02",
+  "product_id": 4091,
+  "product": "DS-2CE12DF3T-LFS 2.8mm Hikvision HD-TVI ColorVu bullet kamera 2MP",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f2",
+  "hook_type": "provokativno",
+  "hook_text": "Noću je svaki auto siv.",
+  "music_style": "deep_house",
+  "music_key": 2,
+  "price": 6620,
+  "url": "https://super-vision.rs/proizvod/hd-tvi-bullet-kamera-ds-2ce12df3t-lfs-2-8mm/",
+  "buffer_posts": {
+   "instagram": "6ae82407759fc887b6ce30cf",
+   "tiktok": "6ae824081a965d64fbef615d",
+   "linkedin": "6ae8240964604db31441ef01"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-02 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-02-hikvision-colorvu-ds-2ce12df3t.mp4",
+  "buffer_post_id": "6ae82407759fc887b6ce30cf"
  }
 ]

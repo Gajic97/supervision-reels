@@ -70,6 +70,7 @@ Za svaki proizvod u `~/work/<slug>/`:
    - Napravi `sfx.json` sa efektima u **apsolutnom vremenu**, usklađenim sa tvojim ulascima elemenata. Format je `[{"type":"shutter","t":2.0,"g":0.9}, ...]`, a tipovi su opisani na vrhu sound.py. Bez `SFX` se koristi raspored reel-v3.
    - Pokreni: `STYLE=.. KEY=.. SEED=.. INTRO=3.0 SFX=sfx.json OUT_WAV=music.wav python3 sound.py`
    - Bez tonskih blip i pluck zvukova.
+   - **Font:** Poppins nije instaliran u okruženju (GitHub raw je blokiran). Uzmi ga iz npm-a (`npm pack @fontsource/poppins@5.0.8`, fajlovi latin i latin-ext 400–800) i ubaci `@font-face` u index.html; primer je `templates/runs/2026-11-02-hikvision-colorvu-ds-2ce12df3t/build.py`.
 6. **Provera kadrova:** pre rendera pregledaj stillove svake scene, hook-a i sredine prelaza (Playwright screenshot, pa Read), pa ispravi preklapanja, prelome, kontrast i tekst preblizu ivice.
 7. **Render:** `node scripts/render.js ~/work/<slug> ~/work/<slug>/music.wav ~/work/<slug>/reel.mp4 24 2.6`. Poster (thumbnail) je tekstualni hook na 2,6 s.
 8. **Opisi** (BRAND.md): Instagram, TikTok i LinkedIn. Instagram tekst ide u `ig.txt`.
