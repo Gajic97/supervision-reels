@@ -52,6 +52,7 @@ Ako je na listi manje od 2 proizvoda (svi su objavljeni u poslednjih 30 dana), u
 
 ## 3. Pravljenje reela (brag)
 Za svaki proizvod u `~/work/<slug>/`:
+0. **Hikvision = bez cene** (BRAND.md → „Hikvision: bez cene“). Važi za video i sve opise.
 1. **Proveri stranicu uživo:** cena, „Na stanju“, sadržaj paketa, šta NIJE u paketu. Ako nešto ne može da se potvrdi, ne ide u video.
 2. **Slike:** koristi samo prave slike sa sajta. Kod kompleta pronađi svaki deo kao zaseban proizvod (pretraga po šifri modela u /tmp/products.json) i uzmi njegovu sliku; ne seci delove iz slike kompleta.
 3. **brag-plan.md:**

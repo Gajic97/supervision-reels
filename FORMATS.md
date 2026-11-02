@@ -79,3 +79,12 @@ Pravila su ista kao za proizvode: hook po HOOKS.md, formati 2, 4, 5 i 8 (3 i 6 s
 **Usluge uopšte** (/usluge-tehnicke-zastite/): sve licence MUP-a, sve kroz jednu firmu bez podizvođača; 5 usluga: akt o proceni rizika, plan i projekat, ugradnja, stručni nadzor, održavanje i servis. Slika salona: `usluge-tehnicke-zastite-supervision.jpg`.
 
 Za zakonske teme (akt, projektovanje) ton je informativan: „proverite da li se odnosi na vas“, nikad zastrašivanje kaznama ili inspekcijom.
+
+## Hikvision: bez cene (Gajic, 2.11.2026)
+Za proizvode brenda **Hikvision** (proizvođač ili naziv sadrži „Hikvision“) cena se **nikad ne prikazuje javno**: ni u videu ni u opisima (Instagram, TikTok, LinkedIn), ni kao „ušteda“ ili „kupljeno pojedinačno“. Proizvod sme da se prikaže.
+- Scena sa cenom (`sP`): umesto odometra ide „**Cena na upit**“, dugme „**Zatraži ponudu**“, a posle dodira „✓ 062/618-736“. Primer je `templates/runs/2026-11-02-hikvision-colorvu-ds-2ce12df3t-v2/`.
+- Opisi: umesto cene ide „Cena na upit: super-vision.rs ili 062/618-736“.
+- Format 4 (poređenje): ako je bilo koji proizvod Hikvision, red „Cena“ se ne pravi; poredi se nešto drugo (kanali, rezolucija, detekcija, kabl).
+- Format 6 (šta dobiješ) za Hikvision komplete: bez brojki „kupljeno pojedinačno“ i „ušteda“; kraj je „Sve u jednoj kutiji · Cena na upit“.
+- Pre rendera proveri: `grep -c "RSD\|dinara" index.html` i opisi moraju dati 0 za Hikvision.
+- Važi za sve dok Gajic ne kaže drugačije. Da li važi i za HiLook, HiWatch i EZVIZ (brendovi iz Hikvision grupe): **čeka Gajicovu odluku**; do tada se cene za njih prikazuju kao i ranije.

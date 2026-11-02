@@ -229,12 +229,11 @@
   "hook_text": "Noću je svaki auto siv.",
   "music_style": "deep_house",
   "music_key": 2,
-  "price": 6620,
   "url": "https://super-vision.rs/proizvod/hd-tvi-bullet-kamera-ds-2ce12df3t-lfs-2-8mm/",
   "buffer_posts": {
-   "instagram": "6ae82407759fc887b6ce30cf",
-   "tiktok": "6ae824081a965d64fbef615d",
-   "linkedin": "6ae8240964604db31441ef01"
+   "instagram": "6ae8af6cf1669be3eabe26a2",
+   "tiktok": "6ae8af6df1669be3eabe271d",
+   "linkedin": "6ae8af6e2426d4fa350671d8"
   },
   "channels": [
    "instagram",
@@ -242,7 +241,8 @@
    "linkedin"
   ],
   "scheduled": "2026-11-02 19:30",
-  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-02-hikvision-colorvu-ds-2ce12df3t.mp4",
-  "buffer_post_id": "6ae82407759fc887b6ce30cf"
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-02-hikvision-colorvu-ds-2ce12df3t-v2.mp4",
+  "buffer_post_id": "6ae82407759fc887b6ce30cf",
+  "note": "Ponovo napravljen bez cene (Hikvision pravilo, 2.11.)"
  }
 ]

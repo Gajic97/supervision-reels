@@ -84,3 +84,12 @@ Svaki reel mora imati **nešto u pokretu u svakom trenutku** i **novi vizuelni �
 - **Prelazi se smenjuju:** wipe, iris (krug), blic sa zoom-punch efektom, wipe nadole
 - **Kraj:** logo se blago njiše, a dugme pulsira u ritmu
 Nijedna animacija ne sme da sakrije ili prekine tekst koji treba pročitati.
+
+## Hikvision: bez cene (Gajic, 2.11.2026)
+Za proizvode brenda **Hikvision** (proizvođač ili naziv sadrži „Hikvision“) cena se **nikad ne prikazuje javno**: ni u videu ni u opisima (Instagram, TikTok, LinkedIn), ni kao „ušteda“ ili „kupljeno pojedinačno“. Proizvod sme da se prikaže.
+- Scena sa cenom (`sP`): umesto odometra ide „**Cena na upit**“, dugme „**Zatraži ponudu**“, a posle dodira „✓ 062/618-736“. Primer je `templates/runs/2026-11-02-hikvision-colorvu-ds-2ce12df3t-v2/`.
+- Opisi: umesto cene ide „Cena na upit: super-vision.rs ili 062/618-736“.
+- Format 4 (poređenje): ako je bilo koji proizvod Hikvision, red „Cena“ se ne pravi; poredi se nešto drugo (kanali, rezolucija, detekcija, kabl).
+- Format 6 (šta dobiješ) za Hikvision komplete: bez brojki „kupljeno pojedinačno“ i „ušteda“; kraj je „Sve u jednoj kutiji · Cena na upit“.
+- Pre rendera proveri: `grep -c "RSD\|dinara" index.html` i opisi moraju dati 0 za Hikvision.
+- Važi za sve dok Gajic ne kaže drugačije. Da li važi i za HiLook, HiWatch i EZVIZ (brendovi iz Hikvision grupe): **čeka Gajicovu odluku**; do tada se cene za njih prikazuju kao i ranije.
