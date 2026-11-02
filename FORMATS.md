@@ -25,7 +25,7 @@ Stil se ne menja: boje, Poppins, logo, margine 92%, hook od 3 s, scena sa cenom 
 
 ## Pravila po formatu
 
-**2. Problem → rešenje.** Svakodnevni problem kupca, pa proizvod kao rešenje. Problem mora biti **neutralan, bez straha**: bez lopova, provala i „zaštitite porodicu“. Malo humora je dobrodošlo („Mačka. Opet.“). Rešenje mora biti osobina sa stranice proizvoda. Banka problema:
+**2. Problem → rešenje.** Tamni „noćni“ sloj (`$('dark')`) uključuj samo u scenama glavnog dela (`t>=0`), nikad tokom tekstualnog hook-a: hook je uvek na zelenoj pozadini kao u ostalim formatima. Svakodnevni problem kupca, pa proizvod kao rešenje. Problem mora biti **neutralan, bez straha**: bez lopova, provala i „zaštitite porodicu“. Malo humora je dobrodošlo („Mačka. Opet.“). Rešenje mora biti osobina sa stranice proizvoda. Banka problema:
 - Pas laje noću, a ne znaš na šta. → kamera sa IR / noćnim snimanjem
 - Kurir kaže da je zvonio, a ti nisi čuo. → interfon / video interfon, kamera na ulazu
 - Vikendica je daleko, a hoćeš da vidiš da je sve u redu posle nevremena. → kamera sa aplikacijom, 4G ili solarna

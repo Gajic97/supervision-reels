@@ -137,7 +137,7 @@ F['f2'] = dict(name='Problem → rešenje', style='cinematic', key=5,
     <div class="chip" id="d6" style="left:610px;top:1130px">IP66</div>
   </div>''',
   js='''function renderF(t){
-  if(t<4.6){$('dark').style.opacity=.8;pop($('a1'),t,.05,{dx:-90,dy:0,s0:1});slam($('a2'),t,.5);
+  if(t>=0&&t<4.6){$('dark').style.opacity=.8;pop($('a1'),t,.05,{dx:-90,dy:0,s0:1});slam($('a2'),t,.5);
     {const p=P(t,0,.6);$('ya').style.opacity=p;}
     ['q1','q2','q3'].forEach((id,i)=>{const p=eob(P(t,1+i*.6,.35));const el=$(id);el.style.opacity=clamp(p*2,0,1);el.style.transform=`translateY(${Math.sin(t*3+i)*8}px)`;});}
   if(t>=4.4&&t<9.1){$('dark').style.opacity=.6;pop($('b1'),t,4.6,{dx:-90,dy:0,s0:1});slam($('b2'),t,5.0);
