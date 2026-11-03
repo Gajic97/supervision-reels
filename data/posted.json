@@ -244,5 +244,59 @@
   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-02-hikvision-colorvu-ds-2ce12df3t-v2.mp4",
   "buffer_post_id": "6ae82407759fc887b6ce30cf",
   "note": "Ponovo napravljen bez cene (Hikvision pravilo, 2.11.)"
+ },
+ {
+  "date": "2026-11-03",
+  "product_id": 2912,
+  "product": "Komplet video nadzora HiLook 8x bullet THC-B120-P 2MP + DVR-108G-M1/T",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f3",
+  "hook_type": "lista",
+  "hook_text": "Komplet video nadzora za 8 kamera: 3 stvari.",
+  "music_style": "cinematic",
+  "url": "https://super-vision.rs/proizvod/komplet-video-nadzora-8-kamera/",
+  "price": "37.100 RSD",
+  "buffer_posts": {
+   "instagram": "6ae98ae83f84a453ac0dd28b",
+   "tiktok": "6ae98ae964e1ad8ea2edef9a",
+   "linkedin": "6ae98aeaee93f2557f2e2cda"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-03 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-03-komplet-hilook-8x-bullet-thc-b120-p.mp4",
+  "buffer_post_id": "6ae98ae83f84a453ac0dd28b",
+  "music_key": 0
+ },
+ {
+  "date": "2026-11-03",
+  "product_id": 5393,
+  "product": "C8C EZVIZ spoljna Wi-Fi pan-tilt kamera 4K 8MP",
+  "category": "Kamere",
+  "keyword": "wifi kamera za dvorište",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "Pre nego što kupiš Wi-Fi kameru, proveri struju.",
+  "music_style": "lofi_chill",
+  "url": "https://super-vision.rs/proizvod/c8c-ezviz-spoljna-wi-fi-pan-tilt-kamera-4k-8mp/",
+  "price": "10.530 RSD",
+  "buffer_posts": {
+   "instagram": "6ae98af064e1ad8ea2edf113",
+   "tiktok": "6ae98af16896a4441f68db22",
+   "linkedin": "6ae98af23b00665c737ded26"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-03 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-03-ezviz-c8c.mp4",
+  "buffer_post_id": "6ae98af064e1ad8ea2edf113",
+  "music_key": 11
  }
 ]
