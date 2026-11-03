@@ -342,10 +342,11 @@
   "date": "2026-11-03",
   "network": "instagram",
   "name": "ProCar Security",
-  "handle": null,
-  "url": null,
+  "handle": "@procar_security",
+  "url": "https://www.instagram.com/procar_security/",
   "city": "Beograd (Zemun, Bačka 68A)",
-  "reason": "Ugradnja video nadzora i alarma od 2008, licenca MUP-a (planplus.rs). Profil nije viđen u pretrazi: potraži po imenu na Instagramu i LinkedIn-u."
+  "reason": "Ugradnja video nadzora i alarma od 2008, licenca MUP-a (planplus.rs). Profil nije viđen u pretrazi: potraži po imenu na Instagramu i LinkedIn-u.",
+  "followed": "2026-11-03"
  },
  {
   "date": "2026-11-03",
@@ -354,6 +355,84 @@
   "handle": null,
   "url": null,
   "city": "Beograd (Zvezdara, Dolačka 9)",
-  "reason": "Alarmni sistemi, video nadzor i parking rampe (planplus.rs). Profil nije viđen u pretrazi: potraži po imenu."
+  "reason": "Alarmni sistemi, video nadzor i parking rampe (planplus.rs). Profil nije viđen u pretrazi: potraži po imenu.",
+  "note": "Instagram profil nije pronađen (3.11.)"
+ },
+ {
+  "date": "2026-11-03",
+  "network": "instagram",
+  "name": "M&S PROTECT",
+  "handle": "@video_nadzor__",
+  "url": "https://www.instagram.com/video_nadzor__/",
+  "city": "Beograd",
+  "reason": "Video nadzor (Dahua), alarmi, interfoni.",
+  "followed": "2026-11-03",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-03",
+  "network": "instagram",
+  "name": "Video nadzor i iskopi GBMT",
+  "handle": "@videonadzor_kamere_gbmt",
+  "url": "https://www.instagram.com/videonadzor_kamere_gbmt/",
+  "city": "Srbija (062 broj)",
+  "reason": "Video nadzor; prati supervisionsm.",
+  "followed": "2026-11-03",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-03",
+  "network": "instagram",
+  "name": "Video Nadzor Beograd",
+  "handle": "@video_nadzor.beograd",
+  "url": "https://www.instagram.com/video_nadzor.beograd/",
+  "city": "Beograd",
+  "reason": "Instalacija i servis video nadzora, DVR/NVR.",
+  "followed": "2026-11-03",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-03",
+  "network": "instagram",
+  "name": "Guardian Bor (tehnička zaštita)",
+  "handle": "@tehnickazastitabor",
+  "url": "https://www.instagram.com/tehnickazastitabor/",
+  "city": "Bor",
+  "reason": "Licencirana firma za montažu i planiranje tehničke zaštite.",
+  "followed": "2026-11-03",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-03",
+  "network": "instagram",
+  "name": "Business IT Systems",
+  "handle": "@business.it.systems",
+  "url": "https://www.instagram.com/business.it.systems/",
+  "city": "Ćuprija",
+  "reason": "Tehnička zaštita: procena rizika, projekat, montaža.",
+  "followed": "2026-11-03",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-03",
+  "network": "instagram",
+  "name": "Ugradnja kamera 014",
+  "handle": "@ugradnja_kamera_014",
+  "url": "https://www.instagram.com/ugradnja_kamera_014/",
+  "city": "Valjevo",
+  "reason": "Ugradnja Wi-Fi kamera i kabliranje.",
+  "followed": "2026-11-03",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-03",
+  "network": "instagram",
+  "name": "Ugradnja sigurnosnih kamera LE",
+  "handle": "@ugradnja_kamera_le",
+  "url": "https://www.instagram.com/ugradnja_kamera_le/",
+  "city": "Leskovac",
+  "reason": "Ugradnja i servis IP, PoE, AHD i Wi-Fi kamera.",
+  "followed": "2026-11-03",
+  "source": "Instagram pretraga u Chrome-u"
  }
 ]
