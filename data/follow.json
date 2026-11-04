@@ -442,7 +442,8 @@
   "handle": "@pccentarleskovac",
   "url": "https://www.instagram.com/pccentarleskovac/",
   "city": "Leskovac",
-  "reason": "Elektroinstalacije, ugradnja video nadzora i alarmnih sistema"
+  "reason": "Elektroinstalacije, ugradnja video nadzora i alarmnih sistema",
+  "followed": "2026-11-04"
  },
  {
   "date": "2026-11-04",
@@ -470,5 +471,38 @@
   "url": "https://rs.linkedin.com/company/tanetel",
   "city": "Beograd",
   "reason": "Elektroinstalacije jake i slabe struje, CCTV i alarmi sa licenciranim partnerima"
+ },
+ {
+  "date": "2026-11-04",
+  "network": "instagram",
+  "name": "Alarmni sistemi Smed. Palanka",
+  "handle": "@alarmnisistemi",
+  "url": "https://www.instagram.com/alarmnisistemi/",
+  "city": "Smederevska Palanka",
+  "reason": "Prodaja i ugradnja alarma i video nadzora.",
+  "followed": "2026-11-04",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-04",
+  "network": "instagram",
+  "name": "Bora-sat video nadzor i alarmi",
+  "handle": "@borasat",
+  "url": "https://www.instagram.com/borasat/",
+  "city": "Beograd",
+  "reason": "Video nadzor i alarmni sistemi (Dahua, Paradox).",
+  "followed": "2026-11-04",
+  "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-04",
+  "network": "instagram",
+  "name": "Link&Ko",
+  "handle": "@link.and.ko",
+  "url": "https://www.instagram.com/link.and.ko/",
+  "city": "Srbija (lokacija nije navedena)",
+  "reason": "Video nadzor, alarmi, mrežni sistemi; prati supervisionsm.",
+  "followed": "2026-11-04",
+  "source": "Instagram pretraga u Chrome-u"
  }
 ]
