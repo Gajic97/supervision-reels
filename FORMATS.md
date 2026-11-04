@@ -56,8 +56,10 @@ U `data/posted.json` svaki reel dobija polje `format` (`f2`–`f8`). Nedeljni za
 ## Usluge i B2B portal (Gajic, 30.10.2026)
 Ne moraju svi reelovi biti proizvodi. **Povremeno**, umesto jednog proizvoda tog dana, ide reel o **B2B portalu** ili o **uslugama**:
 - najviše **2 takva reela nedeljno** (najviše 1 dnevno; drugi reel tog dana je proizvod)
-- smenjuju se: B2B portal, ugradnja video nadzora, akt o proceni rizika, projektovanje, kalkulator ugradnje
-- isti tip ne ide dve nedelje zaredom ako ima drugih
+- **B2B portal ide redovno, bar 1 put nedeljno** (Gajic, 4.11.2026: „zgodno nam je za instalatere“). Ako u `posted.json` nema reela sa `category: "B2B"` u poslednjih 7 dana, jutarnji reel (12:30) tog dana je B2B portal. Svaki B2B reel ima drugi ugao (format i hook), da se ne ponavlja: npr. f2 „fali konektor na terenu“ → spisak po objektu; f5 instalater / firma / servis; f8 „greška: nabavka sa pet strana“; f4 maloprodaja ili B2B nalog (samo činjenice sa sajta i portala).
+- drugi „ne-proizvod“ slot nedeljno (ako ga ima) su usluge, i one se smenjuju: ugradnja video nadzora, akt o proceni rizika, projektovanje, kalkulator ugradnje
+- isti tip usluge ne ide dve nedelje zaredom ako ima drugih
+- LinkedIn opis za B2B reel piši za instalatere i firme (veleprodaja, lager, slanje za 2 radna dana, spisak po objektu), a Instagram i TikTok kraće
 - **31.10.2026: jutarnji reel (12:30) je B2B portal.** Večernji je proizvod.
 
 Pravila su ista kao za proizvode: hook po HOOKS.md, formati 2, 4, 5 i 8 (3 i 6 samo za komplete, pa ovde ne idu), samo činjenice sa stranice, bez straha i bez izmišljenih ponuda. Umesto scene sa cenom (`sP`) ide **CTA kartica** sa istom animacijom (kartica, sjaj, dodir prsta), sa tekstom poziva (npr. „Zatražite ponudu“ ili „b2b.super-vision.rs“) i telefonom 062/618-736. Slike su samo sa sajta (fotografije sa stranica usluga, licence MUP-a, slike proizvoda). U posted.json: `product_id: null`, `category: "B2B"` ili `"Usluge"`, `product`: naziv usluge, `url`: stranica.
