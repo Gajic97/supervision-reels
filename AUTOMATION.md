@@ -79,7 +79,7 @@ Za svaki proizvod u `~/work/<slug>/`:
 Ako bilo koji korak ne uspe za neki proizvod, preskoči ga i uzmi sledeći sa liste. Nikad se ne objavljuje video sa neproverenim podacima.
 
 ## 4. Hosting videa (grana `media`, GitHub Pages)
-Preimenuj render u konačno ime (`~/work/<slug>/<GGGG-MM-DD>-<slug>.mp4`, isto i .jpg), dodaj nove naloge (korak 7.3), pa jednom pokreni:
+Preimenuj render u konačno ime (`~/work/<slug>/<GGGG-MM-DD>-<slug>.mp4`, isto i .jpg), pa jednom pokreni:
 ```bash
 cd ~/sr && GH_TOKEN="$GH_TOKEN" BUFFER_TOKEN="$BUFFER_TOKEN" bash scripts/publish_media.sh ~/work/<slug1>/<ime1>.mp4 ~/work/<slug2>/<ime2>.mp4
 ```
@@ -122,17 +122,5 @@ Predloge za promenu pravila (faze, kategorije, cene) samo predlaži; ne menjaj i
 Kratko, na srpskom:
 1. **Zakazano danas:** proizvod, vreme, kanal, link videa i ključna reč.
 2. **Komentari:** Buffer API (29.10.2026) nema čitanje komentara. Napiši podsetnik da se novi komentari pogledaju u Buffer Community. Ako Gajic u promptu nalepi komentare, daj predloge odgovora na osnovu podataka sa sajta.
-3. **Nalozi za praćenje (fajl + stranica):** web pretragom nađi do **10 Instagram, 10 TikTok i 10 LinkedIn** naloga. Samo ljudi i firme koji se **bave video nadzorom i sigurnosnom opremom**:
-   - instalateri i serviseri video nadzora, alarma i interfona **isključivo iz Srbije** (prednost Srem, Novi Sad, Beograd)
-   - firme za tehničku zaštitu, električari koji ugrađuju kamere
-   - kreatori sadržaja o video nadzoru i pametnoj kući iz Srbije
-
-   **Samo Srbija:** lokacija mora biti potvrđena (bio, adresa, broj +381, grad u Srbiji). Nikako Banja Luka, Republika Srpska, BiH, Hrvatska, Crna Gora, Severna Makedonija ni druge zemlje. Ako lokacija nije sigurna, preskoči.
-
-   **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, oglasi i članci, prodavnice-konkurenti. Nikad ne izmišljaj URL: ako direktan link profila nisi video, stavi `"url": null` i upiši ime (Gajic traži po imenu). Ne ponavljaj naloge koji već postoje u `data/follow.json` (ista mreža i isto ime ili handle). Ako nema dovoljno sigurnih, daj manje.
-
-   Upiši ih alatom Write u `/tmp/novi_nalozi.json` (lista `{"date","network":"instagram|tiktok|linkedin","name","handle","url","city","reason"}`) i pokreni `python3 scripts/add_follow.py /tmp/novi_nalozi.json`. Stranicu pravi `scripts/publish_media.sh` (korak 4).
-   Stranica: **https://gajic97.github.io/supervision-reels/nalozi/**. Folder `nalozi/` se nikad ne briše. U izveštaju daj link stranice i broj novih naloga po mreži. (Ovo važi i ako prompt zadatka kaže 5: AUTOMATION.md ima prednost.)
-
-   Ne prati ih sam.
+3. **Nalozi za praćenje:** u ovom zadatku se **ne traže** (od 4.11.2026 to radi poseban zakazani zadatak po `FOLLOW.md`, da pravljenje reelova ne zavisi od toga). Samo dodaj link stranice https://gajic97.github.io/supervision-reels/nalozi/ u izveštaj.
 4. **Problemi:** šta nije uspelo i šta Gajic treba da uradi, ako išta.
