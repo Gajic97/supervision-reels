@@ -434,5 +434,41 @@
   "reason": "Ugradnja i servis IP, PoE, AHD i Wi-Fi kamera.",
   "followed": "2026-11-03",
   "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-04",
+  "network": "instagram",
+  "name": "PC Centar Leskovac",
+  "handle": "@pccentarleskovac",
+  "url": "https://www.instagram.com/pccentarleskovac/",
+  "city": "Leskovac",
+  "reason": "Elektroinstalacije, ugradnja video nadzora i alarmnih sistema"
+ },
+ {
+  "date": "2026-11-04",
+  "network": "linkedin",
+  "name": "Telel Solutions d.o.o.",
+  "handle": null,
+  "url": "https://rs.linkedin.com/company/telelsolutions",
+  "city": "Beograd",
+  "reason": "Ugradnja video nadzora (CCTV), alarma, protivpožarne dojave i interfona; telekom i elektro izvođač"
+ },
+ {
+  "date": "2026-11-04",
+  "network": "linkedin",
+  "name": "Atlas Security",
+  "handle": null,
+  "url": "https://rs.linkedin.com/company/atlas-security-doo",
+  "city": "Beograd",
+  "reason": "Firma za fizičko-tehničku zaštitu: CCTV, alarmni sistemi, kontrola pristupa"
+ },
+ {
+  "date": "2026-11-04",
+  "network": "linkedin",
+  "name": "Tanetel",
+  "handle": null,
+  "url": "https://rs.linkedin.com/company/tanetel",
+  "city": "Beograd",
+  "reason": "Elektroinstalacije jake i slabe struje, CCTV i alarmi sa licenciranim partnerima"
  }
 ]

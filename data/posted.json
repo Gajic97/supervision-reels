@@ -298,5 +298,56 @@
   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-03-ezviz-c8c.mp4",
   "buffer_post_id": "6ae98af064e1ad8ea2edf113",
   "music_key": 11
+ },
+ {
+  "date": "2026-11-04",
+  "product_id": 2905,
+  "product_id_b": 2897,
+  "product": "Komplet video nadzora HiLook 4x turret IPC-T220HA-LUC 2MP + NVR-104H-D (vs 4x bullet IPC-B120HA-LUC)",
+  "category": "Kompleti video nadzora",
+  "keyword": "IP komplet video nadzora",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Biraš IP komplet sa 4 kamere?",
+  "music_style": "synthwave",
+  "buffer_posts": {
+   "instagram": "6aeafb56961fae078ac55f06",
+   "tiktok": "6aeafb570eea02ace329f978",
+   "linkedin": "6aeafb581d881477a617bf9b"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-04 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-04-poredjenje-ip-kompleta-turret-bullet.mp4",
+  "buffer_post_id": "6aeafb56961fae078ac55f06",
+  "url": "https://super-vision.rs/proizvod/ip-komplet-video-nadzora-4-dome-kamere/"
+ },
+ {
+  "date": "2026-11-04",
+  "product_id": 3096,
+  "product": "CS-H5 EZVIZ 4G kamera 3MP 4mm",
+  "category": "Kamere",
+  "keyword": "kamera sa SIM karticom",
+  "format": "f5",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako nemaš internet, kamera nosi svoj.",
+  "music_style": "minimal_tech",
+  "buffer_posts": {
+   "instagram": "6aeafb5920b88292aa797cea",
+   "tiktok": "6aeafb5bce16a24329ea17e7",
+   "linkedin": "6aeafb5c1d881477a617c70a"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-04 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-04-ezviz-cs-h5-4g.mp4",
+  "buffer_post_id": "6aeafb5920b88292aa797cea",
+  "url": "https://super-vision.rs/proizvod/kamera-cs-h5-4g/"
  }
 ]

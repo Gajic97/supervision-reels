@@ -1,0 +1,5 @@
+IP komplet video nadzora sa 4 kamere, u dve varijante: HiLook 4x IPC-T220HA-LUC (turret) ili 4x IPC-B120HA-LUC (bullet), oba sa snimačem NVR-104H-D, PoE svičem i diskom WD Purple 1 TB.
+
+Turret kućište nema staklenu kupolu, pa noću nema odsjaja IC svetla u snimku, a ugao se podešava posle montaže. Bullet kamere imaju Smart Hybrid Light osvetljenje. Obe su 2 MP, 2.8 mm, IP67, sa mikrofonom. NVR-104H-D nema PoE portove; napajanje i sliku kamerama daje priloženi svič, jedan mrežni kabl do 100 m po kameri. Snimač prima kamere do 6 MP i disk do 6 TB.
+
+Oba kompleta 38.100 RSD sa PDV-om (pojedinačno 48.710 RSD, ušteda 22%). Na stanju: super-vision.rs

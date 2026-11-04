@@ -1,0 +1,12 @@
+IP komplet video nadzora sa 4 kamere: turret ili bullet? Dva HiLook kompleta, ista cena i isti snimač, razlika je u kameri.
+
+A: 4x IPC-T220HA-LUC turret + NVR-104H-D. Turret je kupastog oblika i posle montaže se okreće u sve strane, pa se ugao podešava na licu mesta. Nema staklenu kupolu, pa noću nema odsjaja infracrvenog svetla u snimku.
+B: 4x IPC-B120HA-LUC bullet + NVR-104H-D. Kamere imaju Smart Hybrid Light osvetljenje.
+
+Isto u oba: 2 MP, objektiv 2.8 mm, IP67 i mikrofon, snimač 4 kanala koji prima kamere do 6 MP, PoE svič (slika i struja kroz jedan mrežni kabl do 100 m) i disk WD Purple 1 TB.
+
+Oba kompleta 38.100 RSD sa PDV-om. Kupljeno pojedinačno 48.710 RSD, ušteda 10.610 RSD (22%). Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio: super-vision.rs
+
+Napiši u komentar: A ili B?
+
+#ipkompletvideonadzora #videonadzor #hilook #supervision
