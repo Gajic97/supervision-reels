@@ -1,6 +1,34 @@
 {
- "generated": "04.11.2026. 10:29",
+ "generated": "04.11.2026. 10:31",
  "reels": [
+  {
+   "date": "2026-11-04",
+   "product": "CS-H5 EZVIZ 4G kamera 3MP 4mm",
+   "category": "Kamere",
+   "keyword": "kamera sa SIM karticom",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako nemaš internet, kamera nosi svoj.",
+   "music_style": "minimal_tech",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-04-ezviz-cs-h5-4g.mp4",
+   "scheduled": "2026-11-04 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-04",
+   "product": "Komplet video nadzora HiLook 4x turret IPC-T220HA-LUC 2MP + NVR-104H-D (vs 4x bullet IPC-B120HA-LUC)",
+   "category": "Kompleti video nadzora",
+   "keyword": "IP komplet video nadzora",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Biraš IP komplet sa 4 kamere?",
+   "music_style": "synthwave",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-04-poredjenje-ip-kompleta-turret-bullet.mp4",
+   "scheduled": "2026-11-04 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-03",
    "product": "C8C EZVIZ spoljna Wi-Fi pan-tilt kamera 4K 8MP",
