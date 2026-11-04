@@ -79,13 +79,13 @@ Za svaki proizvod u `~/work/<slug>/`:
 Ako bilo koji korak ne uspe za neki proizvod, preskoči ga i uzmi sledeći sa liste. Nikad se ne objavljuje video sa neproverenim podacima.
 
 ## 4. Hosting videa (grana `media`, GitHub Pages)
+Preimenuj render u konačno ime (`~/work/<slug>/<GGGG-MM-DD>-<slug>.mp4`, isto i .jpg), dodaj nove naloge (korak 7.3), pa jednom pokreni:
 ```bash
-git -c http.extraHeader="$AUTH" clone -q --branch media https://github.com/Gajic97/supervision-reels.git ~/media
-cp ~/work/<slug>/reel.mp4 ~/media/v/$(date +%F)-<slug>.mp4
-# obriši videe starije od 14 dana iz ~/media/v
-cd ~/media && git checkout --orphan tmp && git add -A && git commit -qm "media $(date +%F)" \
- && git branch -D media && git branch -m media && git -c http.extraHeader="$AUTH" push -qf origin media
+cd ~/sr && GH_TOKEN="$GH_TOKEN" BUFFER_TOKEN="$BUFFER_TOKEN" bash scripts/publish_media.sh ~/work/<slug1>/<ime1>.mp4 ~/work/<slug2>/<ime2>.mp4
 ```
+Skripta kopira videe, uklanja one starije od 14 dana, pravi stranice `nalozi/` i `izvestaj/` i radi običan `git push` (grana media se više ne prepisuje force push-om).
+
+Napomena za pisanje komandi: podatke kao što su JSON liste (novi nalozi, unos za posted.json) upiši alatom **Write** u fajl, pa ih obradi skriptom (npr. `python3 scripts/add_follow.py /tmp/novi_nalozi.json`), umesto da ih ubacuješ u dugačku inline komandu.
 Javni link: `https://gajic97.github.io/supervision-reels/v/<fajl>.mp4`. Pre zakazivanja sačekaj da link vrati `200` i `content-type: video/mp4` (Pages se objavljuje 1–3 min; proveravaj na 20 s, najviše 10 min).
 
 ## 5. Zakazivanje (Buffer API)
@@ -131,10 +131,7 @@ Kratko, na srpskom:
 
    **Zabranjeno:** agencije za nekretnine, opšti izvođači bez veze sa nadzorom, oglasi i članci, prodavnice-konkurenti. Nikad ne izmišljaj URL: ako direktan link profila nisi video, stavi `"url": null` i upiši ime (Gajic traži po imenu). Ne ponavljaj naloge koji već postoje u `data/follow.json` (ista mreža i isto ime ili handle). Ako nema dovoljno sigurnih, daj manje.
 
-   Dodaj ih u `data/follow.json` (grana main) kao `{"date","network":"instagram|tiktok|linkedin","name","handle","url","city","reason"}`, pa pre push-a grane `media` (korak 4) napravi stranicu:
-   ```bash
-   cd ~/sr && python3 scripts/follow_page.py ~/media/nalozi
-   ```
+   Upiši ih alatom Write u `/tmp/novi_nalozi.json` (lista `{"date","network":"instagram|tiktok|linkedin","name","handle","url","city","reason"}`) i pokreni `python3 scripts/add_follow.py /tmp/novi_nalozi.json`. Stranicu pravi `scripts/publish_media.sh` (korak 4).
    Stranica: **https://gajic97.github.io/supervision-reels/nalozi/**. Folder `nalozi/` se nikad ne briše. U izveštaju daj link stranice i broj novih naloga po mreži. (Ovo važi i ako prompt zadatka kaže 5: AUTOMATION.md ima prednost.)
 
    Ne prati ih sam.
