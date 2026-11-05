@@ -102,7 +102,7 @@ U `data/posted.json` (grana main) dodaj unos za svaki zakazani reel:
 - `buffer_posts`: {"instagram": id, "tiktok": id, "linkedin": id}, gde je id iz izlaza schedule_buffer.py
 - channels, scheduled, video, buffer_post_id
 
-Uz to sačuvaj `templates/runs/<datum>-<slug>/` sa fajlovima brag-plan.md, index.html, sound.py i opisima. MP4 i frejmove ne čuvaj. Zatim commit i push na main.
+Uz to sačuvaj `templates/runs/<datum>-<slug>/` sa fajlovima brag-plan.md, index.html, sound.py i opisima. MP4 i frejmove ne čuvaj. Zatim commit i push na main: `git pull --rebase` pa `git push`, i odmah proveri `git fetch && git log origin/main -1` da je tvoj commit stvarno gore (5.11. reelovi su zakazani, ali posted.json nije stigao na main). Unos za posted.json piši alatom Write u fajl i dodaj ga skriptom, ne velikom inline komandom.
 
 ## 6b. Stranica sa rezultatima (svaki dan) i nedeljni zaključak (ponedeljkom)
 Pre push-a grane `media` (korak 4), osveži stranicu sa rezultatima:
