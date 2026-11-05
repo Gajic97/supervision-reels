@@ -349,5 +349,43 @@
   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-04-ezviz-cs-h5-4g.mp4",
   "buffer_post_id": "6aeafb5920b88292aa797cea",
   "url": "https://super-vision.rs/proizvod/kamera-cs-h5-4g/"
+ },
+ {
+  "date": "2026-11-05",
+  "product_id": 5568,
+  "product": "THC-T220-M 2.8mm HiLook Turbo HD turret kamera 2MP",
+  "category": "Kamere",
+  "keyword": "kamera za video nadzor",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "(nije zabeleženo)",
+  "music_style": "nepoznato",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-05-hilook-thc-t220-m.mp4",
+  "scheduled": "2026-11-05 12:30",
+  "buffer_posts": {
+   "instagram": "6aec178d75052a1eb821b5ba",
+   "tiktok": "6aec178fe22643a987923f9b",
+   "linkedin": "6aec179175052a1eb821b788"
+  },
+  "note": "Unos dodat naknadno 5.11. (jutarnji zadatak nije gurnuo posted.json)"
+ },
+ {
+  "date": "2026-11-05",
+  "product_id": 12801,
+  "product": "Komplet video nadzora Hikvision 4x turret DS-2CE76K0T-LMFS 3K + DVR iDS-7204HUHI-M1/T",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f3",
+  "hook_type": "izjava / broj",
+  "hook_text": "4 kamere 3K, snimač i disk. Jedna kutija.",
+  "music_style": "nepoznato",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-05-komplet-hikvision-4x-turret-3k.mp4",
+  "scheduled": "2026-11-05 19:30",
+  "buffer_posts": {
+   "instagram": "6aec178e7877e0eab278c586",
+   "tiktok": "6aec17903ddb81d22108f9f8",
+   "linkedin": "6aec1792e22643a987923fda"
+  },
+  "note": "Unos dodat naknadno 5.11.; Hikvision bez cene"
  }
 ]
