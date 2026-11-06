@@ -526,5 +526,104 @@
   "reason": "Video nadzor, alarmi, mrežni sistemi; prati supervisionsm.",
   "followed": "2026-11-04",
   "source": "Instagram pretraga u Chrome-u"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "instagram",
+  "name": "Top Security System",
+  "handle": "@topsecurity_system",
+  "url": "https://www.instagram.com/topsecurity_system/",
+  "city": "Ruma",
+  "reason": "Ugradnja video nadzora, interfona i alarma u Sremu (Ruma, Inđija, Stara Pazova); topsecurity.rs"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "instagram",
+  "name": "ProGuardElektro",
+  "handle": "@pro.guard.elektro",
+  "url": "https://www.instagram.com/pro.guard.elektro/",
+  "city": "Srbija (grad nije naveden)",
+  "reason": "Video nadzor, alarm, kontrola pristupa, interfoni, elektroinstalacije; bio: Srbija"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "instagram",
+  "name": "Setup Trstenik",
+  "handle": "@setuptrstenik",
+  "url": null,
+  "city": "Trstenik",
+  "reason": "Servis računara i bežično povezivanje objekata za video nadzor"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "Phoenix Security Serbia",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/phoenix-security-serbia",
+  "city": "Beograd",
+  "reason": "Monitoring centar, video nadzor, alarmi, GPS praćenje"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "TechGroup Serbia",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/techgroup-serbia",
+  "city": "Beograd",
+  "reason": "Firma za tehničku zaštitu i sigurnosne sisteme"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "Video-nadzor Tesla (Tesla sistemi)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/video-nadzor-tesla-819b2797",
+  "city": "Srbija",
+  "reason": "Sistem integrator: projektovanje, ugradnja i održavanje video nadzora i interfona"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "Smart Home doo",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/smart-home-doo",
+  "city": "Novi Sad",
+  "reason": "Video nadzor, alarmi, kontrola pristupa, pametna kuća"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "Alarm Systems d.o.o.",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/alarm-systems-d-o-o",
+  "city": "Subotica",
+  "reason": "Alarmni sistemi i 24h nadzor od 1991, rad širom Srbije"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "Raso-elektronik",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/raso-elektronik",
+  "city": "Kraljevo",
+  "reason": "Protivprovalni alarmi, video nadzor, dojava požara; poslovnice Niš i Novi Sad"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "Digital Security",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/digital-securityserbia",
+  "city": "Beograd",
+  "reason": "Projektovanje i profesionalna ugradnja video nadzora za domove i firme"
+ },
+ {
+  "date": "2026-11-06",
+  "network": "linkedin",
+  "name": "Dragan Bjeletić",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/dragan-bjeleti%C4%87-0781591b5",
+  "city": "Novi Sad",
+  "reason": "Tehničar za sigurnosne sisteme u NSV doo"
  }
 ]
