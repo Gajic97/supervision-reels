@@ -19,7 +19,9 @@ umask 077; mkdir -p ~/.secrets
 AUTH="Authorization: Basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
 git -c http.extraHeader="$AUTH" clone -q https://github.com/Gajic97/supervision-reels.git ~/sr && cd ~/sr
 git config user.name Gajic97; git config user.email freelancenemanjagajic@gmail.com
+GH_TOKEN="$GH_TOKEN" bash scripts/state_pull.sh
 ```
+**Evidencija (od 6.11.2026) živi na grani `media`, u folderu `state/`** (posted.json, follow.json, postponed.json, weekly/). `state_pull.sh` je kopira u `~/sr/data/`, a `publish_media.sh` je vraća na granu media. Na **main se ne push-uje ništa** iz ovog zadatka (main je samo za pravila i kod koje menja Gajic sa Claude-om); push na main iz zakazanog zadatka nije prolazio.
 Pročitaj **BRAND.md** (obavezna pravila), **FORMATS.md** (koji format reela danas, obavezno), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v4**: hook od 3 s, šire bočne margine, muzika koja se menja i bogate animacije (BRAND.md → Animacije).
 
 GitHub API (releases i ostalo) je blokiran kroz proxy. Radi samo `git` preko HTTPS-a sa gornjim headerom.
@@ -102,7 +104,12 @@ U `data/posted.json` (grana main) dodaj unos za svaki zakazani reel:
 - `buffer_posts`: {"instagram": id, "tiktok": id, "linkedin": id}, gde je id iz izlaza schedule_buffer.py
 - channels, scheduled, video, buffer_post_id
 
-Uz to sačuvaj `templates/runs/<datum>-<slug>/` sa fajlovima brag-plan.md, index.html, sound.py i opisima. MP4 i frejmove ne čuvaj. Zatim commit i push na main: `git pull --rebase` pa `git push`, i odmah proveri `git fetch && git log origin/main -1` da je tvoj commit stvarno gore (5.11. reelovi su zakazani, ali posted.json nije stigao na main). Unos za posted.json piši alatom Write u fajl i dodaj ga skriptom, ne velikom inline komandom.
+Uz to sačuvaj `templates/runs/<datum>-<slug>/` sa fajlovima brag-plan.md, index.html, sound.py i opisima. MP4 i frejmove ne čuvaj. Unose napiši alatom Write u `/tmp/posted_unosi.json` (lista), pa:
+```bash
+cd ~/sr && python3 scripts/add_posted.py /tmp/posted_unosi.json
+GH_TOKEN="$GH_TOKEN" BUFFER_TOKEN="$BUFFER_TOKEN" bash scripts/publish_media.sh
+```
+Drugi poziv `publish_media.sh` (bez videa) šalje evidenciju i planove (`runs/`) na granu media i osvežava izveštaj. Ne radi commit ni push na main.
 
 ## 6b. Stranica sa rezultatima (svaki dan) i nedeljni zaključak (ponedeljkom)
 Pre push-a grane `media` (korak 4), osveži stranicu sa rezultatima:

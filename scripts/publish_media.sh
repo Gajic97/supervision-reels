@@ -12,9 +12,16 @@ for f in "$@"; do cp "$f" "$M/v/"; j="${f%.mp4}.jpg"; [ -f "$j" ] && cp "$j" "$M
 # stari videi (više od 14 dana po datumu u imenu) se uklanjaju običnim commit-om
 cut=$(date -d '-14 days' +%F)
 for f in "$M"/v/*; do b=$(basename "$f"); d=${b:0:10}; if [[ "$d" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] && [[ "$d" < "$cut" ]]; then git -C "$M" rm -q "v/$b"; fi; done
+# evidencija ide na granu media (state/), jer push na main iz zakazanih zadataka nije pouzdan
+mkdir -p "$M/state"
+for f in posted.json follow.json postponed.json; do [ -f "$SR/data/$f" ] && cp "$SR/data/$f" "$M/state/$f"; done
+[ -d "$SR/data/weekly" ] && mkdir -p "$M/state/weekly" && cp -r "$SR/data/weekly/." "$M/state/weekly/"
+# sačuvani planovi i kompozicije reelova (bez mp4)
+if [ -d "$SR/templates/runs" ]; then mkdir -p "$M/runs"; for d in "$SR"/templates/runs/*/; do b=$(basename "$d"); [ -d "$M/runs/$b" ] || cp -r "$d" "$M/runs/$b"; done; find "$M/runs" -name '*.mp4' -delete; fi
 python3 "$SR/scripts/follow_page.py" "$M/nalozi"
 if [ -n "${BUFFER_TOKEN:-}" ]; then (cd "$SR" && python3 scripts/report.py "$M/izvestaj" --days 60) || echo "izveštaj nije osvežen"; fi
 git -C "$M" add -A
 git -C "$M" -c user.name="supervision-bot" -c user.email="bot@users.noreply.github.com" commit -qm "media $(date +%F)" || echo "nema promena"
+git -C "$M" -c http.extraHeader="$AUTH" pull -q --rebase origin media || true
 git -C "$M" -c http.extraHeader="$AUTH" push -q origin media
 echo "OK media"
