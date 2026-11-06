@@ -1,0 +1,11 @@
+Kamera u boji noću: Hikvision DS-2CE12DF3T-LFS 2.8mm, HD-TVI ColorVu bullet kamera 2 MP.
+
+Obične IC kamere noću prelaze na crno-belo. Ova ima belo LED svetlo dometa do 40 m, pa dok ono radi slika ostaje u boji i vidi se boja odeće i vozila.
+
+Objektiv 2.8 mm daje širok ugao za ulaze, hodnike i manja dvorišta. Ugrađen mikrofon (zvuk ide preko koaksijala, zvučnika nema), kućište IP67, radna temperatura od -40 do 60 stepeni, napajanje 12 VDC.
+
+Ide na DVR ili XVR snimač preko koaksijalnog kabla, NVR i PoE svič ne trebaju. Izlaz 4 u 1 (TVI, AHD, CVI, CVBS) za zamenu stare kamere.
+
+6.620 RSD sa PDV-om. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio: super-vision.rs
+
+#kamerauboji #videonadzor #hikvision #colorvu #supervision

@@ -1,0 +1,429 @@
+[
+ {
+  "date": "2026-10-29",
+  "product_id": 2926,
+  "product": "Komplet video nadzora HiLook 4x bullet THC-B120-P 2MP + DVR-104G-K1",
+  "keyword": "komplet video nadzora",
+  "channels": [
+   "instagram"
+  ],
+  "note": "probni reel v2, objavljen rucno preko Buffer Share Now",
+  "music_style": "deep_house",
+  "hook_type": "none",
+  "buffer_posts": {
+   "instagram": "6ae34c42626d58d096a8d165"
+  },
+  "scheduled": "2026-10-29 14:41",
+  "category": "Kompleti video nadzora"
+ },
+ {
+  "date": "2026-10-29",
+  "product_id": 4849,
+  "product": "CS-BC1c 4K EZVIZ baterijska kamera 8MP sa solarnim panelom",
+  "category": "Kamere",
+  "keyword": "kamera sa solarnim panelom",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-10-29 20:00",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-29-ezviz-bc1c-solarna.mp4",
+  "template": "reel-v2",
+  "music_style": "deep_house",
+  "hook_type": "none",
+  "buffer_posts": {
+   "instagram": "6ae35a04a87e7858ef12ab32",
+   "tiktok": "6ae38b9a5a87bd1f00b0ad6b",
+   "linkedin": "6ae392df31868ec16fbe7313"
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "product_id": 2885,
+  "product": "THC-T120-P HiLook Turbo HD turret kamera 2MP 2.8mm",
+  "category": "Kamere",
+  "keyword": "kamera za video nadzor",
+  "hook_type": "komanda",
+  "hook_text": "Proveri da li radi sa tvojim snimačem.",
+  "music_style": "minimal_tech",
+  "scheduled": "2026-10-30 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-hilook-thc-t120-p.mp4",
+  "template": "reel-v4",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6ae43fc156e01b97638f8622",
+   "tiktok": "6ae43fc2ba1ca51fd3fd3ddb",
+   "linkedin": "6ae43fc46385db216a2c4ee3"
+  },
+  "note": "napravljeno ručno u sesiji jer jutarnji zadatak nije pokrenuo posao"
+ },
+ {
+  "date": "2026-10-30",
+  "product_id": 2939,
+  "product_id_b": 2905,
+  "product": "Komplet video nadzora HiLook 4x turret THC-T120-P 2.8 mm + DVR-104G-K1 (poređenje sa IP kompletom IPC-T220HA-LUC + NVR-104H-D)",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f4",
+  "hook_type": "izjava / broj",
+  "hook_text": "Isti broj kamera. Drugačiji kabl.",
+  "music_style": "synthwave",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-30-poredjenje-analogni-ip.mp4",
+  "scheduled": "2026-10-30 20:00",
+  "buffer_posts": {
+   "instagram": "6ae4c4952a4d923bf40a83fa",
+   "tiktok": "6ae4c496cd8290b9b9fd6798",
+   "linkedin": "6ae4c497a351214acf984809"
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "product_id": null,
+  "product": "B2B portal za instalatere i firme",
+  "category": "B2B",
+  "url": "https://b2b.super-vision.rs/",
+  "keyword": "veleprodaja video nadzora",
+  "format": "f2",
+  "hook_type": "label",
+  "hook_text": "Instalateri: svoju cenu vidiš čim se prijaviš.",
+  "music_style": "deep_house",
+  "music_key": 0,
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-31-b2b-portal.mp4",
+  "scheduled": "2026-10-31 12:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6ae580b0406ab8a0189f2c99",
+   "tiktok": "6ae580b2eaa24d6f9a59ec5a",
+   "linkedin": "6ae580b4406ab8a0189f2d41"
+  },
+  "buffer_post_id": "6ae580b0406ab8a0189f2c99"
+ },
+ {
+  "date": "2026-10-31",
+  "product_id": 4862,
+  "product": "CS-H3c EZVIZ Wi-Fi kamera 2MP 1080p 4mm",
+  "category": "Kamere",
+  "url": "https://super-vision.rs/proizvod/cs-h3c-ezviz-wi-fi-kamera-2mp-1080p-4mm/",
+  "price": 4870,
+  "keyword": "spoljna wifi kamera",
+  "format": "f5",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Imaš Wi-Fi i utičnicu kod ulaza?",
+  "music_style": "lofi_chill",
+  "music_key": 6,
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-10-31-ezviz-cs-h3c.mp4",
+  "scheduled": "2026-10-31 19:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6ae580b1a1145743498a84e0",
+   "tiktok": "6ae580b3eaa24d6f9a59eca1",
+   "linkedin": "6ae580b5ceb491e585dc829f"
+  },
+  "buffer_post_id": "6ae580b1a1145743498a84e0"
+ },
+ {
+  "date": "2026-11-01",
+  "product_id": 12799,
+  "product": "Komplet video nadzora Hikvision 4x turret DS-2CE76D0T-LMFS 2MP + DVR iDS-7104HQHI-M1/S",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f6",
+  "hook_type": "izjava / broj",
+  "hook_text": "4 kamere, snimač, disk i napajanje. Jedna cena.",
+  "music_style": "cinematic",
+  "music_key": 5,
+  "price": 29800,
+  "url": "https://super-vision.rs/proizvod/komplet-video-nadzora-hikvision-4x-ds-2ce76d0t-lmfs-ids-7104hqhi-m1-s/",
+  "buffer_posts": {
+   "instagram": "6ae6d34721c807e9d5a29888",
+   "tiktok": "6ae6d34821c807e9d5a29963",
+   "linkedin": "6ae6d3491ee172cd6ddf2efc"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-01 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-01-komplet-hikvision-4x-turret-acusense.mp4",
+  "buffer_post_id": "6ae6d34721c807e9d5a29888"
+ },
+ {
+  "date": "2026-11-01",
+  "product_id": 4224,
+  "product": "THC-B220-M HiLook Turbo HD bullet kamera 2 MP 4u1 2.8mm",
+  "category": "Kamere",
+  "keyword": "kamera za dvorište",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "Pre nego što kupiš kameru, proveri snimač.",
+  "music_style": "minimal_tech",
+  "music_key": 8,
+  "price": 3260,
+  "url": "https://super-vision.rs/proizvod/thc-b220-m-hilook-turbo-hd-bullet-kamera-2mp-4u1-2-8mm/",
+  "buffer_posts": {
+   "instagram": "6ae6d34e21c807e9d5a29a29",
+   "tiktok": "6ae6d34fab019b9087426a50",
+   "linkedin": "6ae6d3501ee172cd6ddf2fae"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-01 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-01-hilook-thc-b220-m.mp4",
+  "buffer_post_id": "6ae6d34e21c807e9d5a29a29"
+ },
+ {
+  "date": "2026-11-02",
+  "product_id": 2863,
+  "product_id_b": 987,
+  "product": "DVR-104G-K1 HiLook Turbo HD DVR snimač 4 kanala 2MP (poređenje sa iDS-7104HQHI-M1/S Hikvision AcuSense)",
+  "category": "Snimači",
+  "keyword": "snimač za video nadzor",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Biraš snimač za 4 kamere?",
+  "music_style": "synthwave",
+  "music_key": 6,
+  "price": 5620,
+  "price_b": 9660,
+  "url": "https://super-vision.rs/proizvod/snimac-dvr-104g-k1-4-kanalni-turbo-hd-hilook/",
+  "url_b": "https://super-vision.rs/proizvod/snimac-ids-7104hqhi-m1-s-hikvision/",
+  "buffer_posts": {
+   "instagram": "6ae8240564604db31441ec77",
+   "tiktok": "6ae82406c60bdbcc33d96a81",
+   "linkedin": "6ae82407c60bdbcc33d96e47"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-02 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-02-poredjenje-snimaca-dvr-104g-k1-ids-7104.mp4",
+  "buffer_post_id": "6ae8240564604db31441ec77"
+ },
+ {
+  "date": "2026-11-02",
+  "product_id": 4091,
+  "product": "DS-2CE12DF3T-LFS 2.8mm Hikvision HD-TVI ColorVu bullet kamera 2MP",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f2",
+  "hook_type": "provokativno",
+  "hook_text": "Noću je svaki auto siv.",
+  "music_style": "deep_house",
+  "music_key": 2,
+  "url": "https://super-vision.rs/proizvod/hd-tvi-bullet-kamera-ds-2ce12df3t-lfs-2-8mm/",
+  "buffer_posts": {
+   "instagram": "6ae8af6cf1669be3eabe26a2",
+   "tiktok": "6ae8af6df1669be3eabe271d",
+   "linkedin": "6ae8af6e2426d4fa350671d8"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-02 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-02-hikvision-colorvu-ds-2ce12df3t-v2.mp4",
+  "buffer_post_id": "6ae82407759fc887b6ce30cf",
+  "note": "Ponovo napravljen bez cene (Hikvision pravilo, 2.11.)"
+ },
+ {
+  "date": "2026-11-03",
+  "product_id": 2912,
+  "product": "Komplet video nadzora HiLook 8x bullet THC-B120-P 2MP + DVR-108G-M1/T",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f3",
+  "hook_type": "lista",
+  "hook_text": "Komplet video nadzora za 8 kamera: 3 stvari.",
+  "music_style": "cinematic",
+  "url": "https://super-vision.rs/proizvod/komplet-video-nadzora-8-kamera/",
+  "price": "37.100 RSD",
+  "buffer_posts": {
+   "instagram": "6ae98ae83f84a453ac0dd28b",
+   "tiktok": "6ae98ae964e1ad8ea2edef9a",
+   "linkedin": "6ae98aeaee93f2557f2e2cda"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-03 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-03-komplet-hilook-8x-bullet-thc-b120-p.mp4",
+  "buffer_post_id": "6ae98ae83f84a453ac0dd28b",
+  "music_key": 0
+ },
+ {
+  "date": "2026-11-03",
+  "product_id": 5393,
+  "product": "C8C EZVIZ spoljna Wi-Fi pan-tilt kamera 4K 8MP",
+  "category": "Kamere",
+  "keyword": "wifi kamera za dvorište",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "Pre nego što kupiš Wi-Fi kameru, proveri struju.",
+  "music_style": "lofi_chill",
+  "url": "https://super-vision.rs/proizvod/c8c-ezviz-spoljna-wi-fi-pan-tilt-kamera-4k-8mp/",
+  "price": "10.530 RSD",
+  "buffer_posts": {
+   "instagram": "6ae98af064e1ad8ea2edf113",
+   "tiktok": "6ae98af16896a4441f68db22",
+   "linkedin": "6ae98af23b00665c737ded26"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-03 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-03-ezviz-c8c.mp4",
+  "buffer_post_id": "6ae98af064e1ad8ea2edf113",
+  "music_key": 11
+ },
+ {
+  "date": "2026-11-04",
+  "product_id": 2905,
+  "product_id_b": 2897,
+  "product": "Komplet video nadzora HiLook 4x turret IPC-T220HA-LUC 2MP + NVR-104H-D (vs 4x bullet IPC-B120HA-LUC)",
+  "category": "Kompleti video nadzora",
+  "keyword": "IP komplet video nadzora",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Biraš IP komplet sa 4 kamere?",
+  "music_style": "synthwave",
+  "buffer_posts": {
+   "instagram": "6aeafb56961fae078ac55f06",
+   "tiktok": "6aeafb570eea02ace329f978",
+   "linkedin": "6aeafb581d881477a617bf9b"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-04 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-04-poredjenje-ip-kompleta-turret-bullet.mp4",
+  "buffer_post_id": "6aeafb56961fae078ac55f06",
+  "url": "https://super-vision.rs/proizvod/ip-komplet-video-nadzora-4-dome-kamere/"
+ },
+ {
+  "date": "2026-11-04",
+  "product_id": 3096,
+  "product": "CS-H5 EZVIZ 4G kamera 3MP 4mm",
+  "category": "Kamere",
+  "keyword": "kamera sa SIM karticom",
+  "format": "f5",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako nemaš internet, kamera nosi svoj.",
+  "music_style": "minimal_tech",
+  "buffer_posts": {
+   "instagram": "6aeafb5920b88292aa797cea",
+   "tiktok": "6aeafb5bce16a24329ea17e7",
+   "linkedin": "6aeafb5c1d881477a617c70a"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-04 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-04-ezviz-cs-h5-4g.mp4",
+  "buffer_post_id": "6aeafb5920b88292aa797cea",
+  "url": "https://super-vision.rs/proizvod/kamera-cs-h5-4g/"
+ },
+ {
+  "date": "2026-11-05",
+  "product_id": 5568,
+  "product": "THC-T220-M 2.8mm HiLook Turbo HD turret kamera 2MP",
+  "category": "Kamere",
+  "keyword": "kamera za video nadzor",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "(nije zabeleženo)",
+  "music_style": "nepoznato",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-05-hilook-thc-t220-m.mp4",
+  "scheduled": "2026-11-05 12:30",
+  "buffer_posts": {
+   "instagram": "6aec178d75052a1eb821b5ba",
+   "tiktok": "6aec178fe22643a987923f9b",
+   "linkedin": "6aec179175052a1eb821b788"
+  },
+  "note": "Unos dodat naknadno 5.11. (jutarnji zadatak nije gurnuo posted.json)"
+ },
+ {
+  "date": "2026-11-05",
+  "product_id": 12801,
+  "product": "Komplet video nadzora Hikvision 4x turret DS-2CE76K0T-LMFS 3K + DVR iDS-7204HUHI-M1/T",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f3",
+  "hook_type": "izjava / broj",
+  "hook_text": "4 kamere 3K, snimač i disk. Jedna kutija.",
+  "music_style": "nepoznato",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-05-komplet-hikvision-4x-turret-3k.mp4",
+  "scheduled": "2026-11-05 19:30",
+  "buffer_posts": {
+   "instagram": "6aec178e7877e0eab278c586",
+   "tiktok": "6aec17903ddb81d22108f9f8",
+   "linkedin": "6aec1792e22643a987923fda"
+  },
+  "note": "Unos dodat naknadno 5.11.; Hikvision bez cene"
+ },
+ {
+  "date": "2026-11-06",
+  "product_id": 5401,
+  "product": "CS-TY1 4MP EZVIZ unutrašnja Wi-Fi kamera 2K+ koja se okreće",
+  "category": "Kamere",
+  "keyword": "wifi kamera za stan",
+  "format": "nepoznat",
+  "hook_type": "nepoznat",
+  "hook_text": "(nije zabeleženo)",
+  "music_style": "nepoznato",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-06-ezviz-cs-ty1-4mp.mp4",
+  "scheduled": "2026-11-06 12:30",
+  "buffer_posts": {
+   "instagram": "6aed68f57b7e47e8f40dc066",
+   "tiktok": "6aed68f6dbada656bef616ec",
+   "linkedin": "6aed68f7dbada656bef61721"
+  },
+  "note": "Unos dodat naknadno 6.11. (zadatak nije upisao evidenciju)"
+ },
+ {
+  "date": "2026-11-06",
+  "product_id": 2937,
+  "product": "Komplet video nadzora HiLook 8x turret THC-T120-P 2MP + DVR-108G-M1/T",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "nepoznat",
+  "hook_type": "nepoznat",
+  "hook_text": "(nije zabeleženo)",
+  "music_style": "nepoznato",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-06-komplet-hilook-8x-turret-thc-t120-p.mp4",
+  "scheduled": "2026-11-06 19:30",
+  "buffer_posts": {
+   "instagram": "6aed68f886fe9b837975dcd2",
+   "tiktok": "6aed68f9f3498efda7712686",
+   "linkedin": "6aed68faf3498efda77126bb"
+  },
+  "note": "Unos dodat naknadno 6.11."
+ }
+]
