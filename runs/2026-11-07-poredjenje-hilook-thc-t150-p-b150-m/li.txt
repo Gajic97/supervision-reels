@@ -1,0 +1,5 @@
+Kamera za video nadzor, isti senzor od 5 MP, dva kućišta: HiLook THC-T150-P (turret, plastično kućište, samo za unutrašnju montažu, 3.590 RSD sa PDV-om) i THC-B150-M (bullet, metalno kućište IP66, za spoljnu montažu, 4.150 RSD sa PDV-om).
+
+Obe kamere imaju objektiv 2.8 mm i IR domet do 20 m, rade preko koaksijalnog kabla na DVR ili XVR snimaču (ne na NVR) i ne traže PoE. Izbor zavisi od mesta montaže: kancelarija, prodavnica i hodnik, ili dvorište i prilaz.
+
+Obe su na lageru, isporuka u celoj Srbiji za 2 radna dana: super-vision.rs
