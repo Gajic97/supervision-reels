@@ -1,6 +1,34 @@
 {
- "generated": "07.11.2026. 06:42",
+ "generated": "07.11.2026. 06:43",
  "reels": [
+  {
+   "date": "2026-11-07",
+   "product": "THC-T150-P HiLook turret 5 MP unutrašnja (A) vs THC-B150-M HiLook bullet 5 MP IP66 (B)",
+   "category": "Kamere",
+   "keyword": "kamera za video nadzor",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Biraš kameru za unutra ili za napolje?",
+   "music_style": "synthwave",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-07-poredjenje-hilook-thc-t150-p-b150-m.mp4",
+   "scheduled": "2026-11-07 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-07",
+   "product": "B2B portal (lager uživo, cene po prijavi)",
+   "category": "B2B",
+   "keyword": "veleprodaja video nadzora",
+   "hook_type": "komanda",
+   "hook_text": "Pre nego što obećaš rok, proveri lager.",
+   "music_style": "minimal_tech",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-07-b2b-portal-lager.mp4",
+   "scheduled": "2026-11-07 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-06",
    "product": "Komplet video nadzora HiLook 8x turret THC-T120-P 2MP + DVR-108G-M1/T",

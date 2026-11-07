@@ -425,5 +425,55 @@
    "linkedin": "6aed68faf3498efda77126bb"
   },
   "note": "Unos dodat naknadno 6.11."
+ },
+ {
+  "date": "2026-11-07",
+  "product_id": null,
+  "product": "B2B portal (lager uživo, cene po prijavi)",
+  "category": "B2B",
+  "url": "https://b2b.super-vision.rs/",
+  "keyword": "veleprodaja video nadzora",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "Pre nego što obećaš rok, proveri lager.",
+  "music_style": "minimal_tech",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-07-b2b-portal-lager.mp4",
+  "scheduled": "2026-11-07 12:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6aeeba8c004e4879a73791fa",
+   "tiktok": "6aeeba8fd6bbae6fa1696afb",
+   "linkedin": "6aeeba90a7751de7c9ca9793"
+  },
+  "buffer_post_id": "6aeeba8c004e4879a73791fa"
+ },
+ {
+  "date": "2026-11-07",
+  "product_id": 4231,
+  "product_id_b": 4218,
+  "product": "THC-T150-P HiLook turret 5 MP unutrašnja (A) vs THC-B150-M HiLook bullet 5 MP IP66 (B)",
+  "category": "Kamere",
+  "keyword": "kamera za video nadzor",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Biraš kameru za unutra ili za napolje?",
+  "music_style": "synthwave",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-07-poredjenje-hilook-thc-t150-p-b150-m.mp4",
+  "scheduled": "2026-11-07 19:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6aeeba8e9214322f68d17cb6",
+   "tiktok": "6aeeba909214322f68d17d5b",
+   "linkedin": "6aeeba91d6bbae6fa1696b42"
+  },
+  "buffer_post_id": "6aeeba8e9214322f68d17cb6"
  }
 ]
