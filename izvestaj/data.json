@@ -1,6 +1,34 @@
 {
- "generated": "08.11.2026. 06:51",
+ "generated": "08.11.2026. 06:53",
  "reels": [
+  {
+   "date": "2026-11-08",
+   "product": "CS-H3c 2K+ EZVIZ Wi-Fi kamera 4MP 2.8mm Color",
+   "category": "Kamere",
+   "keyword": "wifi kamera za dvorište",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako noću vidiš samo sivo, uključi boju.",
+   "music_style": "cinematic",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-08-ezviz-cs-h3c-2k-color.mp4",
+   "scheduled": "2026-11-08 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-08",
+   "product": "Komplet video nadzora HiLook 4x bullet IPC-B120HA-LUC 2MP + NVR-104H-D",
+   "category": "Kompleti video nadzora",
+   "keyword": "komplet video nadzora",
+   "hook_type": "label",
+   "hook_text": "Vlasnici kuće: slika i struja kroz jedan kabl.",
+   "music_style": "deep_house",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-08-komplet-hilook-4x-bullet-ip-ipc-b120ha-luc.mp4",
+   "scheduled": "2026-11-08 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-07",
    "product": "THC-T150-P HiLook turret 5 MP unutrašnja (A) vs THC-B150-M HiLook bullet 5 MP IP66 (B)",

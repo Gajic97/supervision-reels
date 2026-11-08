@@ -1,0 +1,13 @@
+Komplet video nadzora sa 4 IP kamere: HiLook 4x bullet IPC-B120HA-LUC 2MP + NVR-104H-D.
+
+Slika i napajanje idu kroz isti mrežni kabl, preko priloženog PoE sviča. Šta je u kutiji:
+- 4 kamere IPC-B120HA-LUC: 2 MP, objektiv 2.8 mm, Smart Hybrid Light, ugrađen mikrofon, kućište IP67
+- Snimač NVR-104H-D sa 4 kanala, prima kamere do 6 MP
+- PoE svič WK-PS206(V2) sa 4 porta (snimač nema PoE portove, pa svič napaja kamere)
+- Hard disk WD Purple 1 TB (WD10PURX)
+
+Do svake kamere ide jedan mrežni kabl, do 100 m od sviča (Cat 5e ili 6). Sliku uživo i arhivu gledaš i sa telefona, kroz Hik-Connect aplikaciju. Mrežni kabl nije u kompletu.
+
+Kupljeno pojedinačno 48.710 RSD, u kompletu 38.100 RSD sa PDV-om. Uštedite 10.610 RSD (22%). Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio: super-vision.rs
+
+#kompletvideonadzora #videonadzor #ipkamera #hilook #supervision

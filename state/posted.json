@@ -475,5 +475,53 @@
    "linkedin": "6aeeba91d6bbae6fa1696b42"
   },
   "buffer_post_id": "6aeeba8e9214322f68d17cb6"
+ },
+ {
+  "date": "2026-11-08",
+  "product_id": 2897,
+  "product": "Komplet video nadzora HiLook 4x bullet IPC-B120HA-LUC 2MP + NVR-104H-D",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f6",
+  "hook_type": "label",
+  "hook_text": "Vlasnici kuće: slika i struja kroz jedan kabl.",
+  "music_style": "deep_house",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-08-komplet-hilook-4x-bullet-ip-ipc-b120ha-luc.mp4",
+  "scheduled": "2026-11-08 12:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af00e1b51492b796e1ccbf5",
+   "tiktok": "6af00e1cd6bbae6fa1cd4366",
+   "linkedin": "6af00e1d229bf05daf9240a2"
+  },
+  "buffer_post_id": "6af00e1b51492b796e1ccbf5"
+ },
+ {
+  "date": "2026-11-08",
+  "product_id": 5396,
+  "product": "CS-H3c 2K+ EZVIZ Wi-Fi kamera 4MP 2.8mm Color",
+  "category": "Kamere",
+  "keyword": "wifi kamera za dvorište",
+  "format": "f2",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako noću vidiš samo sivo, uključi boju.",
+  "music_style": "cinematic",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-08-ezviz-cs-h3c-2k-color.mp4",
+  "scheduled": "2026-11-08 19:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af00e1e51492b796e1ccc48",
+   "tiktok": "6af00e1f004e4879a79ab8bb",
+   "linkedin": "6af00e20d6bbae6fa1cd4498"
+  },
+  "buffer_post_id": "6af00e1e51492b796e1ccc48"
  }
 ]
