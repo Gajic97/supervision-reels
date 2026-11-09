@@ -5,10 +5,14 @@ Upotreba:
   INTRO=3.0 (sekunde tekstualnog hook-a pre glavnog dela)  SEED=<broj>
   SFX=sfx.json (opciono; lista događaja u APSOLUTNOM vremenu: {"type","t","g","pan"})
   OUT_WAV=music.wav  python3 sound.py
+Režim sa pravom pesmom (od 10.11.2026, standard):
+  MUSIC_FILE=assets/music/chill/x.mp3  DUR=14  SFX=sfx.json  OUT_WAV=music.wav  python3 sound.py
+  Ne generiše muziku: učita mp3 (ffmpeg, 44.1 kHz stereo), skrati na DUR, fade-out 1 s na kraju;
+  SFX se mešaju preko, ~6 dB tiše nego u sintetičkom režimu. STYLE/KEY/INTRO se tada ignorišu.
 Glavni deo traje 21 s na 120 BPM; „drop“ (ulazak bubnja) je na INTRO+2.0 s.
 Tipovi efekata: shutter, impact, impact_big, whoosh (t = trenutak reza), swish, riser (t = kraj), tap, confirm, thud, revcym (t = kraj).
 """
-import json, os
+import json, os, subprocess
 import numpy as np
 from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
@@ -18,8 +22,9 @@ KEY = int(os.environ.get("KEY", "0"))
 INTRO = float(os.environ.get("INTRO", "3.0"))
 SEED = int(os.environ.get("SEED", "11"))
 SR = 44100
+MUSIC_FILE = os.environ.get("MUSIC_FILE", "")
 MAIN = 21.0
-DUR = INTRO + MAIN
+DUR = float(os.environ.get("DUR", "14")) if MUSIC_FILE else INTRO + MAIN
 BEAT = 0.5
 N = int(SR * DUR)
 rng = np.random.default_rng(SEED)
@@ -216,93 +221,95 @@ STYLES = {
     "cinematic":    dict(ch=[[50,53,57,62],[46,50,53,58],[53,57,60,65],[48,52,55,60]], root=[38,34,41,36], key=0),
     "minimal_tech": dict(ch=[[53,56,60,63],[49,53,56,60],[56,60,63,67],[51,55,58,63]], root=[41,37,44,39], key=0),
 }
-st = STYLES[STYLE]
-if "KEY" not in os.environ: KEY = st["key"]
-CH, ROOT = st["ch"], st["root"]
 kick_times = []
+if not MUSIC_FILE:
+    st = STYLES[STYLE]
+    if "KEY" not in os.environ: KEY = st["key"]
+    CH, ROOT = st["ch"], st["root"]
+    kick_times = []
 
-def add_kick(t, g=0.85, **kw):
-    drums.add(kick(**kw), t, g); kick_times.append(t)
+    def add_kick(t, g=0.85, **kw):
+        drums.add(kick(**kw), t, g); kick_times.append(t)
 
-bars = int(np.ceil(MAIN / 2))
-# ---- intro: tihi bed + riser do drop-a glavnog dela
-for bar in range(int(np.ceil(INTRO / 2))):
-    c = CH[bar % 4]; tb = bar * 2.0
-    if STYLE == "lofi_chill":   music.add(epiano(c, 2.0, 0.8), tb, 0.5)
-    elif STYLE == "cinematic":  music.add(strings(c, 2.1, 900), tb, 0.6)
-    else:                       music.add(pad_saw(c, 2.05, 420), tb, 0.5)
+    bars = int(np.ceil(MAIN / 2))
+    # ---- intro: tihi bed + riser do drop-a glavnog dela
+    for bar in range(int(np.ceil(INTRO / 2))):
+        c = CH[bar % 4]; tb = bar * 2.0
+        if STYLE == "lofi_chill":   music.add(epiano(c, 2.0, 0.8), tb, 0.5)
+        elif STYLE == "cinematic":  music.add(strings(c, 2.1, 900), tb, 0.6)
+        else:                       music.add(pad_saw(c, 2.05, 420), tb, 0.5)
 
-for bar in range(bars):
-    tb = INTRO + bar * 2.0; c = CH[bar % 4]; r = ROOT[bar % 4]
-    pre = tb < DROP; outro = tb >= END
-    # ---------- harmonija
-    if STYLE == "deep_house":
-        cut = 500 if pre else (1300 if tb < INTRO + 8.5 else (2200 if not outro else 1600))
-        p = pad_saw(c, 2.06, cut); music.add(p, tb, 0.42 if not pre else 0.6); send.add(p, tb, 0.22)
-    elif STYLE == "lofi_chill":
-        e = epiano(c, 2.0); music.add(e, tb, 0.75); send.add(e, tb, 0.35)
-        music.add(np.stack([crackle(int(2 * SR))] * 2, 1), tb, 0.08)
-    elif STYLE == "synthwave":
-        p = pad_saw(c, 2.06, 900 if pre else 2600); music.add(p, tb, 0.35); send.add(p, tb, 0.25)
-    elif STYLE == "cinematic":
-        s = strings(c, 2.15, 1200 if pre else 2600); music.add(s, tb, 0.7); send.add(s, tb, 0.45)
-    elif STYLE == "minimal_tech":
-        p = pad_saw(c, 2.06, 700 if pre else 1100, 0.9); music.add(p, tb, 0.3); send.add(p, tb, 0.3)
-    # ---------- bas
-    for k in range(4):
-        t = tb + k * BEAT
-        if t < DROP or t >= END: continue
+    for bar in range(bars):
+        tb = INTRO + bar * 2.0; c = CH[bar % 4]; r = ROOT[bar % 4]
+        pre = tb < DROP; outro = tb >= END
+        # ---------- harmonija
         if STYLE == "deep_house":
-            music.add(sub_bass(r + 12, 0.24), t + BEAT / 2, 0.55)
+            cut = 500 if pre else (1300 if tb < INTRO + 8.5 else (2200 if not outro else 1600))
+            p = pad_saw(c, 2.06, cut); music.add(p, tb, 0.42 if not pre else 0.6); send.add(p, tb, 0.22)
         elif STYLE == "lofi_chill":
-            music.add(sub_bass(r + 12, 0.45, 1.2, 600), t, 0.5 if k in (0, 2) else 0.0)
+            e = epiano(c, 2.0); music.add(e, tb, 0.75); send.add(e, tb, 0.35)
+            music.add(np.stack([crackle(int(2 * SR))] * 2, 1), tb, 0.08)
         elif STYLE == "synthwave":
-            for h in (0, BEAT / 2): music.add(saw_bass(r + 12, 0.22, 420), t + h, 0.32)
+            p = pad_saw(c, 2.06, 900 if pre else 2600); music.add(p, tb, 0.35); send.add(p, tb, 0.25)
         elif STYLE == "cinematic":
-            if k == 0: music.add(sub_bass(r + 12, 1.8, 1.4, 500), t, 0.55)
+            s = strings(c, 2.15, 1200 if pre else 2600); music.add(s, tb, 0.7); send.add(s, tb, 0.45)
         elif STYLE == "minimal_tech":
-            for q in range(4): music.add(saw_bass(r + 12 + (12 if q == 2 else 0), 0.11, 350), t + q * BEAT / 4, 0.28)
-    # ---------- melodijski sloj
-    if STYLE == "synthwave" and INTRO + 8.5 <= tb < END:
-        arp = [c[0] + 12, c[1] + 12, c[2] + 12, c[1] + 24] if len(c) > 3 else c
-        for k in range(16):
-            a = saw_arp(arp[k % len(arp)], 0.22, 2200); music.add(a, tb + k * BEAT / 4, 0.16, 0.3 if k % 2 else -0.3); send.add(a, tb + k * BEAT / 4, 0.12)
+            p = pad_saw(c, 2.06, 700 if pre else 1100, 0.9); music.add(p, tb, 0.3); send.add(p, tb, 0.3)
+        # ---------- bas
+        for k in range(4):
+            t = tb + k * BEAT
+            if t < DROP or t >= END: continue
+            if STYLE == "deep_house":
+                music.add(sub_bass(r + 12, 0.24), t + BEAT / 2, 0.55)
+            elif STYLE == "lofi_chill":
+                music.add(sub_bass(r + 12, 0.45, 1.2, 600), t, 0.5 if k in (0, 2) else 0.0)
+            elif STYLE == "synthwave":
+                for h in (0, BEAT / 2): music.add(saw_bass(r + 12, 0.22, 420), t + h, 0.32)
+            elif STYLE == "cinematic":
+                if k == 0: music.add(sub_bass(r + 12, 1.8, 1.4, 500), t, 0.55)
+            elif STYLE == "minimal_tech":
+                for q in range(4): music.add(saw_bass(r + 12 + (12 if q == 2 else 0), 0.11, 350), t + q * BEAT / 4, 0.28)
+        # ---------- melodijski sloj
+        if STYLE == "synthwave" and INTRO + 8.5 <= tb < END:
+            arp = [c[0] + 12, c[1] + 12, c[2] + 12, c[1] + 24] if len(c) > 3 else c
+            for k in range(16):
+                a = saw_arp(arp[k % len(arp)], 0.22, 2200); music.add(a, tb + k * BEAT / 4, 0.16, 0.3 if k % 2 else -0.3); send.add(a, tb + k * BEAT / 4, 0.12)
 
-# ---------- bubnjevi
-for b in range(int(MAIN / BEAT)):
-    t = INTRO + b * BEAT
-    if not (DROP <= t < END): continue
-    sw = 0.03 if STYLE == "lofi_chill" else 0.012
-    if STYLE in ("deep_house", "synthwave"):
-        add_kick(t, 0.8)
-        if b % 2 == 1:
-            sn = clap() if STYLE == "deep_house" else snare(big=True)
-            drums.add(sn, t, 0.42 if STYLE == "deep_house" else 0.32, 0.05); send.add(sn, t, 0.3 if STYLE == "deep_house" else 0.5)
-        drums.add(hat(), t + BEAT / 2 + sw, 0.3, -0.25)
-        if t >= INTRO + 8.5: drums.add(shaker(), t + BEAT / 4 + 0.01, 0.14, 0.35)
-    elif STYLE == "lofi_chill":
-        bar_pos = b % 4
-        if bar_pos == 0: add_kick(t, 0.7, decay=0.16, punch=80, drive=1.5)
-        if bar_pos == 1: add_kick(t + BEAT / 2 + sw, 0.55, decay=0.16, punch=80, drive=1.5)
-        if bar_pos == 2: sn = snare(); drums.add(lp(sn, 5000), t, 0.32); send.add(sn, t, 0.2)
-        drums.add(lp(hat(), 9000), t + sw, 0.2, -0.3); drums.add(lp(hat(), 9000), t + BEAT / 2 + sw, 0.14, -0.3)
-    elif STYLE == "cinematic":
-        if b % 2 == 0: drums.add(tom(90 if b % 4 == 0 else 120), t, 0.55, -0.2 if b % 4 else 0.2); send.add(tom(100), t, 0.25)
-        if b % 8 == 7: drums.add(tom(140), t + BEAT / 2, 0.35, 0.3)
-        if t >= INTRO + 8.5 and b % 4 == 2: drums.add(snare(big=True), t, 0.25); send.add(snare(big=True), t, 0.4)
-        kick_times.append(t) if b % 4 == 0 else None
-    elif STYLE == "minimal_tech":
-        add_kick(t, 0.85, decay=0.15, punch=140, drive=2.8)
-        if b % 2 == 1: drums.add(rim(), t + BEAT / 4, 0.3, 0.2); send.add(rim(), t + BEAT / 4, 0.2)
-        for q in range(4): drums.add(hat(), t + q * BEAT / 4 + (0.02 if q % 2 else 0), 0.18 if q % 2 else 0.1, -0.2)
-        if b % 4 == 3: drums.add(hat(True), t + BEAT / 2, 0.16, 0.2)
-add_kick(INTRO + 20.0, 0.5)
+    # ---------- bubnjevi
+    for b in range(int(MAIN / BEAT)):
+        t = INTRO + b * BEAT
+        if not (DROP <= t < END): continue
+        sw = 0.03 if STYLE == "lofi_chill" else 0.012
+        if STYLE in ("deep_house", "synthwave"):
+            add_kick(t, 0.8)
+            if b % 2 == 1:
+                sn = clap() if STYLE == "deep_house" else snare(big=True)
+                drums.add(sn, t, 0.42 if STYLE == "deep_house" else 0.32, 0.05); send.add(sn, t, 0.3 if STYLE == "deep_house" else 0.5)
+            drums.add(hat(), t + BEAT / 2 + sw, 0.3, -0.25)
+            if t >= INTRO + 8.5: drums.add(shaker(), t + BEAT / 4 + 0.01, 0.14, 0.35)
+        elif STYLE == "lofi_chill":
+            bar_pos = b % 4
+            if bar_pos == 0: add_kick(t, 0.7, decay=0.16, punch=80, drive=1.5)
+            if bar_pos == 1: add_kick(t + BEAT / 2 + sw, 0.55, decay=0.16, punch=80, drive=1.5)
+            if bar_pos == 2: sn = snare(); drums.add(lp(sn, 5000), t, 0.32); send.add(sn, t, 0.2)
+            drums.add(lp(hat(), 9000), t + sw, 0.2, -0.3); drums.add(lp(hat(), 9000), t + BEAT / 2 + sw, 0.14, -0.3)
+        elif STYLE == "cinematic":
+            if b % 2 == 0: drums.add(tom(90 if b % 4 == 0 else 120), t, 0.55, -0.2 if b % 4 else 0.2); send.add(tom(100), t, 0.25)
+            if b % 8 == 7: drums.add(tom(140), t + BEAT / 2, 0.35, 0.3)
+            if t >= INTRO + 8.5 and b % 4 == 2: drums.add(snare(big=True), t, 0.25); send.add(snare(big=True), t, 0.4)
+            kick_times.append(t) if b % 4 == 0 else None
+        elif STYLE == "minimal_tech":
+            add_kick(t, 0.85, decay=0.15, punch=140, drive=2.8)
+            if b % 2 == 1: drums.add(rim(), t + BEAT / 4, 0.3, 0.2); send.add(rim(), t + BEAT / 4, 0.2)
+            for q in range(4): drums.add(hat(), t + q * BEAT / 4 + (0.02 if q % 2 else 0), 0.18 if q % 2 else 0.1, -0.2)
+            if b % 4 == 3: drums.add(hat(True), t + BEAT / 2, 0.16, 0.2)
+    add_kick(INTRO + 20.0, 0.5)
 
-# ---------- outro akord
-oc = [CH[0][0], CH[0][2], CH[0][0] + 12, CH[0][1] + 12]
-if STYLE == "lofi_chill": music.add(epiano(oc, 2.5), END, 0.7)
-elif STYLE == "cinematic": music.add(strings(oc, 2.5, 2000), END, 0.7)
-else: music.add(pad_saw(oc, 2.5, 1600), END, 0.4)
+    # ---------- outro akord
+    oc = [CH[0][0], CH[0][2], CH[0][0] + 12, CH[0][1] + 12]
+    if STYLE == "lofi_chill": music.add(epiano(oc, 2.5), END, 0.7)
+    elif STYLE == "cinematic": music.add(strings(oc, 2.5, 2000), END, 0.7)
+    else: music.add(pad_saw(oc, 2.5, 1600), END, 0.4)
 
 # ================= EFEKTI (sfx.json ili podrazumevani raspored reel-v2 + intro) =================
 def default_events():
@@ -337,6 +344,29 @@ for i, e in enumerate(events):
     elif ty == "confirm":    sfx.add(confirm(), t, g); send.add(confirm(), t, g)
 
 # ================= MIKS =================
+def load_track(path):
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-f", "f32le", "-ac", "2", "-ar", str(SR), "-"],
+                         check=True, capture_output=True).stdout
+    x = np.frombuffer(raw, dtype=np.float32).reshape(-1, 2).astype(np.float64)
+    while len(x) < N: x = np.concatenate([x, x])
+    return x[:N]
+
+if MUSIC_FILE:
+    trk = load_track(MUSIC_FILE)
+    fi = int(0.03 * SR); trk[:fi] *= np.linspace(0, 1, fi)[:, None]        # bez klika na početku
+    IR = make_ir(2.2, 0.55)
+    revL = fftconvolve(send.L, IR[0])[:N]; revR = fftconvolve(send.R, IR[1])[:N]
+    g = 10 ** (-6 / 20)                                                     # SFX ~6 dB tiše
+    L = trk[:, 0] + hp(sfx.L + revL * 0.55, 28) * 0.45 * g
+    R = trk[:, 1] + hp(sfx.R + revR * 0.55, 28) * 0.45 * g
+    mix = np.stack([L, R], 1)
+    pk = np.abs(mix).max()
+    if pk > 0.97: mix *= 0.97 / pk
+    fade = int(1.0 * SR); mix[-fade:] *= np.linspace(1, 0, fade)[:, None]
+    wavfile.write(os.environ.get("OUT_WAV", "music.wav"), SR, (mix * 32767).astype(np.int16))
+    print("ok MUSIC_FILE", MUSIC_FILE, "dur", DUR)
+    raise SystemExit(0)
+
 duck = np.ones(N)
 for t in kick_times:
     i = int(t * SR); n = int(0.3 * SR); j = min(N, i + n)
