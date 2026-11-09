@@ -523,5 +523,54 @@
    "linkedin": "6af00e20d6bbae6fa1cd4498"
   },
   "buffer_post_id": "6af00e1e51492b796e1ccc48"
+ },
+ {
+  "date": "2026-11-09",
+  "product_id": 911,
+  "product": "DS-2CE16H0T-ITF Hikvision Turbo HD bullet kamera 5MP",
+  "category": "Kamere",
+  "keyword": "kamera za dvorište",
+  "format": "f8",
+  "hook_type": "komanda",
+  "hook_text": "Pre kamere od 5 MP, proveri snimač.",
+  "music_style": "lofi_chill",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-09-hikvision-ds-2ce16h0t-itf.mp4",
+  "scheduled": "2026-11-09 12:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af15d9be44ddbb57c3500e6",
+   "tiktok": "6af15d9ce29b1359f0d031fd",
+   "linkedin": "6af15d9d7522f65ac0c064e6"
+  },
+  "buffer_post_id": "6af15d9be44ddbb57c3500e6"
+ },
+ {
+  "date": "2026-11-09",
+  "product_id": 2887,
+  "product_id_b": 2875,
+  "product": "NVR-104H-D HiLook NVR 4 kanala (A) vs NVR-108H-D HiLook NVR 8 kanala (B)",
+  "category": "Snimači",
+  "keyword": "snimač za video nadzor",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Imaš 4 IP kamere ili planiraš više?",
+  "music_style": "minimal_tech",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-09-poredjenje-nvr-104h-d-108h-d.mp4",
+  "scheduled": "2026-11-09 19:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af15da1e29b1359f0d03287",
+   "tiktok": "6af15da2cac9d7525f6eddad",
+   "linkedin": "6af15da3e29b1359f0d03415"
+  },
+  "buffer_post_id": "6af15da1e29b1359f0d03287"
  }
 ]

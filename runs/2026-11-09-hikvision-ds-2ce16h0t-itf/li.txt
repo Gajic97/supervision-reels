@@ -1,0 +1,5 @@
+Kamera za dvorište od 5 MP daje punu rezoluciju samo uz odgovarajući snimač. Hikvision DS-2CE16H0T-ITF (Turbo HD bullet, metalno kućište za spoljnu montažu) traži snimač sa 5 MP Turbo HD ulazom; na 1080p snimaču slika se spušta na 2 MP.
+
+Za projekte gde se traži veća rezolucija bez prelaska na IP sistem i novog kabliranja: ista koaksijalna instalacija, EXIR infracrveno osvetljenje do oko 30 m (crno-bela slika noću), model bez zvuka (varijanta ITFS ima mikrofon). Namena: dvorišta, ulazi, parkinzi i magacini.
+
+Na lageru, isporuka u celoj Srbiji za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.

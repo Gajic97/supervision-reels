@@ -1,0 +1,10 @@
+Snimač za video nadzor: 4 ili 8 IP kamera? Dva HiLook NVR snimača, oba za IP kamere do 6 MP.
+
+A: NVR-104H-D, 4 kanala, do 40 Mbps ulaznog protoka. Za kuće, stanove i manje firme. 7.860 RSD sa PDV-om.
+B: NVR-108H-D, 8 kanala, do 60 Mbps ulaznog protoka. Za firme, prodavnice i kuće sa širom pokrivenošću. 10.000 RSD sa PDV-om.
+
+Oba imaju H.265+ kompresiju, HDMI i VGA izlaz i 1 ležište za hard disk. Nijedan nema ugrađen PoE: za napajanje kamera preko mreže postoje /4P i /8P verzije ili zaseban PoE svič. Oba su na stanju, isporuka za 2 radna dana, cela Srbija.
+
+Napiši u komentar: A ili B? Link u bio.
+
+#snimaczavideonadzor #videonadzor #hilook #supervision #srbija

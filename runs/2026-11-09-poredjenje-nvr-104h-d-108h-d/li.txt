@@ -1,0 +1,5 @@
+Snimač za video nadzor za IP sisteme do 6 MP po kanalu: HiLook NVR-104H-D (4 kanala, do 40 Mbps ulaznog protoka, 7.860 RSD sa PDV-om) i NVR-108H-D (8 kanala, do 60 Mbps, 10.000 RSD sa PDV-om).
+
+Oba modela imaju H.265+ kompresiju, HDMI i VGA izlaz i jedno ležište za hard disk. Osnovne verzije nemaju ugrađen PoE; za napajanje kamera preko mreže postoje /4P i /8P verzije ili zaseban PoE svič. Izbor zavisi od broja kamera: kuće, stanovi i manje firme, ili firme, prodavnice i objekti sa širom pokrivenošću.
+
+Oba su na lageru, isporuka u celoj Srbiji za 2 radna dana: super-vision.rs

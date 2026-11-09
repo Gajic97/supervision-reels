@@ -1,6 +1,34 @@
 {
- "generated": "09.11.2026. 06:42",
+ "generated": "09.11.2026. 06:45",
  "reels": [
+  {
+   "date": "2026-11-09",
+   "product": "NVR-104H-D HiLook NVR 4 kanala (A) vs NVR-108H-D HiLook NVR 8 kanala (B)",
+   "category": "Snimači",
+   "keyword": "snimač za video nadzor",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Imaš 4 IP kamere ili planiraš više?",
+   "music_style": "minimal_tech",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-09-poredjenje-nvr-104h-d-108h-d.mp4",
+   "scheduled": "2026-11-09 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-09",
+   "product": "DS-2CE16H0T-ITF Hikvision Turbo HD bullet kamera 5MP",
+   "category": "Kamere",
+   "keyword": "kamera za dvorište",
+   "hook_type": "komanda",
+   "hook_text": "Pre kamere od 5 MP, proveri snimač.",
+   "music_style": "lofi_chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-09-hikvision-ds-2ce16h0t-itf.mp4",
+   "scheduled": "2026-11-09 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-08",
    "product": "CS-H3c 2K+ EZVIZ Wi-Fi kamera 4MP 2.8mm Color",
