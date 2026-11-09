@@ -1,0 +1,83 @@
+[
+ {
+  "grupa": "chill",
+  "fajl": "chill/zephiramusic-chill-lofi-585360.mp3",
+  "izvor_id": "585360",
+  "autor": "zephiramusic",
+  "pocetak_s": 104.0,
+  "trajanje_s": 30.0,
+  "original_s": 137.4
+ },
+ {
+  "grupa": "chill",
+  "fajl": "chill/velariomusic-chill-lofi-616929.mp3",
+  "izvor_id": "616929",
+  "autor": "velariomusic",
+  "pocetak_s": 107.0,
+  "trajanje_s": 30.0,
+  "original_s": 160.6
+ },
+ {
+  "grupa": "chill",
+  "fajl": "chill/alex-morgan-lofi-chill-vlog-beats-573883.mp3",
+  "izvor_id": "573883",
+  "autor": "alex",
+  "pocetak_s": 88.5,
+  "trajanje_s": 30.0,
+  "original_s": 145.4
+ },
+ {
+  "grupa": "chill",
+  "fajl": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "izvor_id": "160166",
+  "autor": "fassounds",
+  "pocetak_s": 87.0,
+  "trajanje_s": 30.0,
+  "original_s": 147.1
+ },
+ {
+  "grupa": "chill",
+  "fajl": "chill/atlasaudio-lofi-chill-589987.mp3",
+  "izvor_id": "589987",
+  "autor": "atlasaudio",
+  "pocetak_s": 69.0,
+  "trajanje_s": 30.0,
+  "original_s": 119.4
+ },
+ {
+  "grupa": "b2b",
+  "fajl": "b2b/atlasaudio-corporate-background-587329.mp3",
+  "izvor_id": "587329",
+  "autor": "atlasaudio",
+  "pocetak_s": 131.5,
+  "trajanje_s": 30.0,
+  "original_s": 184.0
+ },
+ {
+  "grupa": "b2b",
+  "fajl": "b2b/nastelbom-corporate-background-488317.mp3",
+  "izvor_id": "488317",
+  "autor": "nastelbom",
+  "pocetak_s": 55.0,
+  "trajanje_s": 30.0,
+  "original_s": 114.1
+ },
+ {
+  "grupa": "b2b",
+  "fajl": "b2b/nastelbom-technology-technology-music-602443.mp3",
+  "izvor_id": "602443",
+  "autor": "nastelbom",
+  "pocetak_s": 95.0,
+  "trajanje_s": 30.0,
+  "original_s": 130.1
+ },
+ {
+  "grupa": "b2b",
+  "fajl": "b2b/the_mountain-technology-corporate-186320.mp3",
+  "izvor_id": "186320",
+  "autor": "the_mountain",
+  "pocetak_s": 61.5,
+  "trajanje_s": 30.0,
+  "original_s": 137.0
+ }
+]

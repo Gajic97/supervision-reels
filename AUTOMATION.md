@@ -4,6 +4,8 @@
 
 Ovo je uputstvo koje Claude prati pri svakom dnevnom pokretanju. Cilj: **2 nova reela dnevno**, zakazana u Buffer-u za **12:30 i 19:30** (Europe/Belgrade), bez ičijeg ručnog rada. Na kraju ide kratak izveštaj za Gajica.
 
+> **NOVO od 10.11.2026 (Gajic): reel traje 14 s, struktura `templates/reel-v5-14s`, prava muzika iz `assets/music/` (samo grupe `chill` i `b2b`).** Gde se pravila ispod razlikuju (24 s, hook od 3 s, sintetička muzika, reel-v4), važi ovo novo. Razlog: ljudi odlaze u prve 2–3 s (prosečno gledanje 2–7 s), a sintetička muzika „zvuči katastrofa“.
+>
 > **Formati (Gajic, 30.10.2026):** od 31.10. svaki reel je jedan od formata iz **FORMATS.md** (2, 3, 4, 5, 6, 8; 7 retko; 1 nikad). Nivo animacije ostaje kao u reel-v4.
 >
 > **Odobreni uzor (Gajic, 29.10.2026):** demo `templates/reel-v4` (EZVIZ CS-TY1) je tačno ono što Gajic želi: tekstualni hook od 3 s, šire margine, animacije u svakom trenutku, prelazi koji se smenjuju, odometar cene i drugačija muzika. Svaki novi reel mora biti bar ovog nivoa animacije i kvaliteta, uz scene prilagođene proizvodu (ne kopija istih scena). Sam demo se ne objavljuje.
@@ -22,7 +24,7 @@ git config user.name Gajic97; git config user.email freelancenemanjagajic@gmail.
 GH_TOKEN="$GH_TOKEN" bash scripts/state_pull.sh
 ```
 **Evidencija (od 6.11.2026) živi na grani `media`, u folderu `state/`** (posted.json, follow.json, postponed.json, weekly/). `state_pull.sh` je kopira u `~/sr/data/`, a `publish_media.sh` je vraća na granu media. Na **main se ne push-uje ništa** iz ovog zadatka (main je samo za pravila i kod koje menja Gajic sa Claude-om); push na main iz zakazanog zadatka nije prolazio.
-Pročitaj **BRAND.md** (obavezna pravila), **FORMATS.md** (koji format reela danas, obavezno), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v4**: hook od 3 s, šire bočne margine, muzika koja se menja i bogate animacije (BRAND.md → Animacije).
+Pročitaj **BRAND.md** (obavezna pravila), **FORMATS.md** (koji format reela danas, obavezno), **HOOKS.md** (tekstualni hook), **brag/SKILL.md** (kako se pravi video) i šablone u `templates/`. Standard je **reel-v5-14s** (od 10.11.2026): 14 s, hook i proizvod u pokretu od prvog kadra, nova scena na 2–3 s, prava muzika. reel-v4 ostaje kao uzor za nivo animacije.
 
 GitHub API (releases i ostalo) je blokiran kroz proxy. Radi samo `git` preko HTTPS-a sa gornjim headerom.
 
@@ -62,21 +64,24 @@ Za svaki proizvod u `~/work/<slug>/`:
    - hook
    - 5–6 scena po strukturi iz BRAND.md
    - spisak činjenica sa izvorom
-4. **Format i kompozicija:** prvo izaberi **format po FORMATS.md** (jutro i veče različiti, ne ponavljaj format iz poslednja 2 reela, format 1 se ne koristi). Polazi od `templates/formati-demo/base.html` i scena tog formata u `templates/formati-demo/gen.py` (f2–f8), pa ih prilagodi proizvodu: tekstovi, slike, brojke i ilustracije. Nivo animacije mora ostati kao u demou. Ima `window.render(t)` i `window.ready`, format 1080×1920 i **24 s**:
-   - **0–3 s: tekstualni hook (scena s0)** po `HOOKS.md`: oznaka iznad, glavni red od najviše 8 reči (svaka reč je `<span class="w">`, a ključne su `class="w green"`) i jedna rečenica ispod. Tip hook-a mora biti drugačiji od prethodnog reela u posted.json.
-   - **3–24 s: glavni deo** (`renderF(t)`, vreme ide od 0). Scene formata idu od 0 do 15,5 s (`SCN`), a od 15,5 su zajednička scena sa cenom (`sP`) i outro (`sO`).
-   - **Bočne margine:** sav sadržaj scena je skaliran na 92%, tako da je razmak od ivice oko 117 px. Ne vraćaj `.scene` scale, ne stavljaj tekst bliže od x=80 unutar scene i ne pravi elemente šire od 920 px.
-   - Scene i tekst prilagodi proizvodu: hook mora biti specifičan za taj proizvod, a ne kopija prethodnog. Ključna reč se mora pojaviti na ekranu.
-5. **Muzika (svaki reel drugačija):** kopiraj `templates/reel-v4/sound.py` (primer `sfx.json` je u istom folderu).
-   - Izaberi `STYLE` iz skupa deep_house, lofi_chill, synthwave, cinematic, minimal_tech, tako da se **ne ponavlja nijedan od poslednja 2 reela** (`music_style` u posted.json).
-   - `KEY` uzmi nasumično 0–11, a `SEED` = product_id.
-   - Napravi `sfx.json` sa efektima u **apsolutnom vremenu**, usklađenim sa tvojim ulascima elemenata. Format je `[{"type":"shutter","t":2.0,"g":0.9}, ...]`, a tipovi su opisani na vrhu sound.py. Bez `SFX` se koristi raspored reel-v3.
-   - Pokreni: `STYLE=.. KEY=.. SEED=.. INTRO=3.0 SFX=sfx.json OUT_WAV=music.wav python3 sound.py`
-   - Bez tonskih blip i pluck zvukova.
-   - **Font:** Poppins nije instaliran u okruženju (GitHub raw je blokiran). Uzmi ga iz npm-a (`npm pack @fontsource/poppins@5.0.8`, fajlovi latin i latin-ext 400–800) i ubaci `@font-face` u index.html; primer je `templates/runs/2026-11-02-hikvision-colorvu-ds-2ce12df3t/build.py`.
+4. **Format i kompozicija (od 10.11.2026):** izaberi **format po FORMATS.md** (jutro i veče različiti, ne ponavljaj format iz poslednja 2 reela, format 1 se ne koristi) kao **ugao priče**, pa ga složi u strukturu od **14 s**. Polazi od `templates/reel-v5-14s/index.html` (EZVIZ CS-H4 primer: `window.render(t)`, `window.ready`, 1080×1920, `fonts.css` sa Poppins woff2 u `assets/`). Scene, tekstovi i grafika se prilagođavaju proizvodu; ne kopiraj iste scene.
+   - **0–2,6 s: hook + proizvod u pokretu od 0. kadra.** Nema posebne uvodne scene ni fade-a iz crnog. Glavni red **najviše 5–6 reči** (ključne reči `<em>`), drugi kraći red ulazi posle ~1 s. Tip hook-a po HOOKS.md, drugačiji od prethodnog reela.
+   - **2,6–5,4 s i 5,4–8,4 s: dve koristi**, svaka sa svojom pozadinom/ilustracijom i „čipom“ sa činjenicom (najviše 3–5 reči po kadru).
+   - **8,4–10,9 s: tri brze „pečat“ poruke** (~0,8 s svaka, krupno).
+   - **10,9–14 s: cena** (odometar) + `super-vision.rs · 062/618-736`. **Hikvision bez cene:** „Cena na upit“ + „Zatraži ponudu“ + „✓ 062/618-736“.
+   - Na svakom rezu (2,6 / 5,4 / 8,4 / 10,9) kratak bljesak i „trzaj“ proizvoda (scale +6% pa nazad).
+   - Format kao ugao: f2 problem → hook-problem pa 2 rešenja; f4 poređenje → koristi = A pa B; f5 za koga → 2 tipa kupca; f8 greška → hook-greška pa 2 scene ispravke; f3/f6 (samo kompleti) → delovi kompleta u pečatima.
+   - Bočne margine: tekst ne bliže od 70 px ivici; ključna reč se mora pojaviti na ekranu.
+   - Slika proizvoda: sa sajta, beli fon uklonjen (flood-fill od ivica, prag 238), PNG u `assets/`.
+5. **Muzika (od 10.11.2026: prava pesma, ne sintetička):** kopiraj `templates/reel-v5-14s/sound.py` i napravi `sfx.json` u apsolutnom vremenu (primer u istom folderu; efekti na rezovima, tap/confirm na ceni).
+   - **Grupa:** `b2b` ako je reel o B2B portalu ili usluzi, inače `chill`. Druge grupe se ne koriste (Gajic, 9.11.).
+   - **Pesma:** iz `assets/music/<grupa>/` uzmi onu koja **nije korišćena u poslednjih 7 dana** (`music_track` u posted.json); ako su sve korišćene, onu najdavnije korišćenu.
+   - Pokreni: `MUSIC_FILE=~/sr/assets/music/<grupa>/<pesma>.mp3 DUR=14 SFX=sfx.json OUT_WAV=music.wav python3 sound.py`
+   - Licence su u `assets/music/LICENSES.md`; nove pesme dodaje samo Gajic (ručno sa Pixabay-a), obrada: `python3 scripts/prep_music.py <folder>`.
+   - **Font:** koristi `fonts.css` i woff2 iz `templates/reel-v5-14s/assets/` (Poppins 600–800, latin + latin-ext).
 6. **Provera kadrova:** pre rendera pregledaj stillove svake scene, hook-a i sredine prelaza (Playwright screenshot, pa Read), pa ispravi preklapanja, prelome, kontrast i tekst preblizu ivice.
-7. **Render:** `node scripts/render.js ~/work/<slug> ~/work/<slug>/music.wav ~/work/<slug>/reel.mp4 24 2.6`. Poster (thumbnail) je tekstualni hook na 2,6 s.
-8. **Opisi** (BRAND.md): Instagram, TikTok i LinkedIn. Instagram tekst ide u `ig.txt`.
+7. **Render:** `node scripts/render.js ~/work/<slug> ~/work/<slug>/music.wav ~/work/<slug>/reel.mp4 14 1.5`. Poster (thumbnail) je kadar sa hook-om na 1,5 s.
+8. **Opisi** (BRAND.md): Instagram, TikTok i LinkedIn. Instagram tekst ide u `ig.txt`. Na kraj IG i TikTok opisa dodaj **kratko pitanje** za komentare (npr. „Kuća ili firma? Napiši u komentar.“), bez obećanja i nagrada.
 
 Ako bilo koji korak ne uspe za neki proizvod, preskoči ga i uzmi sledeći sa liste. Nikad se ne objavljuje video sa neproverenim podacima.
 
@@ -100,7 +105,7 @@ BUFFER_TOKEN=... python3 scripts/schedule_buffer.py --service instagram --video 
 
 ## 6. Evidencija
 U `data/posted.json` (grana main) dodaj unos za svaki zakazani reel:
-- date, product_id, product, category, keyword, **format** (f2–f8), hook_type, hook_text, music_style (kod formata 4 i product_id_b)
+- date, product_id, product, category, keyword, **format** (f2–f8), hook_type, hook_text, music_style (= grupa `chill`/`b2b`), **music_track** (npr. `chill/zephiramusic-chill-lofi-585360.mp3`), (kod formata 4 i product_id_b)
 - `buffer_posts`: {"instagram": id, "tiktok": id, "linkedin": id}, gde je id iz izlaza schedule_buffer.py
 - channels, scheduled, video, buffer_post_id
 

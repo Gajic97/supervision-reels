@@ -1,6 +1,9 @@
 # HOOKS.md: tekstualni hook pre proizvoda (Hormozi pristup)
 
-Svaki reel počinje **tekstualnim hook-om od 3 s** (scena `s0` u `templates/reel-v4`), pa tek onda ide proizvod. Hook ne pominje model. Obraća se kupcu i njegovom problemu, a proizvod u nastavku je odgovor.
+**Od 10.11.2026 (reel od 14 s, `templates/reel-v5-14s`):** nema posebne scene sa tekstom pre proizvoda. Hook i proizvod u pokretu su na ekranu **od 0. kadra**, hook traje 0–2,6 s, glavni red ima **najviše 5–6 reči**, a drugi kraći red ulazi posle ~1 s. Sve ostalo ispod (poluge, tipovi, smenjivanje, zabrane) važi i dalje.
+- Po podacima 2.–8.11.: **yes-pitanje** i **provokativno** su prošli najbolje, **komanda** („Pre nego što kupiš…“) najslabije; komandu koristi retko (najviše 1 nedeljno).
+
+(Staro, do 9.11.:) Svaki reel počinje **tekstualnim hook-om od 3 s** (scena `s0` u `templates/reel-v4`), pa tek onda ide proizvod. Hook ne pominje model. Obraća se kupcu i njegovom problemu, a proizvod u nastavku je odgovor.
 
 ## Kako se piše (Alex Hormozi, $100M Leads i Value Equation)
 - **Jedna poruka, najviše 7–8 reči** u glavnom redu. Uz to idu kratka oznaka iznad (2–4 reči, „kome se obraćamo“) i jedna rečenica ispod, koja vodi u proizvod.

@@ -1,5 +1,10 @@
 # FORMATS.md: formati reelova (Gajicova odluka, 30.10.2026)
 
+> **Od 10.11.2026 (Gajic):** svaki format se slaže u reel od **14 s** (`templates/reel-v5-14s`, raspored u AUTOMATION.md korak 4): hook 0–2,6 · dve koristi do 8,4 · tri „pečata“ do 10,9 · cena do 14. Format određuje **ugao priče**, ne broj scena.
+> **Teme po terminu:** u **19:30 potrošačke** (Wi-Fi, solarne, 4G/SIM, ColorVu i kamere u boji noću, EZVIZ), u **12:30** HiLook/Hikvision turret i bullet, snimači, kompleti i B2B portal (B2B i dalje bar 1× nedeljno u 12:30). Razlog: sva 3 najgledanija reela 2.–8.11. su bila večernja potrošačka.
+> **Muzika:** samo `assets/music/chill` (proizvodi) i `assets/music/b2b` (B2B portal, usluge).
+
+
 Svi demo snimci su na https://gajic97.github.io/supervision-reels/demo/formati/. Kod je u `templates/formati-demo/`: `base.html` je zajednička osnova (stil, cena, outro, prelazi), a `gen.py` sadrži scene svakog formata.
 
 Stil se ne menja: boje, Poppins, logo, margine 92%, hook od 3 s, scena sa cenom i dugmetom „Dodaj u korpu“, outro i 24 s trajanja. Menja se **scenario**.
