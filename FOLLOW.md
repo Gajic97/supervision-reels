@@ -4,6 +4,8 @@ Ovaj posao je **odvojen od pravljenja reelova** (Gajic, 4.11.2026): reelovi se p
 
 Repo: klon kao u AUTOMATION.md (korak 0), pa odmah `cd ~/sr && GH_TOKEN="$GH_TOKEN" bash scripts/state_pull.sh` (aktuelna lista naloga je na grani media, `state/follow.json`). Nikad ne pratiš naloge i ne šalješ poruke, samo praviš listu. Praćenje radi Gajic, ili Claude preko Gajicovog Chrome-a kad Gajic to zatraži u razgovoru.
 
+**Jednokratno (dok postoji `data/follow_sync.json` na main):** odmah posle `state_pull.sh` pokreni `python3 scripts/merge_follow_sync.py`; to upisuje praćenje urađeno ručno 8. i 9.11.2026. u evidenciju (publish_media.sh na kraju ga šalje na media). Ponovno pokretanje ništa ne kvari.
+
 Web pretragom nađi do **10 Instagram, 10 TikTok i 10 LinkedIn** naloga. Samo ljudi i firme koji se **bave video nadzorom i sigurnosnom opremom**:
 - instalateri i serviseri video nadzora, alarma i interfona **isključivo iz Srbije** (prednost Srem, Novi Sad, Beograd)
 - firme za tehničku zaštitu, električari koji ugrađuju kamere
