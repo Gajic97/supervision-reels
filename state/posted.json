@@ -600,27 +600,22 @@
  },
  {
   "date": "2026-11-10",
-  "product_id": 2866,
-  "product": "DVR-108G-M1/T HiLook Turbo HD DVR snimač 8 kanala 2MP",
-  "category": "Snimači",
-  "keyword": "snimač za video nadzor",
-  "format": "f2",
-  "hook_type": "ako-onda",
-  "hook_text": "Ako planiraš više kamera, uzmi više kanala.",
-  "music_style": "synthwave",
-  "url": "https://super-vision.rs/proizvod/snimac-dvr-108g-m1-t-8-kanalni-turbo-hd-hilook/",
-  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-10-hilook-dvr-108g-m1-t.mp4",
+  "product_id": null,
+  "product": "B2B portal: ponude za klijente (instalateri)",
+  "category": "B2B",
+  "keyword": "ponuda za klijenta",
+  "format": "f8",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Još kucate ponude u Excelu?",
+  "music_style": "b2b",
+  "url": "https://b2b.super-vision.rs/",
+  "video": "(otpremljen direktno u Buffer, nije na Pages)",
   "scheduled": "2026-11-10 19:30",
   "channels": [
    "instagram",
    "tiktok",
    "linkedin"
   ],
-  "buffer_posts": {
-   "instagram": "6af2b0f705af22d7260c731e",
-   "tiktok": "6af2b0f8e261c09acca1e220",
-   "linkedin": "6af2b0f9d35dff5701e03cb6"
-  },
-  "buffer_post_id": "6af2b0f705af22d7260c731e"
+  "note": "Gajic 10.11.: ručno zakazano kroz Buffer web umesto DVR-108G-M1/T (taj je premešten u Buffer Drafts i u postponed.json)."
  }
 ]
