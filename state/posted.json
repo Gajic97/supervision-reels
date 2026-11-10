@@ -572,5 +572,55 @@
    "linkedin": "6af15da3e29b1359f0d03415"
   },
   "buffer_post_id": "6af15da1e29b1359f0d03287"
+ },
+ {
+  "date": "2026-11-10",
+  "product_id": 4878,
+  "product": "CS-H4 EZVIZ Wi-Fi dome kamera 2K 2.8mm",
+  "category": "Kamere",
+  "keyword": "Wi-Fi kamera",
+  "format": "f5",
+  "hook_type": "label",
+  "hook_text": "Stan, radnja ili ulaz: jedna kamera.",
+  "music_style": "deep_house",
+  "url": "https://super-vision.rs/proizvod/cs-h4-ezviz-wi-fi-dome-kamera-2k-2-8mm/",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-10-ezviz-cs-h4-wifi-dome.mp4",
+  "scheduled": "2026-11-10 12:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af2b0f4d35dff5701e03c14",
+   "tiktok": "6af2b0f5e261c09acca1e18f",
+   "linkedin": "6af2b0f626f9e6aeeae902b4"
+  },
+  "buffer_post_id": "6af2b0f4d35dff5701e03c14"
+ },
+ {
+  "date": "2026-11-10",
+  "product_id": 2866,
+  "product": "DVR-108G-M1/T HiLook Turbo HD DVR snimač 8 kanala 2MP",
+  "category": "Snimači",
+  "keyword": "snimač za video nadzor",
+  "format": "f2",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako planiraš više kamera, uzmi više kanala.",
+  "music_style": "synthwave",
+  "url": "https://super-vision.rs/proizvod/snimac-dvr-108g-m1-t-8-kanalni-turbo-hd-hilook/",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-10-hilook-dvr-108g-m1-t.mp4",
+  "scheduled": "2026-11-10 19:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af2b0f705af22d7260c731e",
+   "tiktok": "6af2b0f8e261c09acca1e220",
+   "linkedin": "6af2b0f9d35dff5701e03cb6"
+  },
+  "buffer_post_id": "6af2b0f705af22d7260c731e"
  }
 ]

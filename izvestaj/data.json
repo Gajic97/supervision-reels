@@ -1,6 +1,34 @@
 {
- "generated": "10.11.2026. 06:45",
+ "generated": "10.11.2026. 06:52",
  "reels": [
+  {
+   "date": "2026-11-10",
+   "product": "DVR-108G-M1/T HiLook Turbo HD DVR snimač 8 kanala 2MP",
+   "category": "Snimači",
+   "keyword": "snimač za video nadzor",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako planiraš više kamera, uzmi više kanala.",
+   "music_style": "synthwave",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-10-hilook-dvr-108g-m1-t.mp4",
+   "scheduled": "2026-11-10 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-10",
+   "product": "CS-H4 EZVIZ Wi-Fi dome kamera 2K 2.8mm",
+   "category": "Kamere",
+   "keyword": "Wi-Fi kamera",
+   "hook_type": "label",
+   "hook_text": "Stan, radnja ili ulaz: jedna kamera.",
+   "music_style": "deep_house",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-10-ezviz-cs-h4-wifi-dome.mp4",
+   "scheduled": "2026-11-10 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-09",
    "product": "NVR-104H-D HiLook NVR 4 kanala (A) vs NVR-108H-D HiLook NVR 8 kanala (B)",
