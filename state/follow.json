@@ -1293,5 +1293,50 @@
   "url": "https://www.linkedin.com/in/branko-stankovic-434776129",
   "city": "Srbija",
   "reason": "Servisni inženjer, MUP licenca za tehničku zaštitu, CCTV i dojava požara"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "Servisni centar Anatronix",
+  "handle": "@servis_racunara_nova_pazova",
+  "url": "https://www.instagram.com/servis_racunara_nova_pazova/",
+  "city": "Nova Pazova",
+  "reason": "Servis računara koji radi i video nadzor; Srem"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "linkedin",
+  "name": "Mirko Tomić (ITLINK)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/mirko-tomic-a2a875183/",
+  "city": "Beograd (Zvečka)",
+  "reason": "Vlasnik PR ITLINK: video nadzor, alarmi, kontrola pristupa, interfoni (delatnost 8020)"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "linkedin",
+  "name": "Milan Matejić (ELMAX Security)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/matejic",
+  "city": "Jagodina",
+  "reason": "Osnivač ELMAX Security: video nadzor, alarmi, interfoni"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "linkedin",
+  "name": "Mihajlo Živojinović (Expert Security)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/mihajlo-zivojinovic-6114bb123",
+  "city": "Beograd",
+  "reason": "Vlasnik Expert Security Beograd: kamere i alarmi"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "linkedin",
+  "name": "Vladan Kantar (Armory Security Systems)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/vladan-kantar-741653110",
+  "city": "Srbija",
+  "reason": "Osnivač Armory Security Systems, sigurnosni sistemi"
  }
 ]
