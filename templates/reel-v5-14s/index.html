@@ -33,16 +33,20 @@ html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-
 #stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;z-index:7}
 #stamp div{font-weight:800;font-size:150px;line-height:1.02;color:#fff;text-align:center;letter-spacing:-3px}
 #stamp div em{font-style:normal;color:#6cc08f}
-#price{position:absolute;inset:0;opacity:0;display:flex;flex-direction:column;align-items:center;z-index:7}
-#price .card{margin-top:1190px;background:#fff;border-radius:44px;padding:40px 70px;text-align:center;box-shadow:0 30px 70px rgba(0,0,0,.45)}
-#price .nm{font-weight:600;font-size:34px;color:#2f7a50}
-#price .pr{font-weight:800;font-size:132px;color:#123528;line-height:1.1}
-#price .pr small{font-size:60px}
-#price .cta{margin-top:56px;color:#fff;font-weight:700;font-size:54px}
-#price .cta b{color:#6cc08f}
+#endbg{position:absolute;inset:0;opacity:0;background:radial-gradient(1100px 1100px at 50% 45%,#ffffff 0%,#eef6f1 55%,#d7ebe0 100%)}
+/* krajnja kartica = naslovna slika na gridu (sav sadržaj u srednjih 3:4, y 240–1680) */
+#end{position:absolute;inset:0;opacity:0;z-index:7;text-align:center}
+#end .cat{position:absolute;top:310px;left:0;right:0;font-weight:700;font-size:40px;letter-spacing:4px;color:#2f7a50}
+#end .nm{position:absolute;top:1270px;left:60px;right:60px;font-weight:800;font-size:92px;line-height:1.05;color:#123528;letter-spacing:-1px}
+#end .sub{position:absolute;top:1390px;left:60px;right:60px;font-weight:600;font-size:48px;color:#2f7a50}
+#end .pr{position:absolute;top:1480px;left:0;right:0;display:flex;justify-content:center}
+#end .pr>span{background:#123528;color:#fff;font-weight:800;font-size:64px;padding:18px 50px;border-radius:70px}
+#end .pr b{color:#6cc08f}
+#end .cta{position:absolute;top:1610px;left:0;right:0;font-weight:700;font-size:42px;color:#123528}
+#end .cta b{color:#2f7a50}
 #flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:20}
 </style></head><body>
-<div id="bg"></div><div id="grid"></div>
+<div id="bg"></div><div id="grid"></div><div id="endbg"></div>
 <svg width="0" height="0" style="position:absolute"><defs>
 <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173a2b"/><stop offset="1" stop-color="#245740"/></linearGradient>
 <linearGradient id="fovw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8f0cf" stop-opacity=".75"/><stop offset="1" stop-color="#b8f0cf" stop-opacity=".18"/></linearGradient>
@@ -84,8 +88,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-
 <div id="h"><div class="a"></div><div class="b"></div></div>
 <div id="chip"><span></span></div>
 <div id="stamp"><div></div></div>
-<div id="price"><div class="card"><div class="nm">EZVIZ CS-HB90 · 4 MP + 4 MP · solarni panel</div><div class="pr"><span id="pv">26.910</span> <small>RSD</small></div></div>
-<div class="cta">super-vision.rs · <b>062/618-736</b></div></div>
+<div id="end"><div class="cat">WI-FI KAMERA · 2 OBJEKTIVA</div><div class="nm">EZVIZ CS-HB90</div><div class="sub">4 MP + 4 MP · solarni panel</div>
+<div class="pr"><span><span id="pv">26.910</span> <b>RSD</b></span></div><div class="cta">super-vision.rs · <b>062/618-736</b></div></div>
 <div id="flash"></div>
 <script>
 const $=id=>document.getElementById(id);
@@ -108,7 +112,7 @@ window.render=function(t){
  if(t<2.6){const p=ease(cl(t/0.9));sc=1.3-0.22*p+0.015*Math.sin(t*3);y=40-40*p;rot=-6+6*p;}
  else if(t<8.4){po=0;}
  else if(t<10.9){sc=0.62;y=-520;}
- else {const p=ease(cl((t-10.9)/0.5));sc=0.82-0.05*p;y=-250-20*p;}
+ else {const p=ease(cl((t-10.9)/0.5));sc=0.62+0.46*p;y=-520+330*p;}
  CUTS.forEach(c=>{const d=t-c;if(d>=0&&d<0.25)sc*=1+0.06*(1-d/0.25)});
  $('prod').style.opacity=po;$('prod').style.transform=`translate(${x}px,${y}px) scale(${sc}) rotate(${rot}deg)`;
  // oznake objektiva u hook-u
@@ -146,9 +150,11 @@ window.render=function(t){
  const sm=ST.find(s=>t>=s[0]&&t<s[1]);const se=$('stamp');
  if(sm){se.querySelector('div').innerHTML=sm[2];const p=cl((t-sm[0])/0.14);se.style.opacity=1;se.style.transform=`translateY(160px) scale(${1.5-0.5*ease(p)})`;}
  else se.style.opacity=0;
- // cena
- const pr=ease(cl((t-10.9)/0.35));$('price').style.opacity=pr;$('price').style.transform=`translateY(${(1-pr)*80}px)`;
- $('pv').textContent=Math.round(26910*ease(cl((t-11.0)/0.9))).toLocaleString('de-DE');
+ // krajnja kartica (= naslovna slika na gridu)
+ const pr=ease(cl((t-10.9)/0.4));$('endbg').style.opacity=pr;$('end').style.opacity=pr;
+ [...$('end').children].forEach((e,i)=>{const q=ease(cl((t-11.0-i*0.08)/0.4));e.style.opacity=q;e.style.transform=`translateY(${(1-q)*40}px)`;});
+ $('pv').textContent=Math.round(26910*ease(cl((t-11.2)/0.9))).toLocaleString('de-DE');
+ $('logo').style.color=pr>0.5?'#123528':'#fff';
  let f=0;CUTS.forEach(cu=>{const d=t-cu;if(d>=0&&d<0.12)f=Math.max(f,0.5*(1-d/0.12))});$('flash').style.opacity=f;
 };
 window.ready=Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r}))).then(()=>document.fonts.ready).then(()=>render(0));

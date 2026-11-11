@@ -51,7 +51,7 @@ def main():
     ap.add_argument("--video", required=True)
     ap.add_argument("--text-file", required=True)
     ap.add_argument("--at")
-    ap.add_argument("--thumb-offset", type=int, default=0, help="ms; frejm 0 je poster")
+    ap.add_argument("--thumb-offset", type=int, default=13300, help="ms; naslovna slika = krajnja kartica reela od 14 s (13,3 s)")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 

@@ -68,7 +68,7 @@ Za svaki proizvod u `~/work/<slug>/`:
    - **0–2,6 s: hook + proizvod u pokretu od 0. kadra.** Nema posebne uvodne scene ni fade-a iz crnog. Glavni red **najviše 5–6 reči** (ključne reči `<em>`), drugi kraći red ulazi posle ~1 s. Tip hook-a po HOOKS.md, drugačiji od prethodnog reela.
    - **2,6–5,4 s i 5,4–8,4 s: dve koristi**, svaka sa svojom pozadinom/ilustracijom i „čipom“ sa činjenicom (najviše 3–5 reči po kadru).
    - **8,4–10,9 s: tri brze „pečat“ poruke** (~0,8 s svaka, krupno).
-   - **10,9–14 s: cena** (odometar) + `super-vision.rs · 062/618-736`. **Hikvision bez cene:** „Cena na upit“ + „Zatraži ponudu“ + „✓ 062/618-736“.
+   - **10,9–14 s: krajnja kartica = naslovna slika na Instagram gridu** (Gajic, 11.11.2026; uzor u `templates/reel-v5-14s/index.html`, `#end`): svetla pozadina, velika slika proizvoda, iznad kategorija (npr. „WI-FI KAMERA · 2 OBJEKTIVA“), ispod model (npr. „EZVIZ CS-HB90“), jedna korist, cena u tamnom „čipu“ i `super-vision.rs · 062/618-736`. **Sav sadržaj u srednjih 3:4 kadra (y 240–1680)**, jer grid seče gore i dole. Kartica mora biti potpuno postavljena do 13,0 s. **Hikvision bez cene:** u čipu „Cena na upit“, a ispod „Zatraži ponudu · 062/618-736“. B2B reel: umesto proizvoda prikaz portala (telefon/laptop sa ponudom) i natpis „B2B portal“, čip „b2b.super-vision.rs“.
    - Na svakom rezu (2,6 / 5,4 / 8,4 / 10,9) kratak bljesak i „trzaj“ proizvoda (scale +6% pa nazad).
    - Format kao ugao: f2 problem → hook-problem pa 2 rešenja; f4 poređenje → koristi = A pa B; f5 za koga → 2 tipa kupca; f8 greška → hook-greška pa 2 scene ispravke; f3/f6 (samo kompleti) → delovi kompleta u pečatima.
    - Bočne margine: tekst ne bliže od 70 px ivici; ključna reč se mora pojaviti na ekranu.
@@ -80,7 +80,7 @@ Za svaki proizvod u `~/work/<slug>/`:
    - Licence su u `assets/music/LICENSES.md`; nove pesme dodaje samo Gajic (ručno sa Pixabay-a), obrada: `python3 scripts/prep_music.py <folder>`.
    - **Font:** koristi `fonts.css` i woff2 iz `templates/reel-v5-14s/assets/` (Poppins 600–800, latin + latin-ext).
 6. **Provera kadrova:** pre rendera pregledaj stillove svake scene, hook-a i sredine prelaza (Playwright screenshot, pa Read), pa ispravi preklapanja, prelome, kontrast i tekst preblizu ivice.
-7. **Render:** `node scripts/render.js ~/work/<slug> ~/work/<slug>/music.wav ~/work/<slug>/reel.mp4 14 1.5`. Poster (thumbnail) je kadar sa hook-om na 1,5 s.
+7. **Render:** `node scripts/render.js ~/work/<slug> ~/work/<slug>/music.wav ~/work/<slug>/reel.mp4 14 13.3`. Naslovna slika je krajnja kartica: Buffer je uzima iz videa na 13,3 s (`schedule_buffer.py` po defaultu šalje `thumbnailOffset` 13300 ms). Ne ubacuj poster kao prvi kadar.
 8. **Opisi** (BRAND.md): Instagram, TikTok i LinkedIn. Instagram tekst ide u `ig.txt`. Na kraj IG i TikTok opisa dodaj **kratko pitanje** za komentare (npr. „Kuća ili firma? Napiši u komentar.“), bez obećanja i nagrada.
 
 Ako bilo koji korak ne uspe za neki proizvod, preskoči ga i uzmi sledeći sa liste. Nikad se ne objavljuje video sa neproverenim podacima.

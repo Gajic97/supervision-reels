@@ -11,6 +11,8 @@ Drugi primer (jednostavniji, proizvod na pozadini): `primer-h4/` (EZVIZ CS-H4, h
 Probni render:
 ```bash
 MUSIC_FILE=../../assets/music/chill/zephiramusic-chill-lofi-585360.mp3 DUR=14 SFX=sfx.json OUT_WAV=music.wav python3 sound.py
-node ../../scripts/render.js . music.wav reel.mp4 14 1.5
+node ../../scripts/render.js . music.wav reel.mp4 14 13.3
 ```
 Raspored scena i pravila: AUTOMATION.md korak 4–5, HOOKS.md, FORMATS.md.
+
+Krajnja kartica (10,9–14 s, `#end`) je ujedno **naslovna slika na Instagram gridu** (Buffer `thumbnailOffset` 13300 ms); sadržaj u srednjih 3:4 (y 240–1680).
