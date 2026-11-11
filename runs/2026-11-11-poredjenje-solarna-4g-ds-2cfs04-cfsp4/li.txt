@@ -1,0 +1,7 @@
+Solarna kamera za lokacije bez struje i bez interneta: poređenje Hikvision DS-2CFS04/4G i DS-2CFSP4/4G, obe 4 MP (2560 x 1440).
+
+Obe se napajaju iz ugrađene baterije od 9000 mAh koju puni solarni panel od 8 W, a povezuju se preko 4G mreže uz nano SIM karticu koju korisnik nabavlja posebno. Belo i infracrveno osvetljenje do 30 m, mikrofon i zvučnik, memorijska kartica do 512 GB, IP66.
+
+DS-2CFS04/4G je fiksna verzija, jednostavnija za montažu na banderu ili zid. DS-2CFSP4/4G ima motorizovano PT postolje (0–340° horizontalno, 0–80° vertikalno) za lokacije gde jedna kamera treba da pokrije više pravaca: gradilišta, parkinzi bez infrastrukture, poljoprivredna imanja.
+
+Cena na upit: super-vision.rs ili 062/618-736

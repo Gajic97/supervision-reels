@@ -617,5 +617,60 @@
    "linkedin"
   ],
   "note": "Gajic 10.11.: ručno zakazano kroz Buffer web umesto DVR-108G-M1/T (taj je premešten u Buffer Drafts i u postponed.json)."
+ },
+ {
+  "date": "2026-11-11",
+  "product_id": 2866,
+  "product": "DVR-108G-M1/T HiLook Turbo HD DVR snimač 8 kanala 2MP",
+  "category": "Snimači",
+  "keyword": "snimač za kamere",
+  "format": "f2",
+  "hook_type": "izjava / broj",
+  "hook_text": "Peta kamera. Snimač ima 4.",
+  "music_style": "chill",
+  "music_track": "chill/velariomusic-chill-lofi-616929.mp3",
+  "url": "https://super-vision.rs/proizvod/snimac-dvr-108g-m1-t-8-kanalni-turbo-hd-hilook/",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-11-hilook-dvr-108g-m1-t.mp4",
+  "scheduled": "2026-11-11 12:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af400e5a9d779009b884383",
+   "tiktok": "6af400e7095081ea08b9e895",
+   "linkedin": "6af400e97ffe799078d444d2"
+  },
+  "buffer_post_id": "6af400e5a9d779009b884383",
+  "note": "Novi reel (reel-v5-14s) za proizvod iz postponed.json."
+ },
+ {
+  "date": "2026-11-11",
+  "product_id": 4212,
+  "product_id_b": 4213,
+  "product": "DS-2CFS04/4G Hikvision solarna 4G (A) vs DS-2CFSP4/4G Hikvision solarna 4G PT (B)",
+  "category": "Kamere",
+  "keyword": "solarna kamera",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Plac bez struje i interneta?",
+  "music_style": "chill",
+  "music_track": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "url": "https://super-vision.rs/proizvod/solarna-kamera-ds-2cfs04-4g/",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-11-poredjenje-solarna-4g-ds-2cfs04-cfsp4.mp4",
+  "scheduled": "2026-11-11 19:30",
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "buffer_posts": {
+   "instagram": "6af400e67ffe799078d4437f",
+   "tiktok": "6af400e81da76fd3d2c36e5f",
+   "linkedin": "6af400eaa9d779009b884543"
+  },
+  "buffer_post_id": "6af400e67ffe799078d4437f",
+  "note": "Hikvision: bez cene (Cena na upit)."
  }
 ]

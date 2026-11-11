@@ -1,6 +1,34 @@
 {
- "generated": "11.11.2026. 06:44",
+ "generated": "11.11.2026. 06:45",
  "reels": [
+  {
+   "date": "2026-11-11",
+   "product": "DS-2CFS04/4G Hikvision solarna 4G (A) vs DS-2CFSP4/4G Hikvision solarna 4G PT (B)",
+   "category": "Kamere",
+   "keyword": "solarna kamera",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Plac bez struje i interneta?",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-11-poredjenje-solarna-4g-ds-2cfs04-cfsp4.mp4",
+   "scheduled": "2026-11-11 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-11",
+   "product": "DVR-108G-M1/T HiLook Turbo HD DVR snimač 8 kanala 2MP",
+   "category": "Snimači",
+   "keyword": "snimač za kamere",
+   "hook_type": "izjava / broj",
+   "hook_text": "Peta kamera. Snimač ima 4.",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-11-hilook-dvr-108g-m1-t.mp4",
+   "scheduled": "2026-11-11 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-10",
    "product": "B2B portal: ponude za klijente (instalateri)",
