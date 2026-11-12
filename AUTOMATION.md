@@ -72,7 +72,11 @@ Za svaki proizvod u `~/work/<slug>/`:
    - Na svakom rezu (2,6 / 5,4 / 8,4 / 10,9) kratak bljesak i „trzaj“ proizvoda (scale +6% pa nazad).
    - Format kao ugao: f2 problem → hook-problem pa 2 rešenja; f4 poređenje → koristi = A pa B; f5 za koga → 2 tipa kupca; f8 greška → hook-greška pa 2 scene ispravke; f3/f6 (samo kompleti) → delovi kompleta u pečatima.
    - Bočne margine: tekst ne bliže od 70 px ivici; ključna reč se mora pojaviti na ekranu.
-   - Slika proizvoda: sa sajta, beli fon uklonjen (flood-fill od ivica, prag 238), PNG u `assets/`.
+   - **Slika proizvoda (Gajic 12.11.2026, posle obrisanog reela sa „iscepanim“ kamerama):**
+     - Uzmi **originalnu sliku u punoj veličini** sa sajta (najveća iz `srcset`, obično 500–800 px), nikad umanjenu/thumbnail verziju.
+     - **Ne seci beli fon** (flood-fill/prag) kod slika sa belom pozadinom: beli delovi proizvoda (kućište, nosač, nožice panela) nestaju i ivice izgledaju iscepano. Proizvod ide **na belu zaobljenu karticu** (`background:#fff; border-radius:48px; padding ~30 px; blaga senka`), slika `object-fit:contain` unutar nje. Seći se sme samo ako slika na sajtu već ima pravu providnost (PNG sa alfa kanalom).
+     - **Ne uvećavaj** sliku više od ~1,1× njene prave širine (500 px slika → najviše ~550 px na ekranu); ako treba veće, uvećaj karticu, ne sliku.
+     - U proveri kadrova (korak 6) obavezno pogledaj **uvećan isečak proizvoda u punoj rezoluciji** (hook i krajnja kartica): bez rupa, bez belih „otisaka“ oko ivica, bez mutnoće. Ako ne valja, ispravi pre rendera.
 5. **Muzika (od 10.11.2026: prava pesma, ne sintetička):** kopiraj `templates/reel-v5-14s/sound.py` i napravi `sfx.json` u apsolutnom vremenu (primer u istom folderu; efekti na rezovima, tap/confirm na ceni).
    - **Grupa:** `b2b` ako je reel o B2B portalu ili usluzi, inače `chill`. Druge grupe se ne koriste (Gajic, 9.11.).
    - **Pesma:** iz `assets/music/<grupa>/` uzmi onu koja **nije korišćena u poslednjih 7 dana** (`music_track` u posted.json); ako su sve korišćene, onu najdavnije korišćenu.

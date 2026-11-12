@@ -16,3 +16,5 @@ node ../../scripts/render.js . music.wav reel.mp4 14 13.3
 Raspored scena i pravila: AUTOMATION.md korak 4–5, HOOKS.md, FORMATS.md.
 
 Krajnja kartica (10,9–14 s, `#end`) je ujedno **naslovna slika na Instagram gridu** (Buffer `thumbnailOffset` 13300 ms); sadržaj u srednjih 3:4 (y 240–1680).
+
+VAŽNO (12.11.): HB90 slika u primeru je isečena ručno i pregledana. U automatici se slike sa belim fonom NE seku, nego proizvod ide na belu zaobljenu karticu (AUTOMATION.md korak 4, „Slika proizvoda“).
