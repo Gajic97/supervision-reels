@@ -1,6 +1,34 @@
 {
- "generated": "12.11.2026. 06:44",
+ "generated": "12.11.2026. 06:45",
  "reels": [
+  {
+   "date": "2026-11-12",
+   "product": "H3c EZVIZ Wi-Fi kamera 5MP 2.8mm",
+   "category": "Kamere",
+   "keyword": "spoljna wifi kamera",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Vidi pokret, a ne čoveka? / Spoljna Wi-Fi kamera to rešava.",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-12-ezviz-h3c-5mp.mp4",
+   "scheduled": "2026-11-12 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-12",
+   "product": "DVR-204Q-M1 HiLook Turbo HD DVR snimač 4 kanala 2MP",
+   "category": "Snimači",
+   "keyword": "DVR snimač",
+   "hook_type": "label",
+   "hook_text": "Kuća. Lokal. Kancelarija. / Jedan DVR snimač za 4 kamere.",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-12-hilook-dvr-204q-m1.mp4",
+   "scheduled": "2026-11-12 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-11",
    "product": "DS-2CFS04/4G Hikvision solarna 4G (A) vs DS-2CFSP4/4G Hikvision solarna 4G PT (B)",

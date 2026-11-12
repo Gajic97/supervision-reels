@@ -1,0 +1,166 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;background:#0b1a14}
+#bg{position:absolute;inset:0;background:radial-gradient(1300px 1100px at 50% 36%,#1a4231 0%,#0e251b 55%,#06110b 100%)}
+#grid{position:absolute;inset:0;opacity:.06;background-image:linear-gradient(#6cc08f 1px,transparent 1px),linear-gradient(90deg,#6cc08f 1px,transparent 1px);background-size:72px 72px}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35}
+#logo{position:absolute;top:70px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:16px;color:#fff;font-weight:700;font-size:34px;letter-spacing:2px;z-index:9}
+#logo img{width:58px;height:58px;border-radius:14px}
+#bar{position:absolute;top:0;left:0;height:8px;background:#6cc08f;z-index:10}
+#h{position:absolute;top:180px;left:70px;right:70px;text-align:center;z-index:8}
+#h .a{font-weight:800;font-size:112px;line-height:1.02;color:#fff;letter-spacing:-2px}
+#h .a em{font-style:normal;color:#6cc08f}
+#h .b{font-weight:700;font-size:56px;line-height:1.15;color:#cfe9da;margin-top:26px}
+#h .b em{font-style:normal;color:#6cc08f}
+#prod{position:absolute;left:160px;top:660px;width:760px;height:760px;transform-origin:50% 50%}
+#prod .glow{position:absolute;left:80px;top:180px;width:600px;height:400px;border-radius:50%;background:radial-gradient(closest-side,rgba(108,192,143,.55),rgba(108,192,143,0));}
+#prod img{position:absolute;left:0;top:0;width:100%;height:100%;filter:drop-shadow(0 50px 60px rgba(0,0,0,.6))}
+.ring{position:absolute;left:30%;top:70%;width:0;height:0}.ring i{position:absolute;left:-90px;top:-90px;width:180px;height:180px;border-radius:50%;border:7px solid #6cc08f}.ring b{position:absolute;left:-300px;top:70px;white-space:nowrap;background:#6cc08f;color:#0b1a14;font-weight:800;font-size:40px;padding:8px 24px;border-radius:40px}
+#pk{position:absolute;top:790px;left:0;right:0;text-align:center;font-weight:700;font-size:52px;color:#cfe9da;opacity:0;z-index:8}
+.ch{position:absolute;top:530px;width:150px;height:84px;margin-left:-75px;border-radius:24px;background:#6cc08f;color:#0b1a14;font-weight:800;font-size:38px;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 14px 30px rgba(0,0,0,.4)}
+.ch svg{width:42px;height:30px}
+#card{position:absolute;left:50px;top:560px;width:980px;height:700px;border-radius:40px;overflow:hidden;background:#0f2a1f;box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 0 2px rgba(108,192,143,.35);opacity:0}
+#card svg{position:absolute;left:0;top:0;width:980px;height:700px}
+#tag{position:absolute;left:26px;top:22px;background:rgba(11,26,20,.8);color:#cfe9da;font-weight:700;font-size:28px;padding:6px 18px;border-radius:20px;opacity:0}
+#chip{position:absolute;top:1300px;left:0;right:0;display:flex;justify-content:center;z-index:7}
+#chip span{background:#fff;color:#123528;font-weight:700;font-size:46px;padding:22px 44px;border-radius:60px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+#chip span b{color:#2f7a50}
+#stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;z-index:7}
+#stamp div{font-weight:800;font-size:150px;line-height:1.02;color:#fff;text-align:center;letter-spacing:-3px}
+#stamp div em{font-style:normal;color:#6cc08f}
+#endbg{position:absolute;inset:0;opacity:0;background:radial-gradient(1100px 1100px at 50% 45%,#ffffff 0%,#eef6f1 55%,#d7ebe0 100%)}
+#end{position:absolute;inset:0;opacity:0;z-index:7;text-align:center}
+#end .cat{position:absolute;top:310px;left:0;right:0;font-weight:700;font-size:40px;letter-spacing:4px;color:#2f7a50}
+#end .nm{position:absolute;top:1280px;left:40px;right:40px;white-space:nowrap;font-weight:800;font-size:80px;line-height:1.05;color:#123528;letter-spacing:-1px}
+#end .sub{position:absolute;top:1390px;left:60px;right:60px;font-weight:600;font-size:48px;color:#2f7a50}
+#end .pr{position:absolute;top:1480px;left:0;right:0;display:flex;justify-content:center}
+#end .pr>span{background:#123528;color:#fff;font-weight:800;font-size:64px;padding:18px 50px;border-radius:70px}
+#end .pr b{color:#6cc08f}
+#end .cta{position:absolute;top:1610px;left:0;right:0;font-weight:700;font-size:42px;color:#123528}
+#end .cta b{color:#2f7a50}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:20}
+</style></head><body>
+<div id="bg"></div><div id="grid"></div>
+<div class="blob" id="b1" style="width:520px;height:520px;background:#2f7a50"></div>
+<div class="blob" id="b2" style="width:420px;height:420px;background:#439665"></div>
+<div id="endbg"></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173a2b"/><stop offset="1" stop-color="#245740"/></linearGradient>
+<linearGradient id="fovw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8f0cf" stop-opacity=".6"/><stop offset="1" stop-color="#b8f0cf" stop-opacity=".12"/></linearGradient>
+<g id="yard">
+ <rect width="980" height="700" fill="url(#sky)"/>
+ <circle cx="840" cy="90" r="34" fill="#e9f6ef" opacity=".85"/>
+ <rect y="430" width="980" height="270" fill="#1d4a35"/>
+ <path d="M0 430 Q490 400 980 430 L980 445 L0 445Z" fill="#2a6447"/>
+ <rect x="40" y="250" width="260" height="190" fill="#e9efe9"/><path d="M20 260 L170 150 L320 260Z" fill="#2f7a50"/>
+ <rect x="90" y="300" width="60" height="60" fill="#ffd77a"/><rect x="200" y="330" width="60" height="110" fill="#8a6a4a"/>
+ <rect x="890" y="300" width="22" height="140" fill="#6b4e33"/><circle cx="900" cy="280" r="70" fill="#2f7a50"/><circle cx="860" cy="310" r="45" fill="#3a8c5e"/>
+ <g stroke="#cfe9da" stroke-width="6" opacity=".8"><line x1="330" y1="410" x2="980" y2="410"/>
+ <line x1="350" y1="380" x2="350" y2="440"/><line x1="420" y1="380" x2="420" y2="440"/><line x1="490" y1="380" x2="490" y2="440"/><line x1="720" y1="380" x2="720" y2="440"/><line x1="790" y1="380" x2="790" y2="440"/><line x1="860" y1="380" x2="860" y2="440"/></g>
+ <rect x="540" y="372" width="140" height="70" fill="none" stroke="#cfe9da" stroke-width="8"/>
+ <path d="M610 700 L590 445 L640 445 L700 700Z" fill="#3c6b55"/>
+ <g transform="translate(380 520)"><rect width="200" height="70" rx="22" fill="#d9e4de"/><rect x="40" y="-40" width="120" height="50" rx="18" fill="#d9e4de"/><rect x="55" y="-30" width="40" height="30" rx="6" fill="#5b7f6d"/><rect x="105" y="-30" width="40" height="30" rx="6" fill="#5b7f6d"/><circle cx="45" cy="72" r="22" fill="#0b1a14"/><circle cx="155" cy="72" r="22" fill="#0b1a14"/></g>
+</g>
+<g id="person"><circle cx="0" cy="-118" r="22" fill="#fff"/><path d="M-26 -90 Q0 -100 26 -90 L22 -20 L-22 -20Z" fill="#fff"/><rect x="-22" y="-22" width="16" height="22" fill="#fff"/><rect x="6" y="-22" width="16" height="22" fill="#fff"/></g>
+</defs></svg>
+<div id="card">
+ <svg viewBox="0 0 980 700"><use href="#yard"/>
+  <path id="fov" d="" fill="url(#fovw)" stroke="#b8f0cf" stroke-width="4" stroke-dasharray="14 10" opacity="0"/>
+  <path id="arc" d="" fill="none" stroke="#6cc08f" stroke-width="8" opacity="0"/>
+  <g id="deg" opacity="0"><rect x="560" y="70" width="230" height="84" rx="42" fill="#6cc08f"/><text id="degT" x="675" y="128" text-anchor="middle" fill="#0b1a14" font-family="Poppins" font-weight="800" font-size="46">125°</text></g>
+  <use id="p1" href="#person"/>
+  <g id="box" opacity="0"><rect id="bR" width="120" height="180" fill="none" stroke="#6cc08f" stroke-width="6"/><rect id="bL" width="150" height="42" rx="8" fill="#6cc08f"/><text id="bT" fill="#0b1a14" font-family="Poppins" font-weight="800" font-size="27">Čovek</text></g>
+  <g id="scan" opacity="0"><rect id="sc" width="120" height="6" fill="#6cc08f"/></g>
+  <g transform="translate(300 255)"><rect x="-6" y="-14" width="40" height="28" rx="12" fill="#fff"/><circle r="12" fill="#fff"/><circle r="6" fill="#0b1a14"/></g>
+ </svg>
+ <div id="tag">Primer</div>
+</div>
+<div id="prod"><div class="glow"></div><img src="assets/prod.png"><div class="ring" id="rg"><i></i><b>AI detekcija</b></div></div>
+<div id="logo"><img src="assets/supervision-ikonica-512.png">SUPERVISION</div>
+<div id="bar"></div>
+<div id="h"><div class="a"></div><div class="b"></div></div>
+<div id="pk">Pre kupovine proveri:</div>
+<div id="chip"><span></span></div>
+<div id="stamp"><div></div></div>
+<div id="end"><div class="cat">SPOLJNA WI-FI KAMERA · 5 MP</div><div class="nm">EZVIZ H3c</div><div class="sub">AI detekcija čoveka · IP67</div>
+<div class="pr"><span><span id="pv">8.190</span> <b>RSD</b></span></div><div class="cta">super-vision.rs · <b>062/618-736</b></div></div>
+<div id="flash"></div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const CUTS=[2.6,5.4,8.4,10.9];
+const PRICE=8190;
+const H=[
+ [0,2.6,'Vidi pokret,<br>a ne <em>čoveka</em>?','<em>Spoljna Wi-Fi kamera</em> to rešava.'],
+ [2.6,5.4,'AI prepozna<br><em>oblik čoveka</em>.',''],
+ [5.4,8.4,'Širi kadar,<br><em>više detalja</em>.',''],
+];
+const CH=[[3.0,5.4,'<b>AI detekcija</b> ljudskog oblika'],[5.8,8.4,'<b>5 MP</b> · 2880 × 1620']];
+const ST=[[8.4,9.2,'<em>IP67</em><br>napolju.'],[9.2,10.0,'microSD<br>do <em>512 GB</em>.'],[10.0,10.9,'<em>Wi-Fi</em><br>i RJ45.']];
+const CX=300,CY=255;
+const px=t=>830-130*cl((t-2.8)/5.4),py=t=>630+30*cl((t-2.8)/5.4);
+window.render=function(t){
+ $('bar').style.width=(1080*t/14)+'px';
+ $('b1').style.transform=`translate(${120+120*Math.sin(t*0.7)}px,${300+90*Math.cos(t*0.5)}px)`;
+ $('b2').style.transform=`translate(${560+100*Math.cos(t*0.6)}px,${1200+120*Math.sin(t*0.8)}px)`;
+ let sc=1,y=0,rot=0,po=1,ry=0;
+ if(t<2.6){const p=ease(cl(t/0.9));sc=0.98-0.08*p+0.015*Math.sin(t*3);y=60-40*p;rot=-6+6*p+1.5*Math.sin(t*2.2);ry=(1-p)*35;}
+ else if(t<8.4){po=0;}
+ else if(t<10.9){sc=0.55;y=-560;rot=2*Math.sin(t*2);}
+ else {const p=ease(cl((t-10.9)/0.5));sc=0.55+0.33*p;y=-560+340*p;}
+ CUTS.forEach(c=>{const d=t-c;if(d>=0&&d<0.25)sc*=1+0.06*(1-d/0.25)});
+ $('prod').style.opacity=po;$('prod').style.transform=`translateY(${y}px) perspective(1400px) rotateY(${ry}deg) scale(${sc}) rotate(${rot}deg)`;
+ const pr=ease(cl((t-10.9)/0.4));
+ $('prod').querySelector('.glow').style.opacity=pr>0.5?0:0.6+0.4*Math.sin(t*4);
+ // prsten na objektivu
+ const rg=$('rg');const t0=0.7;const v=t<2.6?ease(cl((t-t0)/0.3)):0;rg.style.opacity=v;
+ const ph=((t-t0)*1.4)%1;rg.querySelector('i').style.transform=`scale(${0.7+0.5*ph})`;rg.querySelector('i').style.opacity=1-ph;
+ rg.querySelector('b').style.transform=`scale(${0.7+0.3*back(cl((t-t0-0.2)/0.35))})`;
+ // kartica
+ const co=t>=2.6&&t<8.4?ease(cl((t-2.6)/0.3)):0;const card=$('card');card.style.opacity=co;
+ card.style.transform=`translateY(${(1-co)*120}px) scale(${0.96+0.04*co})`;$('tag').style.opacity=co;
+ const X=px(t),Y=py(t);$('p1').setAttribute('transform',`translate(${X} ${Y})`);
+ // A: skeniranje pa okvir „Čovek"
+ const sO=t>=3.0&&t<3.8?1:0;$('scan').setAttribute('opacity',sO);
+ $('sc').setAttribute('x',X-60);$('sc').setAttribute('y',Y-180+180*(((t-3.0)/0.4)%1));
+ const bO=t>=3.8&&t<8.4?back(cl((t-3.8)/0.3)):0;$('box').setAttribute('opacity',cl(bO));
+ $('bR').setAttribute('x',X-60);$('bR').setAttribute('y',Y-165);$('bL').setAttribute('x',X-60);$('bL').setAttribute('y',Y-212);
+ $('bT').setAttribute('x',X-46);$('bT').setAttribute('y',Y-182);
+ // B: vidno polje se otvara do 125°
+ const op=t>=5.4?ease(cl((t-5.5)/1.0)):0;const half=(125/2)*op*Math.PI/180;const base=Math.PI*0.32;
+ const R=1100;const a1=base-half,a2=base+half;
+ $('fov').setAttribute('d',`M${CX} ${CY} L${CX+R*Math.cos(a1)} ${CY+R*Math.sin(a1)} L${CX+R*Math.cos(a2)} ${CY+R*Math.sin(a2)}Z`);
+ $('fov').setAttribute('opacity',t>=5.4&&t<8.4?0.9:0);
+ const r=110;$('arc').setAttribute('d',`M${CX+r*Math.cos(a1)} ${CY+r*Math.sin(a1)} A${r} ${r} 0 0 1 ${CX+r*Math.cos(a2)} ${CY+r*Math.sin(a2)}`);
+ $('arc').setAttribute('opacity',t>=5.4&&t<8.4?1:0);
+ $('deg').setAttribute('opacity',t>=5.6&&t<8.4?1:0);$('degT').textContent=Math.round(125*op)+'°';
+ // naslov
+ const hh=H.find(h=>t>=h[0]&&t<h[1]);const he=$('h');
+ if(hh){he.querySelector('.a').innerHTML=hh[2];he.querySelector('.b').innerHTML=hh[3];
+  const local=t-hh[0];const p=hh[0]===0?1:back(cl(local/0.35));
+  he.style.opacity=hh[0]===0?1:cl(local/0.12);he.style.transform=`scale(${0.86+0.14*p})`;
+  he.querySelector('.a').style.fontSize=hh[0]===0?'116px':'92px';
+  he.querySelector('.b').style.opacity=hh[3]?cl((t-1.0)/0.25):0;
+  he.querySelector('.b').style.transform=`translateY(${(1-ease(cl((t-1.0)/0.3)))*30}px)`;}
+ else he.style.opacity=0;
+ $('pk').style.opacity=t>=8.4&&t<10.9?1:0;
+ const c=CH.find(c=>t>=c[0]&&t<c[1]);const ce=$('chip');
+ if(c){ce.querySelector('span').innerHTML=c[2];const p=back(cl((t-c[0])/0.35));ce.style.opacity=cl((t-c[0])/0.1)*cl((c[1]-t)/0.15);ce.style.transform=`translateY(${(1-p)*80}px)`;}
+ else ce.style.opacity=0;
+ const sm=ST.find(s=>t>=s[0]&&t<s[1]);const se=$('stamp');
+ if(sm){se.querySelector('div').innerHTML=sm[2];const p=cl((t-sm[0])/0.14);se.style.opacity=1;se.style.transform=`translateY(160px) scale(${1.5-0.5*ease(p)})`;}
+ else se.style.opacity=0;
+ $('endbg').style.opacity=pr;$('end').style.opacity=pr;
+ [...$('end').children].forEach((e,i)=>{const q=ease(cl((t-11.0-i*0.08)/0.4));e.style.opacity=q;e.style.transform=`translateY(${(1-q)*40}px)`;});
+ $('pv').textContent=Math.round(PRICE*ease(cl((t-11.2)/0.9))).toLocaleString('de-DE');
+ $('logo').style.color=pr>0.5?'#123528':'#fff';
+ let f=0;CUTS.forEach(cu=>{const d=t-cu;if(d>=0&&d<0.12)f=Math.max(f,0.5*(1-d/0.12))});$('flash').style.opacity=f;
+};
+function fit(){const e=document.querySelector('#end .nm');let fs=80;e.style.fontSize=fs+'px';while(e.scrollWidth>1000&&fs>40){fs-=2;e.style.fontSize=fs+'px';}}
+window.ready=Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r}))).then(()=>document.fonts.ready).then(()=>{fit();render(0);});
+</script></body></html>

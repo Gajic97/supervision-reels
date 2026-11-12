@@ -672,5 +672,63 @@
   },
   "buffer_post_id": "6af400e67ffe799078d4437f",
   "note": "Hikvision: bez cene (Cena na upit)."
+ },
+ {
+  "date": "2026-11-12",
+  "product_id": 6132,
+  "product": "DVR-204Q-M1 HiLook Turbo HD DVR snimač 4 kanala 2MP",
+  "category": "Snimači",
+  "keyword": "DVR snimač",
+  "format": "f5",
+  "hook_type": "label",
+  "hook_text": "Kuća. Lokal. Kancelarija. / Jedan DVR snimač za 4 kamere.",
+  "music_style": "chill",
+  "music_track": "chill/atlasaudio-lofi-chill-589987.mp3",
+  "url": "https://super-vision.rs/proizvod/dvr-204q-m1-hilook-turbo-hd-dvr-snimac-4-kanala-2mp/",
+  "price": 9320,
+  "buffer_posts": {
+   "instagram": "6af552783edeaff13cfff733",
+   "tiktok": "6af5527adf70eccdaab51abf",
+   "linkedin": "6af5527c016d3b89d8a74fa0"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-12 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-12-hilook-dvr-204q-m1.mp4",
+  "buffer_post_id": "6af552783edeaff13cfff733",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-12-hilook-dvr-204q-m1"
+ },
+ {
+  "date": "2026-11-12",
+  "product_id": 5879,
+  "product": "H3c EZVIZ Wi-Fi kamera 5MP 2.8mm",
+  "category": "Kamere",
+  "keyword": "spoljna wifi kamera",
+  "format": "f8",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Vidi pokret, a ne čoveka? / Spoljna Wi-Fi kamera to rešava.",
+  "music_style": "chill",
+  "music_track": "chill/zephiramusic-chill-lofi-585360.mp3",
+  "url": "https://super-vision.rs/proizvod/h3c-ezviz-wi-fi-kamera-5mp-2-8mm/",
+  "price": 8190,
+  "buffer_posts": {
+   "instagram": "6af552799539b54d882193c5",
+   "tiktok": "6af5527b016d3b89d8a74f6e",
+   "linkedin": "6af5527ddf70eccdaab51b35"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-12 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-12-ezviz-h3c-5mp.mp4",
+  "buffer_post_id": "6af552799539b54d882193c5",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-12-ezviz-h3c-5mp"
  }
 ]
