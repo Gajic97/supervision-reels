@@ -1,5 +1,5 @@
 {
- "generated": "11.11.2026. 09:47",
+ "generated": "12.11.2026. 06:44",
  "reels": [
   {
    "date": "2026-11-11",
@@ -11,9 +11,31 @@
    "music_style": "chill",
    "video": "https://gajic97.github.io/supervision-reels/v/2026-11-11-poredjenje-solarna-4g-ds-2cfs04-cfsp4.mp4",
    "scheduled": "2026-11-11 19:30",
-   "channels": {},
-   "views": 0,
-   "eng": 0
+   "channels": {
+    "instagram": {
+     "views": 0.0,
+     "reach": 0.0,
+     "eng": 0.0,
+     "watch": 0.0,
+     "link": "https://www.instagram.com/reel/DfnIV8QiW_u/"
+    },
+    "tiktok": {
+     "views": 0.0,
+     "reach": 0.0,
+     "eng": 0.0,
+     "watch": 0.0,
+     "link": "https://tiktok.com/@supervision.doo/video/7706983172373908756"
+    },
+    "linkedin": {
+     "views": 1.0,
+     "reach": 1.0,
+     "eng": 0.0,
+     "watch": 0.0,
+     "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7526350828329279488"
+    }
+   },
+   "views": 1.0,
+   "eng": 0.0
   },
   {
    "date": "2026-11-11",
@@ -25,9 +47,31 @@
    "music_style": "chill",
    "video": "https://gajic97.github.io/supervision-reels/v/2026-11-11-hilook-dvr-108g-m1-t.mp4",
    "scheduled": "2026-11-11 12:30",
-   "channels": {},
-   "views": 0,
-   "eng": 0
+   "channels": {
+    "instagram": {
+     "views": 60.0,
+     "reach": 33.0,
+     "eng": 0.0,
+     "watch": 3.22,
+     "link": "https://www.instagram.com/reel/DfmYLWljkCs/"
+    },
+    "tiktok": {
+     "views": 178.0,
+     "reach": 0.0,
+     "eng": 1.0,
+     "watch": 2.94,
+     "link": "https://tiktok.com/@supervision.doo/video/7706874850991672596"
+    },
+    "linkedin": {
+     "views": 0.0,
+     "reach": 0.0,
+     "eng": 0.0,
+     "watch": 0.0,
+     "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7526244995155046401"
+    }
+   },
+   "views": 238.0,
+   "eng": 1.0
   },
   {
    "date": "2026-11-10",
@@ -55,17 +99,17 @@
    "scheduled": "2026-11-10 12:30",
    "channels": {
     "instagram": {
-     "views": 80.0,
-     "reach": 36.0,
+     "views": 84.0,
+     "reach": 39.0,
      "eng": 1.0,
-     "watch": 2.86,
+     "watch": 2.84,
      "link": "https://www.instagram.com/reel/DfjzY2uD0PS/"
     },
     "tiktok": {
-     "views": 162.0,
+     "views": 176.0,
      "reach": 0.0,
      "eng": 1.0,
-     "watch": 2.84,
+     "watch": 2.81,
      "link": "https://tiktok.com/@supervision.doo/video/7706502852511829254"
     },
     "linkedin": {
@@ -76,7 +120,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7525882615435018240"
     }
    },
-   "views": 243.0,
+   "views": 261.0,
    "eng": 2.0
   },
   {
@@ -91,15 +135,15 @@
    "scheduled": "2026-11-09 19:30",
    "channels": {
     "instagram": {
-     "views": 56.0,
-     "reach": 27.0,
+     "views": 59.0,
+     "reach": 30.0,
      "eng": 0.0,
-     "watch": 3.78,
+     "watch": 3.59,
      "link": "https://www.instagram.com/reel/Dfh-ySpjw36/"
     },
     "tiktok": {
      "views": 54.0,
-     "reach": 0.0,
+     "reach": 31.0,
      "eng": 0.0,
      "watch": 1.95,
      "link": "https://www.tiktok.com/@supervision.doo/video/7706241020496776455?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
@@ -112,7 +156,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7525626081421234176"
     }
    },
-   "views": 114.0,
+   "views": 117.0,
    "eng": 3.0
   },
   {
@@ -127,15 +171,15 @@
    "scheduled": "2026-11-09 12:30",
    "channels": {
     "instagram": {
-     "views": 63.0,
-     "reach": 33.0,
+     "views": 69.0,
+     "reach": 37.0,
      "eng": 0.0,
-     "watch": 2.68,
+     "watch": 2.51,
      "link": "https://www.instagram.com/reel/DfhOnS5jkmr/"
     },
     "tiktok": {
      "views": 55.0,
-     "reach": 0.0,
+     "reach": 49.0,
      "eng": 0.0,
      "watch": 2.65,
      "link": "https://www.tiktok.com/@supervision.doo/video/7706132674737360148?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
@@ -148,7 +192,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7525520243172052992"
     }
    },
-   "views": 119.0,
+   "views": 125.0,
    "eng": 0.0
   },
   {
@@ -163,15 +207,15 @@
    "scheduled": "2026-11-08 19:30",
    "channels": {
     "instagram": {
-     "views": 91.0,
+     "views": 92.0,
      "reach": 61.0,
      "eng": 0.0,
-     "watch": 2.52,
+     "watch": 2.57,
      "link": "https://www.instagram.com/reel/DffZ8LMAoOg/"
     },
     "tiktok": {
      "views": 69.0,
-     "reach": 51.0,
+     "reach": 67.0,
      "eng": 0.0,
      "watch": 2.46,
      "link": "https://www.tiktok.com/@supervision.doo/video/7705869828854238471?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
@@ -184,7 +228,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7525263579659288578"
     }
    },
-   "views": 160.0,
+   "views": 161.0,
    "eng": 0.0
   },
   {
@@ -199,10 +243,10 @@
    "scheduled": "2026-11-08 12:30",
    "channels": {
     "instagram": {
-     "views": 79.0,
-     "reach": 47.0,
+     "views": 81.0,
+     "reach": 48.0,
      "eng": 0.0,
-     "watch": 3.18,
+     "watch": 3.14,
      "link": "https://www.instagram.com/reel/Dfepx3_GdM0/"
     },
     "tiktok": {
@@ -220,7 +264,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7525157801279643648"
     }
    },
-   "views": 138.0,
+   "views": 140.0,
    "eng": 0.0
   },
   {
@@ -243,7 +287,7 @@
     },
     "tiktok": {
      "views": 90.0,
-     "reach": 88.0,
+     "reach": 89.0,
      "eng": 0.0,
      "watch": 2.66,
      "link": "https://www.tiktok.com/@supervision.doo/video/7705498688914787602?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
@@ -271,15 +315,15 @@
    "scheduled": "2026-11-07 12:30",
    "channels": {
     "instagram": {
-     "views": 95.0,
-     "reach": 53.0,
+     "views": 100.0,
+     "reach": 55.0,
      "eng": 0.0,
-     "watch": 2.54,
+     "watch": 2.68,
      "link": "https://www.instagram.com/reel/DfcE-tUD3Qk/"
     },
     "tiktok": {
      "views": 51.0,
-     "reach": 50.0,
+     "reach": 51.0,
      "eng": 0.0,
      "watch": 2.64,
      "link": "https://www.tiktok.com/@supervision.doo/video/7705390546759568647?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
@@ -292,7 +336,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524795402186002434"
     }
    },
-   "views": 147.0,
+   "views": 152.0,
    "eng": 0.0
   },
   {
@@ -307,10 +351,10 @@
    "scheduled": "2026-11-06 19:30",
    "channels": {
     "instagram": {
-     "views": 138.0,
-     "reach": 87.0,
+     "views": 140.0,
+     "reach": 89.0,
      "eng": 1.0,
-     "watch": 3.59,
+     "watch": 3.54,
      "link": "https://www.instagram.com/reel/DfaQbzZGclY/"
     },
     "tiktok": {
@@ -328,7 +372,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524538873121566720"
     }
    },
-   "views": 208.0,
+   "views": 210.0,
    "eng": 1.0
   },
   {
@@ -343,17 +387,17 @@
    "scheduled": "2026-11-06 12:30",
    "channels": {
     "instagram": {
-     "views": 91.0,
-     "reach": 67.0,
+     "views": 95.0,
+     "reach": 69.0,
      "eng": 1.0,
-     "watch": 3.62,
+     "watch": 3.64,
      "link": "https://www.instagram.com/reel/DfZgP6bjIaM/"
     },
     "tiktok": {
-     "views": 58.0,
+     "views": 59.0,
      "reach": 57.0,
      "eng": 1.0,
-     "watch": 2.83,
+     "watch": 2.84,
      "link": "https://www.tiktok.com/@supervision.doo/video/7705018806980119809?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
     },
     "linkedin": {
@@ -364,7 +408,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524433076811419649"
     }
    },
-   "views": 150.0,
+   "views": 155.0,
    "eng": 2.0
   },
   {
@@ -379,10 +423,10 @@
    "scheduled": "2026-11-05 19:30",
    "channels": {
     "instagram": {
-     "views": 110.0,
-     "reach": 67.0,
+     "views": 112.0,
+     "reach": 68.0,
      "eng": 0.0,
-     "watch": 4.2,
+     "watch": 4.14,
      "link": "https://www.instagram.com/reel/DfXrl7Emt_t/"
     },
     "tiktok": {
@@ -400,7 +444,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524176609155809282"
     }
    },
-   "views": 311.0,
+   "views": 313.0,
    "eng": 4.0
   },
   {
@@ -415,10 +459,10 @@
    "scheduled": "2026-11-05 12:30",
    "channels": {
     "instagram": {
-     "views": 91.0,
-     "reach": 52.0,
+     "views": 93.0,
+     "reach": 53.0,
      "eng": 0.0,
-     "watch": 2.45,
+     "watch": 2.46,
      "link": "https://www.instagram.com/reel/DfW7cHnAY0J/"
     },
     "tiktok": {
@@ -436,7 +480,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524070713801142272"
     }
    },
-   "views": 156.0,
+   "views": 158.0,
    "eng": 1.0
   },
   {
@@ -487,10 +531,10 @@
    "scheduled": "2026-11-04 12:30",
    "channels": {
     "instagram": {
-     "views": 85.0,
+     "views": 86.0,
      "reach": 56.0,
      "eng": 0.0,
-     "watch": 2.36,
+     "watch": 2.38,
      "link": "https://www.instagram.com/reel/DfUWm1UgKga/"
     },
     "tiktok": {
@@ -508,7 +552,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7523708272407867394"
     }
    },
-   "views": 252.0,
+   "views": 253.0,
    "eng": 1.0
   },
   {
@@ -559,10 +603,10 @@
    "scheduled": "2026-11-03 12:30",
    "channels": {
     "instagram": {
-     "views": 104.0,
-     "reach": 61.0,
+     "views": 105.0,
+     "reach": 62.0,
      "eng": 0.0,
-     "watch": 4.42,
+     "watch": 4.37,
      "link": "https://www.instagram.com/reel/DfRxzo5CLaA/"
     },
     "tiktok": {
@@ -580,7 +624,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7523345857023426560"
     }
    },
-   "views": 293.0,
+   "views": 294.0,
    "eng": 2.0
   },
   {
@@ -602,10 +646,10 @@
      "link": "https://www.instagram.com/reel/DfP9IbxDGt9/"
     },
     "tiktok": {
-     "views": 225.0,
-     "reach": 223.0,
+     "views": 226.0,
+     "reach": 225.0,
      "eng": 1.0,
-     "watch": 3.22,
+     "watch": 2.61,
      "link": "https://www.tiktok.com/@supervision.doo/video/7703644134141201665?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
     },
     "linkedin": {
@@ -616,7 +660,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7523089270031413249"
     }
    },
-   "views": 421.0,
+   "views": 422.0,
    "eng": 2.0
   },
   {
@@ -631,17 +675,17 @@
    "scheduled": "2026-11-02 12:30",
    "channels": {
     "instagram": {
-     "views": 55.0,
-     "reach": 42.0,
+     "views": 57.0,
+     "reach": 43.0,
      "eng": 0.0,
-     "watch": 6.88,
+     "watch": 6.77,
      "link": "https://www.instagram.com/reel/DfPNCsXleEI/"
     },
     "tiktok": {
      "views": 193.0,
      "reach": 193.0,
      "eng": 0.0,
-     "watch": 2.35,
+     "watch": 1.71,
      "link": "https://www.tiktok.com/@supervision.doo/video/7703535033973361972?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
     },
     "linkedin": {
@@ -652,7 +696,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7522983490469040129"
     }
    },
-   "views": 251.0,
+   "views": 253.0,
    "eng": 0.0
   },
   {
@@ -703,10 +747,10 @@
    "scheduled": "2026-11-01 12:30",
    "channels": {
     "instagram": {
-     "views": 192.0,
-     "reach": 89.0,
+     "views": 193.0,
+     "reach": 90.0,
      "eng": 3.0,
-     "watch": 6.22,
+     "watch": 6.17,
      "link": "https://www.instagram.com/reel/DfMoN9zCfG-/"
     },
     "tiktok": {
@@ -724,7 +768,7 @@
      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7522621087793229824"
     }
    },
-   "views": 269.0,
+   "views": 270.0,
    "eng": 3.0
   },
   {
@@ -855,7 +899,7 @@
     },
     "tiktok": {
      "views": 80.0,
-     "reach": 79.0,
+     "reach": 80.0,
      "eng": 1.0,
      "watch": 1.5,
      "link": "https://www.tiktok.com/@supervision.doo/video/7702421802366045460?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
@@ -891,7 +935,7 @@
     },
     "tiktok": {
      "views": 566.0,
-     "reach": 563.0,
+     "reach": 566.0,
      "eng": 1.0,
      "watch": 2.66,
      "link": "https://www.tiktok.com/@supervision.doo/video/7702166673536584981?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
