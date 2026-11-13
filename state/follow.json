@@ -1211,7 +1211,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/mihajlo-crnkovi%C4%87-8011ab234",
   "city": "Beograd",
-  "reason": "Vlasnik Security mont, projektovanje i ugradnja video nadzora i tehničke zaštite"
+  "reason": "Vlasnik Security mont, projektovanje i ugradnja video nadzora i tehničke zaštite",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1220,7 +1222,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/aleksandarvisnjicki",
   "city": "Srbija",
-  "reason": "Head Engineer, projektovanje i implementacija video nadzora, alarma i kontrole pristupa"
+  "reason": "Head Engineer, projektovanje i implementacija video nadzora, alarma i kontrole pristupa",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1229,7 +1233,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/marko-dobricic-62638b86",
   "city": "Beograd",
-  "reason": "Suvlasnik i instalater alarma, CCTV i kontrole pristupa, 15+ godina iskustva"
+  "reason": "Suvlasnik i instalater alarma, CCTV i kontrole pristupa, 15+ godina iskustva",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1238,7 +1244,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/company/tehno-vinca-d-o-o-",
   "city": "Beograd",
-  "reason": "Firma za ugradnju i održavanje CCTV, alarma i dojave požara (Trgovačka 81/8)"
+  "reason": "Firma za ugradnju i održavanje CCTV, alarma i dojave požara (Trgovačka 81/8)",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1247,7 +1255,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/biljan",
   "city": "Beograd",
-  "reason": "Tehnički direktor, ekspert za IP video nadzor i kontrolu pristupa, sopstvena firma"
+  "reason": "Tehnički direktor, ekspert za IP video nadzor i kontrolu pristupa, sopstvena firma",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1256,7 +1266,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/dejan-mijatovic-26525436",
   "city": "Srbija",
-  "reason": "CEO Smart Solution Serbia, video nadzor, alarmi, pametna kuća"
+  "reason": "CEO Smart Solution Serbia, video nadzor, alarmi, pametna kuća",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1265,7 +1277,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/filip-puzic-823638268",
   "city": "Beograd",
-  "reason": "Vlasnik Nebgradnja, ugradnja video nadzora i interfona"
+  "reason": "Vlasnik Nebgradnja, ugradnja video nadzora i interfona",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1274,7 +1288,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/dejan-%C5%A1paravalo-b04533214",
   "city": "Beograd",
-  "reason": "Samostalni elektroničar: alarmi, kontrola pristupa, video nadzor, pametna kuća"
+  "reason": "Samostalni elektroničar: alarmi, kontrola pristupa, video nadzor, pametna kuća",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1283,7 +1299,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/mirko-stan%C4%8Devi%C4%87-1a353214b",
   "city": "Beograd",
-  "reason": "Serviser tehničke zaštite (CCTV, IP nadzor, alarmi) u G4S"
+  "reason": "Serviser tehničke zaštite (CCTV, IP nadzor, alarmi) u G4S",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-10",
@@ -1292,7 +1310,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/branko-stankovic-434776129",
   "city": "Srbija",
-  "reason": "Servisni inženjer, MUP licenca za tehničku zaštitu, CCTV i dojava požara"
+  "reason": "Servisni inženjer, MUP licenca za tehničku zaštitu, CCTV i dojava požara",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-11",
@@ -1301,7 +1321,8 @@
   "handle": "@servis_racunara_nova_pazova",
   "url": "https://www.instagram.com/servis_racunara_nova_pazova/",
   "city": "Nova Pazova",
-  "reason": "Servis računara koji radi i video nadzor; Srem"
+  "reason": "Servis računara koji radi i video nadzor; Srem",
+  "followed": "2026-11-11"
  },
  {
   "date": "2026-11-11",
@@ -1310,7 +1331,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/mirko-tomic-a2a875183/",
   "city": "Beograd (Zvečka)",
-  "reason": "Vlasnik PR ITLINK: video nadzor, alarmi, kontrola pristupa, interfoni (delatnost 8020)"
+  "reason": "Vlasnik PR ITLINK: video nadzor, alarmi, kontrola pristupa, interfoni (delatnost 8020)",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-11",
@@ -1319,7 +1342,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/matejic",
   "city": "Jagodina",
-  "reason": "Osnivač ELMAX Security: video nadzor, alarmi, interfoni"
+  "reason": "Osnivač ELMAX Security: video nadzor, alarmi, interfoni",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-11",
@@ -1328,7 +1353,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/mihajlo-zivojinovic-6114bb123",
   "city": "Beograd",
-  "reason": "Vlasnik Expert Security Beograd: kamere i alarmi"
+  "reason": "Vlasnik Expert Security Beograd: kamere i alarmi",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-11",
@@ -1337,7 +1364,9 @@
   "handle": null,
   "url": "https://www.linkedin.com/in/vladan-kantar-741653110",
   "city": "Srbija",
-  "reason": "Osnivač Armory Security Systems, sigurnosni sistemi"
+  "reason": "Osnivač Armory Security Systems, sigurnosni sistemi",
+  "followed": "2026-11-11",
+  "followed_as": "Vladimir Ozimkovic"
  },
  {
   "date": "2026-11-12",
@@ -1419,5 +1448,175 @@
   "url": "https://www.linkedin.com/in/nikola-milosevic-83896853",
   "city": "Srbija",
   "reason": "Šef sektora alarma, kontrole pristupa i dojave požara u SECTRON Serbia"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "AL TECHNOLOGY SECURITY",
+  "handle": "@video_nadzor_pancevo",
+  "url": "https://www.instagram.com/video_nadzor_pancevo/",
+  "city": "Pančevo",
+  "reason": "Video nadzor, alarmi, automatika kapija.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "Trilux.rs",
+  "handle": "@alarm_videonadzor_pozar",
+  "url": "https://www.instagram.com/alarm_videonadzor_pozar/",
+  "city": "Srbija (trilux.rs)",
+  "reason": "Alarmi, video nadzor, protivpožarni sistemi.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "MEGA-TEL",
+  "handle": "@video_nadzor_kraljevo",
+  "url": "https://www.instagram.com/video_nadzor_kraljevo/",
+  "city": "Kraljevo",
+  "reason": "Ugradnja video nadzora, alarma, rampi, interfona.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "Antene Kamere Beograd",
+  "handle": "@antenebeograd",
+  "url": "https://www.instagram.com/antenebeograd/",
+  "city": "Beograd",
+  "reason": "Antene i kamere.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "Dahua kamere Obrenovac",
+  "handle": "@video_nadzor_obrenovac_beograd",
+  "url": "https://www.instagram.com/video_nadzor_obrenovac_beograd/",
+  "city": "Obrenovac (Beograd)",
+  "reason": "Ugradnja video nadzora i mrežnih kablova.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "Milan Jakšić (ajaxalarm.rs)",
+  "handle": "@ajaxalarmsrbija",
+  "url": "https://www.instagram.com/ajaxalarmsrbija/",
+  "city": "Srbija (ajaxalarm.rs)",
+  "reason": "Ajax alarmi.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "Videonadzor Srbija",
+  "handle": "@videonadzorsrbija",
+  "url": "https://www.instagram.com/videonadzorsrbija/",
+  "city": "Pirot",
+  "reason": "Video nadzor.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-11",
+  "network": "instagram",
+  "name": "Zeljko",
+  "handle": "@sve_za_video_nadzor_srbija",
+  "url": "https://www.instagram.com/sve_za_video_nadzor_srbija/",
+  "city": "Srbija (+381)",
+  "reason": "Sve za video nadzor.",
+  "followed": "2026-11-11"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "Koving d.o.o.",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/koving-d.o.o.",
+  "city": "Beograd",
+  "reason": "Projektovanje, ugradnja i održavanje sistema tehničke zaštite, 25+ godina"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "VIA LOG d.o.o.",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/via-log",
+  "city": "Beograd",
+  "reason": "IP video nadzor i sigurnosna rešenja, Tetovska 41"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "STASANETrs",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/stasanet-doo",
+  "city": "Beograd",
+  "reason": "Alarmi, CCTV, interfoni, pametna kuća; obuka instalatera"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "Bit Media doo",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/bit-media-doo",
+  "city": "Novi Beograd",
+  "reason": "Tehnička zaštita: video nadzor i alarmni sistemi za kuće i firme"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "Robotik security",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/robotik-security",
+  "city": "Borča (Beograd)",
+  "reason": "Ugradnja video nadzora, 24/7 monitoring i alarmna intervencija"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "Spressystems",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/spressystems",
+  "city": "Šimanovci (Srem)",
+  "reason": "Security Systems Services, sedište u Šimanovcima, ogranak Požarevac"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "Sky Technologies d.o.o.",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/sky-technologies-d-o-o",
+  "city": "Zemun",
+  "reason": "Sistem integrator tehničke zaštite: video nadzor, alarmi, kontrola pristupa"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "SOKO Technology d.o.o.",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/soko-technology-d-o-o",
+  "city": "Leskovac",
+  "reason": "Ugradnja i održavanje video nadzora, alarma, interfona i kapija"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "VipTek DOO",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/viptek-doo",
+  "city": "Stara Pazova (Srem)",
+  "reason": "Sigurnosni sistemi i automatizacija kuće"
+ },
+ {
+  "date": "2026-11-13",
+  "network": "linkedin",
+  "name": "Dot Smart Solutions",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/dotsmartsolutionsdoo",
+  "city": "Beograd",
+  "reason": "Projektovanje, ugradnja i održavanje sigurnosnih sistema i automatike objekata"
  }
 ]
