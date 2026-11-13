@@ -1,0 +1,166 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;background:#0b1a14}
+#bg{position:absolute;inset:0;background:radial-gradient(1300px 1100px at 50% 36%,#1a4231 0%,#0e251b 55%,#06110b 100%)}
+#grid{position:absolute;inset:0;opacity:.06;background-image:linear-gradient(#6cc08f 1px,transparent 1px),linear-gradient(90deg,#6cc08f 1px,transparent 1px);background-size:72px 72px}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35}
+#logo{position:absolute;top:70px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:16px;color:#fff;font-weight:700;font-size:34px;letter-spacing:2px;z-index:9}
+#logo img{width:58px;height:58px;border-radius:14px}
+#bar{position:absolute;top:0;left:0;height:8px;background:#6cc08f;z-index:10}
+#h{position:absolute;top:180px;left:70px;right:70px;text-align:center;z-index:8}
+#h .a{font-weight:800;font-size:112px;line-height:1.02;color:#fff;letter-spacing:-2px}
+#h .a em{font-style:normal;color:#6cc08f}
+#h .b{font-weight:700;font-size:56px;line-height:1.15;color:#cfe9da;margin-top:26px}
+#h .b em{font-style:normal;color:#6cc08f}
+#prod{position:absolute;left:280px;top:760px;width:520px;height:520px;transform-origin:50% 50%}
+#prod img{position:absolute;left:0;top:0;width:100%;height:100%;filter:drop-shadow(0 40px 50px rgba(0,0,0,.5))}
+#prod svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible}
+#glow{position:absolute;left:230px;top:780px;width:620px;height:480px;border-radius:50%;background:radial-gradient(closest-side,rgba(108,192,143,.5),rgba(108,192,143,0))}
+#card{position:absolute;left:50px;top:560px;width:980px;height:700px;border-radius:40px;overflow:hidden;background:#0f2a1f;box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 0 2px rgba(108,192,143,.35);opacity:0}
+#card svg{position:absolute;left:0;top:0;width:980px;height:700px}
+#tag{position:absolute;left:26px;top:22px;background:rgba(11,26,20,.8);color:#cfe9da;font-weight:700;font-size:28px;padding:6px 18px;border-radius:20px;opacity:0}
+#chip{position:absolute;top:1300px;left:0;right:0;display:flex;justify-content:center;z-index:7}
+#chip span{background:#fff;color:#123528;font-weight:700;font-size:46px;padding:22px 44px;border-radius:60px;box-shadow:0 18px 40px rgba(0,0,0,.35);white-space:nowrap}
+#chip span b{color:#2f7a50}
+#stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;z-index:7}
+#stamp div{font-weight:800;font-size:150px;line-height:1.02;color:#fff;text-align:center;letter-spacing:-3px}
+#stamp div em{font-style:normal;color:#6cc08f}
+#endbg{position:absolute;inset:0;opacity:0;background:radial-gradient(1100px 1100px at 50% 45%,#ffffff 0%,#eef6f1 55%,#d7ebe0 100%)}
+#end{position:absolute;inset:0;opacity:0;z-index:7;text-align:center}
+#end .cat{position:absolute;top:310px;left:0;right:0;font-weight:700;font-size:40px;letter-spacing:4px;color:#2f7a50}
+#end .im{position:absolute;left:260px;top:620px;width:560px;height:560px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.18))}
+#end .nm{position:absolute;top:1280px;left:40px;right:40px;white-space:nowrap;font-weight:800;font-size:80px;line-height:1.05;color:#123528;letter-spacing:-1px}
+#end .sub{position:absolute;top:1390px;left:60px;right:60px;font-weight:600;font-size:48px;color:#2f7a50}
+#end .pr{position:absolute;top:1480px;left:0;right:0;display:flex;justify-content:center}
+#end .pr>span{background:#123528;color:#fff;font-weight:800;font-size:64px;padding:18px 50px;border-radius:70px}
+#end .cta{position:absolute;top:1610px;left:0;right:0;font-weight:700;font-size:42px;color:#123528}
+#end .cta b{color:#2f7a50}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:20}
+</style></head><body>
+<div id="bg"></div><div id="grid"></div>
+<div class="blob" id="b1" style="width:520px;height:520px;background:#2f7a50"></div>
+<div class="blob" id="b2" style="width:420px;height:420px;background:#439665"></div>
+<div id="endbg"></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+<g id="cam"><rect x="-30" y="-14" width="52" height="28" rx="12" fill="#fff"/><circle cx="-30" cy="0" r="10" fill="#0b1a14"/><rect x="16" y="-5" width="18" height="10" fill="#cfe9da"/><line x1="10" y1="-14" x2="14" y2="-40" stroke="#fff" stroke-width="5"/></g>
+<linearGradient id="nite" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173a2b"/><stop offset="1" stop-color="#245740"/></linearGradient>
+<linearGradient id="ir" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#e8f4ee" stop-opacity=".55"/><stop offset="1" stop-color="#e8f4ee" stop-opacity=".05"/></linearGradient>
+<g id="wf"><path d="M-18 -10 A26 26 0 0 1 18 -10" /><path d="M-34 -24 A48 48 0 0 1 34 -24"/><path d="M-50 -38 A70 70 0 0 1 50 -38"/></g>
+</defs></svg>
+<div id="card">
+ <!-- scena A: kamera na garaži, ruter u kući, Wi-Fi umesto mrežnog kabla -->
+ <svg id="sA" viewBox="0 0 980 700">
+  <rect width="980" height="700" fill="url(#nite)"/>
+  <rect y="520" width="980" height="180" fill="#1d4a35"/>
+  <rect x="60" y="270" width="360" height="250" fill="#e9efe9"/><path d="M30 280 L240 140 L450 280Z" fill="#2f7a50"/>
+  <rect x="110" y="330" width="90" height="80" fill="#ffd77a"/><rect x="270" y="380" width="80" height="140" fill="#8a6a4a"/>
+  <g transform="translate(150 492)"><rect x="-50" y="-22" width="100" height="44" rx="10" fill="#123528"/><circle cx="-24" cy="0" r="5" fill="#6cc08f"/><circle cx="-6" cy="0" r="5" fill="#6cc08f"/><circle cx="12" cy="0" r="5" fill="#6cc08f"/><line x1="-34" y1="-22" x2="-40" y2="-38" stroke="#123528" stroke-width="6"/><line x1="34" y1="-22" x2="40" y2="-38" stroke="#123528" stroke-width="6"/>
+   <text x="0" y="-50" text-anchor="middle" fill="#123528" font-family="Poppins" font-weight="800" font-size="26">ruter</text></g>
+  <rect x="640" y="330" width="290" height="190" fill="#cfd9d3"/><path d="M620 340 L785 260 L950 340Z" fill="#245740"/>
+  <rect x="690" y="400" width="190" height="120" fill="#8fa89a"/><g stroke="#6f897b" stroke-width="4"><line x1="690" y1="430" x2="880" y2="430"/><line x1="690" y1="460" x2="880" y2="460"/><line x1="690" y1="490" x2="880" y2="490"/></g>
+  <text x="785" y="375" text-anchor="middle" fill="#123528" font-family="Poppins" font-weight="800" font-size="26">garaža</text>
+  <g transform="translate(660 320)"><use href="#cam"/></g>
+  <g id="kabl"><path d="M200 520 Q420 600 650 520" fill="none" stroke="#cfe9da" stroke-width="7" stroke-dasharray="16 12" opacity=".7"/>
+   <g transform="translate(425 568)"><circle r="34" fill="#0b1a14" stroke="#fff" stroke-width="5"/><path d="M-14 -14 L14 14 M14 -14 L-14 14" stroke="#fff" stroke-width="7" stroke-linecap="round"/></g></g>
+  <g id="waves" fill="none" stroke="#6cc08f" stroke-width="8" stroke-linecap="round"></g>
+  <g id="plug" opacity="0"><path d="M660 340 L660 400 L610 400" fill="none" stroke="#fff2b8" stroke-width="5"/><rect x="560" y="384" width="50" height="34" rx="8" fill="#fff2b8"/><text x="585" y="452" text-anchor="middle" fill="#fff2b8" font-family="Poppins" font-weight="800" font-size="24">12 V</text></g>
+ </svg>
+ <!-- scena B: noć, IR osvetljenje do 30 m -->
+ <svg id="sB" viewBox="0 0 980 700" style="opacity:0">
+  <rect width="980" height="700" fill="#0c1813"/>
+  <g fill="#fff" opacity=".45"><circle cx="300" cy="70" r="3"/><circle cx="520" cy="50" r="2"/><circle cx="700" cy="110" r="3"/><circle cx="420" cy="140" r="2"/></g>
+  <rect y="470" width="980" height="230" fill="#13261d"/>
+  <rect x="870" y="200" width="110" height="500" fill="#2a3b33"/>
+  <g transform="translate(880 250) scale(-1 1)"><use href="#cam"/></g>
+  <path id="cone" d="M850 250 L60 430 L60 690 L850 262Z" fill="url(#ir)"/>
+  <g id="cat" fill="#dfe9e3"><ellipse cx="0" cy="-30" rx="46" ry="22"/><circle cx="-48" cy="-48" r="18"/><path d="M-60 -62 L-56 -78 L-48 -64Z M-44 -64 L-38 -79 L-34 -62Z"/><rect x="-36" y="-14" width="8" height="22"/><rect x="24" y="-14" width="8" height="22"/><path d="M44 -36 Q74 -60 66 -84" stroke="#dfe9e3" stroke-width="8" fill="none"/></g>
+  <g id="ruler" opacity="0"><line x1="120" y1="640" x2="840" y2="640" stroke="#6cc08f" stroke-width="6"/><line x1="120" y1="620" x2="120" y2="660" stroke="#6cc08f" stroke-width="6"/><line x1="840" y1="620" x2="840" y2="660" stroke="#6cc08f" stroke-width="6"/>
+   <rect x="400" y="600" width="160" height="56" rx="28" fill="#6cc08f"/><text id="rl" x="480" y="640" text-anchor="middle" fill="#0b1a14" font-family="Poppins" font-weight="800" font-size="34">30 m</text></g>
+ </svg>
+ <div id="tag">Primer</div>
+</div>
+<div id="glow"></div>
+<div id="prod"><img src="assets/prod.png"><svg viewBox="0 0 560 560"><g id="pw" transform="translate(400 70)" fill="none" stroke="#6cc08f" stroke-width="9" stroke-linecap="round"></g></svg></div>
+<div id="logo"><img src="assets/supervision-ikonica-512.png">SUPERVISION</div>
+<div id="bar"></div>
+<div id="h"><div class="a"></div><div class="b"></div></div>
+<div id="chip"><span></span></div>
+<div id="stamp"><div></div></div>
+<div id="end"><div class="cat">WI-FI BULLET KAMERA · 4 MP</div><img class="im" src="assets/prod.png"><div class="nm">Hikvision DS-2CV2041G2-IDW</div><div class="sub">Wi-Fi · IR do 30 m · microSD</div>
+<div class="pr"><span>Cena na upit</span></div><div class="cta">Zatraži ponudu · <b>062/618-736</b></div></div>
+<div id="flash"></div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const CUTS=[2.6,5.4,8.4,10.9];
+const H=[
+ [0,2.6,'<em>Mrežni</em> kabl<br>do kamere?','<em>Bežična kamera</em><br>radi preko Wi-Fi mreže.'],
+ [2.6,5.4,'Kamera na garaži?<br><em>Wi-Fi</em> do rutera.',''],
+ [5.4,8.4,'Noću vidi<br>do <em>30 m</em>.',''],
+];
+const CH=[[3.0,5.4,'<b>Napajanje:</b> 12 V adapter'],[5.8,8.4,'<b>EXIR</b> IR osvetljenje']];
+const ST=[[8.4,9.2,'<em>4 MP</em><br>slika.'],[9.2,10.0,'<em>microSD</em><br>i mikrofon.'],[10.0,10.9,'<em>IP66</em><br>kućište.']];
+// talasi: iz kamere ka ruteru (scena A) i na anteni (hook)
+const W=$('waves');for(let i=0;i<4;i++)W.insertAdjacentHTML('beforeend',`<use class="wv" href="#wf"/>`);
+const PW=$('pw');for(let i=0;i<3;i++)PW.insertAdjacentHTML('beforeend',`<path class="pa" d="M${-18-16*i} ${-10-14*i} A${26+22*i} ${26+22*i} 0 0 1 ${18+16*i} ${-10-14*i}"/>`);
+window.render=function(t){
+ $('bar').style.width=(1080*t/14)+'px';
+ $('b1').style.transform=`translate(${120+120*Math.sin(t*0.7)}px,${300+90*Math.cos(t*0.5)}px)`;
+ $('b2').style.transform=`translate(${560+100*Math.cos(t*0.6)}px,${1200+120*Math.sin(t*0.8)}px)`;
+ // proizvod
+ let sc=1,y=0,rot=0,po=1,ry=0;
+ if(t<2.6){const p=ease(cl(t/0.9));sc=1.0-0.06*(1-p)+0.012*Math.sin(t*3);y=60*(1-p);rot=-6+6*p;ry=(1-p)*35;}
+ else if(t<8.4){po=0;}
+ else if(t<10.9){sc=0.62+0.012*Math.sin(t*3);y=-500+8*Math.sin(t*2.2);}
+ else po=0;
+ CUTS.forEach(c=>{const d=t-c;if(d>=0&&d<0.25)sc*=1+0.06*(1-d/0.25)});
+ $('prod').style.opacity=po;$('prod').style.transform=`translateY(${y}px) perspective(1400px) rotateY(${ry}deg) scale(${sc}) rotate(${rot}deg)`;
+ $('glow').style.opacity=(t<2.6?1:0)*(0.6+0.4*Math.sin(t*4));
+ [...document.querySelectorAll('.pa')].forEach((p,i)=>{const ph=((t*1.6)-i*0.25)%1;p.setAttribute('opacity',t<2.6&&t>0.6?(ph>0&&ph<0.7?1-ph/0.7:0):0);});
+ // kartica
+ const co=t>=2.6&&t<8.4?ease(cl((t-2.6)/0.3)):0;const card=$('card');card.style.opacity=co;
+ card.style.transform=`translateY(${(1-co)*120}px) scale(${0.96+0.04*co})`;
+ $('tag').style.opacity=co;
+ const inB=t>=5.4;const wipe=cl((t-5.4)/0.35);
+ $('sA').style.opacity=inB?1-wipe:1;$('sB').style.opacity=inB?wipe:0;$('sB').style.clipPath=`circle(${wipe*90}% at 50% 50%)`;
+ // A: kabl precrtan, talasi putuju od kamere do rutera
+ const kx=cl((t-2.9)/0.25);$('kabl').setAttribute('opacity',kx*(t<3.6?1:1-0.6*cl((t-3.6)/0.3)));
+ [...document.querySelectorAll('.wv')].forEach((u,i)=>{const f=((t-3.4)*0.6+i/4)%1;const on=t>3.4;
+   const x=650-480*f,yy=300+150*f-90*Math.sin(Math.PI*f);u.setAttribute('transform',`translate(${x} ${yy}) rotate(-70) scale(${0.7+0.3*Math.sin(Math.PI*f)})`);u.setAttribute('opacity',on?Math.sin(Math.PI*f):0);});
+ $('plug').setAttribute('opacity',cl((t-3.9)/0.2));
+ // B: mačka prolazi kroz IR snop, lenjir 30 m
+ const cx=180+380*cl((t-5.6)/2.8);$('cat').setAttribute('transform',`translate(${cx} ${560+4*Math.sin(t*14)})`);
+ $('cone').setAttribute('opacity',0.75+0.25*Math.sin(t*5));
+ $('ruler').setAttribute('opacity',cl((t-6.0)/0.2));$('rl').textContent=Math.round(30*ease(cl((t-6.0)/0.8)))+' m';
+ // naslov
+ const hh=H.find(h=>t>=h[0]&&t<h[1]);const he=$('h');
+ if(hh){he.querySelector('.a').innerHTML=hh[2];he.querySelector('.b').innerHTML=hh[3];
+  const local=t-hh[0];const p=hh[0]===0?1:back(cl(local/0.35));
+  he.style.opacity=hh[0]===0?1:cl(local/0.12);he.style.transform=`scale(${0.86+0.14*p})`;
+  he.querySelector('.a').style.fontSize=hh[0]===0?'116px':'92px';
+  he.querySelector('.b').style.opacity=hh[3]?cl((t-1.0)/0.25):0;
+  he.querySelector('.b').style.transform=`translateY(${(1-ease(cl((t-1.0)/0.3)))*30}px)`;}
+ else he.style.opacity=0;
+ // čip
+ const c=CH.find(c=>t>=c[0]&&t<c[1]);const ce=$('chip');
+ if(c){ce.querySelector('span').innerHTML=c[2];const p=back(cl((t-c[0])/0.35));ce.style.opacity=cl((t-c[0])/0.1)*cl((c[1]-t)/0.15);ce.style.transform=`translateY(${(1-p)*80}px)`;}
+ else ce.style.opacity=0;
+ // pečati
+ const sm=ST.find(s=>t>=s[0]&&t<s[1]);const se=$('stamp');
+ if(sm){se.querySelector('div').innerHTML=sm[2];const p=cl((t-sm[0])/0.14);se.style.opacity=1;se.style.transform=`translateY(200px) scale(${1.5-0.5*ease(p)})`;}
+ else se.style.opacity=0;
+ // krajnja kartica
+ const pr=ease(cl((t-10.9)/0.4));$('endbg').style.opacity=pr;$('end').style.opacity=pr;
+ [...$('end').children].forEach((e,i)=>{const q=ease(cl((t-11.0-i*0.08)/0.4));e.style.opacity=q;e.style.transform=`translateY(${(1-q)*40}px)`;});
+ const ei=document.querySelector('#end .im');const eq=back(cl((t-11.0)/0.5));ei.style.transform=`translateY(${(1-cl(eq))*40}px) scale(${0.85+0.15*eq+0.01*Math.sin(t*3)})`;
+ $('logo').style.color=pr>0.5?'#123528':'#fff';
+ let f=0;CUTS.forEach(cu=>{const d=t-cu;if(d>=0&&d<0.12)f=Math.max(f,0.5*(1-d/0.12))});$('flash').style.opacity=f;
+};
+function fit(){const e=document.querySelector('#end .nm');let fs=80;e.style.fontSize=fs+'px';while(e.scrollWidth>1000&&fs>40){fs-=2;e.style.fontSize=fs+'px';}}
+window.ready=Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r}))).then(()=>document.fonts.ready).then(()=>{fit();render(0);});
+</script></body></html>

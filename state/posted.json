@@ -730,5 +730,64 @@
   "buffer_post_id": "6af552799539b54d882193c5",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-12-ezviz-h3c-5mp"
+ },
+ {
+  "date": "2026-11-13",
+  "product_id": 5546,
+  "product_id_b": 2858,
+  "product": "NVR-104MH-C/4P(B) HiLook NVR sa PoE (A) vs NVR-104MH-C bez PoE HiLook NVR (B)",
+  "category": "Snimači",
+  "keyword": "NVR snimač",
+  "format": "f4",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako imaš 4 IP kamere, / NVR snimač: sa PoE ili bez?",
+  "music_style": "chill",
+  "music_track": "chill/alex-morgan-lofi-chill-vlog-beats-573883.mp3",
+  "url": "https://super-vision.rs/proizvod/nvr-104mh-c-4pb-hilook-nvr-snimac-4-kanala-8mp-sa-poe-svicem/",
+  "price": 16180,
+  "buffer_posts": {
+   "instagram": "6af6a464c1a0010a5bff26fc",
+   "tiktok": "6af6a464ba218f32637f0ab0",
+   "linkedin": "6af6a465ba218f32637f0ada"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-13 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-13-poredjenje-nvr-104mh-c-poe.mp4",
+  "buffer_post_id": "6af6a464c1a0010a5bff26fc",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-13-poredjenje-nvr-104mh-c-poe"
+ },
+ {
+  "date": "2026-11-13",
+  "product_id": 5562,
+  "product": "DS-2CV2041G2-IDW 2.8mm Hikvision IP WiFi bullet kamera 4MP",
+  "category": "Kamere",
+  "keyword": "bežična kamera",
+  "format": "f2",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Mrežni kabl do kamere? / Bežična kamera radi preko Wi-Fi mreže.",
+  "music_style": "chill",
+  "music_track": "chill/velariomusic-chill-lofi-616929.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-2cv2041g2-idw-2-8mm-hikvision-ip-wifi-bullet-kamera-4mp/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6af6a466e1d8eff610a2c67a",
+   "tiktok": "6af6a4675ec1c9d5be613e4c",
+   "linkedin": "6af6a468fb90ccefdd1fae53"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-13 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-13-hikvision-ds-2cv2041g2-idw-wifi.mp4",
+  "buffer_post_id": "6af6a466e1d8eff610a2c67a",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-13-hikvision-ds-2cv2041g2-idw-wifi"
  }
 ]

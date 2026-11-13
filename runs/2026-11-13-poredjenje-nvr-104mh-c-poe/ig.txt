@@ -1,0 +1,12 @@
+NVR snimač za 4 IP kamere: sa PoE ili bez? HiLook NVR-104MH-C/4P(B) (A) ili HiLook NVR-104MH-C (B).
+
+A: ugrađen 4-portni PoE svič. Kamere se napajaju direktno sa snimača preko mrežnog kabla, bez posebnog PoE svića. 16.180 RSD sa PDV-om.
+B: nema PoE portove. Napajanje kamera ide preko posebnog PoE svića ili adaptera. 11.120 RSD sa PDV-om.
+
+Oba: 4 kanala, kamere do 8 MP, H.265+ kompresija, HDMI izlaz.
+
+Oba na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio: super-vision.rs
+
+Napiši u komentar: A ili B?
+
+#nvrsnimač #videonadzor #hilook #poe #supervision

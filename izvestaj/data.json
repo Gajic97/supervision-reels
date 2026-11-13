@@ -1,6 +1,34 @@
 {
- "generated": "13.11.2026. 06:46",
+ "generated": "13.11.2026. 06:47",
  "reels": [
+  {
+   "date": "2026-11-13",
+   "product": "DS-2CV2041G2-IDW 2.8mm Hikvision IP WiFi bullet kamera 4MP",
+   "category": "Kamere",
+   "keyword": "bežična kamera",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Mrežni kabl do kamere? / Bežična kamera radi preko Wi-Fi mreže.",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-13-hikvision-ds-2cv2041g2-idw-wifi.mp4",
+   "scheduled": "2026-11-13 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-13",
+   "product": "NVR-104MH-C/4P(B) HiLook NVR sa PoE (A) vs NVR-104MH-C bez PoE HiLook NVR (B)",
+   "category": "Snimači",
+   "keyword": "NVR snimač",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako imaš 4 IP kamere, / NVR snimač: sa PoE ili bez?",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-13-poredjenje-nvr-104mh-c-poe.mp4",
+   "scheduled": "2026-11-13 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-12",
    "product": "H3c EZVIZ Wi-Fi kamera 5MP 2.8mm",
