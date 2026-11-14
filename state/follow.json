@@ -1618,5 +1618,59 @@
   "url": "https://www.linkedin.com/company/dotsmartsolutionsdoo",
   "city": "Beograd",
   "reason": "Projektovanje, ugradnja i održavanje sigurnosnih sistema i automatike objekata"
+ },
+ {
+  "date": "2026-11-14",
+  "network": "linkedin",
+  "name": "NES Communications",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/nes-communications",
+  "city": "Beograd (Radoja Dakića 7)",
+  "reason": "ICT i sigurnosni sistemi, video nadzor za firme i hotele"
+ },
+ {
+  "date": "2026-11-14",
+  "network": "linkedin",
+  "name": "Smart Building Technologies d.o.o.",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/smart-building-technologies-d-o-o",
+  "city": "Beograd",
+  "reason": "Sigurnosni i protivpožarni sistemi, automatizacija zgrada"
+ },
+ {
+  "date": "2026-11-14",
+  "network": "linkedin",
+  "name": "IT Plus Inzinjering",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/it-plus-inzinjering",
+  "city": "Veternik (Novi Sad)",
+  "reason": "Sistemi tehničke zaštite: video nadzor, protivprovala, kontrola pristupa"
+ },
+ {
+  "date": "2026-11-14",
+  "network": "linkedin",
+  "name": "NetBridge Novi Sad",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/net-bridge",
+  "city": "Novi Sad (Heroja Pinkija 31)",
+  "reason": "Mreže, video nadzor i alarmni sistemi"
+ },
+ {
+  "date": "2026-11-14",
+  "network": "linkedin",
+  "name": "MaxProtect d.o.o.",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/maxprotect-d-o-o",
+  "city": "Niš, Novi Sad (Kisačka 82)",
+  "reason": "Projektovanje i instalacija sistema obezbeđenja i zaštite"
+ },
+ {
+  "date": "2026-11-14",
+  "network": "linkedin",
+  "name": "Securitas SE doo Beograd",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/securitas-se-doo-beograd",
+  "city": "Beograd (i Niš, Kragujevac, Novi Sad)",
+  "reason": "Tehnički sistemi: video nadzor, alarmi, kontrola pristupa, monitoring"
  }
 ]
