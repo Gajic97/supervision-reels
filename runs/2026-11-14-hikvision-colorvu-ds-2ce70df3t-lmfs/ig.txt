@@ -1,0 +1,16 @@
+Kamera u boji noću ne ide na NVR: Hikvision DS-2CE70DF3T-LMFS je HD-TVI (analogna) turret kamera 2 MP i povezuje se na DVR ili XVR snimač preko koaksijalnog kabla. NVR i PoE svič joj ne trebaju.
+
+ColorVu Smart Hybrid Light kombinuje IC i belo LED svetlo dometa do 20 m, pa slika noću može da ostane u boji. Okruglo turret kućište se bira za ulaze, hodnike i enterijer.
+
+Pre kupovine proveri:
+- snimač: DVR ili XVR (ne NVR)
+- napajanje: 12 VDC, do 5,4 W
+- kućište IP67, radi od -40 do 60 °C
+- ugrađen mikrofon, zvuk ide preko koaksa (bez zvučnika)
+- WDR 130 dB, video izlaz TVI, AHD, CVI i CVBS
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+Imaš DVR ili NVR? Napiši u komentar.
+
+#kamerauboji #videonadzor #hikvision #colorvu #supervision

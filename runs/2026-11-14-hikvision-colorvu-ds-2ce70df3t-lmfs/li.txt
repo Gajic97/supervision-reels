@@ -1,0 +1,8 @@
+Kamera u boji noću za postojeće analogne sisteme: Hikvision DS-2CE70DF3T-LMFS.
+
+HD-TVI turret kamera 2 MP sa ColorVu Smart Hybrid Light osvetljenjem (IC i belo LED do 20 m). Povezuje se na DVR ili XVR snimač preko koaksijalnog kabla; NVR i PoE svič joj ne trebaju. Greška koju je lako napraviti pri nabavci: analogna kamera uz NVR snimač.
+
+Tehnički: ugrađen mikrofon (jednosmerni audio preko koaksa), WDR 130 dB, napajanje 12 VDC do 5,4 W, kućište IP67, radna temperatura od -40 do 60 °C, video izlaz TVI/AHD/CVI/CVBS. Namenjena ulazima, hodnicima i enterijeru.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana u celoj Srbiji.
+https://super-vision.rs/proizvod/hd-tvi-turret-kamera-ds-2ce70df3t-lmfs/

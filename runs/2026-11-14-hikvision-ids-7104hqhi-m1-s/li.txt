@@ -1,0 +1,8 @@
+Snimač za video nadzor sa AcuSense detekcijom za kuće i manje objekte: Hikvision iDS-7104HQHI-M1/S.
+
+Kompaktan 4-kanalni Turbo HD DVR koji prepoznaje ljude i vozila, pa alarm ne pokreće svaki pokret u kadru. Koristan je kada kamera gleda ulicu ili dvorište sa drvećem, gde obična detekcija pokreta šalje obaveštenja stalno.
+
+Tehnički: 4 kanala, rezolucija do 6 MP, H.265 Pro+, HDMI i VGA izlaz, jedno ležište za SATA hard disk, bez PoE portova. AcuSense radi i noću, dok kamera daje upotrebljivu sliku uz IR ili drugo osvetljenje.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana u celoj Srbiji.
+https://super-vision.rs/proizvod/snimac-ids-7104hqhi-m1-s-hikvision/

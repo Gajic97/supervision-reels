@@ -1,6 +1,34 @@
 {
- "generated": "14.11.2026. 06:43",
+ "generated": "14.11.2026. 06:44",
  "reels": [
+  {
+   "date": "2026-11-14",
+   "product": "DS-2CE70DF3T-LMFS Hikvision HD-TVI ColorVu turret kamera 2MP dual-light",
+   "category": "Kamere",
+   "keyword": "kamera u boji noću",
+   "hook_type": "provokativno",
+   "hook_text": "Greška: analogna kamera na NVR. / Kamera u boji noću ide na DVR ili XVR.",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-14-hikvision-colorvu-ds-2ce70df3t-lmfs.mp4",
+   "scheduled": "2026-11-14 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-14",
+   "product": "iDS-7104HQHI-M1/S Hikvision Turbo HD DVR snimač 4 kanala AcuSense",
+   "category": "Snimači",
+   "keyword": "snimač za video nadzor",
+   "hook_type": "label",
+   "hook_text": "Vlasnici kuća sa dvorištem: / Snimač za video nadzor koji razlikuje ljude i vozila.",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-14-hikvision-ids-7104hqhi-m1-s.mp4",
+   "scheduled": "2026-11-14 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-13",
    "product": "DS-2CV2041G2-IDW 2.8mm Hikvision IP WiFi bullet kamera 4MP",

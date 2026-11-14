@@ -789,5 +789,63 @@
   "buffer_post_id": "6af6a466e1d8eff610a2c67a",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-13-hikvision-ds-2cv2041g2-idw-wifi"
+ },
+ {
+  "date": "2026-11-14",
+  "product_id": 987,
+  "product": "iDS-7104HQHI-M1/S Hikvision Turbo HD DVR snimač 4 kanala AcuSense",
+  "category": "Snimači",
+  "keyword": "snimač za video nadzor",
+  "format": "f5",
+  "hook_type": "label",
+  "hook_text": "Vlasnici kuća sa dvorištem: / Snimač za video nadzor koji razlikuje ljude i vozila.",
+  "music_style": "chill",
+  "music_track": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "url": "https://super-vision.rs/proizvod/snimac-ids-7104hqhi-m1-s-hikvision/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6af7f53d81e1228421e7059f",
+   "tiktok": "6af7f53ed16af15d4df515e1",
+   "linkedin": "6af7f53f78196a0a9742aac9"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-14 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-14-hikvision-ids-7104hqhi-m1-s.mp4",
+  "buffer_post_id": "6af7f53d81e1228421e7059f",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-14-hikvision-ids-7104hqhi-m1-s"
+ },
+ {
+  "date": "2026-11-14",
+  "product_id": 4172,
+  "product": "DS-2CE70DF3T-LMFS Hikvision HD-TVI ColorVu turret kamera 2MP dual-light",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f8",
+  "hook_type": "provokativno",
+  "hook_text": "Greška: analogna kamera na NVR. / Kamera u boji noću ide na DVR ili XVR.",
+  "music_style": "chill",
+  "music_track": "chill/atlasaudio-lofi-chill-589987.mp3",
+  "url": "https://super-vision.rs/proizvod/hd-tvi-turret-kamera-ds-2ce70df3t-lmfs/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6af7f54378196a0a9742aba4",
+   "tiktok": "6af7f5444b28296eb138fcfd",
+   "linkedin": "6af7f545bb36d00909eda4e6"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-14 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-14-hikvision-colorvu-ds-2ce70df3t-lmfs.mp4",
+  "buffer_post_id": "6af7f54378196a0a9742aba4",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-14-hikvision-colorvu-ds-2ce70df3t-lmfs"
  }
 ]
