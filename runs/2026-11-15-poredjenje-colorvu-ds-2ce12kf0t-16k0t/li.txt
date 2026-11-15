@@ -1,0 +1,11 @@
+Kamera u boji noću: dva Hikvision 3K modela za analogne sisteme i razlika u noćnom režimu.
+
+DS-2CE12KF0T-LFS (ColorVu): belo svetlo drži sliku u boji i noću, do oko 40 m. Objektiv 2.8 mm za širok kadar kod ulaza, kapija i dvorišta.
+
+DS-2CE16K0T-LFS (mini bullet, dvostruko osvetljenje): IR do 30 m ili belo svetlo do 20 m, pa se noćni režim bira prema tome da li je važnija diskrecija ili boja. Metalno kućište, IP67, radni opseg od -40 do 60 °C, ugao 104,9° horizontalno.
+
+Zajedničko: 3K (2960 x 1665), 2.8 mm, ugrađen mikrofon, HD-TVI preko koaksijala na DVR ili XVR snimač. Za punu 3K rezoluciju snimač mora da podržava taj format.
+
+Cena na upit: super-vision.rs ili 062/618-736. Oba modela na stanju, isporuka za 2 radna dana u celoj Srbiji.
+https://super-vision.rs/proizvod/ds-2ce12kf0t-lfs-2-8mm-hikvision-hd-tvi-colorvu-bullet-kamera-3k/
+https://super-vision.rs/proizvod/ds-2ce16k0t-lfs-hikvision-analogna-bullet-kamera-3k-2-8mm/

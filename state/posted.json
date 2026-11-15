@@ -847,5 +847,65 @@
   "buffer_post_id": "6af7f54378196a0a9742aba4",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-14-hikvision-colorvu-ds-2ce70df3t-lmfs"
+ },
+ {
+  "date": "2026-11-15",
+  "product_id": 2861,
+  "product": "DVR-216Q-M1 HiLook Turbo HD DVR snimač 16 kanala 2MP",
+  "category": "Snimači",
+  "keyword": "snimač 16 kanala",
+  "format": "f2",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Imaš više od 8 kamera? / Snimač 16 kanala za 11.680 RSD.",
+  "music_style": "chill",
+  "music_track": "chill/zephiramusic-chill-lofi-585360.mp3",
+  "url": "https://super-vision.rs/proizvod/snimac-dvr-216q-m1-16-kanalni-turbo-hd-hilook/",
+  "price": 11680,
+  "buffer_posts": {
+   "instagram": "6af9472fe5a113497acb215e",
+   "tiktok": "6af94730e86a5789a6f04d47",
+   "linkedin": "6af9473176c23bf1c75e9cd8"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-15 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-15-hilook-dvr-216q-m1.mp4",
+  "buffer_post_id": "6af9472fe5a113497acb215e",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-15-hilook-dvr-216q-m1"
+ },
+ {
+  "date": "2026-11-15",
+  "product_id": 5604,
+  "product_id_b": 2647,
+  "product": "DS-2CE12KF0T-LFS 2.8mm Hikvision ColorVu bullet 3K (A) vs DS-2CE16K0T-LFS Hikvision bullet 3K 2.8mm (B)",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f4",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako hoćeš boju noću, / kamera u boji noću: A ili B?",
+  "music_style": "chill",
+  "music_track": "chill/alex-morgan-lofi-chill-vlog-beats-573883.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-2ce12kf0t-lfs-2-8mm-hikvision-hd-tvi-colorvu-bullet-kamera-3k/",
+  "url_b": "https://super-vision.rs/proizvod/ds-2ce16k0t-lfs-hikvision-analogna-bullet-kamera-3k-2-8mm/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6af94737e5a113497acb2332",
+   "tiktok": "6af94738b9a106584c8d3ef3",
+   "linkedin": "6af9473976c23bf1c75ea049"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-15 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-15-poredjenje-colorvu-ds-2ce12kf0t-16k0t.mp4",
+  "buffer_post_id": "6af94737e5a113497acb2332",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-15-poredjenje-colorvu-ds-2ce12kf0t-16k0t"
  }
 ]

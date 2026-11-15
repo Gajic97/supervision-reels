@@ -1,0 +1,13 @@
+Kamera u boji noću: Hikvision DS-2CE12KF0T-LFS (A) ili DS-2CE16K0T-LFS (B)? Obe su 3K analogne bullet kamere sa objektivom 2.8 mm i mikrofonom.
+
+A, ColorVu: belo svetlo drži sliku u boji i noću, do oko 40 m. Za dvorišta, ulaze i kapije, gde je bitan širok kadar.
+
+B, mini bullet sa dva svetla: IR do 30 m ili belo svetlo do 20 m sa slikom u boji, pa noćni režim biraš prema tome da li ti je važnija diskrecija ili boja. Metalno kućište, IP67.
+
+Obe rade na DVR ili XVR snimaču preko koaksijalnog kabla; za punu 3K rezoluciju snimač mora da podržava taj format.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+A ili B? Napiši u komentar.
+
+#kameraubojinoću #videonadzor #hikvision #colorvu #supervision
