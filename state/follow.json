@@ -1672,5 +1672,68 @@
   "url": "https://www.linkedin.com/company/securitas-se-doo-beograd",
   "city": "Beograd (i Niš, Kragujevac, Novi Sad)",
   "reason": "Tehnički sistemi: video nadzor, alarmi, kontrola pristupa, monitoring"
+ },
+ {
+  "date": "2026-11-15",
+  "network": "instagram",
+  "name": "SMIT MEDIA",
+  "handle": "@smit_rs_media",
+  "url": "https://www.instagram.com/smit_rs_media/",
+  "city": "Srbobran (Novi Sad, Srem)",
+  "reason": "Prodaja i ugradnja tehničke zaštite: video nadzor, alarm, interfon; licenca MUP-a"
+ },
+ {
+  "date": "2026-11-15",
+  "network": "linkedin",
+  "name": "Laznik",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/laznik",
+  "city": "Novi Sad",
+  "reason": "Video nadzor za stambene, komercijalne i poljoprivredne objekte (bezicnivideonadzor.rs)"
+ },
+ {
+  "date": "2026-11-15",
+  "network": "linkedin",
+  "name": "Boma D O O",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/bomadoo",
+  "city": "Beograd",
+  "reason": "Projektovanje i instalacija video nadzora, interfona, kontrole pristupa i alarma od 1990."
+ },
+ {
+  "date": "2026-11-15",
+  "network": "linkedin",
+  "name": "Goran Bubalo (Alarm Systems doo)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/goran-bubalo-96328294",
+  "city": "Subotica, Beograd",
+  "reason": "Vodeći projektant video nadzora i protivpožarne zaštite, licence LT1/LT2/LT3"
+ },
+ {
+  "date": "2026-11-15",
+  "network": "linkedin",
+  "name": "Marko Prodanovic (Macchina Security)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/marko-prodanovic-aa094044",
+  "city": "Beograd",
+  "reason": "Montaža i programiranje sistema tehničke zaštite: video nadzor, alarmi, interfoni, pametna kuća"
+ },
+ {
+  "date": "2026-11-15",
+  "network": "linkedin",
+  "name": "Aleksandra Šmit (SMIT.RS MEDIA)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/aleksandrasmit",
+  "city": "Srbobran",
+  "reason": "Suvlasnica firme za video nadzor, alarme, IP interfone i kontrolu pristupa"
+ },
+ {
+  "date": "2026-11-15",
+  "network": "linkedin",
+  "name": "WISE Smart Home",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/wise-smart-home",
+  "city": "Beograd (Vojvode Stepe 194), Novi Sad",
+  "reason": "Pametna kuća i sistemi automatizacije doma"
  }
 ]
