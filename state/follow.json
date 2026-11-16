@@ -1735,5 +1735,68 @@
   "url": "https://www.linkedin.com/company/wise-smart-home",
   "city": "Beograd (Vojvode Stepe 194), Novi Sad",
   "reason": "Pametna kuća i sistemi automatizacije doma"
+ },
+ {
+  "date": "2026-11-16",
+  "network": "instagram",
+  "name": "ION Solutions",
+  "handle": "@ion_solutions",
+  "url": "https://www.instagram.com/ion_solutions/",
+  "city": "Novi Sad",
+  "reason": "Pametna kuća i pametna zgrada, Novi Sad (lokacija na profilu)"
+ },
+ {
+  "date": "2026-11-16",
+  "network": "instagram",
+  "name": "OnlineIT (Alarmi i kamere)",
+  "handle": "@sigurnosnisistemishop",
+  "url": "https://www.instagram.com/sigurnosnisistemishop/",
+  "city": "Beograd (Zemun)",
+  "reason": "Hikvision kompleti, alarmi, interfoni; isti tim kao Alarmi i kamere doo / Online IT iz Zemuna"
+ },
+ {
+  "date": "2026-11-16",
+  "network": "linkedin",
+  "name": "Watchout Security",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/watchout-security",
+  "city": "Kragujevac",
+  "reason": "Tehničko obezbeđenje za pravna i fizička lica, Šumadija i Pomoravlje"
+ },
+ {
+  "date": "2026-11-16",
+  "network": "linkedin",
+  "name": "Falco PSC",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/falco-psc",
+  "city": "Niš",
+  "reason": "Distribucija sistema tehničke zaštite (video nadzor, alarmi, interfoni); već praćen na Instagramu"
+ },
+ {
+  "date": "2026-11-16",
+  "network": "linkedin",
+  "name": "Nikša Mihajlović (MMN Company / Axion Novi Sad)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/niksamihajlovic",
+  "city": "Novi Sad",
+  "reason": "Tehničar za video nadzor (Surveillance Technician) u MMN Company"
+ },
+ {
+  "date": "2026-11-16",
+  "network": "linkedin",
+  "name": "Milorad Maksimović (MAXALARM)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/maksa-maxalarm",
+  "city": "Kruševac",
+  "reason": "Osnivač MAXALARM grupacije: projektovanje i integracija CCTV, alarmnih i protivpožarnih sistema"
+ },
+ {
+  "date": "2026-11-16",
+  "network": "linkedin",
+  "name": "Stefan Katić (Fortilux)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/stefan-katic-304b03209",
+  "city": "Beograd",
+  "reason": "Elektroinstalacije plus kompletni sistemi video nadzora i alarmne zaštite"
  }
 ]
