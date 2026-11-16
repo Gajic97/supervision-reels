@@ -1,0 +1,13 @@
+Kamera u boji noću za ulaz, dvorište ili radnju: Hikvision DS-2CD1347G2H-LIU, IP turret ColorVu, 4 MP.
+
+- Dvorište i ulaz: belo svetlo do 30 m i osetljivost 0,0005 luksa uz objektiv F1.0, pa slika ostaje u boji i posle zalaska sunca.
+- Radnja sa izlogom: WDR 120 dB za kadrove gde su jako svetlo i senka zajedno.
+- Magacin i garaža: 4 MP (2560 x 1440) za više detalja nego kod 2 MP kamere.
+
+Objektiv 2.8 mm, ugrađen mikrofon, turret glava se okreće u tri ose. Napajanje preko PoE ili 12 V. Nema slot za memorijsku karticu, snima na NVR.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+Kuća, radnja ili garaža? Napiši u komentar.
+
+#kamerauboji #colorvu #hikvision #videonadzor #supervision

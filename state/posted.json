@@ -907,5 +907,63 @@
   "buffer_post_id": "6af94737e5a113497acb2332",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-15-poredjenje-colorvu-ds-2ce12kf0t-16k0t"
+ },
+ {
+  "date": "2026-11-16",
+  "product_id": 6214,
+  "product": "DS-7604NI-K1/4K Hikvision NVR snimač 4 kanala 4K bez HDD",
+  "category": "Snimači",
+  "keyword": "NVR snimač",
+  "format": "f8",
+  "hook_type": "provokativno",
+  "hook_text": "Ovaj snimač ne snima… / …dok mu ne dodaš disk.",
+  "music_style": "chill",
+  "music_track": "chill/velariomusic-chill-lofi-616929.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-7604ni-k1-4k-hikvision-nvr-snimac-4-kanala-4k-bez-hdd/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6afa97e6a869c35e5bbe2e22",
+   "tiktok": "6afa97e9a869c35e5bbe2ec2",
+   "linkedin": "6afa97ead7e5fee638a32ed0"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-16 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-16-nvr-ds-7604ni-k1-4k.mp4",
+  "buffer_post_id": "6afa97e6a869c35e5bbe2e22",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-16-nvr-ds-7604ni-k1-4k"
+ },
+ {
+  "date": "2026-11-16",
+  "product_id": 2679,
+  "product": "DS-2CD1347G2H-LIU Hikvision IP turret kamera 4MP ColorVu",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f5",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Treba ti kamera u boji noću? / Kuća, radnja ili garaža.",
+  "music_style": "chill",
+  "music_track": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-2cd1347g2h-liu-hikvision-ip-turret-kamera-4mp-colorvu/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6afa97e806e1675856cc4bc4",
+   "tiktok": "6afa97ea60a910801c6f9ded",
+   "linkedin": "6afa97eb8e87c256a3b5b3e9"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-16 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-16-colorvu-ds-2cd1347g2h-liu.mp4",
+  "buffer_post_id": "6afa97e806e1675856cc4bc4",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-16-colorvu-ds-2cd1347g2h-liu"
  }
 ]

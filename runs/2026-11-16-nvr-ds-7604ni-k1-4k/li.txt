@@ -1,0 +1,5 @@
+NVR snimač za 4 IP kamere: Hikvision DS-7604NI-K1/4K (K serija, HDMI izlaz do 4K).
+
+Dve stavke koje treba uključiti u ponudu: snimač se isporučuje bez hard diska (jedno SATA ležište, kapacitet po izboru) i nema PoE portove, pa kamere idu preko zasebnog PoE sviča ili adaptera. Kompresija H.265+, video izlazi HDMI i VGA. Namenjen stanovima, kućama i malim lokalima sa do četiri IP kamere; za više kamera postoje osmokanalni i šesnaestokanalni modeli iz iste serije.
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.
