@@ -965,5 +965,64 @@
   "buffer_post_id": "6afa97e806e1675856cc4bc4",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-16-colorvu-ds-2cd1347g2h-liu"
+ },
+ {
+  "date": "2026-11-17",
+  "product_id": 6133,
+  "product_id_b": 6132,
+  "product": "DVR-204U-M1/T HiLook DVR 4 kanala 5MP (A) vs DVR-204Q-M1 HiLook DVR 4 kanala 2MP (B)",
+  "category": "Snimači",
+  "keyword": "DVR snimač 4 kanala",
+  "format": "f4",
+  "hook_type": "izjava / broj",
+  "hook_text": "4 kanala. Dve oštrine. / DVR snimač 4 kanala: A ili B?",
+  "music_style": "chill",
+  "music_track": "chill/atlasaudio-lofi-chill-589987.mp3",
+  "url": "https://super-vision.rs/proizvod/dvr-204u-m1-t-hilook-turbo-hd-dvr-snimac-4-kanala-5mp/",
+  "price": 15380,
+  "buffer_posts": {
+   "instagram": "6afbeac9df36f4d82570a542",
+   "tiktok": "6afbeacadf36f4d82570a5ac",
+   "linkedin": "6afbeaccf83aaca8f3b1522b"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-17 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-17-poredjenje-dvr-204u-204q.mp4",
+  "buffer_post_id": "6afbeac9df36f4d82570a542",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-17-poredjenje-dvr-204u-204q"
+ },
+ {
+  "date": "2026-11-17",
+  "product_id": 6242,
+  "product": "IPC-B140HA-LUC 4mm HiLook IP bullet kamera 4MP dual light",
+  "category": "Kamere",
+  "keyword": "kamera za dvorište",
+  "format": "f2",
+  "hook_type": "provokativno",
+  "hook_text": "Široka slika nije jasno lice. / Kamera za dvorište, 4 mm.",
+  "music_style": "chill",
+  "music_track": "chill/zephiramusic-chill-lofi-585360.mp3",
+  "url": "https://super-vision.rs/proizvod/ipc-b140ha-luc-4mm-hilook-ip-bullet-kamera-4mp-dual-light/",
+  "price": 6620,
+  "buffer_posts": {
+   "instagram": "6afbeacadf36f4d82570a573",
+   "tiktok": "6afbeacb3e42cd001e55fdd1",
+   "linkedin": "6afbeacd3e42cd001e55ff3b"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-17 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-17-dual-light-ipc-b140ha-luc-4mm.mp4",
+  "buffer_post_id": "6afbeacadf36f4d82570a573",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-17-dual-light-ipc-b140ha-luc-4mm"
  }
 ]

@@ -1,0 +1,7 @@
+DVR snimač 4 kanala: kada uzeti 5 MP, a kada je 2 MP dovoljno?
+
+HiLook DVR-204U-M1/T (15.380 RSD) radi sa kamerama do 5 MP i prima do 8 IP kamera do 8 MP, za objekte gde je potrebna oštrija slika od 2 MP. HiLook DVR-204Q-M1 (9.320 RSD) je 2 MP (1080p Lite) i prima do 6 IP kamera do 6 MP.
+
+Zajedničko: ulazi HDTVI, AHD, CVI, CVBS i IP, Motion Detection 2.0 sa klasifikacijom ljudi i vozila, H.265 Pro+, jedno SATA ležište za disk do 10 TB i dvosmerni audio preko koaksijalnog kabla.
+
+Oba na stanju, isporuka za 2 radna dana: super-vision.rs

@@ -1,0 +1,174 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;background:#0b1a14}
+#bg{position:absolute;inset:0;background:radial-gradient(1300px 1100px at 50% 36%,#1a4231 0%,#0e251b 55%,#06110b 100%)}
+#grid{position:absolute;inset:0;opacity:.06;background-image:linear-gradient(#6cc08f 1px,transparent 1px),linear-gradient(90deg,#6cc08f 1px,transparent 1px);background-size:72px 72px}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35}
+#logo{position:absolute;top:70px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:16px;color:#fff;font-weight:700;font-size:34px;letter-spacing:2px;z-index:9}
+#logo img{width:58px;height:58px;border-radius:14px}
+#bar{position:absolute;top:0;left:0;height:8px;background:#6cc08f;z-index:10}
+#h{position:absolute;top:180px;left:70px;right:70px;text-align:center;z-index:8}
+#h .a{font-weight:800;font-size:112px;line-height:1.02;color:#fff;letter-spacing:-2px}
+#h .a em{font-style:normal;color:#6cc08f}
+#h .b{font-weight:700;font-size:56px;line-height:1.15;color:#cfe9da;margin-top:26px}
+#h .b em{font-style:normal;color:#6cc08f}
+/* slika 440 px, scale najviše 1.12 => 493 px < MAX_PX 504 */
+#prod{position:absolute;left:320px;top:800px;width:440px;height:440px;transform-origin:50% 50%;z-index:6}
+#prod img{width:100%;height:100%;border-radius:44px;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+#ring{position:absolute;left:290px;top:770px;width:500px;height:500px;border-radius:50%;border:5px solid #6cc08f;z-index:5;opacity:0}
+.lens{position:absolute;width:0;height:0;z-index:7}
+.lens b{position:absolute;white-space:nowrap;background:#6cc08f;color:#0b1a14;font-weight:800;font-size:40px;padding:8px 22px;border-radius:40px}
+#l1{left:760px;top:900px}#l1 b{left:-40px;top:-90px}
+#l2{left:320px;top:1240px}#l2 b{left:-40px;top:20px;background:#fff;color:#123528}
+#card{position:absolute;left:50px;top:560px;width:980px;height:700px;border-radius:40px;overflow:hidden;background:#0f2a1f;box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 0 2px rgba(108,192,143,.35);opacity:0}
+#card>svg{position:absolute;left:0;top:0;width:980px;height:700px}
+#night{position:absolute;inset:0;background:#030a07;opacity:0}
+#tag{position:absolute;left:26px;top:22px;background:rgba(11,26,20,.8);color:#cfe9da;font-weight:700;font-size:28px;padding:6px 18px;border-radius:20px;z-index:3}
+#pip{position:absolute;left:28px;bottom:28px;width:360px;height:360px;border-radius:26px;overflow:hidden;border:6px solid #6cc08f;box-shadow:0 20px 40px rgba(0,0,0,.5);background:#0f2a1f;opacity:0;z-index:3}
+#pip svg{position:absolute;left:0;top:0;width:980px;height:700px;transform-origin:0 0}
+#pip .pt2{position:absolute;left:14px;bottom:14px;background:rgba(11,26,20,.88);color:#6cc08f;font-weight:800;font-size:30px;padding:6px 18px;border-radius:22px}
+#chip{position:absolute;top:1300px;left:0;right:0;display:flex;justify-content:center;z-index:7}
+#chip span{background:#fff;color:#123528;font-weight:700;font-size:46px;padding:22px 44px;border-radius:60px;box-shadow:0 18px 40px rgba(0,0,0,.35);white-space:nowrap}
+#chip span b{color:#2f7a50}
+#stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;z-index:7}
+#stamp div{font-weight:800;font-size:140px;line-height:1.05;color:#fff;text-align:center;letter-spacing:-3px}
+#stamp div em{font-style:normal;color:#6cc08f}
+#endbg{position:absolute;inset:0;opacity:0;background:radial-gradient(1100px 1100px at 50% 45%,#ffffff 0%,#eef6f1 55%,#d7ebe0 100%)}
+#end{position:absolute;inset:0;opacity:0;z-index:7;text-align:center}
+#end .cat{position:absolute;top:310px;left:0;right:0;font-weight:700;font-size:40px;letter-spacing:4px;color:#2f7a50}
+/* krajnja slika 480 px, scale <= 1.01 => < MAX_PX 504 */
+#end .im{position:absolute;left:300px;top:700px;width:480px;height:480px;border-radius:44px;box-shadow:0 30px 50px rgba(0,0,0,.16)}
+#end .nm{position:absolute;top:1280px;left:40px;right:40px;white-space:nowrap;font-weight:800;font-size:80px;line-height:1.05;color:#123528;letter-spacing:-1px}
+#end .sub{position:absolute;top:1390px;left:60px;right:60px;font-weight:600;font-size:48px;color:#2f7a50}
+#end .pr{position:absolute;top:1480px;left:0;right:0;display:flex;justify-content:center}
+#end .pr>span{background:#123528;color:#fff;font-weight:800;font-size:64px;padding:18px 50px;border-radius:70px}
+#end .pr b{color:#6cc08f}
+#end .cta{position:absolute;top:1610px;left:0;right:0;font-weight:700;font-size:42px;color:#123528}
+#end .cta b{color:#2f7a50}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:20}
+</style></head><body>
+<div id="bg"></div><div id="grid"></div>
+<div class="blob" id="b1" style="width:520px;height:520px;background:#2f7a50"></div>
+<div class="blob" id="b2" style="width:420px;height:420px;background:#439665"></div>
+<div id="endbg"></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173a2b"/><stop offset="1" stop-color="#245740"/></linearGradient>
+<linearGradient id="fovw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8f0cf" stop-opacity=".2"/><stop offset="1" stop-color="#b8f0cf" stop-opacity=".05"/></linearGradient>
+<linearGradient id="fovn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8f0cf" stop-opacity=".75"/><stop offset="1" stop-color="#b8f0cf" stop-opacity=".2"/></linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff6d6" stop-opacity=".9"/><stop offset="1" stop-color="#fff6d6" stop-opacity=".15"/></linearGradient>
+<g id="yard">
+ <rect width="980" height="700" fill="url(#sky)"/>
+ <rect y="430" width="980" height="270" fill="#1d4a35"/>
+ <path d="M0 430 Q490 400 980 430 L980 445 L0 445Z" fill="#2a6447"/>
+ <rect x="0" y="220" width="200" height="220" fill="#e9efe9"/><path d="M-20 230 L100 140 L220 230Z" fill="#2f7a50"/>
+ <rect x="40" y="280" width="60" height="60" fill="#ffd77a"/>
+ <g stroke="#cfe9da" stroke-width="6" opacity=".8"><line x1="220" y1="410" x2="980" y2="410"/>
+ <line x1="250" y1="380" x2="250" y2="440"/><line x1="330" y1="380" x2="330" y2="440"/><line x1="410" y1="380" x2="410" y2="440"/><line x1="490" y1="380" x2="490" y2="440"/><line x1="570" y1="380" x2="570" y2="440"/><line x1="650" y1="380" x2="650" y2="440"/></g>
+ <rect x="730" y="360" width="180" height="82" fill="none" stroke="#cfe9da" stroke-width="8"/>
+ <line x1="820" y1="360" x2="820" y2="442" stroke="#cfe9da" stroke-width="6"/>
+ <path d="M0 700 L200 470 L260 470 L120 700Z" fill="#3c6b55" opacity=".7"/>
+</g>
+<g id="person"><circle cx="0" cy="-118" r="22" fill="#f2c9a5"/><path d="M-26 -90 Q0 -100 26 -90 L22 -20 L-22 -20Z" fill="#e0574f"/><rect x="-22" y="-22" width="16" height="22" fill="#3a5fa8"/><rect x="6" y="-22" width="16" height="22" fill="#3a5fa8"/></g>
+<g id="cam"><rect x="-34" y="-15" width="62" height="30" rx="12" fill="#fff"/><rect x="18" y="-17" width="18" height="34" rx="6" fill="#111"/><circle cx="27" cy="0" r="7" fill="#6cc08f"/></g>
+</defs></svg>
+<div id="card">
+ <svg viewBox="0 0 980 700"><use href="#yard"/>
+  <path id="fovW" d="M190 200 L980 -60 L980 760Z" fill="url(#fovw)" stroke="#b8f0cf" stroke-width="3" stroke-dasharray="10 10" opacity="0"/>
+  <path id="fovN" d="M190 200 L980 220 L980 520Z" fill="url(#fovn)" stroke="#6cc08f" stroke-width="4" opacity="0"/>
+ </svg>
+ <div id="night"></div>
+ <svg viewBox="0 0 980 700" style="position:absolute;left:0;top:0;width:980px;height:700px">
+  <path id="beamP" d="M200 205 L960 250 L960 520Z" fill="url(#beam)" opacity="0"/>
+  <use id="p1" href="#person"/>
+  <rect id="trk" width="90" height="170" fill="none" stroke="#6cc08f" stroke-width="6" stroke-dasharray="16 10" opacity="0"/>
+  <g transform="translate(190 200)"><use href="#cam"/></g>
+ </svg>
+ <div id="tag">Primer</div>
+ <div id="pip"><svg id="zs" viewBox="0 0 980 700"><use href="#yard"/><use id="p2" href="#person"/></svg><div class="pt2">4 mm · uvećano</div></div>
+</div>
+<div id="ring"></div>
+<div id="prod"><img src="assets/prod.png"></div>
+<div class="lens" id="l1"><b>4 mm</b></div><div class="lens" id="l2"><b>4 MP</b></div>
+<div id="logo"><img src="assets/supervision-ikonica-512.png">SUPERVISION</div>
+<div id="bar"></div>
+<div id="h"><div class="a"></div><div class="b"></div></div>
+<div id="chip"><span></span></div>
+<div id="stamp"><div></div></div>
+<div id="end"><div class="cat">IP KAMERA · 4 MP · DUAL LIGHT</div><img class="im" src="assets/prod.png"><div class="nm">HiLook IPC-B140HA-LUC 4mm</div><div class="sub">Belo svetlo 15 m · IR 20 m</div>
+<div class="pr"><span><span id="pv">6.620</span> <b>RSD</b></span></div><div class="cta">super-vision.rs · <b>062/618-736</b></div></div>
+<div id="flash"></div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const CUTS=[2.6,5.4,8.4,10.9];
+const PRICE=6620;
+const H=[
+ [0,2.6,'Široka slika nije<br><em>jasno lice</em>.','<em>Kamera za dvorište</em>, 4 mm.'],
+ [2.6,5.4,'Daleka kapija?<br><em>Više detalja</em>.',''],
+ [5.4,8.4,'Noću u boji:<br><em>belo svetlo</em>.',''],
+];
+const CH=[[3.0,5.4,'<b>Objektiv 4 mm</b> · 4 MP'],[5.8,8.4,'<b>Belo svetlo 15 m</b> · IR 20 m']];
+const ST=[[8.4,9.2,'Detekcija<br><em>ljudi</em>.'],[9.2,10.0,'Ugrađen<br><em>mikrofon</em>.'],[10.0,10.9,'<em>PoE</em> ili<br>12 V.']];
+const px=t=>t<5.4?990-170*cl((t-2.8)/2.2):820-30*cl((t-5.6)/2.4);const py=()=>450;
+window.render=function(t){
+ $('bar').style.width=(1080*t/14)+'px';
+ $('b1').style.transform=`translate(${120+120*Math.sin(t*0.7)}px,${300+90*Math.cos(t*0.5)}px)`;
+ $('b2').style.transform=`translate(${560+100*Math.cos(t*0.6)}px,${1200+120*Math.sin(t*0.8)}px)`;
+ // proizvod
+ let sc=1,y=0,rot=0,ry=0,po=1;
+ if(t<2.6){const p=ease(cl(t/0.8));sc=0.9+0.12*p+0.01*Math.sin(t*3);y=60-60*p;rot=-5+5*p;ry=-25+25*p;}
+ else if(t<8.4)po=0;
+ else if(t<10.9){sc=0.62;y=-460;}
+ else po=0;
+ CUTS.forEach(c=>{const d=t-c;if(d>=0&&d<0.25)sc=Math.min(1.12,sc*(1+0.06*(1-d/0.25)))});
+ $('prod').style.opacity=po;$('prod').style.transform=`translateY(${y}px) perspective(1200px) rotateY(${ry}deg) scale(${sc}) rotate(${rot}deg)`;
+ const rp=((t*0.9)%1);$('ring').style.opacity=t<2.6?(1-rp)*0.8*cl(t/0.4):0;$('ring').style.transform=`scale(${0.9+0.3*rp})`;
+ [['l1',0.9],['l2',1.25]].forEach(([id,t0])=>{const e=$(id);e.style.opacity=t<2.6?cl((t-t0)/0.2):0;e.querySelector('b').style.transform=`scale(${0.7+0.3*back(cl((t-t0)/0.35))})`;});
+ // kartica
+ const co=t>=2.6&&t<8.4?ease(cl((t-2.6)/0.3)):0;const card=$('card');card.style.opacity=co;
+ card.style.transform=`translateY(${(1-co)*120}px) scale(${0.96+0.04*co})`;
+ const inN=t>=5.4;
+ $('fovW').setAttribute('opacity',!inN?cl((t-2.8)/0.3)*(1-0.6*cl((t-3.6)/0.4)):0);
+ $('fovN').setAttribute('opacity',!inN?cl((t-3.6)/0.4)*(0.85+0.15*Math.sin(t*6)):0);
+ $('night').style.opacity=inN?0.72*cl((t-5.4)/0.3):0;
+ $('beamP').setAttribute('opacity',inN?cl((t-5.9)/0.25)*(0.9+0.1*Math.sin(t*9)):0);
+ const X=px(t),Y=py(t);const ps=0.85;
+ $('p1').setAttribute('transform',`translate(${X} ${Y}) scale(${ps})`);$('p2').setAttribute('transform',`translate(${X} ${Y}) scale(${ps})`);
+ // osoba je obojena samo kad je osvetljena (noću bez snopa je siva)
+ $('p1').style.filter=inN&&t<5.9?'grayscale(1) brightness(.5)':'none';
+ const tO=t>=4.1&&t<8.4&&!(inN&&t<6.1)?cl((inN?t-6.1:t-4.1)/0.25):0;const tr=$('trk');tr.setAttribute('x',X-45);tr.setAttribute('y',Y-155);tr.setAttribute('opacity',tO);
+ // uvećan prikaz (4 mm)
+ const pin=back(cl((t-4.3)/0.35));const pip=$('pip');
+ pip.style.opacity=t>=4.3&&t<8.4?cl(pin):0;pip.style.transform=`scale(${0.6+0.4*cl(pin,0,1.1)})`;pip.style.transformOrigin='0 100%';
+ const Z=2.3;const zs=$('zs');zs.style.transform=`translate(${180-X*Z}px,${180-(Y-70)*Z}px) scale(${Z})`;
+ zs.style.filter=inN?'brightness(.75)':'none';
+ // naslov
+ const hh=H.find(h=>t>=h[0]&&t<h[1]);const he=$('h');
+ if(hh){he.querySelector('.a').innerHTML=hh[2];he.querySelector('.b').innerHTML=hh[3];
+  const local=t-hh[0];const p=hh[0]===0?1:back(cl(local/0.35));
+  he.style.opacity=hh[0]===0?1:cl(local/0.12);he.style.transform=`scale(${0.86+0.14*p})`;
+  he.querySelector('.a').style.fontSize=hh[0]===0?'108px':'88px';
+  he.querySelector('.b').style.opacity=hh[3]?cl((t-1.0)/0.25):0;
+  he.querySelector('.b').style.transform=`translateY(${(1-ease(cl((t-1.0)/0.3)))*30}px)`;}
+ else he.style.opacity=0;
+ const c=CH.find(c=>t>=c[0]&&t<c[1]);const ce=$('chip');
+ if(c){ce.querySelector('span').innerHTML=c[2];const p=back(cl((t-c[0])/0.35));ce.style.opacity=cl((t-c[0])/0.1)*cl((c[1]-t)/0.15);ce.style.transform=`translateY(${(1-p)*80}px)`;}
+ else ce.style.opacity=0;
+ const sm=ST.find(s=>t>=s[0]&&t<s[1]);const se=$('stamp');
+ if(sm){se.querySelector('div').innerHTML=sm[2];const p=cl((t-sm[0])/0.14);se.style.opacity=1;se.style.transform=`translateY(260px) scale(${1.5-0.5*ease(p)})`;}
+ else se.style.opacity=0;
+ const pr=ease(cl((t-10.9)/0.4));$('endbg').style.opacity=pr;$('end').style.opacity=pr;
+ [...$('end').children].forEach((e,i)=>{const q=ease(cl((t-11.0-i*0.08)/0.4));e.style.opacity=q;e.style.transform=`translateY(${(1-q)*40}px)`;});
+ const ei=document.querySelector('#end .im');const eq=back(cl((t-11.0)/0.5));ei.style.transform=`translateY(${(1-cl(eq))*40}px) scale(${Math.min(1.01,0.85+0.15*eq)-0.01+0.01*Math.sin(t*3)})`;
+ $('pv').textContent=Math.round(PRICE*ease(cl((t-11.2)/0.9))).toLocaleString('de-DE');
+ $('logo').style.color=pr>0.5?'#123528':'#fff';
+ let f=0;CUTS.forEach(cu=>{const d=t-cu;if(d>=0&&d<0.12)f=Math.max(f,0.5*(1-d/0.12))});$('flash').style.opacity=f;
+};
+function fit(){const e=document.querySelector('#end .nm');let fs=80;e.style.fontSize=fs+'px';while(e.scrollWidth>1000&&fs>40){fs-=2;e.style.fontSize=fs+'px';}}
+window.ready=Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r}))).then(()=>document.fonts.ready).then(()=>{fit();render(0);});
+</script></body></html>
