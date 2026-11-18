@@ -1024,5 +1024,63 @@
   "buffer_post_id": "6afbeacadf36f4d82570a573",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-17-dual-light-ipc-b140ha-luc-4mm"
+ },
+ {
+  "date": "2026-11-18",
+  "product_id": null,
+  "product": "B2B portal: za instalatere i firme",
+  "category": "B2B",
+  "keyword": "veleprodaja video nadzora",
+  "format": "f5",
+  "hook_type": "label",
+  "hook_text": "Instalateri: veleprodaja video nadzora. / Cene i lager čim se prijaviš.",
+  "music_style": "b2b",
+  "music_track": "b2b/the_mountain-technology-corporate-186320.mp3",
+  "url": "https://b2b.super-vision.rs/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6afd3b62aa3b065dd97713c9",
+   "tiktok": "6afd3b649f3765f6ab351892",
+   "linkedin": "6afd3b66bb12698d159e2c08"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-18 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-18-b2b-portal-za-koga.mp4",
+  "buffer_post_id": "6afd3b62aa3b065dd97713c9",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-18-b2b-portal-za-koga"
+ },
+ {
+  "date": "2026-11-18",
+  "product_id": 4151,
+  "product": "DS-2CE70K0T-PTLTS 2.8mm Hikvision HD-TVI PT turret kamera dvosmerni audio 3K",
+  "category": "Kamere",
+  "keyword": "kamera koja se okreće",
+  "format": "f8",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Ugao promašen posle montaže? / Kamera koja se okreće.",
+  "music_style": "chill",
+  "music_track": "chill/alex-morgan-lofi-chill-vlog-beats-573883.mp3",
+  "url": "https://super-vision.rs/proizvod/hd-tvi-turret-kamera-ds-2ce70k0t-ptlts-2-8mm/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6afd3b63aa3b065dd977141e",
+   "tiktok": "6afd3b65f38e9cc54867e997",
+   "linkedin": "6afd3b67f38e9cc54867ea33"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-18 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-18-hikvision-pt-turret-ds-2ce70k0t-ptlts.mp4",
+  "buffer_post_id": "6afd3b63aa3b065dd977141e",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-18-hikvision-pt-turret-ds-2ce70k0t-ptlts"
  }
 ]

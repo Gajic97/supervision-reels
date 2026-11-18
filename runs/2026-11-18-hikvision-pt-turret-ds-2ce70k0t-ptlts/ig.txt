@@ -1,0 +1,13 @@
+Kamera koja se okreće: Hikvision DS-2CE70K0T-PTLTS 2.8mm, PT turret kamera 3K sa dvosmernim zvukom.
+
+Česta greška je fiksan ugao: kamera se montira, a tek posle se vidi da gleda pogrešno. Ova ima PT postolje, 350 stepeni levo-desno i 100 gore-dole, pa se ugao dotera ručno ili daljinski, bez skidanja kamere sa zida. Ne prati pokret sama, ugao se namesti pri podešavanju.
+
+Ugrađeni mikrofon i zvučnik od 2 W: posetiocu na kapiji možeš da se obratiš. Noću IC do 25 m i belo svetlo do 20 m.
+
+Pre kupovine proveri: ide na DVR ili XVR snimač preko koaksijalnog kabla, a za zvuk snimač mora da podržava audio preko koaksijala.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana. Link u bio.
+
+Dvorište ili ulaz? Napiši u komentar.
+
+#kamerakojaseokrece #videonadzor #hikvision #supervision

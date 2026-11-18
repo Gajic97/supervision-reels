@@ -1,0 +1,7 @@
+Kamera koja se okreće za analogne (HD-TVI) sisteme: Hikvision DS-2CE70K0T-PTLTS 2.8mm.
+
+PT postolje pokriva 350° horizontalno i 100° vertikalno, pa se ugao dotera ručno ili daljinski pri podešavanju, bez skidanja kamere sa zida (nije PTZ sa automatskim praćenjem). Rezolucija 3K (2960 × 1665), ugrađeni mikrofon i zvučnik od 2 W za dvosmerni audio, IC do 25 m, belo svetlo do 20 m, napajanje 12 VDC do 10 W, radna temperatura od -40 do 60 °C.
+
+Pre ugradnje: kamera ide na DVR ili XVR snimač preko koaksijalnog kabla, a snimač mora da podržava audio preko koaksijala i dvosmernu komunikaciju.
+
+Cena na upit: super-vision.rs ili 062/618-736.
