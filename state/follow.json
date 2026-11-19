@@ -1942,5 +1942,86 @@
   "url": "https://www.linkedin.com/in/boban-nikolic-97a79a7",
   "city": "Istočna i južna Srbija",
   "reason": "Vlasnik, ugradnja CCTV, alarma i automatike kapija"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "instagram",
+  "name": "Timtronic Plus",
+  "handle": "@timtronicplus",
+  "url": "https://www.instagram.com/timtronicplus/",
+  "city": "Beograd",
+  "reason": "Video nadzor, alarmni sistemi, protivpožarna zaštita i kontrola pristupa; beogradski fiksni broj 011"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "Object Security",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/object-security-guard-service",
+  "city": "Kikinda",
+  "reason": "Ugradnja Uniview kamera i Hikvision alarma, video-monitoring 24/7; Čanadska 2, Kikinda"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "GBD",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/gbd",
+  "city": "Beograd",
+  "reason": "Sistem integrator tehničke zaštite: video nadzor, kontrola pristupa, rampe; Đušina 9, Beograd"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "Novak Soskic (Boma d.o.o.)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/novak-soskic-a13248283",
+  "city": "Beograd",
+  "reason": "Pre-sales inženjer za CCTV, kontrolu pristupa i protivprovalu, 15+ godina iskustva"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "Milos Pajovic (Macchina Security Serbia)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/milos-pajovic",
+  "city": "Beograd",
+  "reason": "Sales engineer / PM za CCTV, interfone, dojavu požara i kontrolu pristupa"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "Milos Milosevic (LOGO DOO)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/milos-milosevic-93a198121",
+  "city": "Beograd",
+  "reason": "Solutions engineer, LT2 licenca za tehničku zaštitu, Bosch VMS"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "Mladen Jakovljević (TVI DOO)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/mladen-jakovljevi%C4%87-b76a6537b",
+  "city": "Beograd",
+  "reason": "Vođa tima održavanja sistema dojave požara i sigurnosnih sistema u TVI DOO"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "Bratislav Punosevac (Smart Home doo)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/bratislav-punosevac-8215a9159",
+  "city": "Novi Sad",
+  "reason": "Ugradnja i održavanje video nadzora, dojave požara i kontrole pristupa u Smart Home doo Novi Sad"
+ },
+ {
+  "date": "2026-11-19",
+  "network": "linkedin",
+  "name": "Sasa Obradovic (Cloud Solutions)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/sasa-obradovic-cloudsolutions",
+  "city": "Srbija",
+  "reason": "Suosnivač Cloud Solutions: integrisana sigurnosna rešenja i video analitika"
  }
 ]
