@@ -1,6 +1,34 @@
 {
- "generated": "19.11.2026. 06:43",
+ "generated": "19.11.2026. 06:44",
  "reels": [
+  {
+   "date": "2026-11-19",
+   "product": "DS-2CD1027G3-LIU Hikvision IP ColorVu bullet 2MP (A) vs DS-2CD1327G3-LIU Hikvision IP ColorVu turret 2MP (B)",
+   "category": "Kamere",
+   "keyword": "kamera u boji noću",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Biraš kameru u boji noću? / Bullet ili turret: A ili B?",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-19-poredjenje-colorvu-ds-2cd1027g3-1327g3.mp4",
+   "scheduled": "2026-11-19 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-19",
+   "product": "NVR-108MH-C HiLook NVR snimač 8 kanala bez PoE",
+   "category": "Snimači",
+   "keyword": "NVR snimač 8 kanala",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako imaš svič, ne plaćaj PoE dvaput. / NVR snimač 8 kanala bez PoE",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-19-hilook-nvr-108mh-c.mp4",
+   "scheduled": "2026-11-19 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-18",
    "product": "DS-2CE70K0T-PTLTS 2.8mm Hikvision HD-TVI PT turret kamera dvosmerni audio 3K",

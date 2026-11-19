@@ -1082,5 +1082,65 @@
   "buffer_post_id": "6afd3b63aa3b065dd977141e",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-18-hikvision-pt-turret-ds-2ce70k0t-ptlts"
+ },
+ {
+  "date": "2026-11-19",
+  "product_id": 4188,
+  "product": "NVR-108MH-C HiLook NVR snimač 8 kanala bez PoE",
+  "category": "Snimači",
+  "keyword": "NVR snimač 8 kanala",
+  "format": "f2",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako imaš svič, ne plaćaj PoE dvaput. / NVR snimač 8 kanala bez PoE",
+  "music_style": "chill",
+  "music_track": "chill/velariomusic-chill-lofi-616929.mp3",
+  "url": "https://super-vision.rs/proizvod/nvr-108mh-c-hilook-nvr-snimac-8-kanala/",
+  "price": 12350,
+  "buffer_posts": {
+   "instagram": "6afe8cbc46636f319e8ea742",
+   "tiktok": "6afe8cbf3802f5b9fc6e8251",
+   "linkedin": "6afe8cc03802f5b9fc6e82c4"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-19 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-19-hilook-nvr-108mh-c.mp4",
+  "buffer_post_id": "6afe8cbc46636f319e8ea742",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-19-hilook-nvr-108mh-c"
+ },
+ {
+  "date": "2026-11-19",
+  "product_id": 2765,
+  "product_id_b": 4115,
+  "product": "DS-2CD1027G3-LIU Hikvision IP ColorVu bullet 2MP (A) vs DS-2CD1327G3-LIU Hikvision IP ColorVu turret 2MP (B)",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f4",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Biraš kameru u boji noću? / Bullet ili turret: A ili B?",
+  "music_style": "chill",
+  "music_track": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-2cd1027g3-liu-hikvision-ip-bullet-kamera-2mp-colorvu-2-8mm/",
+  "url_b": "https://super-vision.rs/proizvod/ds-2cd1327g3-liu-hikvision-ip-turret-kamera-2mp-colorvu-2-8mm/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6afe8cbeb16549e9b8295e57",
+   "tiktok": "6afe8cbfb16549e9b8295ea9",
+   "linkedin": "6afe8cc1749099bdc7130711"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-19 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-19-poredjenje-colorvu-ds-2cd1027g3-1327g3.mp4",
+  "buffer_post_id": "6afe8cbeb16549e9b8295e57",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-19-poredjenje-colorvu-ds-2cd1027g3-1327g3"
  }
 ]
