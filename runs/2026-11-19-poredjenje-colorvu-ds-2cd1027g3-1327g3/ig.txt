@@ -1,0 +1,13 @@
+Kamera u boji noću: bullet ili turret? Dve Hikvision IP ColorVu kamere od 2 MP sa objektivom 2.8 mm.
+
+A: DS-2CD1027G3-LIU (bullet). ColorVu 3.0, belo svetlo do 30 m i osetljivost 0.0005 luksa, pa noću ostaje boja odeće i vozila.
+
+B: DS-2CD1327G3-LIU (turret). Ista ColorVu 3.0 slika do 30 m, a kućište bez staklene kupole ne stvara odsjaj IC diode noću. IP67, napajanje PoE ili 12 VDC.
+
+Obe imaju ugrađen mikrofon i detekciju pokreta koja razlikuje čoveka i vozilo. Obe snimaju na snimač (bez microSD).
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+A ili B? Napiši u komentar.
+
+#kamerauboji #videonadzor #hikvision #colorvu #supervision

@@ -1,0 +1,168 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;background:#0b1a14}
+#bg{position:absolute;inset:0;background:radial-gradient(1300px 1100px at 50% 36%,#1a4231 0%,#0e251b 55%,#06110b 100%)}
+#grid{position:absolute;inset:0;opacity:.06;background-image:linear-gradient(#6cc08f 1px,transparent 1px),linear-gradient(90deg,#6cc08f 1px,transparent 1px);background-size:72px 72px}
+.blob{position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.35;background:#2f7a50}
+#bar{position:absolute;top:0;left:0;height:10px;background:#6cc08f;z-index:12}
+#logo{position:absolute;top:70px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:16px;color:#fff;font-weight:700;font-size:34px;letter-spacing:2px;z-index:9}
+#logo img{width:58px;height:58px;border-radius:14px}
+#h{position:absolute;top:180px;left:70px;right:70px;text-align:center;z-index:8}
+#h .a{font-weight:800;font-size:112px;line-height:1.04;color:#fff;letter-spacing:-2px}
+#h .a em{font-style:normal;color:#6cc08f}
+#h .b{font-weight:700;font-size:58px;line-height:1.15;color:#cfe9da;margin-top:26px}
+#h .b em{font-style:normal;color:#6cc08f}
+#prod{position:absolute;left:280px;top:740px;width:520px;height:520px;transform-origin:50% 50%;z-index:6}
+#prod img{width:100%;height:100%;border-radius:48px;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+#glow{position:absolute;left:190px;top:650px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,#6cc08f55 0%,transparent 65%);z-index:5}
+#tag{position:absolute;left:640px;top:700px;z-index:7;opacity:0}
+#tag span{display:inline-block;white-space:nowrap;background:#fff;color:#123528;font-weight:800;font-size:48px;padding:12px 30px;border-radius:40px;border:5px dashed #d64545;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+#card{position:absolute;left:50px;top:560px;width:980px;height:700px;border-radius:40px;overflow:hidden;background:#0f2a1f;box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 0 2px rgba(108,192,143,.35);opacity:0}
+#card svg{position:absolute;left:0;top:0;width:980px;height:700px}
+.pr-note{position:absolute;right:28px;bottom:22px;color:#cfe9da;font-weight:600;font-size:26px;opacity:.75}
+#chip{position:absolute;top:1300px;left:0;right:0;display:flex;justify-content:center;z-index:7}
+#chip span{background:#fff;color:#123528;font-weight:700;font-size:46px;padding:22px 44px;border-radius:60px;box-shadow:0 18px 40px rgba(0,0,0,.35);white-space:nowrap}
+#chip span b{color:#2f7a50}
+#stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;z-index:7}
+#stamp div{font-weight:800;font-size:150px;line-height:1.02;color:#fff;text-align:center;letter-spacing:-3px}
+#stamp div em{font-style:normal;color:#6cc08f}
+#endbg{position:absolute;inset:0;opacity:0;background:radial-gradient(1100px 1100px at 50% 45%,#ffffff 0%,#eef6f1 55%,#d7ebe0 100%)}
+#end{position:absolute;inset:0;opacity:0;z-index:7;text-align:center}
+#end .cat{position:absolute;top:310px;left:0;right:0;font-weight:700;font-size:40px;letter-spacing:4px;color:#2f7a50}
+#end .nm{position:absolute;top:1280px;left:40px;right:40px;white-space:nowrap;font-weight:800;font-size:80px;line-height:1.05;color:#123528;letter-spacing:-1px}
+#end .sub{position:absolute;top:1390px;left:60px;right:60px;font-weight:600;font-size:48px;color:#2f7a50}
+#end .pr{position:absolute;top:1480px;left:0;right:0;display:flex;justify-content:center}
+#end .pr>span{background:#123528;color:#fff;font-weight:800;font-size:64px;padding:18px 50px;border-radius:70px;font-variant-numeric:tabular-nums}
+#end .pr b{color:#6cc08f}
+#end .cta{position:absolute;top:1610px;left:0;right:0;font-weight:700;font-size:42px;color:#123528}
+#end .cta b{color:#2f7a50}
+#badge{position:absolute;left:700px;top:420px;width:190px;height:190px;border-radius:50%;background:#2f7a50;color:#fff;font-weight:800;font-size:56px;display:flex;align-items:center;justify-content:center;z-index:8;opacity:0;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:20}
+</style></head><body>
+<div id="bg"></div><div id="grid"></div>
+<div class="blob" id="b1"></div><div class="blob" id="b2"></div>
+<div id="endbg"></div>
+<div id="glow"></div>
+<!-- scena 1: disk se bira posebno (ilustracija) -->
+<div id="card">
+ <svg viewBox="0 0 980 700">
+  <rect width="980" height="700" fill="#143627"/>
+  <g id="sA">
+   <!-- otvoren snimač odozgo -->
+   <rect x="140" y="150" width="700" height="420" rx="26" fill="#1c1f22" stroke="#3b4247" stroke-width="6"/>
+   <rect x="170" y="200" width="300" height="360" rx="14" fill="#262b2f"/>
+   <g fill="#3b4247"><rect x="200" y="235" width="240" height="22" rx="6"/><rect x="200" y="275" width="180" height="22" rx="6"/><rect x="200" y="315" width="210" height="22" rx="6"/></g>
+   <text x="320" y="470" fill="#6c757b" font-family="Poppins" font-weight="700" font-size="30" text-anchor="middle">matična ploča</text>
+   <!-- prazno SATA ležište -->
+   <rect id="bay" x="520" y="230" width="280" height="300" rx="16" fill="none" stroke="#6cc08f" stroke-width="6" stroke-dasharray="18 12"/>
+   <text id="bayT" x="660" y="390" fill="#6cc08f" font-family="Poppins" font-weight="800" font-size="40" text-anchor="middle">1 SATA</text>
+   <!-- disk -->
+   <g id="hdd"><rect x="0" y="0" width="260" height="280" rx="14" fill="#c9d3cf"/><circle cx="130" cy="120" r="80" fill="#a7b4ae"/><circle cx="130" cy="120" r="16" fill="#7f8c86"/><rect x="40" y="225" width="180" height="30" rx="6" fill="#7f8c86"/><text x="130" y="248" fill="#fff" font-family="Poppins" font-weight="800" font-size="24" text-anchor="middle">HDD</text></g>
+   <g id="tb" opacity="0"><rect x="180" y="600" width="220" height="64" rx="32" fill="#6cc08f"/><text x="290" y="643" fill="#0b1a14" font-family="Poppins" font-weight="800" font-size="34" text-anchor="middle">do 8 TB</text></g>
+   <g id="ok" opacity="0"><circle cx="840" cy="170" r="44" fill="#6cc08f"/><path d="M818 170 L834 186 L864 154" stroke="#0b1a14" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </g>
+  <!-- scena 2: kamere -> PoE svič -> NVR -> monitor -->
+  <g id="sB" opacity="0">
+   <g id="cams"></g>
+   <path id="ln0" d="M110 150 L110 250" fill="none" stroke="#6cc08f" stroke-width="6"/><path id="ln1" d="M218 150 L218 250" fill="none" stroke="#6cc08f" stroke-width="6"/><path id="ln2" d="M326 150 L326 250" fill="none" stroke="#6cc08f" stroke-width="6"/><path id="ln3" d="M434 150 L434 250" fill="none" stroke="#6cc08f" stroke-width="6"/><path id="ln4" d="M542 150 L542 250" fill="none" stroke="#6cc08f" stroke-width="6"/><path id="ln5" d="M650 150 L650 250" fill="none" stroke="#6cc08f" stroke-width="6"/><path id="ln6" d="M758 150 L758 250" fill="none" stroke="#6cc08f" stroke-width="6"/><path id="ln7" d="M866 150 L866 250" fill="none" stroke="#6cc08f" stroke-width="6"/>
+   <rect x="60" y="250" width="860" height="90" rx="16" fill="#e9efe9"/>
+   <g fill="#123528"><rect x="93" y="262" width="34" height="22" rx="4"/><rect x="201" y="262" width="34" height="22" rx="4"/><rect x="309" y="262" width="34" height="22" rx="4"/><rect x="417" y="262" width="34" height="22" rx="4"/><rect x="525" y="262" width="34" height="22" rx="4"/><rect x="633" y="262" width="34" height="22" rx="4"/><rect x="741" y="262" width="34" height="22" rx="4"/><rect x="849" y="262" width="34" height="22" rx="4"/></g>
+   <text x="490" y="326" fill="#2f7a50" font-family="Poppins" font-weight="800" font-size="26" text-anchor="middle">tvoj PoE svič</text>
+   <path id="ln8" d="M420 340 L420 470" fill="none" stroke="#6cc08f" stroke-width="6"/>
+   <rect x="250" y="470" width="340" height="80" rx="14" fill="#1c1f22" stroke="#3b4247" stroke-width="4"/>
+   <text x="420" y="522" fill="#fff" font-family="Poppins" font-weight="800" font-size="30" text-anchor="middle">NVR · 8 IP</text>
+   <path id="ln9" d="M590 510 L700 510" fill="none" stroke="#6cc08f" stroke-width="6"/>
+   <rect x="700" y="400" width="230" height="160" rx="12" fill="#0b1a14" stroke="#cfe9da" stroke-width="6"/>
+   <g id="mon" opacity="0"><rect x="712" y="412" width="52" height="64" fill="#3a8c5e"/><rect x="767" y="412" width="52" height="64" fill="#2f7a50"/><rect x="822" y="412" width="52" height="64" fill="#3a8c5e"/><rect x="877" y="412" width="52" height="64" fill="#2f7a50"/><rect x="712" y="480" width="52" height="64" fill="#2f7a50"/><rect x="767" y="480" width="52" height="64" fill="#3a8c5e"/><rect x="822" y="480" width="52" height="64" fill="#2f7a50"/><rect x="877" y="480" width="52" height="64" fill="#3a8c5e"/></g>
+   <text id="k4" x="815" y="600" fill="#6cc08f" font-family="Poppins" font-weight="800" font-size="30" text-anchor="middle" opacity="0">HDMI + VGA</text>
+   <circle id="pulse" r="12" fill="#fff"/>
+  </g>
+ </svg>
+ <div class="pr-note">Primer</div>
+</div>
+<div id="prod"><img src="assets/prod.png"></div>
+<div id="tag"><span>bez PoE</span></div>
+<div id="logo"><img src="assets/supervision-ikonica-512.png">SUPERVISION</div>
+<div id="h"><div class="a"></div><div class="b"></div></div>
+<div id="chip"><span></span></div>
+<div id="stamp"><div></div></div>
+<div id="end"><div class="cat">NVR SNIMAČ · 8 IP KANALA</div><div class="nm">HiLook NVR-108MH-C</div><div class="sub">Bez PoE · disk do 8 TB</div>
+<div class="pr"><span id="price">12.350 <b>RSD</b></span></div><div class="cta">super-vision.rs · <b>062/618-736</b></div></div>
+<div id="badge">8 CH</div>
+<div id="bar"></div>
+<div id="flash"></div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const CUTS=[2.6,5.4,8.4,10.9];
+const H=[
+ [0,2.6,'Ako imaš svič,<br>ne plaćaj <em>PoE dvaput</em>.','<em>NVR snimač 8 kanala</em> bez PoE'],
+ [2.6,5.4,'<em>8 IP kamera</em><br>na tvom sviču.',''],
+ [5.4,8.4,'Snimci na<br><em>disk do 8 TB</em>.',''],
+];
+const CH=[[3.0,5.4,'<b>8 kanala</b> · do 8 MP po kanalu'],[5.8,8.4,'Disk se <b>kupuje posebno</b>']];
+const ST=[[8.4,9.2,'<em>H.265+</em><br>kompresija.'],[9.2,10.0,'<em>HDMI</em> i<br>VGA izlaz.'],[10.0,10.9,'<span style="font-size:118px">Isporuka za<br><em>2 radna dana</em>.</span>']];
+// ikonice kamera u sceni 2
+(function(){let g='';[110,218,326,434,542,650,758,866].forEach(x=>{g+=`<g transform="translate(${x} 110) scale(.85)"><rect x="-46" y="-34" width="92" height="56" rx="24" fill="#e9efe9"/><circle cx="-14" cy="-6" r="16" fill="#123528"/><circle cx="-14" cy="-6" r="6" fill="#6cc08f"/><rect x="-8" y="22" width="16" height="22" fill="#e9efe9"/></g>`});$('cams').innerHTML=g;})();
+const LEN={};
+window.render=function(t){
+ $('bar').style.width=(1080*cl(t/14))+'px';
+ $('b1').style.transform=`translate(${-120+80*Math.sin(t*0.6)}px,${200+60*Math.cos(t*0.5)}px)`;
+ $('b2').style.transform=`translate(${680+70*Math.cos(t*0.7)}px,${1250+80*Math.sin(t*0.4)}px)`;
+ // proizvod (širina 520 px, scale najviše 1.12 => <= 582 px < MAX_PX 616)
+ let sc=1,y=0,rot=0,po=1,ry=0;
+ if(t<2.6){const p=ease(cl(t/0.9));sc=0.8+0.3*p+0.012*Math.sin(t*3);y=60-60*p+8*Math.sin(t*2.2);rot=-8+8*p;ry=30-30*p;}
+ else if(t<8.4){po=0;}
+ else if(t<10.9){sc=0.5;y=-440+6*Math.sin(t*3);}
+ else {const p=ease(cl((t-10.9)/0.5));sc=0.5+0.5*p;y=-440+300*p+6*Math.sin(t*2)*p;}
+ CUTS.forEach(c=>{const d=t-c;if(d>=0&&d<0.25)sc=Math.min(1.12,sc*(1+0.06*(1-d/0.25)))});
+ $('prod').style.opacity=po;$('prod').style.transform=`translate(0px,${y}px) perspective(1200px) rotateY(${ry}deg) scale(${sc}) rotate(${rot}deg)`;
+ $('glow').style.opacity=(t<2.6?0.7+0.3*Math.sin(t*5):t>=10.9?0:0.5);
+ $('glow').style.transform=`translateY(${y}px) scale(${0.9+0.08*Math.sin(t*4)})`;
+ // oznaka "bez HDD"
+ const tg=$('tag');const tv=t<2.6?back(cl((t-1.2)/0.35)):0;tg.style.opacity=cl(tv*3);tg.style.transform=`scale(${0.5+0.5*tv}) rotate(${-6+3*Math.sin(t*6)}deg)`;
+ // kartica sa ilustracijom
+ const co=t>=2.6&&t<8.4?ease(cl((t-2.6)/0.3)):0;const card=$('card');card.style.opacity=co;
+ card.style.transform=`translateY(${(1-co)*120}px) scale(${0.96+0.04*co})`;
+ // scena A: disk ulazi u ležište
+ const a=t>=5.4;$('sA').setAttribute('opacity',a?1:0);$('sB').setAttribute('opacity',a?0:1);
+ const hp=ease(cl((t-6.2)/0.8));$('hdd').setAttribute('transform',`translate(${530+260*(1-hp)} ${240-260*(1-hp)}) rotate(${12*(1-hp)})`);
+ $('hdd').setAttribute('opacity',cl((t-6.0)/0.2));$('tb').setAttribute('opacity',cl((t-7.1)/0.2));
+ $('bay').setAttribute('stroke-dashoffset',-t*40);$('bayT').setAttribute('opacity',1-hp);
+ const ok=back(cl((t-7.05)/0.3));$('ok').setAttribute('opacity',cl(ok));$('ok').setAttribute('transform',`translate(840 170) scale(${cl(ok,0,1.2)}) translate(-840 -170)`);
+ // scena B: linije se iscrtavaju
+ ['ln0','ln1','ln2','ln3','ln4','ln5','ln6','ln7','ln8','ln9'].forEach((id,i)=>{const e=$(id);if(!LEN[id])LEN[id]=e.getTotalLength();const L=LEN[id];const p=cl((t-(i<8?2.9+i*0.1:3.8+(i-8)*0.3))/0.35);e.setAttribute('stroke-dasharray',L);e.setAttribute('stroke-dashoffset',L*(1-p));});
+ $('mon').setAttribute('opacity',cl((t-4.4)/0.25));$('k4').setAttribute('opacity',cl((t-4.6)/0.25));
+ const pp=((t-4.0)*0.9)%1;const pe=$('pulse');const pth=$('ln8');if(t>4.0&&LEN.ln8){const q=pth.getPointAtLength(LEN.ln8*pp);pe.setAttribute('cx',q.x);pe.setAttribute('cy',q.y);pe.setAttribute('opacity',1);}else pe.setAttribute('opacity',0);
+ // naslov
+ const hh=H.find(h=>t>=h[0]&&t<h[1]);const he=$('h');
+ if(hh){he.querySelector('.a').innerHTML=hh[2];he.querySelector('.b').innerHTML=hh[3];
+  const local=t-hh[0];const p=hh[0]===0?ease(cl(t/0.35)):back(cl(local/0.35));
+  he.style.opacity=hh[0]===0?cl(t/0.15+0.4):cl(local/0.12);he.style.transform=`scale(${0.86+0.14*p})`;
+  he.querySelector('.a').style.fontSize=hh[0]===0?'86px':'92px';
+  he.querySelector('.b').style.opacity=hh[3]?cl((t-1.0)/0.25):0;
+  he.querySelector('.b').style.transform=`translateY(${(1-ease(cl((t-1.0)/0.3)))*30}px)`;}
+ else he.style.opacity=0;
+ // čip
+ const c=CH.find(c=>t>=c[0]&&t<c[1]);const ce=$('chip');
+ if(c){ce.querySelector('span').innerHTML=c[2];const p=back(cl((t-c[0])/0.35));ce.style.opacity=cl((t-c[0])/0.1)*cl((c[1]-t)/0.15);ce.style.transform=`translateY(${(1-p)*80}px)`;}
+ else ce.style.opacity=0;
+ // pečati
+ const sm=ST.find(s=>t>=s[0]&&t<s[1]);const se=$('stamp');
+ if(sm){se.querySelector('div').innerHTML=sm[2];const p=cl((t-sm[0])/0.14);se.style.opacity=1;se.style.transform=`translateY(160px) scale(${1.5-0.5*ease(p)})`;}
+ else se.style.opacity=0;
+ // krajnja kartica
+ const pr=ease(cl((t-10.9)/0.4));$('endbg').style.opacity=pr;$('end').style.opacity=pr;
+ [...$('end').children].forEach((e,i)=>{const q=ease(cl((t-11.0-i*0.08)/0.4));e.style.opacity=q;e.style.transform=`translateY(${(1-q)*40}px)`;});
+ const bq=back(cl((t-11.6)/0.4));$('badge').style.opacity=t>=10.9?cl(bq):0;$('badge').style.transform=`scale(${cl(bq,0,1.2)*(1+0.03*Math.sin(t*6))}) rotate(${-10+4*Math.sin(t*2)}deg)`;
+ const op=ease(cl((t-11.2)/1.0));$('price').innerHTML=Math.round(12350*op).toLocaleString('de-DE')+' <b>RSD</b>';
+ $('logo').style.color=pr>0.5?'#123528':'#fff';
+ let f=0;CUTS.forEach(cu=>{const d=t-cu;if(d>=0&&d<0.12)f=Math.max(f,0.5*(1-d/0.12))});$('flash').style.opacity=f;
+};
+window.ready=Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r}))).then(()=>document.fonts.ready).then(()=>render(0));
+</script></body></html>

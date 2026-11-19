@@ -1,0 +1,16 @@
+NVR snimač 8 kanala bez PoE: HiLook NVR-108MH-C, za IP kamere do 8 MP.
+
+Ako kamere već napajaš preko PoE sviča, ne treba ti snimač sa još jednim svičem. Verzija sa 8 PoE portova (NVR-108MH-C/8P) realno duplira cenu upravo zbog sviča.
+
+- 8 IP kanala, do 8 MP po kanalu
+- H.265+ kompresija
+- 1 SATA ležište za disk do 8 TB (disk se kupuje posebno)
+- HDMI i VGA izlaz istovremeno
+
+Za manje stanove, kuće i lokale gde PoE svič već postoji.
+
+Cena: 12.350 RSD sa PDV-om. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+Svič već imaš ili tek kupuješ? Napiši u komentar.
+
+#nvrsnimac #videonadzor #hilook #ipkamere #supervision

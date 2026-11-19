@@ -1,0 +1,7 @@
+Kamera u boji noću: bullet ili turret, kada je osnova ista?
+
+Hikvision DS-2CD1027G3-LIU (bullet) i DS-2CD1327G3-LIU (turret) su IP kamere od 2 MP sa objektivom 2.8 mm i ColorVu 3.0 tehnologijom: slika u boji noću, belo svetlo dometa do 30 m. Obe imaju ugrađen mikrofon i detekciju pokreta 3.0 koja razlikuje čoveka i vozilo od grana i senki, a snimaju na snimač (bez microSD slota).
+
+Razlika je u kućištu. Turret nema staklenu kupolu, pa nema odsjaja IC diode na staklu noću; napaja se preko PoE (802.3af) ili 12 VDC, zaštita IP67. Bullet je za ulaze, dvorišta, terase lokala i manje parkinge, uz osetljivost od 0.0005 luksa.
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.
