@@ -1,0 +1,7 @@
+DVR snimač 4 kanala Hikvision iDS-7204HQHI-M1/E: na šta obratiti pažnju pre izbora.
+
+Model je iz Lite klase AcuSense serije. Lite znači niže rezolucije po kanalu: kamere od 5 MP prima, ali ih snima kao 5 MP Lite na 12 fps, dok 4 MP Lite i 1080p Lite idu na 25 fps. Zato je namenjen sistemima sa do četiri kamere od 2 MP (kuća, stan, manja radnja, vikendica); za 5 i 8 MP u punoj rezoluciji preporuka je HUHI ili HTHI serija.
+
+Specifikacija: 4 analogna kanala + 1 IP kamera do 6 MP, AcuSense detekcija ljudi i vozila, H.265 Pro+/H.265/H.264+, HDMI i VGA istovremeno, audio 1/1 RCA, Gigabit RJ45, 2x USB 2.0, 1 SATA disk do 10 TB, napajanje 12 VDC, bez alarmnih ulaza.
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.

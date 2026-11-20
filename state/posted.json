@@ -1142,5 +1142,63 @@
   "buffer_post_id": "6afe8cbeb16549e9b8295e57",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-19-poredjenje-colorvu-ds-2cd1027g3-1327g3"
+ },
+ {
+  "date": "2026-11-20",
+  "product_id": 2793,
+  "product": "iDS-7204HQHI-M1/E Hikvision Turbo HD DVR snimač 4 kanala AcuSense",
+  "category": "Snimači",
+  "keyword": "DVR snimač 4 kanala",
+  "format": "f8",
+  "hook_type": "provokativno",
+  "hook_text": "Kamera 5 MP, a snimak manji? / DVR snimač 4 kanala · Lite",
+  "music_style": "chill",
+  "music_track": "chill/atlasaudio-lofi-chill-589987.mp3",
+  "url": "https://super-vision.rs/proizvod/ids-7204hqhi-m1-e-hikvision-turbo-hd-dvr-snimac-4-kanala-acusense/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6affde5ed5f8acdd0d750c6c",
+   "tiktok": "6affde5f738ce4635f8d5bee",
+   "linkedin": "6affde604c1afd05def6600a"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-20 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-20-hikvision-dvr-ids-7204hqhi-m1e.mp4",
+  "buffer_post_id": "6affde5ed5f8acdd0d750c6c",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-20-hikvision-dvr-ids-7204hqhi-m1e"
+ },
+ {
+  "date": "2026-11-20",
+  "product_id": 6140,
+  "product": "IPC-T240HA-LU HiLook IP turret kamera 4MP 2.8mm dual light",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f5",
+  "hook_type": "label",
+  "hook_text": "Ulaz, lokal, garaža: noću u boji. / Kamera u boji noću · 4 MP",
+  "music_style": "chill",
+  "music_track": "chill/zephiramusic-chill-lofi-585360.mp3",
+  "url": "https://super-vision.rs/proizvod/ipc-t240ha-lu-hilook-ip-turret-kamera-4mp-2-8mm-dual-light/",
+  "price": 8420,
+  "buffer_posts": {
+   "instagram": "6affde61d5f8acdd0d751051",
+   "tiktok": "6affde62d5f8acdd0d7510c1",
+   "linkedin": "6affde630f5eda1a57c5640f"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-20 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-20-hilook-kamera-u-boji-ipc-t240ha-lu.mp4",
+  "buffer_post_id": "6affde61d5f8acdd0d751051",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-20-hilook-kamera-u-boji-ipc-t240ha-lu"
  }
 ]

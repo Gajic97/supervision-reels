@@ -1,6 +1,34 @@
 {
- "generated": "20.11.2026. 06:43",
+ "generated": "20.11.2026. 06:45",
  "reels": [
+  {
+   "date": "2026-11-20",
+   "product": "IPC-T240HA-LU HiLook IP turret kamera 4MP 2.8mm dual light",
+   "category": "Kamere",
+   "keyword": "kamera u boji noću",
+   "hook_type": "label",
+   "hook_text": "Ulaz, lokal, garaža: noću u boji. / Kamera u boji noću · 4 MP",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-20-hilook-kamera-u-boji-ipc-t240ha-lu.mp4",
+   "scheduled": "2026-11-20 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-20",
+   "product": "iDS-7204HQHI-M1/E Hikvision Turbo HD DVR snimač 4 kanala AcuSense",
+   "category": "Snimači",
+   "keyword": "DVR snimač 4 kanala",
+   "hook_type": "provokativno",
+   "hook_text": "Kamera 5 MP, a snimak manji? / DVR snimač 4 kanala · Lite",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-20-hikvision-dvr-ids-7204hqhi-m1e.mp4",
+   "scheduled": "2026-11-20 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-19",
    "product": "DS-2CD1027G3-LIU Hikvision IP ColorVu bullet 2MP (A) vs DS-2CD1327G3-LIU Hikvision IP ColorVu turret 2MP (B)",
