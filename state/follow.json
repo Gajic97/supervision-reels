@@ -2086,5 +2086,50 @@
   "url": null,
   "city": "Zemun (Batajnica, Široki put 11a)",
   "reason": "Ugradnja video nadzora, alarma, interfona; sajt navodi Instagram nalog, handle nije viđen"
+ },
+ {
+  "date": "2026-11-21",
+  "network": "linkedin",
+  "name": "Nebojša Filipović (Object Security / Monza Security)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/neboj%C5%A1a-filipovi%C4%87-789538193",
+  "city": "Kikinda",
+  "reason": "Osnivač Object Security i Monza Security: prodaja i ugradnja video nadzora, alarma, interfona, 24/7 video monitoring"
+ },
+ {
+  "date": "2026-11-21",
+  "network": "linkedin",
+  "name": "Monza Security",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/monza-security",
+  "city": "Kikinda (Miloša Ostojina 69)",
+  "reason": "Kontrolni centar, praćenje video nadzora i alarma klijenata uz patrolne timove"
+ },
+ {
+  "date": "2026-11-21",
+  "network": "linkedin",
+  "name": "Radovan Banovac (protektorsm)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/radovan-banovac-63338b17b",
+  "city": "Srbija (licence MUP Srbije)",
+  "reason": "Specijalista sigurnosti, licence za instalaciju, planiranje i projektovanje tehničke zaštite, Hikvision i Paradox sertifikati"
+ },
+ {
+  "date": "2026-11-21",
+  "network": "linkedin",
+  "name": "Predrag Đorđević (Mega Security)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/predrag-pedja-djordjevic-9955271b6",
+  "city": "Leskovac",
+  "reason": "Mega Security, sistemi tehničke zaštite"
+ },
+ {
+  "date": "2026-11-21",
+  "network": "linkedin",
+  "name": "GM&SM Centar",
+  "handle": null,
+  "url": "https://rs.linkedin.com/company/gm-sm-centar",
+  "city": "Kruševac",
+  "reason": "Firma čije su specijalnosti video nadzor i alarmni sistemi"
  }
 ]
