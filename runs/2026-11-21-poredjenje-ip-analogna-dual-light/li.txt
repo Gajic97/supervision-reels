@@ -1,0 +1,7 @@
+Kamera za dvorište: IP ili analogna? U praksi izbor često određuje postojeća instalacija.
+
+HiLook IPC-B120HA-LU 2.8mm je IP bullet kamera 2 MP sa dualnom rasvetom (IR ili belo svetlo do 30 m) i ugrađenim mikrofonom. Radi sa NVR snimačem, napaja se preko PoE ili sa 12 VDC. Cena 6.850 RSD sa PDV-om.
+
+Hikvision DS-2CE18D0T-LFS 3.6mm je HD-TVI kamera 2 MP sa Smart Hybrid Light tehnologijom (IC i belo LED svetlo do 60 m), kućište IP67. Ide koaksijalnim kablom na DVR ili XVR snimač, a video izlaz radi u režimima TVI, AHD, CVI i CVBS. Cena na upit.
+
+Oba modela su na stanju, isporuka za 2 radna dana: super-vision.rs ili 062/618-736.

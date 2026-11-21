@@ -1200,5 +1200,65 @@
   "buffer_post_id": "6affde61d5f8acdd0d751051",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-20-hilook-kamera-u-boji-ipc-t240ha-lu"
+ },
+ {
+  "date": "2026-11-21",
+  "product_id": 2875,
+  "product": "NVR-108H-D HiLook NVR snimač 8 kanala 6MP",
+  "category": "Snimači",
+  "keyword": "snimač za 8 kamera",
+  "format": "f2",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Imaš više od 4 kamere? / Snimač za 8 kamera",
+  "music_style": "chill",
+  "music_track": "chill/alex-morgan-lofi-chill-vlog-beats-573883.mp3",
+  "url": "https://super-vision.rs/proizvod/snimac-nvr-108h-d-8-kanalni-mrezni-6mp-hilook/",
+  "price": 10000,
+  "buffer_posts": {
+   "instagram": "6b0130755e993799d8555078",
+   "tiktok": "6b0130765e993799d85550b3",
+   "linkedin": "6b0130775102766245fc00c5"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-21 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-21-hilook-nvr-108h-d.mp4",
+  "buffer_post_id": "6b0130755e993799d8555078",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-21-hilook-nvr-108h-d"
+ },
+ {
+  "date": "2026-11-21",
+  "product_id": 6135,
+  "product_id_b": 4175,
+  "product": "IPC-B120HA-LU 2.8mm HiLook IP bullet dual light (A) vs DS-2CE18D0T-LFS 3.6mm Hikvision HD-TVI dual-light bullet (B)",
+  "category": "Kamere",
+  "keyword": "kamera za dvorište",
+  "format": "f4",
+  "hook_type": "provokativno",
+  "hook_text": "Kabl bira kameru, ne ti. / Kamera za dvorište: IP ili analogna?",
+  "music_style": "chill",
+  "music_track": "chill/velariomusic-chill-lofi-616929.mp3",
+  "url": "https://super-vision.rs/proizvod/ipc-b120ha-lu-2-8mm-hilook-ip-bullet-kamera-2mp-dual-light/",
+  "url_b": "https://super-vision.rs/proizvod/hd-tvi-bullet-kamera-ds-2ce18d0t-lfs-3-6mm/",
+  "price": 6850,
+  "buffer_posts": {
+   "instagram": "6b01307d9ffbc8503cff3444",
+   "tiktok": "6b01307e5e993799d85551fd",
+   "linkedin": "6b01307f9ffbc8503cff34b7"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-21 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-21-poredjenje-ip-analogna-dual-light.mp4",
+  "buffer_post_id": "6b01307d9ffbc8503cff3444",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-21-poredjenje-ip-analogna-dual-light"
  }
 ]

@@ -1,0 +1,7 @@
+Snimač za 8 kamera: HiLook NVR-108H-D.
+
+Za objekte gde četiri kanala nisu dovoljna (lokal sa ulazom, kasom i magacinom, manja firma, kuća sa širom pokrivenošću), NVR-108H-D prima do 8 IP kamera rezolucije do 6 MP. Propusni opseg od 60 Mbps omogućava stabilan rad svih osam kanala istovremeno.
+
+Specifikacija: 8 IP kanala, H.265+, HDMI i VGA izlaz, jedno ležište za disk. Model nema PoE portove; za napajanje kamera preko mreže koristi se zaseban PoE svič ili verzija /8P.
+
+Na stanju, isporuka za 2 radna dana. Cena 10.000 RSD sa PDV-om: super-vision.rs ili 062/618-736.
