@@ -1,0 +1,16 @@
+Kamera u boji noću Hikvision DS-2CE72KF0T-LFS 2.8mm: ColorVu turret, 3K rezolucija.
+
+Za koga je:
+1. Ulaz: belo i infracrveno svetlo dometa do 40 m, kamera sama bira između njih.
+2. Parking: 3K (2960 × 1665), viša rezolucija, na primer za čitljivije tablice.
+3. Dvorište: kućište IP67, radi od -40 do 60 stepeni, turret se lako usmerava i posle montaže.
+
+Mikrofon hvata zvuk u krugu do 5 m preko istog kabla.
+
+Važno: HD-TVI kamera ide preko koaksijalnog kabla na DVR ili XVR snimač, ne na NVR, i ne treba joj PoE. Napajanje 12 VDC.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+Ulaz, parking ili dvorište? Napiši u komentar.
+
+#kamerauboji #videonadzor #hikvision #colorvu #supervision

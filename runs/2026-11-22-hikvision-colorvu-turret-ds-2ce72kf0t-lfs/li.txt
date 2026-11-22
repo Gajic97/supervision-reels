@@ -1,0 +1,7 @@
+Kamera u boji noću Hikvision DS-2CE72KF0T-LFS 2.8mm: ColorVu Smart Hybrid Light u 3K rezoluciji.
+
+Kamera kombinuje belo i infracrveno svetlo dometa do 40 m i sama bira između njih. Rezolucija je 3K (2960 × 1665), 5 MP klasa, objektiv fiksni 2.8mm, što je čini pogodnom za ulaze, parkinge i dvorišta gde je pored boje noću bitna i viša rezolucija, na primer za čitljivije tablice.
+
+Tehnički: HD-TVI preko koaksijalnog kabla na DVR ili XVR snimač (ne na NVR), bez PoE; napajanje 12 VDC, oko 5,2 W; kućište IP67, metal i plastika; radna temperatura -40 do 60 °C; mikrofon do 5 m, audio preko istog kabla. U odnosu na DS-2CE72DF3T-LFS (2 MP) ovaj model ima 3K rezoluciju.
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.

@@ -1,0 +1,9 @@
+NVR snimač 4 kanala Hikvision DS-7104NI-Q1: šta proveriti pre izbora.
+
+DS-7104NI-Q1 nema PoE portove. Kamere se napajaju preko PoE sviča ili zasebnog napajanja, a do snimača ide jedan mrežni kabl. Zato se PoE svič planira u istoj nabavci.
+
+Namena: lokal, magacin, kancelarija, portirnica ili ulaz u zgradu, do četiri kamere, bez rek ormana (kućište 200 × 200 × 48 mm). Nije izbor za halu ili kompleks: jedno ležište za disk, bez alarmnih ulaza.
+
+Specifikacija: 4 IP kanala do 6 MP, dekodiranje 1 kanal @6 MP, 2 @4 MP ili 4 @1080p; H.265/H.265+/H.264+/H.264; HDMI i VGA istovremeno; prelazak linije, upad u zonu, pametna pretraga; Gigabit RJ45, 2x USB 2.0; 1 SATA disk do 6 TB; 12 VDC, do 10 W bez diska. Sa kamerama drugih proizvođača radi preko ONVIF-a.
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.

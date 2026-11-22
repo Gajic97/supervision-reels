@@ -1,6 +1,34 @@
 {
- "generated": "22.11.2026. 06:43",
+ "generated": "22.11.2026. 06:44",
  "reels": [
+  {
+   "date": "2026-11-22",
+   "product": "DS-2CE72KF0T-LFS 2.8mm Hikvision ColorVu analogna turret kamera 5 MP",
+   "category": "Kamere",
+   "keyword": "kamera u boji noću",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Treba ti boja i noću? / Kamera u boji noću · 3K",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-22-hikvision-colorvu-turret-ds-2ce72kf0t-lfs.mp4",
+   "scheduled": "2026-11-22 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-22",
+   "product": "DS-7104NI-Q1 Hikvision NVR snimač 4 kanala 6MP",
+   "category": "Snimači",
+   "keyword": "NVR snimač 4 kanala",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako NVR nema PoE, treba ti svič. / NVR snimač 4 kanala · 6 MP",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-22-hikvision-nvr-ds-7104ni-q1.mp4",
+   "scheduled": "2026-11-22 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-21",
    "product": "IPC-B120HA-LU 2.8mm HiLook IP bullet dual light (A) vs DS-2CE18D0T-LFS 3.6mm Hikvision HD-TVI dual-light bullet (B)",

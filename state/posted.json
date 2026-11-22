@@ -1260,5 +1260,63 @@
   "buffer_post_id": "6b01307d9ffbc8503cff3444",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-21-poredjenje-ip-analogna-dual-light"
+ },
+ {
+  "date": "2026-11-22",
+  "product_id": 2815,
+  "product": "DS-7104NI-Q1 Hikvision NVR snimač 4 kanala 6MP",
+  "category": "Snimači",
+  "keyword": "NVR snimač 4 kanala",
+  "format": "f8",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako NVR nema PoE, treba ti svič. / NVR snimač 4 kanala · 6 MP",
+  "music_style": "chill",
+  "music_track": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-7104ni-q1-hikvision-nvr-snimac-4-kanala-6mp/",
+  "price": 11120,
+  "buffer_posts": {
+   "instagram": "6b028120c72676f5e9071e7c",
+   "tiktok": "6b028122846b0ee90761d41d",
+   "linkedin": "6b02812302479690922832dc"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-22 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-22-hikvision-nvr-ds-7104ni-q1.mp4",
+  "buffer_post_id": "6b028120c72676f5e9071e7c",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-22-hikvision-nvr-ds-7104ni-q1"
+ },
+ {
+  "date": "2026-11-22",
+  "product_id": 4208,
+  "product": "DS-2CE72KF0T-LFS 2.8mm Hikvision ColorVu analogna turret kamera 5 MP",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f5",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Treba ti boja i noću? / Kamera u boji noću · 3K",
+  "music_style": "chill",
+  "music_track": "chill/atlasaudio-lofi-chill-589987.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-2ce72kf0t-lfs-2-8mm-hikvision-colorvu-turret-kamera-5mp/",
+  "price": 7980,
+  "buffer_posts": {
+   "instagram": "6b028121cc364169c12e25b0",
+   "tiktok": "6b028123c72676f5e9071f68",
+   "linkedin": "6b028124cc364169c12e26f7"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-22 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-22-hikvision-colorvu-turret-ds-2ce72kf0t-lfs.mp4",
+  "buffer_post_id": "6b028121cc364169c12e25b0",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-22-hikvision-colorvu-turret-ds-2ce72kf0t-lfs"
  }
 ]
