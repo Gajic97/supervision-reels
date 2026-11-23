@@ -1318,5 +1318,66 @@
   "buffer_post_id": "6b028121cc364169c12e25b0",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-22-hikvision-colorvu-turret-ds-2ce72kf0t-lfs"
+ },
+ {
+  "date": "2026-11-23",
+  "product_id": 2858,
+  "product_id_b": 4199,
+  "product": "NVR-104MH-C HiLook NVR snimač 4 kanala 8MP (A) vs NVR-216MH-C HiLook NVR snimač 16 kanala (B)",
+  "category": "Snimači",
+  "keyword": "snimač za video nadzor",
+  "format": "f4",
+  "hook_type": "izjava / broj",
+  "hook_text": "4 kamere ili 16? / Snimač za video nadzor: A ili B?",
+  "music_style": "chill",
+  "music_track": "chill/zephiramusic-chill-lofi-585360.mp3",
+  "url": "https://super-vision.rs/proizvod/snimac-nvr-104mh-c-4-kanalni-mrezni-hilook/",
+  "url_b": "https://super-vision.rs/proizvod/nvr-216mh-c-hilook-nvr-snimac-16-kanala/",
+  "price": 11120,
+  "price_b": 19100,
+  "buffer_posts": {
+   "instagram": "6b03d369c72676f5e98c3309",
+   "tiktok": "6b03d36ad864a01105248f83",
+   "linkedin": "6b03d36b846b0ee907e82cea"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-23 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-23-poredjenje-nvr-104mh-c-216mh-c.mp4",
+  "buffer_post_id": "6b03d369c72676f5e98c3309",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-23-poredjenje-nvr-104mh-c-216mh-c"
+ },
+ {
+  "date": "2026-11-23",
+  "product_id": 6232,
+  "product": "DS-2CD1043G3-LIU Hikvision IP bullet kamera 4MP Hybrid Light 2.8mm",
+  "category": "Kamere",
+  "keyword": "kamera za dvorište",
+  "format": "f2",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Pas laje noću? / Kamera za dvorište sa svetlom do 30 m",
+  "music_style": "chill",
+  "music_track": "chill/alex-morgan-lofi-chill-vlog-beats-573883.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-2cd1043g3-liu-hikvision-ip-bullet-kamera-4mp-hybrid-light-2-8mm/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6b03d370d5eabfb8cc0b5621",
+   "tiktok": "6b03d371c72676f5e98c351a",
+   "linkedin": "6b03d372d5eabfb8cc0b5667"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-23 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-23-hikvision-kamera-za-dvoriste-ds-2cd1043g3-liu.mp4",
+  "buffer_post_id": "6b03d370d5eabfb8cc0b5621",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-23-hikvision-kamera-za-dvoriste-ds-2cd1043g3-liu"
  }
 ]

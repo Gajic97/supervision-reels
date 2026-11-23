@@ -1,6 +1,34 @@
 {
- "generated": "23.11.2026. 06:46",
+ "generated": "23.11.2026. 06:48",
  "reels": [
+  {
+   "date": "2026-11-23",
+   "product": "DS-2CD1043G3-LIU Hikvision IP bullet kamera 4MP Hybrid Light 2.8mm",
+   "category": "Kamere",
+   "keyword": "kamera za dvorište",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Pas laje noću? / Kamera za dvorište sa svetlom do 30 m",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-23-hikvision-kamera-za-dvoriste-ds-2cd1043g3-liu.mp4",
+   "scheduled": "2026-11-23 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-23",
+   "product": "NVR-104MH-C HiLook NVR snimač 4 kanala 8MP (A) vs NVR-216MH-C HiLook NVR snimač 16 kanala (B)",
+   "category": "Snimači",
+   "keyword": "snimač za video nadzor",
+   "hook_type": "izjava / broj",
+   "hook_text": "4 kamere ili 16? / Snimač za video nadzor: A ili B?",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-23-poredjenje-nvr-104mh-c-216mh-c.mp4",
+   "scheduled": "2026-11-23 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-22",
    "product": "DS-2CE72KF0T-LFS 2.8mm Hikvision ColorVu analogna turret kamera 5 MP",
