@@ -1,0 +1,167 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;background:#0b1a14}
+#bg{position:absolute;inset:0;background:radial-gradient(1300px 1100px at 50% 36%,#1a4231 0%,#0e251b 55%,#06110b 100%)}
+#grid{position:absolute;inset:0;opacity:.06;background-image:linear-gradient(#6cc08f 1px,transparent 1px),linear-gradient(90deg,#6cc08f 1px,transparent 1px);background-size:72px 72px}
+.blob{position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.35;background:#2f7a50}
+#bar{position:absolute;top:0;left:0;height:10px;background:#6cc08f;z-index:12}
+#logo{position:absolute;top:70px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:16px;color:#fff;font-weight:700;font-size:34px;letter-spacing:2px;z-index:9}
+#logo img{width:58px;height:58px;border-radius:14px}
+#h{position:absolute;top:180px;left:70px;right:70px;text-align:center;z-index:8}
+#h .a{font-weight:800;font-size:100px;line-height:1.04;color:#fff;letter-spacing:-2px}
+#h .a em{font-style:normal;color:#6cc08f}
+#h .b{font-weight:700;font-size:54px;line-height:1.15;color:#cfe9da;margin-top:26px}
+#h .b em{font-style:normal;color:#6cc08f}
+.pt{position:absolute;width:400px;height:400px;transform-origin:50% 50%;z-index:6}
+.pt img{width:100%;height:100%;border-radius:40px;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+.pt .lb{position:absolute;left:0;right:0;top:-40px;text-align:center}
+.pt .lb span{display:inline-block;background:#6cc08f;color:#0b1a14;font-weight:800;font-size:56px;width:96px;height:96px;line-height:96px;border-radius:50%;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+#pB .lb span{background:#fff;color:#123528}
+.pt .tx{position:absolute;left:-20px;right:-20px;top:420px;text-align:center;color:#fff;font-weight:700;font-size:44px;white-space:nowrap}
+#vs{position:absolute;left:490px;top:880px;width:100px;height:100px;border-radius:50%;background:#123528;border:4px solid #6cc08f;color:#fff;font-weight:800;font-size:36px;display:flex;align-items:center;justify-content:center;z-index:7}
+#card{position:absolute;left:50px;top:560px;width:980px;height:700px;border-radius:40px;overflow:hidden;background:#0f2a1f;box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 0 2px rgba(108,192,143,.35);opacity:0}
+#card svg{position:absolute;left:0;top:0;width:980px;height:700px}
+.pr-note{position:absolute;right:28px;bottom:22px;color:#cfe9da;font-weight:600;font-size:26px;opacity:.75}
+#mini{position:absolute;left:94px;top:620px;width:190px;height:190px;z-index:7;opacity:0}
+#mini img{width:100%;height:100%;border-radius:26px;box-shadow:0 14px 30px rgba(0,0,0,.4)}
+#mini span{position:absolute;right:-22px;top:-22px;width:64px;height:64px;border-radius:50%;background:#6cc08f;color:#0b1a14;font-weight:800;font-size:38px;display:flex;align-items:center;justify-content:center}
+#chip{position:absolute;top:1300px;left:0;right:0;display:flex;justify-content:center;z-index:7}
+#chip span{background:#fff;color:#123528;font-weight:700;font-size:46px;padding:22px 44px;border-radius:60px;box-shadow:0 18px 40px rgba(0,0,0,.35);white-space:nowrap}
+#chip span b{color:#2f7a50}
+#stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;z-index:7}
+#stamp div{font-weight:800;font-size:150px;line-height:1.02;color:#fff;text-align:center;letter-spacing:-3px}
+#stamp div em{font-style:normal;color:#6cc08f}
+#stamp div small{display:block;font-size:66px;color:#cfe9da;letter-spacing:0;margin-top:20px}
+#endbg{position:absolute;inset:0;opacity:0;background:radial-gradient(1100px 1100px at 50% 45%,#ffffff 0%,#eef6f1 55%,#d7ebe0 100%)}
+#end{position:absolute;inset:0;opacity:0;z-index:7;text-align:center}
+#end .cat{position:absolute;top:310px;left:0;right:0;font-weight:700;font-size:40px;letter-spacing:4px;color:#2f7a50}
+#end .im{position:absolute;left:330px;top:640px;width:420px;height:420px}
+#end .im img{width:100%;height:100%;border-radius:40px;box-shadow:0 30px 60px rgba(0,0,0,.18)}
+#end .nm{position:absolute;top:1200px;left:40px;right:40px;white-space:nowrap;font-weight:800;font-size:80px;line-height:1.05;color:#123528;letter-spacing:-1px}
+#end .sub{position:absolute;top:1310px;left:60px;right:60px;font-weight:600;font-size:48px;color:#2f7a50}
+#end .pr{position:absolute;top:1410px;left:0;right:0;display:flex;justify-content:center}
+#end .pr>span{background:#123528;color:#fff;font-weight:800;font-size:64px;padding:18px 50px;border-radius:70px;font-variant-numeric:tabular-nums}
+#end .pr b{color:#6cc08f}
+#end .cta{position:absolute;top:1550px;left:0;right:0;font-weight:700;font-size:42px;color:#123528}
+#end .cta b{color:#2f7a50}
+#badge{position:absolute;left:690px;top:520px;width:180px;height:180px;border-radius:50%;background:#2f7a50;color:#fff;font-weight:800;font-size:52px;line-height:1.05;display:flex;align-items:center;justify-content:center;text-align:center;z-index:8;opacity:0;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:20}
+</style></head><body>
+<div id="bg"></div><div id="grid"></div>
+<div class="blob" id="b1"></div><div class="blob" id="b2"></div>
+<div id="endbg"></div>
+<div id="card">
+ <svg viewBox="0 0 980 700">
+  <rect width="980" height="700" fill="#143627"/>
+  <g id="sA">
+   <!-- tlocrt kuće, 4 kamere -->
+   <rect x="300" y="80" width="600" height="440" rx="18" fill="#1b4636" stroke="#cfe9da" stroke-width="6"/>
+   <path d="M600 80 L600 300 M300 300 L480 300 M720 300 L900 300" stroke="#cfe9da" stroke-width="5" opacity=".6"/>
+   <g font-family="Poppins" font-weight="700" font-size="26" fill="#cfe9da" text-anchor="middle" opacity=".9">
+    <text x="450" y="200">dnevna</text><text x="750" y="200">kuhinja</text><text x="450" y="420">ulaz</text><text x="750" y="420">dvorište</text>
+   </g>
+   <g id="fovsA"></g><g id="dotsA"></g>
+   <g id="cntA" opacity="0"><rect x="505" y="560" width="190" height="80" rx="40" fill="#6cc08f"/><text id="cntAT" x="600" y="615" fill="#0b1a14" font-family="Poppins" font-weight="800" font-size="40" text-anchor="middle">1 / 4</text></g>
+   <g id="hddA" opacity="0"><rect x="730" y="565" width="170" height="70" rx="14" fill="#1c1f22" stroke="#6cc08f" stroke-width="4"/><text x="815" y="611" fill="#fff" font-family="Poppins" font-weight="800" font-size="30" text-anchor="middle">1 × disk</text></g>
+  </g>
+  <g id="sB" opacity="0">
+   <!-- 16 kanala kao prikaz na monitoru -->
+   <rect x="300" y="70" width="600" height="420" rx="18" fill="#0b1a14" stroke="#cfe9da" stroke-width="6"/>
+   <g id="tiles"></g>
+   <g id="cntB" opacity="0"><rect x="495" y="520" width="210" height="80" rx="40" fill="#6cc08f"/><text id="cntBT" x="600" y="575" fill="#0b1a14" font-family="Poppins" font-weight="800" font-size="40" text-anchor="middle">1 / 16</text></g>
+   <g id="hddB" opacity="0"><rect x="730" y="525" width="170" height="70" rx="14" fill="#1c1f22" stroke="#6cc08f" stroke-width="4"/><text x="815" y="571" fill="#fff" font-family="Poppins" font-weight="800" font-size="30" text-anchor="middle">2 × disk</text></g>
+  </g>
+ </svg>
+ <div class="pr-note">Primer</div>
+</div>
+<div id="mini"><img id="miniImg" src="assets/a.png"><span id="miniL">A</span></div>
+<div class="pt" id="pA"><img src="assets/a.png"><div class="lb"><span>A</span></div><div class="tx">4 kanala</div></div>
+<div class="pt" id="pB"><img src="assets/b.png"><div class="lb"><span>B</span></div><div class="tx">16 kanala</div></div>
+<div id="vs">ili</div>
+<div id="logo"><img src="assets/supervision-ikonica-512.png">SUPERVISION</div>
+<div id="h"><div class="a"></div><div class="b"></div></div>
+<div id="chip"><span></span></div>
+<div id="stamp"><div></div></div>
+<div id="end"><div class="cat">NVR SNIMAČ · 4 IP KANALA</div><div class="im"><img src="assets/a.png"></div><div class="nm" id="nm">HiLook NVR-104MH-C</div><div class="sub">Kamere do 8 MP · 4K HDMI</div>
+<div class="pr"><span id="price">11.120 <b>RSD</b></span></div><div class="cta">super-vision.rs · <b>062/618-736</b></div></div>
+<div id="badge">4 CH</div>
+<div id="bar"></div>
+<div id="flash"></div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const SMAX=1.0; // pt 400 px, B MAX_PX 514, A MAX_PX 985
+const CUTS=[2.6,5.4,8.4,10.9];
+const H=[
+ [0,2.6,'<em>4</em> kamere<br>ili <em>16</em>?','<em>Snimač za video nadzor</em>:<br>A ili B?'],
+ [2.6,5.4,'A: 4 kanala.<br><em>Stan ili kuća.</em>',''],
+ [5.4,8.4,'B: 16 kanala.<br><em>Dva diska.</em>',''],
+];
+const CH=[[3.0,5.4,'<b>4 IP kamere</b> · 11.120 RSD'],[5.8,8.4,'<b>16 IP kamera</b> · 19.100 RSD']];
+const ST=[[8.4,9.2,'Oba do<br><em>8 MP</em>.'],[9.2,10.0,'<span style="font-size:112px">Oba bez PoE:<br><em>zaseban svič</em>.</span>'],[10.0,10.9,'<em>A ili B?</em><small>Napiši u komentar.</small>']];
+const CAMS=[[320,100,45],[880,100,135],[320,500,-45],[880,500,-135]];
+(function(){let f='',d='';CAMS.forEach((c,i)=>{const [x,y,a]=c;const r=250,w=26;const p1=[x+r*Math.cos((a-w)*Math.PI/180),y+r*Math.sin((a-w)*Math.PI/180)],p2=[x+r*Math.cos((a+w)*Math.PI/180),y+r*Math.sin((a+w)*Math.PI/180)];
+ f+=`<path id="fv${i}" d="M${x} ${y} L${p1[0]} ${p1[1]} A${r} ${r} 0 0 1 ${p2[0]} ${p2[1]} Z" fill="#6cc08f" opacity="0"/>`;
+ d+=`<g id="cd${i}" opacity="0"><circle cx="${x}" cy="${y}" r="22" fill="#fff"/><circle cx="${x}" cy="${y}" r="10" fill="#123528"/></g>`;});
+ $('fovsA').innerHTML=f;$('dotsA').innerHTML=d;
+ let s='';for(let i=0;i<16;i++){const x=314+(i%4)*144,y=84+Math.floor(i/4)*100;
+  s+=`<g id="tl${i}" opacity="0"><rect x="${x}" y="${y}" width="132" height="88" rx="8" fill="#1b4636"/><rect x="${x}" y="${y+56}" width="132" height="32" rx="0" fill="#2f7a50" opacity=".55"/><circle cx="${x+100}" cy="${y+26}" r="10" fill="#cfe9da" opacity=".7"/><text x="${x+12}" y="${y+30}" fill="#fff" font-family="Poppins" font-weight="800" font-size="22">${i+1}</text></g>`;}
+ $('tiles').innerHTML=s;})();
+window.render=function(t){
+ $('bar').style.width=(1080*cl(t/14))+'px';
+ $('b1').style.transform=`translate(${-120+80*Math.sin(t*0.6)}px,${200+60*Math.cos(t*0.5)}px)`;
+ $('b2').style.transform=`translate(${680+70*Math.cos(t*0.7)}px,${1250+80*Math.sin(t*0.4)}px)`;
+ // hook: oba snimača (PT_A/PT_B px, scale <= SMAX)
+ const hp=ease(cl(t/0.7));const ho=t<2.6?1:0;
+ const s0=Math.min(SMAX,0.85+0.15*hp+0.01*Math.sin(t*3));
+ $('pA').style.opacity=ho;$('pB').style.opacity=ho;
+ $('pA').style.left='70px';$('pA').style.top='760px';$('pB').style.left='610px';$('pB').style.top='760px';
+ $('pA').style.transform=`translate(${-260*(1-hp)}px,${6*Math.sin(t*2.2)}px) scale(${s0}) rotate(${-6*(1-hp)}deg)`;
+ $('pB').style.transform=`translate(${260*(1-hp)}px,${6*Math.cos(t*2.2)}px) scale(${s0}) rotate(${6*(1-hp)}deg)`;
+ const vq=back(cl((t-0.6)/0.35));$('vs').style.opacity=t<2.6?cl(vq):0;$('vs').style.transform=`scale(${cl(vq,0,1.2)*(1+0.05*Math.sin(t*7))})`;
+ const co=t>=2.6&&t<8.4?ease(cl((t-2.6)/0.3)):0;const card=$('card');card.style.opacity=co;
+ card.style.transform=`translateY(${(1-co)*120}px) scale(${0.96+0.04*co})`;
+ const b=t>=5.4;$('sA').setAttribute('opacity',b?0:1);$('sB').setAttribute('opacity',b?1:0);
+ $('mini').style.opacity=co;$('miniImg').src=b?'assets/b.png':'assets/a.png';$('miniL').textContent=b?'B':'A';
+ $('miniL').style.background=b?'#fff':'#6cc08f';
+ let mk=1;[2.6,5.4].forEach(c=>{const d=t-c;if(d>=0&&d<0.3)mk=0.6+0.4*back(cl(d/0.3))});$('mini').style.transform=`scale(${mk}) rotate(${-4+2*Math.sin(t*3)}deg)`;
+ // A: 4 kamere
+ let n=0;CAMS.forEach((c,i)=>{const st=2.9+i*0.35;const q=back(cl((t-st)/0.3));if(t>=st)n=i+1;
+  const d=$('cd'+i);d.setAttribute('opacity',cl(q*2));d.setAttribute('transform',`translate(${c[0]} ${c[1]}) scale(${cl(q,0,1.3)}) translate(${-c[0]} ${-c[1]})`);
+  $('fv'+i).setAttribute('opacity',cl((t-st-0.1)/0.3)*(0.24+0.06*Math.sin(t*4+i)));});
+ $('cntA').setAttribute('opacity',t>=2.9?1:0);$('cntAT').textContent=Math.max(1,n)+' / 4';
+ const ha=back(cl((t-4.4)/0.3));$('hddA').setAttribute('opacity',cl(ha));
+ // B: 16 kanala
+ let m=0;for(let i=0;i<16;i++){const st=5.7+i*0.1;const q=back(cl((t-st)/0.25));if(t>=st)m=i+1;const e=$('tl'+i);
+  const x=314+(i%4)*144+66,y=84+Math.floor(i/4)*100+44;e.setAttribute('opacity',cl(q*2));e.setAttribute('transform',`translate(${x} ${y}) scale(${cl(q,0,1.15)}) translate(${-x} ${-y})`);}
+ $('cntB').setAttribute('opacity',t>=5.7?1:0);$('cntBT').textContent=Math.max(1,m)+' / 16';
+ const hb=back(cl((t-7.5)/0.3));$('hddB').setAttribute('opacity',cl(hb));
+ const hh=H.find(h=>t>=h[0]&&t<h[1]);const he=$('h');
+ if(hh){he.querySelector('.a').innerHTML=hh[2];he.querySelector('.b').innerHTML=hh[3];
+  const local=t-hh[0];const p=hh[0]===0?ease(cl(t/0.35)):back(cl(local/0.35));
+  he.style.opacity=hh[0]===0?cl(t/0.15+0.4):cl(local/0.12);he.style.transform=`scale(${0.86+0.14*p})`;
+  he.querySelector('.a').style.fontSize=hh[0]===0?'110px':'88px';
+  he.querySelector('.b').style.opacity=hh[3]?cl((t-1.0)/0.25):0;
+  he.querySelector('.b').style.transform=`translateY(${(1-ease(cl((t-1.0)/0.3)))*30}px)`;}
+ else he.style.opacity=0;
+ const c=CH.find(c=>t>=c[0]&&t<c[1]);const ce=$('chip');
+ if(c){ce.querySelector('span').innerHTML=c[2];const p=back(cl((t-c[0])/0.35));ce.style.opacity=cl((t-c[0])/0.1)*cl((c[1]-t)/0.15);ce.style.transform=`translateY(${(1-p)*80}px)`;}
+ else ce.style.opacity=0;
+ const sm=ST.find(s=>t>=s[0]&&t<s[1]);const se=$('stamp');
+ if(sm){se.querySelector('div').innerHTML=sm[2];const p=cl((t-sm[0])/0.14);se.style.opacity=1;se.style.transform=`scale(${1.5-0.5*ease(p)})`;}
+ else se.style.opacity=0;
+ const pr=ease(cl((t-10.9)/0.4));$('endbg').style.opacity=pr;$('end').style.opacity=pr;
+ [...$('end').children].forEach((e,i)=>{const q=ease(cl((t-11.0-i*0.08)/0.4));e.style.opacity=q;e.style.transform=`translateY(${(1-q)*40}px)`+(i===1?` scale(${0.9+0.1*q})`:'');});
+ const bq=back(cl((t-11.6)/0.4));$('badge').style.opacity=t>=10.9?cl(bq):0;$('badge').style.transform=`scale(${cl(bq,0,1.2)*(1+0.03*Math.sin(t*6))}) rotate(${-10+4*Math.sin(t*2)}deg)`;
+ const op=ease(cl((t-11.2)/1.0));$('price').innerHTML=Math.round(11120*op).toLocaleString('de-DE')+' <b>RSD</b>';
+ $('logo').style.color=pr>0.5?'#123528':'#fff';
+ let f=0;CUTS.forEach(cu=>{const d=t-cu;if(d>=0&&d<0.12)f=Math.max(f,0.5*(1-d/0.12))});$('flash').style.opacity=f;
+};
+function fit(){const e=$('nm');let fs=80;e.style.fontSize=fs+'px';while(e.scrollWidth>1000&&fs>40){fs-=2;e.style.fontSize=fs+'px';}}
+window.ready=Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r}))).then(()=>document.fonts.ready).then(()=>{fit();render(0);});
+</script></body></html>

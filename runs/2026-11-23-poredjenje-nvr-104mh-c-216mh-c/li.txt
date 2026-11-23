@@ -1,0 +1,9 @@
+Snimač za video nadzor: 4 ili 16 kanala?
+
+Za manje IP sisteme (stan, kuća, manja firma sa do četiri kamere) HiLook NVR-104MH-C prima 4 IP kamere rezolucije do 8 MP, uz H.265+ kompresiju, HDMI izlaz u 4K i jedno ležište za disk. Cena 11.120 RSD sa PDV-om.
+
+Za veće objekte HiLook NVR-216MH-C prima 16 IP kamera do 8 MP, ima dva SATA ležišta (diskovi do 8 TB svaki, kupuju se odvojeno), propusnost do 160 Mbps i HDMI i VGA izlaz. Cena 19.100 RSD sa PDV-om.
+
+Nijedan model nema PoE portove; kamere se napajaju preko zasebnog PoE sviča ili sopstvenih adaptera.
+
+Oba na stanju: super-vision.rs ili 062/618-736.
