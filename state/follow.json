@@ -2203,5 +2203,68 @@
   "url": null,
   "city": "Novi Sad (Kraljevića Marka 10)",
   "reason": "Ugradnja i servis video nadzora i alarma; sajt nanotechnics.rs upućuje na njihov Instagram, traži po imenu"
+ },
+ {
+  "date": "2026-11-23",
+  "network": "instagram",
+  "name": "Zedex Alarm Servis",
+  "handle": "@zedex_alarm_servis",
+  "url": null,
+  "city": "Beograd (Zedex)",
+  "reason": "Servis i ugradnja alarma; isti Zedex kao Marko Milosevic na LinkedIn listi"
+ },
+ {
+  "date": "2026-11-23",
+  "network": "linkedin",
+  "name": "Elvod Plus",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/elvod-plus",
+  "city": "Beograd (Tomazeova 10)",
+  "reason": "Projektovanje, montaza i servis video nadzora, alarma, dojave pozara"
+ },
+ {
+  "date": "2026-11-23",
+  "network": "linkedin",
+  "name": "Ljubiša Nikolić (Elvod Plus)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/ljubi%C5%A1a-nikoli%C4%87-175197229",
+  "city": "Beograd",
+  "reason": "CEO Elvod Plus, firma za video nadzor i alarme"
+ },
+ {
+  "date": "2026-11-23",
+  "network": "linkedin",
+  "name": "Aleksa Cvijović (Cvijović Elektro)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/aleksa-cvijovic-997344212",
+  "city": "Beograd",
+  "reason": "Elektricar, radi alarme, video nadzor, interfone i kontrolu pristupa"
+ },
+ {
+  "date": "2026-11-23",
+  "network": "linkedin",
+  "name": "DVD Vračar",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/dvd-vracar",
+  "city": "Beograd (Metohijska 28)",
+  "reason": "Zastita od pozara i fizicko-tehnicko obezbedjenje, video nadzor i kontrola pristupa"
+ },
+ {
+  "date": "2026-11-23",
+  "network": "linkedin",
+  "name": "Stelt Security",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/stelt-security",
+  "city": "Beograd",
+  "reason": "Firma za obezbedjenje sa tehnickom zastitom i procenom rizika"
+ },
+ {
+  "date": "2026-11-23",
+  "network": "linkedin",
+  "name": "Nenad Jakovljević (stelt cable)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/%D0%BD%D0%B5%D0%BD%D0%B0%D0%B4-%D1%98%D0%B0%D0%BA%D0%BE%D0%B2%D1%99%D0%B5%D0%B2%D0%B8%D1%9B-006417a4",
+  "city": "Srbija",
+  "reason": "Vlasnik, montaza video nadzora, interfona, alarma i kontrole pristupa"
  }
 ]
