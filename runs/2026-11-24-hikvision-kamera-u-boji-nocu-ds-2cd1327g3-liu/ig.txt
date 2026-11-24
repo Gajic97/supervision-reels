@@ -1,0 +1,19 @@
+Kamera u boji noću Hikvision DS-2CD1327G3-LIU: ColorVu 3.0 drži sliku u boji i noću, sa belim svetlom do 30 m.
+
+Greška pre kupovine: kamera sa staklenom kupolom, kod koje IC dioda noću pravi odsjaj na staklu. Ova turret kamera nema kupolu, pa tog odsjaja nema.
+
+Za šta je: ulazi, terase, dvorišta i manji prodajni prostori kojima je dovoljna Full HD rezolucija uz sliku u boji noću.
+
+Pre kupovine proveri:
+- 2 MP (1920 x 1080), objektiv 2.8 mm
+- belo i IC osvetljenje do 30 m
+- ugrađen mikrofon
+- napajanje PoE ili 12 VDC
+- IP67, za spoljnu montažu
+- nema slot za memorijsku karticu: snima na snimač ili mrežni disk
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+Ulaz ili dvorište? Napiši u komentar.
+
+#kamerauboji #videonadzor #hikvision #colorvu #supervision

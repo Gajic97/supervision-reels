@@ -1379,5 +1379,63 @@
   "buffer_post_id": "6b03d370d5eabfb8cc0b5621",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-23-hikvision-kamera-za-dvoriste-ds-2cd1043g3-liu"
+ },
+ {
+  "date": "2026-11-24",
+  "product_id": 1005,
+  "product": "iDS-7108HQHI-M1/S Hikvision Turbo HD DVR snimač 8 kanala AcuSense",
+  "category": "Snimači",
+  "keyword": "DVR snimač 8 kanala",
+  "format": "f5",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako ti 4 kanala nije dosta / DVR snimač 8 kanala · AcuSense",
+  "music_style": "chill",
+  "music_track": "chill/velariomusic-chill-lofi-616929.mp3",
+  "url": "https://super-vision.rs/proizvod/snimac-ids-7108hqhi-m1-s-hikvision/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6b0526a4ca4899309e60101c",
+   "tiktok": "6b0526a6ca4899309e60116a",
+   "linkedin": "6b0526a7286252d738382fad"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-24 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-24-hikvision-dvr-snimac-8-kanala-ids-7108hqhi-m1-s.mp4",
+  "buffer_post_id": "6b0526a4ca4899309e60101c",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-24-hikvision-dvr-snimac-8-kanala-ids-7108hqhi-m1-s"
+ },
+ {
+  "date": "2026-11-24",
+  "product_id": 4115,
+  "product": "DS-2CD1327G3-LIU Hikvision IP turret kamera 2MP ColorVu 2.8mm",
+  "category": "Kamere",
+  "keyword": "kamera u boji noću",
+  "format": "f8",
+  "hook_type": "provokativno",
+  "hook_text": "Greška: kupola noću odsijava / Kamera u boji noću, bez kupole",
+  "music_style": "chill",
+  "music_track": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "url": "https://super-vision.rs/proizvod/ds-2cd1327g3-liu-hikvision-ip-turret-kamera-2mp-colorvu-2-8mm/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6b0526a5060d9b64824e05b5",
+   "tiktok": "6b0526a731056e7b6e7948f6",
+   "linkedin": "6b0526a8ca4899309e6013e7"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-24 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-24-hikvision-kamera-u-boji-nocu-ds-2cd1327g3-liu.mp4",
+  "buffer_post_id": "6b0526a5060d9b64824e05b5",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-24-hikvision-kamera-u-boji-nocu-ds-2cd1327g3-liu"
  }
 ]

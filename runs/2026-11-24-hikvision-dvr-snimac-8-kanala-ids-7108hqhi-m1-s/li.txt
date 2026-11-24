@@ -1,0 +1,7 @@
+DVR snimač 8 kanala Hikvision iDS-7108HQHI-M1/S: za objekte kojima 4 kanala nisu dovoljna.
+
+Namena: kuća sa više strana za nadzor, manja firma ili radnja gde je obični alarm na pokret javljao previše, kao i zamena starijeg 8-kanalnog snimača na postojećoj koaksijalnoj instalaciji. Postojeće Turbo HD i analogne kamere mogu da ostanu.
+
+Specifikacija: 8 kanala, do 6 MP, H.265 Pro+, HDMI i VGA, 1 ležište za disk (oznaka M1), bez PoE portova. AcuSense detekcija se podešava po kanalu, u zonama koje sami odredite, i smanjuje broj nepotrebnih obaveštenja.
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.

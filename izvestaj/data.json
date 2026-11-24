@@ -1,6 +1,34 @@
 {
- "generated": "24.11.2026. 06:53",
+ "generated": "24.11.2026. 06:55",
  "reels": [
+  {
+   "date": "2026-11-24",
+   "product": "DS-2CD1327G3-LIU Hikvision IP turret kamera 2MP ColorVu 2.8mm",
+   "category": "Kamere",
+   "keyword": "kamera u boji noću",
+   "hook_type": "provokativno",
+   "hook_text": "Greška: kupola noću odsijava / Kamera u boji noću, bez kupole",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-24-hikvision-kamera-u-boji-nocu-ds-2cd1327g3-liu.mp4",
+   "scheduled": "2026-11-24 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-24",
+   "product": "iDS-7108HQHI-M1/S Hikvision Turbo HD DVR snimač 8 kanala AcuSense",
+   "category": "Snimači",
+   "keyword": "DVR snimač 8 kanala",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako ti 4 kanala nije dosta / DVR snimač 8 kanala · AcuSense",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-24-hikvision-dvr-snimac-8-kanala-ids-7108hqhi-m1-s.mp4",
+   "scheduled": "2026-11-24 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-23",
    "product": "DS-2CD1043G3-LIU Hikvision IP bullet kamera 4MP Hybrid Light 2.8mm",
