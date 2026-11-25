@@ -2302,5 +2302,41 @@
   "url": "https://www.linkedin.com/company/protecta-group-d-o-o",
   "city": "Beograd",
   "reason": "Firma za bezbednost sa timom za projektovanje i ugradnju sigurnosne opreme i CCTV operaterima"
+ },
+ {
+  "date": "2026-11-25",
+  "network": "linkedin",
+  "name": "Business IT Systems",
+  "handle": null,
+  "url": "https://www.linkedin.com/company/business-it-systems",
+  "city": "Centralna Srbija (Ćuprija)",
+  "reason": "Firma za tehničku zaštitu od 2016: procena rizika, projektovanje i montaža video nadzora, kontrole pristupa i protivprovale"
+ },
+ {
+  "date": "2026-11-25",
+  "network": "linkedin",
+  "name": "Dejan Marković (Elektrovizija d.o.o.)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/dejan-markovic",
+  "city": "Kragujevac",
+  "reason": "Tehnički direktor Elektrovizije, ovlašćeni instalater Paradox i Hikvision CCTV sistema, licence MUP Srbije LT1 i LT2"
+ },
+ {
+  "date": "2026-11-25",
+  "network": "linkedin",
+  "name": "Ivica Milošević (Dot Smart Solutions)",
+  "handle": null,
+  "url": "https://rs.linkedin.com/in/ivica-milo%C5%A1evi%C4%87-61307b68",
+  "city": "Srbija (licence MUP Srbije)",
+  "reason": "Projekt menadžer za sisteme tehničke zaštite (video nadzor, kontrola pristupa, protivprovala), licenca MUP Srbije LT1"
+ },
+ {
+  "date": "2026-11-25",
+  "network": "linkedin",
+  "name": "Marko Šacka (Lux Elektro Gradnja)",
+  "handle": null,
+  "url": "https://www.linkedin.com/in/marko-%C5%A1acka-3975422a4",
+  "city": "Beograd",
+  "reason": "Vlasnik, električar koji ugrađuje video nadzor (DVR/NVR, pregled preko aplikacije), ranije Alarm Protect doo"
  }
 ]
