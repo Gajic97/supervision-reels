@@ -1437,5 +1437,63 @@
   "buffer_post_id": "6b0526a5060d9b64824e05b5",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-24-hikvision-kamera-u-boji-nocu-ds-2cd1327g3-liu"
+ },
+ {
+  "date": "2026-11-25",
+  "product_id": 12963,
+  "product": "Komplet video nadzora HiLook 1x bullet THC-B120-P 2MP + DVR-204Q-M1",
+  "category": "Kompleti video nadzora",
+  "keyword": "komplet video nadzora",
+  "format": "f6",
+  "hook_type": "izjava / broj",
+  "hook_text": "Kamera, snimač, disk. Jedna kutija. / Komplet video nadzora za 1 kameru",
+  "music_style": "chill",
+  "music_track": "chill/atlasaudio-lofi-chill-589987.mp3",
+  "url": "https://super-vision.rs/proizvod/komplet-video-nadzora-1-kamera/",
+  "price": 25000,
+  "buffer_posts": {
+   "instagram": "6b0675a2d8874a038cf64623",
+   "tiktok": "6b0675a39cddd8483ab13d06",
+   "linkedin": "6b0675a4b6204bca46cd018f"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-25 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-25-komplet-video-nadzora-1-kamera-hilook.mp4",
+  "buffer_post_id": "6b0675a2d8874a038cf64623",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-25-komplet-video-nadzora-1-kamera-hilook"
+ },
+ {
+  "date": "2026-11-25",
+  "product_id": 4129,
+  "product": "DS-2CE12KF3T-LE 2.8mm Hikvision HD-TVI ColorVu PoC bullet kamera 3K",
+  "category": "Kamere",
+  "keyword": "kamera za ulaz",
+  "format": "f2",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Nema utičnice kod kamere? / Kamera za ulaz: struja kroz video kabl",
+  "music_style": "chill",
+  "music_track": "chill/zephiramusic-chill-lofi-585360.mp3",
+  "url": "https://super-vision.rs/proizvod/hd-tvi-bullet-kamera-ds-2ce12kf3t-le-2-8mm/",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6b0675a540e1d58d12000fbf",
+   "tiktok": "6b0675a6608549ccf2664096",
+   "linkedin": "6b0675a722dfb7833a82f97c"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-25 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-25-hikvision-poc-kamera-ds-2ce12kf3t-le.mp4",
+  "buffer_post_id": "6b0675a540e1d58d12000fbf",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-25-hikvision-poc-kamera-ds-2ce12kf3t-le"
  }
 ]

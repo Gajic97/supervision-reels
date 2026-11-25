@@ -1,6 +1,34 @@
 {
- "generated": "25.11.2026. 06:43",
+ "generated": "25.11.2026. 06:44",
  "reels": [
+  {
+   "date": "2026-11-25",
+   "product": "DS-2CE12KF3T-LE 2.8mm Hikvision HD-TVI ColorVu PoC bullet kamera 3K",
+   "category": "Kamere",
+   "keyword": "kamera za ulaz",
+   "hook_type": "yes-pitanje",
+   "hook_text": "Nema utičnice kod kamere? / Kamera za ulaz: struja kroz video kabl",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-25-hikvision-poc-kamera-ds-2ce12kf3t-le.mp4",
+   "scheduled": "2026-11-25 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-25",
+   "product": "Komplet video nadzora HiLook 1x bullet THC-B120-P 2MP + DVR-204Q-M1",
+   "category": "Kompleti video nadzora",
+   "keyword": "komplet video nadzora",
+   "hook_type": "izjava / broj",
+   "hook_text": "Kamera, snimač, disk. Jedna kutija. / Komplet video nadzora za 1 kameru",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-25-komplet-video-nadzora-1-kamera-hilook.mp4",
+   "scheduled": "2026-11-25 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-24",
    "product": "DS-2CD1327G3-LIU Hikvision IP turret kamera 2MP ColorVu 2.8mm",

@@ -1,0 +1,15 @@
+Kamera za ulaz Hikvision DS-2CE12KF3T-LE: PoC napajanje, pa slika i struja idu kroz isti koaksijalni kabl, bez posebnog adaptera.
+
+ColorVu: belo i IC svetlo do 40 m drže sliku u boji i noću. Objektiv 2.8 mm daje širok ugao za ulaze i manje prostorije.
+
+Pre kupovine proveri:
+- PoC napajanje traži snimač ili injektor sa PoC izlazom
+- 3K (2960 x 1665), HD-TVI preko koaksijalnog kabla
+- IP67, radna temperatura -40 do 60 stepeni
+- ista kamera bez PoC: DS-2CE12KF3T-LS (12 VDC adapter)
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+Ulaz ili garaža? Napiši u komentar.
+
+#kamerazaulaz #videonadzor #hikvision #colorvu #supervision

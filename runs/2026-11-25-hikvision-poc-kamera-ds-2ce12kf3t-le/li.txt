@@ -1,0 +1,7 @@
+Kamera za ulaz Hikvision DS-2CE12KF3T-LE: HD-TVI 3K kamera sa ColorVu senzorom i PoC (Power over Coax) napajanjem.
+
+PoC znači da kamera dobija napajanje kroz isti koaksijalni kabl kojim ide video, bez posebnog adaptera, što skraćuje instalaciju. Uslov je snimač ili injektor sa PoC izlazom; običan DVR bez PoC izlaza ovu kameru neće napajati. Za standardno napajanje postoji DS-2CE12KF3T-LS (12 VDC).
+
+Specifikacija: 3K (2960 x 1665), objektiv 2.8 mm, belo i IC svetlo do 40 m, potrošnja do 7,8 W, IP67, -40 do 60 °C, video izlaz TVI/AHD/CVI/CVBS.
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.
