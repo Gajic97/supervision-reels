@@ -1,6 +1,34 @@
 {
- "generated": "26.11.2026. 06:44",
+ "generated": "26.11.2026. 06:46",
  "reels": [
+  {
+   "date": "2026-11-26",
+   "product": "DS-2CD1127G2H-LIU Hikvision IP dome kamera 2MP ColorVu",
+   "category": "Kamere",
+   "keyword": "kamera za ulaz u zgradu",
+   "hook_type": "izjava / broj",
+   "hook_text": "Kamera koja trpi udarac / Kamera za ulaz u zgradu i garažu",
+   "music_style": "chill",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-26-hikvision-dome-kamera-ds-2cd1127g2h-liu.mp4",
+   "scheduled": "2026-11-26 19:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
+  {
+   "date": "2026-11-26",
+   "product": "B2B portal: maloprodaja ili B2B nalog",
+   "category": "B2B",
+   "keyword": "veleprodaja video nadzora",
+   "hook_type": "ako-onda",
+   "hook_text": "Ako ugrađuješ, kupuj na veleprodaju. / Maloprodaja ili B2B nalog?",
+   "music_style": "b2b",
+   "video": "https://gajic97.github.io/supervision-reels/v/2026-11-26-b2b-portal-maloprodaja-ili-b2b.mp4",
+   "scheduled": "2026-11-26 12:30",
+   "channels": {},
+   "views": 0,
+   "eng": 0
+  },
   {
    "date": "2026-11-25",
    "product": "DS-2CE12KF3T-LE 2.8mm Hikvision HD-TVI ColorVu PoC bullet kamera 3K",

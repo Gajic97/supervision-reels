@@ -1495,5 +1495,63 @@
   "buffer_post_id": "6b0675a540e1d58d12000fbf",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-25-hikvision-poc-kamera-ds-2ce12kf3t-le"
+ },
+ {
+  "date": "2026-11-26",
+  "product_id": null,
+  "product": "B2B portal: maloprodaja ili B2B nalog",
+  "category": "B2B",
+  "url": "https://b2b.super-vision.rs/",
+  "keyword": "veleprodaja video nadzora",
+  "format": "f4",
+  "hook_type": "ako-onda",
+  "hook_text": "Ako ugrađuješ, kupuj na veleprodaju. / Maloprodaja ili B2B nalog?",
+  "music_style": "b2b",
+  "music_track": "b2b/nastelbom-technology-technology-music-602443.mp3",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6b07c778d4eda4b659dff074",
+   "tiktok": "6b07c779a791bea1b25966d6",
+   "linkedin": "6b07c77a9f6dda31ccc90139"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-26 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-26-b2b-portal-maloprodaja-ili-b2b.mp4",
+  "buffer_post_id": "6b07c778d4eda4b659dff074",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-26-b2b-portal-maloprodaja-ili-b2b"
+ },
+ {
+  "date": "2026-11-26",
+  "product_id": 2669,
+  "product": "DS-2CD1127G2H-LIU Hikvision IP dome kamera 2MP ColorVu",
+  "category": "Kamere",
+  "url": "https://super-vision.rs/proizvod/ds-2cd1127g2h-liu-hikvision-ip-dome-kamera-2mp-colorvu/",
+  "keyword": "kamera za ulaz u zgradu",
+  "format": "f5",
+  "hook_type": "izjava / broj",
+  "hook_text": "Kamera koja trpi udarac / Kamera za ulaz u zgradu i garažu",
+  "music_style": "chill",
+  "music_track": "chill/alex-morgan-lofi-chill-vlog-beats-573883.mp3",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6b07c77e9f6dda31ccc902c5",
+   "tiktok": "6b07c78007071a60675a7672",
+   "linkedin": "6b07c780d4eda4b659dff344"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-26 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-26-hikvision-dome-kamera-ds-2cd1127g2h-liu.mp4",
+  "buffer_post_id": "6b07c77e9f6dda31ccc902c5",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-26-hikvision-dome-kamera-ds-2cd1127g2h-liu"
  }
 ]

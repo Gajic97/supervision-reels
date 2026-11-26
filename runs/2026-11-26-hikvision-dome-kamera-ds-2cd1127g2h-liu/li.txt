@@ -1,0 +1,7 @@
+Kamera za ulaz u zgradu, hodnik ili garažu: Hikvision DS-2CD1127G2H-LIU.
+
+IP dome kamera 2 MP (1920 x 1080) sa ColorVu senzorom i objektivom 2.8 mm F1.0. Kućište IP67 i IK08 podnosi vodu i udarac, a dome oblik otežava pristup objektivu i ne pokazuje kuda je kamera okrenuta. Model se bira umesto bullet kamere kada je bitna otpornost na udarac i diskretan izgled, a instalacija je mrežna.
+
+Osetljivost 0.001 luksa i belo svetlo do 30 m. PoE napajanje (IEEE 802.3af, do 7.5 W) ili 12 VDC, ugrađen mikrofon, detekcija pokreta koja može da alarmira samo na čoveka ili vozilo. Snimanje na NVR snimaču (bez slota za karticu).
+
+Na stanju, isporuka za 2 radna dana. Cena na upit: super-vision.rs ili 062/618-736.
