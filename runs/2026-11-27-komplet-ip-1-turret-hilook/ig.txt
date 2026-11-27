@@ -1,0 +1,14 @@
+IP komplet video nadzora za 1 kameru: HiLook IPC-T220HA-LUC i snimač NVR-104H-D, uz PoE svič i disk 1 TB.
+
+3 stvari koje IP komplet mora da ima:
+3. kamera: IPC-T220HA-LUC, 2 MP, objektiv 2.8 mm, Smart Hybrid Light, mikrofon, IP67
+2. snimač: NVR-104H-D, 4 kanala, kamere do 6 MP, H.265+
+1. PoE svič: DS-3E0106P-E/M, 4 PoE porta, slika i napajanje istim mrežnim kablom (do 100 m)
+
+Uz to ide hard disk WD Purple 1 TB. Snimač se poveže na ruter, a slika se gleda u aplikaciji Hik-Connect. Ostaju 3 slobodna kanala za kamere koje dodaš kasnije.
+
+Kupljeno pojedinačno 33.350 RSD, u kompletu 29.100 RSD. Uštedite 4.250 RSD (13%). Na stanju, isporuka za 2 radna dana, cela Srbija. Link u bio.
+
+Ulaz ili kasa? Napiši u komentar.
+
+#ipkompletvideonadzora #kompletvideonadzora #videonadzor #hilook #supervision

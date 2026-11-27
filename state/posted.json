@@ -1553,5 +1553,63 @@
   "buffer_post_id": "6b07c77e9f6dda31ccc902c5",
   "template": "reel-v5-14s",
   "run": "templates/runs/2026-11-26-hikvision-dome-kamera-ds-2cd1127g2h-liu"
+ },
+ {
+  "date": "2026-11-27",
+  "product_id": 12999,
+  "product": "Komplet video nadzora HiLook 1x turret IPC-T220HA-LUC 2MP + NVR-104H-D",
+  "category": "Kompleti video nadzora",
+  "url": "https://super-vision.rs/proizvod/ip-komplet-video-nadzora-1-dome-kamera/",
+  "keyword": "ip komplet video nadzora",
+  "format": "f3",
+  "hook_type": "lista",
+  "hook_text": "IP komplet mora da ima 3 stvari / IP komplet video nadzora · 1 kamera",
+  "music_style": "chill",
+  "music_track": "chill/velariomusic-chill-lofi-616929.mp3",
+  "price": 29100,
+  "buffer_posts": {
+   "instagram": "6b09188f776ce21276ec5b69",
+   "tiktok": "6b0918901fd46e62e717cb06",
+   "linkedin": "6b091890062ed764a8e91739"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-27 12:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-27-komplet-ip-1-turret-hilook.mp4",
+  "buffer_post_id": "6b09188f776ce21276ec5b69",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-27-komplet-ip-1-turret-hilook"
+ },
+ {
+  "date": "2026-11-27",
+  "product_id": 5275,
+  "product": "DS-2CE16D0T-LFS 2.8mm Hikvision Turbo HD bullet kamera 2MP belo svetlo i mikrofon",
+  "category": "Kamere",
+  "url": "https://super-vision.rs/proizvod/ds-2ce16d0t-lfs-2-8mm-hikvision-turbo-hd-bullet-kamera-2mp-belo-svetlo-i-mikrofon/",
+  "keyword": "kamera u boji noću",
+  "format": "f2",
+  "hook_type": "yes-pitanje",
+  "hook_text": "Noću ti je slika crno-bela? / Kamera u boji noću, belo svetlo do 20 m",
+  "music_style": "chill",
+  "music_track": "chill/fassounds-good-night-lofi-cozy-chill-music-160166.mp3",
+  "price": null,
+  "buffer_posts": {
+   "instagram": "6b091891658222306ce67502",
+   "tiktok": "6b091892658222306ce6752d",
+   "linkedin": "6b091893062ed764a8e91782"
+  },
+  "channels": [
+   "instagram",
+   "tiktok",
+   "linkedin"
+  ],
+  "scheduled": "2026-11-27 19:30",
+  "video": "https://gajic97.github.io/supervision-reels/v/2026-11-27-hikvision-kamera-u-boji-nocu-ds-2ce16d0t-lfs.mp4",
+  "buffer_post_id": "6b091891658222306ce67502",
+  "template": "reel-v5-14s",
+  "run": "templates/runs/2026-11-27-hikvision-kamera-u-boji-nocu-ds-2ce16d0t-lfs"
  }
 ]

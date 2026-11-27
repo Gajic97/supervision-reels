@@ -1,0 +1,17 @@
+Kamera u boji noću sa mikrofonom: Hikvision DS-2CE16D0T-LFS 2.8mm, Turbo HD bullet kamera 2 MP.
+
+Noću ti je slika crno-bela? Pored infracrvenog ima i belo svetlo do 20 m, pa se noću prepozna boja odeće i vozila. Ugrađen mikrofon šalje zvuk istim koaksijalnim kablom (DVR mora da podržava audio preko koaksijala).
+
+- 2 MP, 1920 × 1080 pri 30 slika u sekundi
+- belo svetlo do 20 m, infracrveno do 30 m
+- vidno polje 101° horizontalno
+- video izlaz 4 u 1: TVI, AHD, CVI, CVBS
+- metalno kućište IP67, od -40 do 60 °C
+
+Za dopunu postojeće analogne instalacije, npr. ulaz u lokal ili kapija.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju. Link u bio.
+
+Kapija ili lokal? Napiši u komentar.
+
+#kamerauboji #videonadzor #hikvision #analognakamera #supervision

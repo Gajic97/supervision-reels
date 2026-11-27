@@ -1,0 +1,7 @@
+Kamera u boji noću za postojeće analogne instalacije: Hikvision DS-2CE16D0T-LFS 2.8mm.
+
+Turbo HD bullet kamera 2 MP (1920 × 1080, 30 fps) sa belim svetlom do 20 m i infracrvenim do 30 m. Slovo L u oznaci znači belo svetlo pored IR-a, a F ugrađen mikrofon; zvuk ide koaksijalnim kablom, pa DVR mora da podržava audio preko koaksijala. Osetljivost 0,01 lux pri F1.6, vidno polje 101° horizontalno, digitalni WDR, BLC, HLC i 3D DNR. Izlaz 4 u 1 (TVI, AHD, CVI, CVBS), napajanje 12 VDC do 3,3 W, metalno kućište IP67.
+
+Primena: dopuna analogne instalacije na ulazu u lokal ili na kapiji, gde treba prepoznati boju odeće i vozila noću i zabeležiti zvuk.
+
+Na stanju. Cena na upit: super-vision.rs ili 062/618-736.

@@ -1,0 +1,5 @@
+IP komplet video nadzora HiLook za jedno mesto: ulaz u kuću, kapija, garaža ili kasa u radnji.
+
+U kompletu: kamera IPC-T220HA-LUC (2 MP, 2.8 mm, Smart Hybrid Light, mikrofon, IP67, turret bez staklene kupole), snimač NVR-104H-D (4 kanala, kamere do 6 MP, H.265+), PoE svič Hikvision DS-3E0106P-E/M sa 4 PoE porta i hard disk WD Purple 1 TB. Snimač nema ugrađene PoE portove, pa svič iz kompleta nosi i sliku i napajanje jednim mrežnim kablom, do 100 m kategorije 5e ili 6. Na snimaču ostaju 3 slobodna kanala.
+
+Cena 29.100 RSD sa PDV-om; kupljeno pojedinačno 33.350 RSD (ušteda 4.250 RSD, 13%). Na stanju, isporuka za 2 radna dana: super-vision.rs
