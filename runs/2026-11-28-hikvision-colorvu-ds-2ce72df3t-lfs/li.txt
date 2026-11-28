@@ -1,0 +1,9 @@
+ColorVu kamera za postojeće analogne sisteme: Hikvision DS-2CE72DF3T-LFS 2.8mm.
+
+Na šta paziti pri izboru: ovo je HD-TVI kamera. Povezuje se koaksijalnim kablom na DVR ili XVR snimač, ne na NVR, i ne koristi PoE. Mikrofon (do 5 m) šalje zvuk istim kablom.
+
+Rezolucija 2 MP, fiksni objektiv 2.8 mm, ugao oko 105 stepeni. Belo LED svetlo zajedno sa IR dopire do 40 m, pa slika ostaje u boji noću dok radi belo svetlo, za razliku od obične IC kamere koja u mraku daje crno-belu sliku. Napajanje 12 VDC (oko 6,9 W), kućište IP67, radna temperatura od -40 do 60 °C.
+
+Primena: ulazi, terase i dvorišta gde je potrebno prepoznati boju odeće ili vozila noću.
+
+Na stanju. Cena na upit: super-vision.rs ili 062/618-736.

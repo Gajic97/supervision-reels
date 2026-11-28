@@ -1,0 +1,17 @@
+ColorVu kamera Hikvision DS-2CE72DF3T-LFS 2.8mm: analogna turret kamera 2 MP sa slikom u boji i noću.
+
+Pre kupovine proveri snimač. Ovo je HD-TVI kamera: ide koaksijalnim kablom na DVR ili XVR snimač, ne na NVR, i ne treba joj PoE.
+
+- belo LED svetlo zajedno sa IR do 40 m, pa slika ostaje u boji dok radi belo svetlo
+- ugao oko 105 stepeni, široka scena iz jedne tačke
+- mikrofon hvata zvuk do 5 m i šalje ga istim kablom
+- 12 VDC, oko 6,9 W
+- kućište IP67, od -40 do 60 °C
+
+Za ulaze, terase i dvorišta gde je bitno da se noću prepozna boja odeće ili vozila.
+
+Cena na upit: super-vision.rs ili 062/618-736. Na stanju. Link u bio.
+
+Imaš DVR ili NVR? Napiši u komentar.
+
+#colorvu #videonadzor #hikvision #kamerauboji #supervision
